@@ -126,11 +126,12 @@ section#menu{
 	top: 0px;
 	background: #FF3051 none repeat scroll 0% 0%;
 	color: #FFF;
+	z-index: 100000000;
 	/*transform-style: preserve-3d;*/
-	transition-property: transform;
+	/*transition-property: transform;
 	transition-duration: 0.4s;
 	transition-timing-function: cubic-bezier(0, 0.99, 0.13, 0.995);
-	transform: translate(-180px, 0px);
+	transform: translate(-180px, 0px);*/
 
 }
 
