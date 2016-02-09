@@ -45,16 +45,69 @@ header.callout > nav.row.large-12.columns h1{
 
 }
 
-nav button.menu{
+/*Burger button*/
+
+nav button.menu-burger-trigger{
+	width: 36px;
+	height: 36px;
 	padding: 0;
+	position: relative;
+	transition-property: transform;
+	transition-duration: 1s;
+	transition-timing-function: ease;
+	transform-origin: 50% 50%;
+	transform: rotate(0deg);
+	outline-color: rgba(0,0,0,0);
 }
 
-nav button.menu span{
+nav button.menu-burger-trigger span{
+	position: absolute;
 	display: block;
 	background-color: black;
-	width: 35px;
+	width: 36px;
 	height: 2px;
-	margin: 10px 0 10px 0;
+	transition-property: transform, top;
+	transition-duration: 1s;
+	transition-timing-function: ease;
+	transform: translate(0 0);
+	transform-origin: 50% 50%;
+	transform: rotate(0deg);
+}
+
+/*When  menu is opened change from burger to cross*/
+
+nav button.menu-burger-trigger span:nth-child(1){
+	top: 0px;
+	left: 0px
+	right: 0px;
+}
+
+nav button.menu-burger-trigger.open span:nth-child(1){
+	top: 12px;
+	transform-origin: 50% 50%;
+	transform: rotate(135deg);
+}
+
+nav button.menu-burger-trigger span:nth-child(2){
+	top: 12px;
+	left: 0px
+	right: 0px;
+}
+
+nav button.menu-burger-trigger.open span:nth-child(2){
+display: none;	
+}
+
+nav button.menu-burger-trigger span:nth-child(3){
+	top: 24px;
+	left: 0px
+	right: 0px;
+}
+
+nav button.menu-burger-trigger.open span:nth-child(3){
+	top: 12px;
+	transform-origin: 50% 50%;
+	transform: rotate(-135deg);
 }
 
 nav.row.large-12.columns ul{
@@ -106,6 +159,7 @@ nav.row.large-12.columns li a.button{
 }
 
 nav.row.large-12.columns li a.button:hover{
+
 	margin: 0px;	
 	transition: background-color 0.25s ease-out 0s, color 0.25s ease-out 0s;
 	border: 0px solid transparent;
@@ -117,14 +171,15 @@ nav.row.large-12.columns li a.button:hover{
 	color: #FFF;
 }
 
-section#menu{
+nav#menu-push{
+	display: none;
 	height: 100vh;
 	width: 180px;
 	position: fixed;
 	z-index: 1000;
 	left: 0px;
 	top: 0px;
-	background: #FF3051 none repeat scroll 0% 0%;
+	background: rgba(255, 48, 81, 0.5) none repeat scroll 0% 0%;
 	color: #FFF;
 	z-index: 100000000;
 	/*transform-style: preserve-3d;*/
