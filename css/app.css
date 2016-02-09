@@ -1,5 +1,8 @@
+/*My black #302b2a et mon rouge #d61232 */
+
 ul{margin: 0; padding: 0;}
 li{list-style-type: none;}
+h1{font-size: 2.5rem;}
 
 
 body{
@@ -250,7 +253,7 @@ div.inside-left, div.inside-right{
 	/*border-style: solid solid none solid;*/ border-style: solid solid none solid;
 	border-color: black;
 	/*box-shadow: 1px 1px 0px 1px rgba(0, 0, 0, 0.1);*/
-	border-radius: 0px;
+	border-radius: 4px 4px 0px 0px;
 	position: relative;
 	color: black;
 	background-color: rgba(0,0,0,0);
@@ -263,13 +266,11 @@ footer.inside-left, footer.inside-right{
 	border-style: none solid solid solid;
 	border-color: black;
 	/*box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.1);*/
-	border-radius: 0px;
+	border-radius: 0px 0px 4px 4px;
 	position: relative;
-	color: black;
+	color: #302b2a;
 	background-color: rgba(0,0,0,0);
 	height: 50px;
-
-
 }
 
 footer.inside-left p, footer.inside-right p{
@@ -281,22 +282,29 @@ footer.inside-left p, footer.inside-right p{
 }
 
 button.square-button{
-	background-color: #FDFACF;
+	background-image: url('../img/iconset_yokoso_sprite_black.svg');
+	background-repeat: no-repeat;
+	background-position: center -1579px;
+	background-size: auto;
+	border-color: #302b2a;
+	border-width: 1px 0 0 1px;
+	border-style: solid none none solid;
 	width: 50px;
 	height: 50px;
 	position: absolute;
 	bottom: -1px;
 	right: -1px;
 	border-radius: 0px;
+	outline-color: rgba(0,0,0,0);
 }
 
-button.square-button:after{
+/*button.square-button:after{
 	content: "▹";
 	padding: 15px;
 	line-height: 48px;
 	font-size: 2rem;
-	color: #DA4C38;
-}
+	color: #302b2a;
+}*/
 
 main > section:nth-child(2), main > section:nth-child(3){
 	padding: 0;
@@ -334,3 +342,126 @@ main > section:nth-child(2) button.square-button:after, main > section:nth-child
 main > section.row.large-12.columns{
 	margin-bottom: 1rem;
 }
+
+.border-button{
+	margin: 0px 0px 1rem;
+	padding: 1rem;	
+	border-width: 1px 1px 1px 1px;
+	border-style: solid solid solid solid;
+	border-color: black;
+	/*box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.1);*/
+	border-radius: 0px;
+	position: relative;
+	color: black;
+	background-color: rgba(0,0,0,0);
+	height: 50px;
+}
+
+.border-button p{
+	text-align: right;
+	margin-right: 55px;
+	margin-left: 55px;
+	font-size: 0.9rem;
+	font-style: italic;
+}
+
+#base > section > article:nth-child(2) > footer:nth-child(2){
+	border-width: 1px 1px 0px 1px;
+	border-style: solid solid none solid;
+	margin: 0px;
+}
+
+#base > section > article:nth-child(2) > footer:nth-child(2) .square-button{
+	border-width: 0 0 0 1px;
+	border-style: none none none solid;
+	margin: 0px;
+}
+
+.picto-button{
+	background-color: transparent;
+	border-color: #302b2a;
+	border-width: 0 1px 0 0;
+	border-style: none solid none none;
+	width: 50px;
+	height: 50px;
+	position: absolute;
+	bottom: -1px;
+	left: -1px;
+	border-radius: 0px;
+	outline-color: rgba(0,0,0,0);
+}
+
+#base > section > article:nth-child(2) > footer:nth-child(2) button.picto-button{
+	background-image: url('../img/iconset_yokoso_sprite_black.svg');
+	background-repeat: no-repeat;
+	background-position: center -1015px;
+	background-size: auto;
+}
+
+#base > section > article:nth-child(2) > footer:nth-child(3) > button.picto-button{
+	background-image: url('../img/iconset_yokoso_sprite_black.svg');
+	background-repeat: no-repeat;
+	background-position: center -714px;
+	background-size: auto;
+}
+
+button.picto-button::after{
+	background-color: #d61232;
+	width: 15px;
+	height: 15px;
+	border-radius: 100%;
+	top:0;
+	right:0;
+
+}
+
+button.big-button{
+	margin: 0px 0px 1rem 0px;
+	padding: 1rem;	
+	border: none;
+	border-radius: 4px;
+	position: relative;
+	color: white;
+	background-color: #d61232;
+	height: 76px;
+	width: 100%;
+	outline-color: rgba(0,0,0,0);
+
+}
+
+button.big-button h1{
+	font-size: 1.45rem;
+	text-align: left;
+	margin-left: 81px;
+	line-height: 3rem;
+}
+
+button.big-button div.picto-button{
+	width: 76px;
+	height: 100%;
+	border-style: solid;	
+	border-color: #EEE8D8;
+	border-width: 0 1px 0 0;
+	outline-color: rgba(0,0,0,0);
+	background-image: url('../img/iconset_yokoso_sprite.svg');
+	background-repeat: no-repeat;
+	background-position: center -2448px;
+	background-size: auto;
+}
+
+#base > section > article:nth-child(3) > div.callout{
+	border-radius: 4px;
+	border: 1px solid #302b2a;
+	text-align: center;
+}
+
+#base > section > article:nth-child(3) > div.callout h1{
+	width: 100%;
+	border-width: 0 1px 1px 0;
+	border-style: solid;
+	border-color: #302b2a;	
+}
+
+#base > section > article:nth-child(3) > div > div > div:nth-child(2) > h1{border-width: 0 0px 1px 0;}
+
+#base > section > article:nth-child(3) > div.callout div.large-6.medium-6{padding: 0;}
