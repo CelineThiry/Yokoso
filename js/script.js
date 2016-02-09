@@ -2,6 +2,21 @@ $(document).ready(function(){
 	$('nav button.menu-burger-trigger').click(function(e){
 		e.preventDefault();
 		$(this).toggleClass('open');
+		$('main#base,nav#menu-push').toggleClass('open');
+
+				$('main#base').click(function(e){ 
+				e.preventDefault();
+				$(this).removeClass('open');
+				$('nav button.menu-burger-trigger,nav#menu-push').removeClass('open');
+			});
+
+				$('nav#menu-push>ul>li>a').click(function(e){
+				e.preventDefault();
+				$('nav button.menu-burger-trigger,nav#menu-push,main#base').removeClass('open');
+			});
+
+
+		
 	});
 });
 
