@@ -3,6 +3,8 @@
 ul{margin: 0; padding: 0;}
 li{list-style-type: none;}
 h1{font-size: 2.5rem;}
+button{outline-color: rgba(0,0,0,0);}
+.button{padding: 0; margin: 0; border: 0;}
 
 
 body{
@@ -34,6 +36,140 @@ body>header.callout{
 	transition-timing-function: cubic-bezier(0, 0.99, 0.13, 0.995);*/
 	
 }
+
+/*Second navigation bar*/
+
+main#base>header.second-nav{
+	/*width: 100vw;*/
+	/*height: 100vh;*/
+	border-width: 0px;
+	border-style: none;
+	border-color: rgba(0, 0, 0, 0);	
+	box-shadow: 0px;
+	margin: 0px;
+	padding: 0;
+	border-radius: 0px;
+	position: relative;
+	color: #222;
+	background-color: transparent;
+	/*position: fixed;*/
+	top: -20px;	
+	/*z-index: 1000000;*/
+	/*transform: translate(0px, 0px);
+	transition-property: transform;
+	transition-duration: 0.4s;
+	transition-timing-function: cubic-bezier(0, 0.99, 0.13, 0.995);*/
+	
+}
+
+main#base>header.second-nav section{padding: 0;}
+
+main#base>header.second-nav aside{
+	height: 100vh;	
+	background-color: yellow;
+}
+
+main#base>header.second-nav section section.read-letter{
+	height: 100vh;	
+	background-color: tomato;
+}
+
+/*Header de la seconde nav*/
+
+main#base>header.second-nav section section.read-letter header{
+	height: 76px;
+	width: 100%;
+	background-color: #d9d3c5;/* Grey*/
+	box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.1);
+	position: relative;
+
+	/*position: fixed;*/
+}
+
+main#base>header.second-nav section section.read-letter header button.contact-panel{
+	height: 100%;
+	width: 50px;
+	background-color: #a6a297;
+	background-image: url('../img/iconset_yokoso_sprite.svg');
+	background-repeat: no-repeat;
+	background-position: center -1565px;
+	background-size: auto;
+
+}
+
+main#base>header.second-nav section section.read-letter header h1{
+	display: inline-block;
+	vertical-align: top;
+	line-height: 76px;
+	height: 76px;
+	margin:0; 
+}
+
+main#base>header.second-nav section section.read-letter header h1::before{
+	content: "";
+	display: inline-block;
+	vertical-align: middle;
+	line-height: 76px;
+	height: 50px;
+	width: 50px;
+	margin: -5px 10px 0px 10px; 
+	background-color: transparent;
+	background-image: url('../img/avatar2.svg');
+	background-repeat: no-repeat;
+	background-position: -1px center;
+	background-size: cover;
+}
+
+main#base>header.second-nav section section.read-letter header div{
+	/*display: inline-block;
+	vertical-align: top;*/
+	float: right;
+	line-height: 76px;
+	height: 76px;
+	margin: 13px 20px 0 20px;
+}
+
+main#base>header.second-nav section section.read-letter header div button.tools{
+	
+	line-height: 76px;
+	height: 50px;
+	width: 50px;
+	border-radius: 100%;
+	background-color: #a6a297;
+	
+	
+}
+
+#base > header > section > section > header > div > button:nth-child(1){
+	background-image: url('../img/iconset_yokoso_sprite.svg');
+	background-repeat: no-repeat;
+	background-position: center -1775px;
+	background-size: auto;
+}
+
+#base > header > section > section > header > div > button:nth-child(2){
+	background-image: url('../img/iconset_yokoso_sprite.svg');
+	background-repeat: no-repeat;
+	background-position: center -1875px;
+	background-size: auto;
+}
+
+/*Big red button of second nav header bar */
+
+main#base>header.second-nav section section.read-letter header a.right-header{
+	display: inline-block;
+	vertical-align: top;
+	height: 100%;
+	width: 76px;
+	background-color: #d61232;
+	background-image: url('../img/iconset_yokoso_sprite.svg');
+	background-repeat: no-repeat;
+	background-position: center -2448px;
+	background-size: auto;
+	float: right;
+}
+
+
 
 /*body>header.callout.open{
 	transform: translate(180px, 0px);

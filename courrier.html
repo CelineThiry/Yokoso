@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yokoso | Tableau de bord</title>
+  <title>Yokoso | Courrier</title>
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/foundation.css" />
   <link rel="stylesheet" href="css/app.css" />
@@ -14,28 +14,26 @@
 <body>
 
   
-
-
-  <header class="callout"> <!-- Navigation bar -->
+  <header class="callout first-nav"> <!-- Navigation bar -->
     
-    <section class="row large-12 columns"> <!-- La ligne de la page courrier -->
-
-        <aside class="large-3 medium3"> <!-- Panel des contacts -->
-          <header></header>
-          <ul> <!-- Liste des contacts -->
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
-          </ul> <!-- END Liste des contacts -->
-        </aside><!-- END Panel des contacts -->
-        <section class="large-9 medium9"> <!-- Section écriture, lecture, historique des lettres -->
-          
-        </section><!-- END Section écriture, lecture, historique des lettres -->
+    <nav class="row large-12 columns">
+    <div class="large-4 medium-4 columns">
+      <button class="menu-burger-trigger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      </div>    
+      <h1 class="large-4 medium-4 columns"><img src="img/logo.svg" alt="Yokoso logo"></h1>
+      <ul class="large-4 medium-4 columns fr-buttons">
+        <li><a class="button float-right" href="">Se connecter</a></li>
+        <li><a class="button float-right" href="">S'inscrire</a></li>
+      </ul>
       
-    </section> <!-- END La ligne de la page courrier -->
+    </nav>
   </header> <!-- END navigation bar -->
+
+ 
 
 
 	<nav id="menu-push">
@@ -50,10 +48,37 @@
 
 <main id="base"> <!-- My main block -->
 
-  <header class="callout"> <!-- Second navigation bar in courrier page -->
-
+ <header class="callout second-nav"> <!-- SEcond Navigation bar -->
     
-  </header><!-- END Second navigation bar in courrier page -->
+    <section class="row large-12 columns"> <!-- La ligne de la page courrier -->
+
+        <aside class="large-3 medium-3 columns"> <!-- Panel des contacts -->
+          <header></header>
+          <ul> <!-- Liste des contacts -->
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul> <!-- END Liste des contacts -->
+        </aside><!-- END Panel des contacts -->
+        <section class="read-letter large-9 medium-9 columns"> <!-- Section écriture, lecture, historique des lettres -->
+        
+        <header> <!-- Header with contact title and tools button -->
+          <button class="contact-panel"></button> <!-- Button to close/open left-panel -->
+          <h1>Hiyori_17</h1>
+          <a class="right-header button float-right"></a>
+            <div class="central">
+              <button class="tools"></button>
+              <button class="tools"></button>            
+            </div>          
+          
+        </header> <!-- END Header with contact title and tools button -->
+          
+        </section><!-- END Section écriture, lecture, historique des lettres -->
+      
+    </section> <!-- END La ligne de la page courrier -->
+  </header> <!-- END Second navigation bar -->
 
 
 </main> <!-- End My main block -->
