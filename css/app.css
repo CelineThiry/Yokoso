@@ -62,16 +62,24 @@ main#base>header.second-nav{
 	
 }
 
-main#base>header.second-nav section{padding: 0;}
+main#base>header.second-nav section{max-width: none; padding: 0;}
 
 main#base>header.second-nav aside{
 	height: 100vh;	
 	background-color: yellow;
+	transition-duration: 1s;
+	transition-property: transform;
+	transition-timing-function: ease;
+	transform: translate(0 0);
+}
+
+#base > header > section > aside.open{
+	display: none;
 }
 
 main#base>header.second-nav section section.read-letter{
 	height: 100vh;	
-	background-color: tomato;
+	/*background-color: tomato;*/
 }
 
 /*Header de la seconde nav*/
@@ -156,6 +164,8 @@ main#base>header.second-nav section section.read-letter header div button.tools{
 	background-size: auto;
 }
 
+main#base>header.second-nav section section.read-letter{position: relative;}
+
 /*Big red button of second nav header bar */
 
 main#base>header.second-nav section section.read-letter header a.right-header{
@@ -174,18 +184,96 @@ main#base>header.second-nav section section.read-letter header a.right-header{
 /*Second nav header contact description*/
 main#base>header.second-nav section section.read-letter section.contact-description{
 	display: none;
+	transform: translate(0px, -250px);
+	
+
 }
 
 main#base>header.second-nav section section.read-letter section.contact-description.open{
 	display: block;
+	position: absolute;
+	top: 76px;
+	left: 0;
+	right: 0;
 	width: 100%;
+	height: 250px;
 	background-color: #d9d3c5;/* Grey*/
 	box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.1);
-	position: relative;
 	padding: 20px;
+	transition-property: transform;
+	transition-duration: 0.4s;
+	transition-timing-function: cubic-bezier(0, 0.99, 0.13, 0.995);
+	transform: translate(0px, 0px);
+	z-index: 9;
+	opacity: 0.5;
 
+}
 
-	/*position: fixed;*/
+#base > header > section > section > section.reading.row.large-12.medium-12.columns{
+	max-width: 780px;
+	margin: auto;
+	
+	/*overflow: hidden;*/
+}
+
+.letter-closed{
+	height: 76px;
+	background-color: #fff;
+	margin: 1rem;
+	border-radius: 4px;
+	position: relative;
+	
+}
+
+.letter-closed p{
+	position: absolute; 
+	font-size: 1rem; 
+	line-height: 76px; 
+	height: 76px;
+	padding: 0 1rem 0 1rem;
+}
+
+.letter-closed p:nth-child(1){top: 0; left:0;}
+.letter-closed p:nth-child(2){top: 0; right:0;}
+
+.letter-opened{
+	background-color: #fff;
+	margin: 40px 1rem 1rem 1rem;
+	padding: 1rem;
+	border-radius: 4px;	
+	position: relative;
+}
+
+.letter-opened::before{
+	content: "21 Janvier 2016";
+	position: absolute;
+	top: -20px;
+	left: 0;
+	font-size: 0.8rem;
+	text-transform: uppercase;
+}
+
+.letter-opened::after{
+	content: "20:15";
+	position: absolute;
+	top: -20px;
+	right: 0;
+	font-size: 0.8rem;
+	text-transform: uppercase;
+}
+
+#base > header > section > section > section.me.row.large-12.medium-12.columns > button{
+	margin: 0px 1rem 1rem 1rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 4px;
+    position: relative;
+    color: white;
+    background-color: #d61232;
+    height: 76px;
+    width: 380px;
+    outline-color: rgba(0,0,0,0);
+
 }
 
 

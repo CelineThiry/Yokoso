@@ -21,6 +21,26 @@ $(document).ready(function(){
 				$('main#base>header.second-nav section section.read-letter section.contact-description').toggleClass('open');
 			});	
 
+	
+	$('#base > header > section > section > header > button').click(function(e){
+				e.preventDefault();
+				$('this').toggleClass('open');
+				$('#base > header > section > aside').toggleClass('open');
+				  if ($('#base > header > section > section').hasClass('large-9 medium-9')) {
+				  		$('#base > header > section > section').removeClass('large-9 medium-9');
+				  		$('#base > header > section > section').addClass('large-12 medium-12');
+				  } 
+				  else {
+				  		$('#base > header > section > section').removeClass('large-12 medium-12');
+				  		$('#base > header > section > section').addClass('large-9 medium-9');
+				  }
+
+				
+
+
+
+			});	
+
 
 });
 
