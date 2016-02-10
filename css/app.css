@@ -72,7 +72,7 @@ main#base>header.second-nav aside{
 	transition-timing-function: ease;
 	transform: translate(0 0);
 	padding: 0;
-	overflow: scroll;
+	
 }
 
 #base > header > section > aside.open{
@@ -108,6 +108,9 @@ header > select{
 
 main#base>header.second-nav aside ul{
 	padding: 0;
+	height: 100vh;
+	overflow: scroll;
+	overflow-x: hidden;
 }
 
 main#base>header.second-nav aside ul li{
@@ -115,10 +118,19 @@ main#base>header.second-nav aside ul li{
 	width: 100%;
 	background-color: #d9d3c5;
 	box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.1);
+	opacity: 0.5;
+}
+
+#base > header > section > aside > ul > li:hover{
+	opacity: 1;
+}
+
+#base > header > section > aside > ul > li.active{
+	opacity: 1;
 }
 
 
-main#base>header.second-nav aside ul li div.img-profil{
+main#base>header.second-nav aside ul li a div.img-profil{
 	height: 114px;
 	width: 114px;
 	background-color: #97c6c1;
@@ -131,25 +143,62 @@ main#base>header.second-nav aside ul li div.img-profil{
 
 }
 
-#base > header > section > aside > ul > li > div:nth-child(2){
+#base > header > section > aside > ul > li > a > div:nth-child(2){
 	padding: 1rem;
 	width: 100%;
 	height: 100%;
 }
 
-#base > header > section > aside > ul > li > div:nth-child(2) h3, #base > header > section > aside > ul > li > div:nth-child(2) p{
+#base > header > section > aside > ul > li > a > div:nth-child(2) h3, #base > header > section > aside > ul > li > a > div:nth-child(2) p{
 	margin: 0;
 }
 
-#base > header > section > aside > ul > li > div:nth-child(2) h3{font-size: 1.5rem;}
+#base > header > section > aside > ul > li > a > div:nth-child(2) h3{font-size: 1.5rem;}
 
-#base > header > section > aside > ul > li > div:nth-child(2) h3::after{
+#base > header > section > aside > ul > li > a > div:nth-child(2) h3::after{
 	content: " ♀ ";
 }
 
+/*EDIT SCROLL BAR OF OVERFLOW*/
+/* Let's get this party started */
+main#base>header.second-nav aside > ul::-webkit-scrollbar {
+    width: 7px;
+}
+ 
+/* Track */
+main#base>header.second-nav aside>ul::-webkit-scrollbar-track {
+    background-color: white;
+}
+ 
+/* Handle */
+main#base>header.second-nav aside>ul::-webkit-scrollbar-thumb {
+    background: #302b2a;
+}
+main#base>header.second-nav aside>ul::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(255,0,0,0.4); 
+}
+
+main#base>header.second-nav aside>ul::-webkit-resizer {
+	display: none;
+}
+/*END EDIT SCROLL BAR OF OVERFLOW*/
+
+
 main#base>header.second-nav section section.read-letter{
 	height: 100vh;	
-	/*background-color: tomato;*/
+	background-color: #fff7ab;
+	z-index: 1;	
+	transform: translate(1000px,0);
+}
+
+main#base>header.second-nav section section.read-letter.active{
+	height: 100vh;	
+	background-color: #fff7ab;
+	z-index: 1000000;	
+	transition-duration: 1s;
+	transition-property: transform;
+	transition-timing-function: ease;
+	transform: translate(0,0);
 }
 
 /*Header de la seconde nav*/
@@ -279,11 +328,16 @@ main#base>header.second-nav section section.read-letter section.contact-descript
 
 }
 
-#base > header > section > section > section.reading.row.large-12.medium-12.columns{
+#base > header > section > section > section{
+	width: 100%;
+	height: 100vh;
+	/*overflow: scroll;
+	overflow-x: hidden;	*/
+}
+
+#base > header > section > section > section > article.letter.row.large-12.medium-12.columns{
 	max-width: 780px;
-	margin: auto;
-	
-	/*overflow: hidden;*/
+	margin: auto;		
 }
 
 .letter-closed{
@@ -332,8 +386,8 @@ main#base>header.second-nav section section.read-letter section.contact-descript
 	text-transform: uppercase;
 }
 
-#base > header > section > section > section.me.row.large-12.medium-12.columns > button{
-	margin: 0px 1rem 1rem 1rem;
+#base > header > section > section > section > button{
+	margin: 0px 1rem 1rem 33.33%;
     padding: 1rem;
     border: none;
     border-radius: 4px;
@@ -343,6 +397,7 @@ main#base>header.second-nav section section.read-letter section.contact-descript
     height: 76px;
     width: 380px;
     outline-color: rgba(0,0,0,0);
+    text-align: center;
 
 }
 

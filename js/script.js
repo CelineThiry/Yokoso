@@ -1,4 +1,5 @@
 $(document).ready(function(){
+	// Menu burger animation
 	$('nav button.menu-burger-trigger').click(function(e){
 		e.preventDefault();
 		$(this).toggleClass('open');
@@ -16,12 +17,13 @@ $(document).ready(function(){
 			});		
 	});
 
+	// Animation of description profil panel
 	$('#base > header > section > section > header > h2').click(function(e){
 				e.preventDefault();
 				$('main#base>header.second-nav section section.read-letter section.contact-description').toggleClass('open');
 			});	
 
-	
+	// Animation of the left panel button
 	$('#base > header > section > section > header > button').click(function(e){
 				e.preventDefault();
 				$('this').toggleClass('open');
@@ -34,12 +36,24 @@ $(document).ready(function(){
 				  		$('#base > header > section > section').removeClass('large-12 medium-12');
 				  		$('#base > header > section > section').addClass('large-9 medium-9');
 				  }
-
-				
-
-
-
 			});	
+	$('#base > header > section > aside > ul > li').click(function(e){
+				e.preventDefault();
+
+
+				var profilView = $(this).children('a').attr('href');
+				$('#base > header > section > aside > ul > li').removeClass('active');
+				$('#base > header > section > section.read-letter').removeClass('active');
+				console.log(profilView);
+
+				$(this).addClass('active');
+				$(profilView).addClass('active');
+				// en mode actif la page de lettre change z-index
+
+
+				 
+			});	
+
 
 
 });
