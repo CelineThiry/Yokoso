@@ -82,6 +82,7 @@ main#base>header.second-nav section section.read-letter header{
 	background-color: #d9d3c5;/* Grey*/
 	box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.1);
 	position: relative;
+	z-index: 10;
 
 	/*position: fixed;*/
 }
@@ -97,15 +98,16 @@ main#base>header.second-nav section section.read-letter header button.contact-pa
 
 }
 
-main#base>header.second-nav section section.read-letter header h1{
+main#base>header.second-nav section section.read-letter header h2{
 	display: inline-block;
 	vertical-align: top;
 	line-height: 76px;
 	height: 76px;
 	margin:0; 
+	cursor: pointer;
 }
 
-main#base>header.second-nav section section.read-letter header h1::before{
+main#base>header.second-nav section section.read-letter header h2::before{
 	content: "";
 	display: inline-block;
 	vertical-align: middle;
@@ -167,6 +169,23 @@ main#base>header.second-nav section section.read-letter header a.right-header{
 	background-position: center -2448px;
 	background-size: auto;
 	float: right;
+}
+
+/*Second nav header contact description*/
+main#base>header.second-nav section section.read-letter section.contact-description{
+	display: none;
+}
+
+main#base>header.second-nav section section.read-letter section.contact-description.open{
+	display: block;
+	width: 100%;
+	background-color: #d9d3c5;/* Grey*/
+	box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.1);
+	position: relative;
+	padding: 20px;
+
+
+	/*position: fixed;*/
 }
 
 

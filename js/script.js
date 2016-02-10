@@ -13,11 +13,15 @@ $(document).ready(function(){
 				$('nav#menu-push>ul>li>a').click(function(e){
 				e.preventDefault();
 				$('nav button.menu-burger-trigger,nav#menu-push,main#base').removeClass('open');
-			});
-
-
-		
+			});		
 	});
+
+	$('#base > header > section > section > header > h2').click(function(e){
+				e.preventDefault();
+				$('main#base>header.second-nav section section.read-letter section.contact-description').toggleClass('open');
+			});	
+
+
 });
 
 // Below, code from code pen
