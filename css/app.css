@@ -500,7 +500,7 @@ nav.row.large-12.columns ul{
 
 }
 
-nav.row.large-12.columns ul li:nth-child(2) a.button{
+/*nav.row.large-12.columns ul li:nth-child(2) a.button{
 	transition: background-color 0.25s ease-out 0s, color 0.25s ease-out 0s;
 	border: 0px solid transparent;
 	border-radius: 0px;
@@ -509,7 +509,7 @@ nav.row.large-12.columns ul li:nth-child(2) a.button{
 	font-size: 1rem;
 	background-color: transparent;
 	color: white;
-}
+}*/
 
 nav.row.large-12.columns ul.jp-buttons li{
 	
@@ -529,7 +529,7 @@ nav.row.large-12.columns li{
 	/*padding: 0 0.9rem 0 0.9rem;*/
 }
 
-nav.row.large-12.columns li a.button{
+/*nav.row.large-12.columns li a.button{
 	margin: 0px;	
 	transition: background-color 0.25s ease-out 0s, color 0.25s ease-out 0s;
 	border: 0px solid transparent;
@@ -544,7 +544,7 @@ nav.row.large-12.columns li a.button{
 nav.row.large-12.columns li a.button:hover{	
 	background-color: white;
 	color: #302b2a;
-}
+}*/
 
 nav#menu-push{
 	margin-top: 76px;

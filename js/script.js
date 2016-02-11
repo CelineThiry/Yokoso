@@ -50,35 +50,65 @@ $(document).ready(function(){
 				$(this).addClass('active');
 				$(profilView).addClass('active');
 				// en mode actif la page de lettre change z-index				 
-			});	
+	});	
+
 	// Message accordion
-	$('.read-letter.active .letter-accordion li').click(function(e) {
-  	e.preventDefault();
+	$('.letter-accordion li').click(function(e) {
+  				// e.preventDefault();
+  				// $(this).siblings('div.letter-inner').addClass('active');
+  				// $(this).removeClass('active');
 
-  	$('.letter-accordion li div.letter-inner').removeClass('active');
-  	$('.letter-accordion li div.letter-preview').removeClass('active');
+  				// $('.letter-accordion li div.letter-preview').addClass('active');
+  				// $('.letter-accordion li div.letter-inner').removeClass('active');  	
 
-  	$(this).children('div.letter-inner').addClass('active');
-  	$('.letter-accordion li div.letter-preview').addClass('active');
+  			// 	$('.toggle').click(function(e) {
+					//   	e.preventDefault();
+					  
+					//     var $this = $(this);
+					  
+					//     if ($this.next().hasClass('show')) {
+					//         $this.next().removeClass('show');
+					//         $this.next().slideUp(350);
+					//     } else {
+					//         $this.parent().parent().find('li .inner').removeClass('show');
+					//         $this.parent().parent().find('li .inner').slideUp(350);
+					//         $this.next().toggleClass('show');
+					//         $this.next().slideToggle(350);
+					//     }
+					// });
 
+  				if ($(this).children('div.letter-preview').hasClass('active') | !$(this).	children('div.letter-inner').hasClass('active')) {
+  						console.log($(this));
+  						$(this).children('div.letter-preview').removeClass('active');
+  						$(this).children('div.letter-inner').addClass('active');
+  						$('div.letter-inner.active').removeClass('active');
+  						$('div.letter-preview').addClass('active');
 
+  				} 
 
+  				if (!$(this).children('div.letter-preview').hasClass('active') | $(this).	children('div.letter-inner').hasClass('active')) {
+  						
+  						$('div.letter-preview').addClass('active');
+  						$(this).children('div.letter-preview').removeClass('active');
+  				} 
+  				
+	});
 
-
-  
-    // var $this = $(this);
-  
-    // if ($this.next().hasClass('show')) {
-    //     $this.next().removeClass('show');
-    //     $this.next().slideUp(350);
-    // } else {
-    //     $this.parent().parent().find('li .inner').removeClass('show');
-    //     $this.parent().parent().find('li .inner').slideUp(350);
-    //     $this.next().toggleClass('show');
-    //     $this.next().slideToggle(350);
-    // }
-});
-
+	//Lightbox
+	// ouvrir la light box du login
+	$('.login.button').click(function(e){
+				e.preventDefault();
+				$('.lightbox.login').addClass('active');							 
+	});	
+	// Fermer n'importe quelle lightbox en cliquant sur la croix
+	$('button.close').click(function(e){
+				e.preventDefault();
+				$('.lightbox').removeClass('active');							 
+	});	
+	// $('.lightbox').click(function(e){
+	// 			e.preventDefault();
+	// 			$('.lightbox').removeClass('active');							 
+	// });	
 
 
 });

@@ -14,7 +14,6 @@
 
 <body>
 
-  
   <header class="callout first-nav"> <!-- Navigation bar -->
     
     <nav class="row large-12 columns">
@@ -27,8 +26,8 @@
       </div>    
       <h1 class="large-4 medium-4 columns"><img src="img/logo.svg" alt="Yokoso logo"></h1>
       <ul class="large-4 medium-4 columns fr-buttons">
-        <li><a class="button float-right" href="">Se connecter</a></li>
-        <li><a class="button float-right" href="">S'inscrire</a></li>
+        <li><a class="login button float-right" href="javascript:void(0)">Se connecter</a></li>
+        <li><a class="signup button float-right" href="javascript:void(0)">S'inscrire</a></li>
       </ul>
       
     </nav>
@@ -45,6 +44,37 @@
 			<li><a href="">Contact</a></li>			
 		</ul>
 	</nav>
+
+<!-- Les ligthbox ou pop in commune à toutes les pages-->
+  <div class="lightbox login">
+    <button class="close">⨯</button>
+    <section class="row">
+      <h2>Se connecter</h2>
+      
+      <form class="large-6 medium-6 columns"> <!-- Left column -->
+        <label>
+          <input id="fname" type="email" placeholder="Adresse e-mail">
+          <!-- <span>Name</span> -->
+        </label>
+        
+        <label>
+          <input type="password" id="password" name="password" placeholder="Mot de passe">
+          <!-- <span>Email</span> -->
+        </label>
+       
+        <label><input type="submit" value="Je me connecte !"></label>
+      </form><!-- END Left column -->
+      <!-- <div class="large-1 medium-1 columns">
+        mileiu
+      </div> -->
+      <form class="large-6 medium-6 columns"><!-- Right column -->
+        prout
+      </form><!-- END Right column -->
+      
+    </section>
+  </div>
+  <div class="lightbox signup"></div>
+  <div class="lightbox signup"></div>
 
 
 <main id="base"> <!-- My main block -->
@@ -127,20 +157,29 @@
           <ul class="letter-accordion row large-12 medium-12 columns"> <!-- Letter -->
             <li>
               <div class="letter-preview active">
-              <p>HIYORI Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+              <p>1 Hiyori Preview active</p>
               <p>28 février 2015 - 25:17</p>
               </div>
               <div class="letter-inner"> <!-- Time and date with after and before -->
-              <p>HIYORI officia cumque, animi minima et laborum autem. Tempora possimus provident ex enim dolores hic quibusdam, velit beatae tempore. Quos amet a cupiditate! <br> Alicia</p>
+              <p>1 Hiyori Inner active officia cumque, animi minima et laborum autem. Tempora possimus provident ex enim dolores hic quibusdam, velit beatae tempore. Quos amet a cupiditate! <br> Alicia</p>
+              </div> 
+            </li>
+            <li>
+              <div class="letter-preview active">
+              <p>2 Hiyori Preview active</p>
+              <p>28 février 2015 - 25:17</p>
+              </div>
+              <div class="letter-inner"> <!-- Time and date with after and before -->
+              <p>2 Hiyori Inner active animi minima et laborum autem. Tempora possimus provident ex enim dolores hic quibusdam, velit beatae tempore. Quos amet a cupiditate! <br> Alicia</p>
               </div> 
             </li>
             <li>
               <div class="letter-preview">
-              <p>Hiyori + Lorem ipsum dolor sit amet.</p>
+              <p>3 Hiyori Preview active</p>
               <p>28 février 2015 - 25:17</p>
               </div>
               <div class="letter-inner active"> <!-- Time and date with after and before -->
-              <p>Hiyori Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam esse laboriosam, tenetur totam culpa, repellendus porro quisquam necessitatibus, recusandae odio ullam similique. Itaque ducimus perferendis consectetur, architecto debitis explicabo, voluptate inventore possimus in dicta enim. Inventore culpa omnis ex illo. Magnam dolor, quo veritatis delectus ab officiis maxime eos, placeat.</p>
+              <p>3 Hiyori Inner active Hiyori Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam esse laboriosam, tenetur totam culpa, repellendus porro quisquam necessitatibus, recusandae odio ullam similique. Itaque ducimus perferendis consectetur, architecto debitis explicabo, voluptate inventore possimus in dicta enim. Inventore culpa omnis ex illo. Magnam dolor, quo veritatis delectus ab officiis maxime eos, placeat.</p>
               </div> 
             </li>       
           </ul> <!-- END Letter -->
