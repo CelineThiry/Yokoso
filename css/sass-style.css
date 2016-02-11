@@ -40,13 +40,27 @@ div.lightbox.active {
   div.lightbox.active section form {
     background-color: blue;
     padding: 20px 100px 20px 100px; }
+    div.lightbox.active section form p {
+      font-weight: 300;
+      font-size: 1rem;
+      color: white; }
+    div.lightbox.active section form p.remember {
+      float: left; }
+    div.lightbox.active section form a.forget {
+      float: right; }
+    div.lightbox.active section form a {
+      font-weight: 300;
+      font-size: 1rem;
+      color: white;
+      text-decoration: underline; }
+    div.lightbox.active section form a:hover {
+      color: #d61232; }
     div.lightbox.active section form label {
       margin: 0 0 1rem 0;
       position: relative;
       display: block; }
       div.lightbox.active section form label input {
         display: block;
-        box-sizing: border-box;
         width: 100%;
         outline: none;
         font-family: "Roboto", sans-serif; }
