@@ -10,3 +10,17 @@ main#base header.second-nav section div.right-panel {
     top: 0;
     left: 0;
     right: 0; }
+    main#base header.second-nav section div.right-panel section.read-letter section ul.letter-accordion li {
+      max-width: 780px;
+      background-color: white;
+      color: black;
+      margin: 10px auto 10px auto; }
+      main#base header.second-nav section div.right-panel section.read-letter section ul.letter-accordion li div.letter-preview {
+        display: none; }
+      main#base header.second-nav section div.right-panel section.read-letter section ul.letter-accordion li div.letter-preview.active {
+        height: 76px;
+        display: block; }
+      main#base header.second-nav section div.right-panel section.read-letter section ul.letter-accordion li div.letter-inner {
+        display: none; }
+      main#base header.second-nav section div.right-panel section.read-letter section ul.letter-accordion li div.letter-inner.active {
+        display: block; }

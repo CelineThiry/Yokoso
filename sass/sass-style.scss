@@ -1,5 +1,6 @@
 $body-bg-color: #EEE8D8;
 $global-font: 'Roboto', sans-serif;
+$block-height: 76px;
 
 body {
   background-color: $body-bg-color;
@@ -22,6 +23,38 @@ main#base{
 					top:0;
 					left:0;
 					right:0;
+
+					section{
+						
+						ul.letter-accordion{
+							
+							li{
+								max-width: 780px;
+								background-color: white;
+								color: black;
+								margin: 10px auto 10px auto;
+
+
+								div.letter-preview{
+									display: none;
+								}
+
+								div.letter-preview.active{
+									height: $block-height;
+									display: block;
+								}
+
+								div.letter-inner{									
+									display: none;
+								}
+
+								div.letter-inner.active{									
+									display: block;
+								}
+							}
+
+						}
+					}
 				}
 
 			}

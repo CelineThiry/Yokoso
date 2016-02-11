@@ -49,11 +49,35 @@ $(document).ready(function(){
 
 				$(this).addClass('active');
 				$(profilView).addClass('active');
-				// en mode actif la page de lettre change z-index
-
-
-				 
+				// en mode actif la page de lettre change z-index				 
 			});	
+	// Message accordion
+	$('.read-letter.active .letter-accordion li').click(function(e) {
+  	e.preventDefault();
+
+  	$('.letter-accordion li div.letter-inner').removeClass('active');
+  	$('.letter-accordion li div.letter-preview').removeClass('active');
+
+  	$(this).children('div.letter-inner').addClass('active');
+  	$('.letter-accordion li div.letter-preview').addClass('active');
+
+
+
+
+
+  
+    // var $this = $(this);
+  
+    // if ($this.next().hasClass('show')) {
+    //     $this.next().removeClass('show');
+    //     $this.next().slideUp(350);
+    // } else {
+    //     $this.parent().parent().find('li .inner').removeClass('show');
+    //     $this.parent().parent().find('li .inner').slideUp(350);
+    //     $this.next().toggleClass('show');
+    //     $this.next().slideToggle(350);
+    // }
+});
 
 
 

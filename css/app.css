@@ -335,29 +335,29 @@ main#base>header.second-nav section div.right-panel section.read-letter section.
 	overflow-x: hidden;	*/
 }
 
-#base > header > section > div > section > section > article.letter.row.large-12.medium-12.columns{
+/*#base > header > section > div > section > section > article.letter.row.large-12.medium-12.columns{
 	max-width: 780px;
 	margin: auto;		
-}
+}*/
 
-.letter-closed{
+/*.letter-closed{
 	height: 76px;
 	background-color: #fff;
 	margin: 1rem;
 	border-radius: 4px;
 	position: relative;
 	
-}
+}*/
 
-.letter-closed p{
+/*.letter-closed p{
 	position: absolute; 
 	font-size: 1rem; 
 	line-height: 76px; 
 	height: 76px;
 	padding: 0 1rem 0 1rem;
-}
+}*/
 
-.letter-closed p:nth-child(1){top: 0; left:0;}
+/*.letter-closed p:nth-child(1){top: 0; left:0;}
 .letter-closed p:nth-child(2){top: 0; right:0;}
 
 .letter-opened{
@@ -384,7 +384,7 @@ main#base>header.second-nav section div.right-panel section.read-letter section.
 	right: 0;
 	font-size: 0.8rem;
 	text-transform: uppercase;
-}
+}*/
 
 #base > header > section > div > section > section > button{
 	margin: 0px 1rem 1rem 33.33%;
