@@ -1,3 +1,129 @@
 body {
   background-color: #EEE8D8;
   font: "Roboto", sans-serif; }
+  body header.first-nav nav ul li a.login.button {
+    margin: 0px;
+    transition: background-color 0.25s ease-out 0s, color 0.25s ease-out 0s;
+    border: 0px solid transparent;
+    border-radius: 4px;
+    padding: 0.85em 1em;
+    margin: 0px 0px 1rem;
+    font-size: 1rem;
+    background-color: #d61232;
+    color: white; }
+  body header.first-nav nav ul li a.login.button:hover {
+    background-color: white;
+    color: #302b2a; }
+  body header.first-nav nav ul li a.signup.button {
+    transition: background-color 0.25s ease-out 0s, color 0.25s ease-out 0s;
+    border: 0px solid transparent;
+    border-radius: 0px;
+    padding: 0.85em 1em;
+    margin: 0px 0px 1rem;
+    font-size: 1rem;
+    background-color: transparent;
+    color: white; }
+
+div.lightbox.active {
+  background-color: rgba(48, 42, 43, 0.8);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10000000000;
+  display: block; }
+  div.lightbox.active section h2 {
+    text-align: center;
+    color: white; }
+  div.lightbox.active section form {
+    background-color: blue;
+    padding: 20px 100px 20px 100px; }
+    div.lightbox.active section form p {
+      font-weight: 300;
+      font-size: 1rem;
+      color: white; }
+    div.lightbox.active section form p.remember {
+      float: left; }
+    div.lightbox.active section form a.forget {
+      float: right; }
+    div.lightbox.active section form a {
+      font-weight: 300;
+      font-size: 1rem;
+      color: white;
+      text-decoration: underline; }
+    div.lightbox.active section form a:hover {
+      color: #d61232; }
+    div.lightbox.active section form label {
+      margin: 0 0 1rem 0;
+      position: relative;
+      display: block; }
+      div.lightbox.active section form label input {
+        display: block;
+        width: 100%;
+        outline: none;
+        font-family: "Roboto", sans-serif; }
+      div.lightbox.active section form label input[type="email"], div.lightbox.active section form label input[type="password"] {
+        border: 0;
+        background: #EEE8D8;
+        padding: 1.4rem 1rem 1.4rem 1rem;
+        font-size: 1.2em;
+        font-weight: 100; }
+      div.lightbox.active section form label input[type="submit"] {
+        display: block;
+        border: none;
+        border-radius: 4px;
+        outline: none;
+        margin: 2em 0 0;
+        padding: 1em 0;
+        /*0.7em 0*/
+        color: white;
+        background: #d61232;
+        font-size: 1.2em;
+        line-height: 1.6em;
+        cursor: pointer;
+        font-weight: 400; }
+      div.lightbox.active section form label input[type="submit"]:hover {
+        color: #302a2b;
+        background: white; }
+  div.lightbox.active section div.large-1 {
+    background-color: yellow; }
+
+div.lightbox > button.close {
+  color: white;
+  font-size: 4rem;
+  line-height: 2rem;
+  width: 100%;
+  height: 50px;
+  margin: 50px auto 50px auto; }
+
+div.lightbox {
+  width: 0vw;
+  height: 0vh;
+  display: none; }
+
+main#base header.second-nav section div.right-panel {
+  position: relative; }
+  main#base header.second-nav section div.right-panel section.read-letter.active {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: block; }
+    main#base header.second-nav section div.right-panel section.read-letter.active section ul.letter-accordion li {
+      max-width: 780px;
+      background-color: white;
+      color: black;
+      margin: 10px auto 10px auto; }
+      main#base header.second-nav section div.right-panel section.read-letter.active section ul.letter-accordion li div.letter-preview {
+        display: none; }
+      main#base header.second-nav section div.right-panel section.read-letter.active section ul.letter-accordion li div.letter-preview.active {
+        height: 76px;
+        display: block; }
+      main#base header.second-nav section div.right-panel section.read-letter.active section ul.letter-accordion li div.letter-inner {
+        display: none; }
+      main#base header.second-nav section div.right-panel section.read-letter.active section ul.letter-accordion li div.letter-inner.active {
+        display: block; }
+  main#base header.second-nav section div.right-panel section.read-letter {
+    display: none; }

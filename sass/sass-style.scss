@@ -1,9 +1,243 @@
-$body-bg-color: #EEE8D8;
+$body-bgc: #EEE8D8;
+$lightbox-bgc: rgba(48,42,43,0.8);
 $global-font: 'Roboto', sans-serif;
+$block-height: 76px;
+$cherry-red: #d61232;
+$my-black: rgb(48,42,43);
+$global-border-radius: 4px;
 
-body {
-  background-color: $body-bg-color;
-  font: $global-font;
+
+
+
+body{
+	background-color: $body-bgc;
+  	font: $global-font;
+
+	header.first-nav{
+		nav{
+			ul{
+				li{
+					a.login.button{
+						margin: 0px;	
+						transition: background-color 0.25s ease-out 0s, color 0.25s ease-out 0s;
+						border: 0px solid transparent;
+						border-radius: $global-border-radius;
+						padding: 0.85em 1em;
+						margin: 0px 0px 1rem;
+						font-size: 1rem;
+						background-color: #d61232;
+						color: white;
+					}
+
+					a.login.button:hover{
+						background-color: white;
+						color: #302b2a;
+					}
+				}
+
+				li{
+					a.signup.button{
+						transition: background-color 0.25s ease-out 0s, color 0.25s ease-out 0s;
+						border: 0px solid transparent;
+						border-radius: 0px;
+						padding: 0.85em 1em;
+						margin: 0px 0px 1rem;
+						font-size: 1rem;
+						background-color: transparent;
+						color: white;
+					}
+
+					a.signup.button:hover{
+						// background-color: white;
+						// color: #302b2a;
+					}
+				}
+			}
+		}
+	}
 }
+
+div.lightbox.active{
+	background-color: $lightbox-bgc;
+	width: 100vw;
+	height: 100vh;
+	position: absolute;
+	top: 0;
+	right: 0;
+	left:0;	
+	z-index: 10000000000;
+	display: block;
+	// transition-property: transform;
+	// transition-duration: 1s;
+	// transition-timing-function: ease-out;
+	// transform: translate(0, 0);
+	
+	section{
+
+		h2{
+			text-align: center;
+			color: white;
+		}
+
+		form{
+			background-color: blue;
+			padding: 20px 100px 20px 100px;
+
+			p{
+				font-weight: 300;
+				font-size: 1rem;
+				color: white;				
+			}
+
+			p.remember{
+				float: left;				
+			}
+
+			a.forget{
+				float: right;				
+			}
+
+			a{
+				font-weight: 300;
+				font-size: 1rem;
+				color: white;
+				text-decoration: underline;
+			}
+
+			a:hover{
+				color: $cherry-red;
+			}
+
+			label{
+				margin: 0 0 1rem 0;
+				position: relative;
+				display: block;
+
+				input{
+					display: block;
+    				width: 100%;
+    				outline: none;
+    				font-family: $global-font;
+				}
+
+				input[type="email"], input[type="password"]{
+					border: 0;
+				    background: $body-bgc;
+				    padding: 1.4rem 1rem 1.4rem 1rem;
+				    font-size: 1.2em;
+				    font-weight: 100;
+				}
+
+				input[type="submit"]{
+					    display: block;
+					    border: none;
+					    border-radius: $global-border-radius;
+					    outline: none;
+					    margin: 2em 0 0;
+					    padding: 1em 0;  /*0.7em 0*/
+					    color: white;
+					    background: $cherry-red;
+					    font-size: 1.2em;
+					    line-height: 1.6em;
+					    cursor: pointer;
+					    font-weight: 400;
+				}
+
+				input[type="submit"]:hover{
+					    color: $my-black;
+					    background: white;					    
+				}
+
+				
+			}
+		}
+
+		div.large-1{
+			background-color: yellow;
+		}
+
+	}
+
+}
+
+div.lightbox > button.close{	
+	color: white;
+	font-size: 4rem;
+	line-height: 2rem;
+	width: 100%;
+	height: 50px;
+	margin: 50px auto 50px auto;
+}
+
+div.lightbox{
+	width: 0vw;
+	height: 0vh;
+	display: none;
+	// transform: translate(-100vw, 0);
+}
+
+main#base{
+
+	header.second-nav{
+
+		section{
+
+			div.right-panel{
+
+				position: relative;
+
+
+				section.read-letter.active{
+					position: absolute;
+					top:0;
+					left:0;
+					right:0;
+					display: block;
+
+					section{
+						
+						ul.letter-accordion{
+							
+							li{
+								max-width: 780px;
+								background-color: white;
+								color: black;
+								margin: 10px auto 10px auto;
+
+
+								div.letter-preview{
+									display: none;
+								}
+
+								div.letter-preview.active{
+									height: $block-height;
+									display: block;
+								}
+
+								div.letter-inner{									
+									display: none;
+								}
+
+								div.letter-inner.active{									
+									display: block;
+								}
+							}
+
+						}
+					}
+				}
+
+				section.read-letter{
+					display: none;
+				}
+
+			}
+		}
+	}
+}
+
+	
+
+
 
 

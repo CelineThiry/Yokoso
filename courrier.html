@@ -14,7 +14,6 @@
 
 <body>
 
-  
   <header class="callout first-nav"> <!-- Navigation bar -->
     
     <nav class="row large-12 columns">
@@ -27,8 +26,8 @@
       </div>    
       <h1 class="large-4 medium-4 columns"><img src="img/logo.svg" alt="Yokoso logo"></h1>
       <ul class="large-4 medium-4 columns fr-buttons">
-        <li><a class="button float-right" href="">Se connecter</a></li>
-        <li><a class="button float-right" href="">S'inscrire</a></li>
+        <li><a class="login button float-right" href="javascript:void(0)">Se connecter</a></li>
+        <li><a class="signup button float-right" href="javascript:void(0)">S'inscrire</a></li>
       </ul>
       
     </nav>
@@ -45,6 +44,37 @@
 			<li><a href="">Contact</a></li>			
 		</ul>
 	</nav>
+
+<!-- Les ligthbox ou pop in commune à toutes les pages-->
+  <div class="lightbox login">
+    <button class="close">⨯</button>
+    <section class="row">
+      <h2>Se connecter</h2>
+      
+      <form class="large-6 medium-6 columns"> <!-- Left column -->
+        <label>
+          <input id="fname" type="email" placeholder="Adresse e-mail">          
+        </label>
+        
+        <label>
+          <input type="password" id="password" name="password" placeholder="Mot de passe">          
+        </label>
+        <p class="remember"><input type="checkbox">Se souvenir de moi</p> <a href="javascript:void(0)" class="forget">Mot de passe oublié?</a>
+       
+        <label>
+        <input type="submit" value="Je me connecte !">
+        </label>
+        <p>Pas encore de compte ? <a href="" class="signup">Inscrivez-vous !</a></p>
+      </form><!-- END Left column -->
+      
+      <form class="large-6 medium-6 columns"><!-- Right column -->
+        prout
+      </form><!-- END Right column -->
+      
+    </section>
+  </div>
+  <div class="lightbox signup"></div>
+  <div class="lightbox signup"></div>
 
 
 <main id="base"> <!-- My main block -->
@@ -95,7 +125,9 @@
           </ul> <!-- END Liste des contacts -->
         </aside><!-- END Panel des contacts -->
 
-        <section id="Hiyori_17" class="read-letter large-9 medium-9 columns active"> <!-- HIYORI Section écriture, lecture, historique des lettres -->
+        <div class="right-panel large-9 medium-9 columns"> <!-- RIGTH PANEL Englobe les sections read-letter  -->
+
+        <section id="Hiyori_17" class="read-letter active"> <!-- HIYORI Section écriture, lecture, historique des lettres -->
         
         <header> <!-- Header with contact title and tools button -->
           <button class="contact-panel"></button> <!-- Button to close/open left-panel -->
@@ -122,24 +154,45 @@
         </section>  <!-- FIN Contact Description -->
         
         <section>
-          <article class="letter row large-12 medium-12 columns"> <!-- Letter -->
-            <div class="letter-closed">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-            <p>21 janvier 2016 - 20:17</p>
-            </div>
-            <div class="letter-opened"> <!-- Time and date with after and before -->
-            <p>Chère Hiyori, <br>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus, iste. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni minima error deserunt pariatur quos. Labore. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta consequuntur debitis beatae molestiae modi, dolorem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet earum recusandae minima modi corporis, iure deserunt repellendus assumenda, laborum soluta quod unde repellat, temporibus non maiores. At id possimus cupiditate. <br> Alicia</p>
-            </div>         
-          </article> <!-- END Letter -->
+          <ul class="letter-accordion row large-12 medium-12 columns"> <!-- Letter -->
+            <li>
+              <div class="letter-preview active">
+              <p>1 Hiyori Preview active</p>
+              <p>28 février 2015 - 25:17</p>
+              </div>
+              <div class="letter-inner"> <!-- Time and date with after and before -->
+              <p>1 Hiyori Inner active officia cumque, animi minima et laborum autem. Tempora possimus provident ex enim dolores hic quibusdam, velit beatae tempore. Quos amet a cupiditate! <br> Alicia</p>
+              </div> 
+            </li>
+            <li>
+              <div class="letter-preview active">
+              <p>2 Hiyori Preview active</p>
+              <p>28 février 2015 - 25:17</p>
+              </div>
+              <div class="letter-inner"> <!-- Time and date with after and before -->
+              <p>2 Hiyori Inner active animi minima et laborum autem. Tempora possimus provident ex enim dolores hic quibusdam, velit beatae tempore. Quos amet a cupiditate! <br> Alicia</p>
+              </div> 
+            </li>
+            <li>
+              <div class="letter-preview">
+              <p>3 Hiyori Preview active</p>
+              <p>28 février 2015 - 25:17</p>
+              </div>
+              <div class="letter-inner active"> <!-- Time and date with after and before -->
+              <p>3 Hiyori Inner active Hiyori Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam esse laboriosam, tenetur totam culpa, repellendus porro quisquam necessitatibus, recusandae odio ullam similique. Itaque ducimus perferendis consectetur, architecto debitis explicabo, voluptate inventore possimus in dicta enim. Inventore culpa omnis ex illo. Magnam dolor, quo veritatis delectus ab officiis maxime eos, placeat.</p>
+              </div> 
+            </li>       
+          </ul> <!-- END Letter -->
           <button class="big-button">
                 <div class="picto-button"></div>
                 <h1>Ecrire une nouvelle lettre</h1>    
           </button>
         </section>    
+  
 
         </section><!-- END HIYORI Section écriture, lecture, historique des lettres -->
 
-        <section id="Yato"class="read-letter large-9 medium-9 columns"> <!-- YATO Section écriture, lecture, historique des lettres -->
+        <section id="Yato"class="read-letter"> <!-- YATO Section écriture, lecture, historique des lettres -->
         
         <header> <!-- Header with contact title and tools button -->
           <button class="contact-panel"></button> <!-- Button to close/open left-panel -->
@@ -166,15 +219,26 @@
         </section>  <!-- FIN Contact Description -->
         
         <section>
-          <article class="letter row large-12 medium-12 columns"> <!-- Letter -->
-            <div class="letter-closed">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-            <p>28 février 2015 - 25:17</p>
-            </div>
-            <div class="letter-opened"> <!-- Time and date with after and before -->
-            <p>Chère Yato, <br>Papigjfghlkjghlfghjlfgjhlfdgjhldfghlgjkhlfdgjhldgj Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam laboriosam totam illum iste doloremque dignissimos modi esse dolorum, nobis quos similique blanditiis debitis quibusdam vero dolorem harum ratione officia cumque, animi minima et laborum autem. Tempora possimus provident ex enim dolores hic quibusdam, velit beatae tempore. Quos amet a cupiditate! <br> Alicia</p>
-            </div>         
-          </article> <!-- END Letter -->
+          <ul class="letter-accordion row large-12 medium-12 columns"> <!-- Letter -->
+            <li>
+              <div class="letter-preview active">
+              <p>YATO Lorem ipsum dolor sit.</p>
+              <p>28 février 2015 - 25:17</p>
+              </div>
+              <div class="letter-inner"> <!-- Time and date with after and before -->
+              <p>YATO Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sit iusto facilis vel quia sint consectetur.</p>
+              </div> 
+            </li>
+            <li>
+              <div class="letter-preview">
+              <p>YATO Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+              <p>28 février 2015 - 25:17</p>
+              </div>
+              <div class="letter-inner active"> <!-- Time and date with after and before -->
+              <p>YATO<br>Papigjfghlkjghlfghjlfgjhlfdgjhldfghlgjkhlfdgjhldgj Lorem ipsum dolor sit amet, consectetur adipisicing anditiis debitis quibusdam vero dolorem harum ratione officia cumque, animi minima et laborum autem. Tempora possimus provident ex enim dolores hic quibusdam, velit beatae tempore. Quos amet a cupiditate! <br> Alicia</p>
+              </div> 
+            </li>       
+          </ul> <!-- END Letter -->
           <button class="big-button">
                 <div class="picto-button"></div>
                 <h1>Ecrire une nouvelle lettre</h1>    
@@ -183,7 +247,7 @@
 
         </section><!-- YATO END Section écriture, lecture, historique des lettres -->
       
-<section id="Yamamoto"class="read-letter large-9 medium-9 columns"> <!-- YAMAMOTO Section écriture, lecture, historique des lettres -->
+<section id="Yamamoto"class="read-letter"> <!-- YAMAMOTO Section écriture, lecture, historique des lettres -->
         
         <header> <!-- Header with contact title and tools button -->
           <button class="contact-panel"></button> <!-- Button to close/open left-panel -->
@@ -210,23 +274,35 @@
         </section>  <!-- FIN Contact Description -->
         
         <section>
-          <article class="letter row large-12 medium-12 columns"> <!-- Letter -->
-            <div class="letter-closed">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
-            <p>28 février 2015 - 25:17</p>
-            </div>
-            <div class="letter-opened"> <!-- Time and date with after and before -->
-            <p>Chère Yato, <br>Papigjfghlkjghlfghjlfgjhlfdgjhldfghlgjkhlfdgjhldgj Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam laboriosam totam illum iste doloremque dignissimos modi esse dolorum, nobis quos similique blanditiis debitis quibusdam vero dolorem harum ratione officia cumque, animi minima et laborum autem. Tempora possimus provident ex enim dolores hic quibusdam, velit beatae tempore. Quos amet a cupiditate! <br> Alicia</p>
-            </div>         
-          </article> <!-- END Letter -->
+          <ul class="letter-accordion row large-12 medium-12 columns"> <!-- Letter -->
+            <li>
+              <div class="letter-preview active">
+              <p>Yamamoto onsectetur adipisicing elit...</p>
+              <p>28 février 2015 - 25:17</p>
+              </div>
+              <div class="letter-inner"> <!-- Time and date with after and before -->
+              <p>YAMAMOTO Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente ratione nostrum delectus dicta non, quaerat incidunt soluta illo, quisquam, quis numquam culpa placeat aliquid doloribus voluptates deserunt ipsam inventore asperiores ipsa. Distinctio quisquam soluta rem numquam veritatis est, quia omnis labore in deserunt sit voluptates fuga vel, inventore veniam! Officiis enim dolor porro, odio repellat provident labore officia error incidunt.</p>
+              </div> 
+            </li>
+            <li>
+              <div class="letter-preview">
+              <p>YAMAMOTO Lorem ipsum dolor sit amet, consectetur adipisicing elit...</p>
+              <p>28 février 2015 - 25:17</p>
+              </div>
+              <div class="letter-inner active"> <!-- Time and date with after and before -->
+              <p>Yamomoto Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus voluptas sed quo commodi voluptate maiores quod doloribus dolores animi perferendis et id quibusdam iste, beatae tempore officiis explicabo. Est neque eum totam a sit impedit, error sapiente expedita ipsa excepturi. Aut eligendi ad veritatis sunt soluta rem doloremque ratione, labore ut omnis voluptas tenetur porro ab accusamus eveniet odit ipsa.</p>
+              </div> 
+            </li>       
+          </ul> <!-- END Letter -->
           <button class="big-button">
                 <div class="picto-button"></div>
                 <h1>Ecrire une nouvelle lettre</h1>    
           </button>
         </section>    
 
-        </section><!-- END YAMAMOTO Section écriture, lecture, historique des lettres -->
 
+        </section><!-- END YAMAMOTO Section écriture, lecture, historique des lettres -->
+      </div><!-- END RIGTH PANEL Englobe les sections read-letter  -->
     </section> <!-- END La ligne de la page courrier -->
   </header> <!-- END Second navigation bar -->
 
