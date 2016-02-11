@@ -18,32 +18,33 @@ $(document).ready(function(){
 	});
 
 	// Animation of description profil panel
-	$('#base > header > section > section > header > h2').click(function(e){
+	$('#base > header > section > div > section > header > h2').click(function(e){
 				e.preventDefault();
-				$('main#base>header.second-nav section section.read-letter section.contact-description').toggleClass('open');
+				$('main#base>header.second-nav section div section.read-letter section.contact-description').toggleClass('open');
 			});	
 
 	// Animation of the left panel button
-	$('#base > header > section > section > header > button').click(function(e){
+	$('#base > header > section > div > section > header > button').click(function(e){
 				e.preventDefault();
 				$('this').toggleClass('open');
 				$('#base > header > section > aside').toggleClass('open');
-				  if ($('#base > header > section > section').hasClass('large-9 medium-9')) {
-				  		$('#base > header > section > section').removeClass('large-9 medium-9');
-				  		$('#base > header > section > section').addClass('large-12 medium-12');
+				  if ($('#base > header > section > div').hasClass('large-9 medium-9')) {
+				  		$('#base > header > section > div').removeClass('large-9 medium-9');
+				  		$('#base > header > section > div').addClass('large-12 medium-12');
 				  } 
 				  else {
-				  		$('#base > header > section > section').removeClass('large-12 medium-12');
-				  		$('#base > header > section > section').addClass('large-9 medium-9');
+				  		$('#base > header > section > div').removeClass('large-12 medium-12');
+				  		$('#base > header > section > div').addClass('large-9 medium-9');
 				  }
 			});	
+	//Contact panel tabs
 	$('#base > header > section > aside > ul > li').click(function(e){
 				e.preventDefault();
 
 
 				var profilView = $(this).children('a').attr('href');
 				$('#base > header > section > aside > ul > li').removeClass('active');
-				$('#base > header > section > section.read-letter').removeClass('active');
+				$('#base > header > section > div.right-panel > section.read-letter').removeClass('active');
 				console.log(profilView);
 
 				$(this).addClass('active');

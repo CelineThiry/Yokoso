@@ -184,14 +184,14 @@ main#base>header.second-nav aside>ul::-webkit-resizer {
 /*END EDIT SCROLL BAR OF OVERFLOW*/
 
 
-main#base>header.second-nav section section.read-letter{
+main#base>header.second-nav section div.right-panel section.read-letter{
 	height: 100vh;	
 	background-color: #fff7ab;
 	z-index: 1;	
 	transform: translate(1000px,0);
 }
 
-main#base>header.second-nav section section.read-letter.active{
+main#base>header.second-nav section div.right-panel section.read-letter.active{
 	height: 100vh;	
 	background-color: #fff7ab;
 	z-index: 1000000;	
@@ -203,7 +203,7 @@ main#base>header.second-nav section section.read-letter.active{
 
 /*Header de la seconde nav*/
 
-main#base>header.second-nav section section.read-letter header{
+main#base>header.second-nav section div.right-panel section.read-letter header{
 	height: 76px;
 	width: 100%;
 	background-color: #d9d3c5;/* Grey*/
@@ -214,7 +214,7 @@ main#base>header.second-nav section section.read-letter header{
 	/*position: fixed;*/
 }
 
-main#base>header.second-nav section section.read-letter header button.contact-panel{
+main#base>header.second-nav section div.right-panel section.read-letter header button.contact-panel{
 	height: 100%;
 	width: 50px;
 	background-color: #a6a297;
@@ -225,7 +225,7 @@ main#base>header.second-nav section section.read-letter header button.contact-pa
 
 }
 
-main#base>header.second-nav section section.read-letter header h2{
+main#base>header.second-nav section div.right-panel section.read-letter header h2{
 	display: inline-block;
 	vertical-align: top;
 	line-height: 76px;
@@ -234,7 +234,7 @@ main#base>header.second-nav section section.read-letter header h2{
 	cursor: pointer;
 }
 
-main#base>header.second-nav section section.read-letter header h2::before{
+main#base>header.second-nav section div.right-panel section.read-letter header h2::before{
 	content: "";
 	display: inline-block;
 	vertical-align: middle;
@@ -249,7 +249,7 @@ main#base>header.second-nav section section.read-letter header h2::before{
 	background-size: cover;
 }
 
-main#base>header.second-nav section section.read-letter header div{
+main#base>header.second-nav section div.right-panel section.read-letter header div{
 	/*display: inline-block;
 	vertical-align: top;*/
 	float: right;
@@ -258,7 +258,7 @@ main#base>header.second-nav section section.read-letter header div{
 	margin: 13px 20px 0 20px;
 }
 
-main#base>header.second-nav section section.read-letter header div button.tools{
+main#base>header.second-nav section div.right-panel section.read-letter header div button.tools{
 	
 	line-height: 76px;
 	height: 50px;
@@ -269,25 +269,25 @@ main#base>header.second-nav section section.read-letter header div button.tools{
 	
 }
 
-#base > header > section > section > header > div > button:nth-child(1){
+#base > header > section > div > section > header > div > button:nth-child(1){
 	background-image: url('../img/iconset_yokoso_sprite.svg');
 	background-repeat: no-repeat;
 	background-position: center -1775px;
 	background-size: auto;
 }
 
-#base > header > section > section > header > div > button:nth-child(2){
+#base > header > section > div > section > header > div > button:nth-child(2){
 	background-image: url('../img/iconset_yokoso_sprite.svg');
 	background-repeat: no-repeat;
 	background-position: center -1875px;
 	background-size: auto;
 }
 
-main#base>header.second-nav section section.read-letter{position: relative;}
+main#base>header.second-nav section div.right-panel section.read-letter{position: relative;}
 
 /*Big red button of second nav header bar */
 
-main#base>header.second-nav section section.read-letter header a.right-header{
+main#base>header.second-nav section div.right-panel section.read-letter header a.right-header{
 	display: inline-block;
 	vertical-align: top;
 	height: 100%;
@@ -301,14 +301,14 @@ main#base>header.second-nav section section.read-letter header a.right-header{
 }
 
 /*Second nav header contact description*/
-main#base>header.second-nav section section.read-letter section.contact-description{
+main#base>header.second-nav section div.right-panel section.read-letter section.contact-description{
 	display: none;
 	transform: translate(0px, -250px);
 	
 
 }
 
-main#base>header.second-nav section section.read-letter section.contact-description.open{
+main#base>header.second-nav section div.right-panel section.read-letter section.contact-description.open{
 	display: block;
 	position: absolute;
 	top: 76px;
@@ -328,14 +328,14 @@ main#base>header.second-nav section section.read-letter section.contact-descript
 
 }
 
-#base > header > section > section > section{
+#base > header > section > div > section > section{
 	width: 100%;
 	height: 100vh;
 	/*overflow: scroll;
 	overflow-x: hidden;	*/
 }
 
-#base > header > section > section > section > article.letter.row.large-12.medium-12.columns{
+#base > header > section > div > section > section > article.letter.row.large-12.medium-12.columns{
 	max-width: 780px;
 	margin: auto;		
 }
@@ -386,7 +386,7 @@ main#base>header.second-nav section section.read-letter section.contact-descript
 	text-transform: uppercase;
 }
 
-#base > header > section > section > section > button{
+#base > header > section > div > section > section > button{
 	margin: 0px 1rem 1rem 33.33%;
     padding: 1rem;
     border: none;

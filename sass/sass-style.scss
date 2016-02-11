@@ -6,4 +6,31 @@ body {
   font: $global-font;
 }
 
+main#base{
+
+	header.second-nav{
+
+		section{
+
+			div.right-panel{
+
+				position: relative;
+
+				section.read-letter{
+					position: absolute;
+					opacity: 1;
+					top:0;
+					left:0;
+					right:0;
+				}
+
+			}
+		}
+	}
+}
+
+	
+
+
+
 
