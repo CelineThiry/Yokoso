@@ -57,6 +57,8 @@ body{
 	}
 }
 
+
+
 div.lightbox.active{
 	background-color: $lightbox-bgc;
 	width: 100vw;
@@ -238,11 +240,82 @@ div.lightbox.active.search{
 		form{
 
 			div{
-				margin: 0 0 1rem 0;
-				position: relative;
-				display: block;
-				width: 100%;
-				height: $block-height;
+				// margin: 0 0 1rem 0;
+				// display: block;	
+
+
+
+		}
+	}
+}
+.dropdown{
+					
+					// position: relative;	
+					background-color: blue;	
+					width: 100%;
+
+
+					dt{
+
+						// position: absolute;
+
+						a{
+							// background-color: lightcoral;
+							// display: block;
+							// padding: 8px 20px 5px 10px;
+							// height: $block-height/2;
+							// line-height: $block-height/2;
+							// overflow: hidden;
+							// border: 0;
+							// width: 272px;
+
+							span{
+								// cursor: pointer;
+  						// 		display: inline-block;
+  						// 		padding: 0 3px 2px 0;
+							}
+
+							p{
+								// cursor: pointer;
+  						// 		display: inline-block;
+  						// 		padding: 0 3px 2px 0;
+							}
+
+						}
+
+					}
+
+					dd{
+
+						div.multiSelect{
+
+							// position: relative;							
+
+							ul{	
+								// background-color: red;
+								// border: 0;
+								// color: #fff;
+								// display: block;
+								// left: 0px;
+								// padding: 2px 15px 2px 5px;
+								// position: absolute;
+								// top: 2px;
+								// width: 280px;
+								// list-style: none;
+								// height: 100px;
+								// overflow: auto;
+
+								li{
+
+									input[type="checkbox"]{
+
+									}
+								}
+
+							}
+						}
+					}
+				}
 
 				label{
 					float: left;
@@ -277,9 +350,8 @@ div.lightbox.active.search{
 				}
 
 			}
-		}
-	}
-}
+
+				
 
 		
 

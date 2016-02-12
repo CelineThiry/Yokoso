@@ -150,38 +150,35 @@ div.lightbox.active {
           color: #302a2b;
           background: white; }
 
-div.lightbox.active.search section form div {
-  margin: 0 0 1rem 0;
-  position: relative;
+div.lightbox.active.search .dropdown {
+  background-color: blue;
+  width: 100%; }
+div.lightbox.active.search label {
+  float: left;
   display: block;
-  width: 100%;
-  height: 76px; }
-  div.lightbox.active.search section form div label {
-    float: left;
-    display: block;
-    outline: none;
-    width: 49%;
-    font-family: "Roboto", sans-serif; }
-  div.lightbox.active.search section form div input {
-    float: right;
-    display: block;
-    outline: none;
-    width: 49%;
-    height: initial;
-    font-family: "Roboto", sans-serif; }
-  div.lightbox.active.search section form div select {
-    float: right;
-    border: 0 !important;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    background-image: url("../img/iconset_yokoso_sprite_black.svg");
-    background-repeat: no-repeat;
-    background-position: right -2654px;
-    background-size: auto;
-    height: 38px;
-    width: 49%;
-    outline-color: transparent;
-    padding-left: 10px; }
+  outline: none;
+  width: 49%;
+  font-family: "Roboto", sans-serif; }
+div.lightbox.active.search input {
+  float: right;
+  display: block;
+  outline: none;
+  width: 49%;
+  height: initial;
+  font-family: "Roboto", sans-serif; }
+div.lightbox.active.search select {
+  float: right;
+  border: 0 !important;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("../img/iconset_yokoso_sprite_black.svg");
+  background-repeat: no-repeat;
+  background-position: right -2654px;
+  background-size: auto;
+  height: 38px;
+  width: 49%;
+  outline-color: transparent;
+  padding-left: 10px; }
 
 div.lightbox > button.close {
   color: white;
