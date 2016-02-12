@@ -25,7 +25,7 @@ body {
     color: white; }
 
 div.lightbox.active {
-  background-color: rgba(48, 42, 43, 0.8);
+  background-color: rgba(48, 42, 43, 0.9);
   width: 100vw;
   height: 100vh;
   position: absolute;
@@ -33,50 +33,97 @@ div.lightbox.active {
   right: 0;
   left: 0;
   z-index: 10000000000;
-  display: block; }
-  div.lightbox.active section h2 {
-    text-align: center;
-    color: white; }
-  div.lightbox.active section form {
-    background-color: blue;
-    padding: 20px 100px 20px 100px; }
-    div.lightbox.active section form p {
-      font-weight: 300;
-      font-size: 1rem;
-      color: white; }
-    div.lightbox.active section form p.remember {
-      float: left; }
-    div.lightbox.active section form a.forget {
-      float: right; }
-    div.lightbox.active section form a {
-      font-weight: 300;
-      font-size: 1rem;
+  display: block;
+  overflow-y: hidden; }
+  div.lightbox.active section {
+    position: relative; }
+    div.lightbox.active section div.separator {
+      width: 0px;
+      background-color: yellow;
+      margin: auto;
+      position: absolute;
+      top: 114px;
+      right: 50%;
+      left: 50%; }
+      div.lightbox.active section div.separator span.line {
+        display: inline-block;
+        width: 1px;
+        height: 150px;
+        background-color: white;
+        text-align: center; }
+      div.lightbox.active section div.separator p {
+        margin-left: -5px;
+        color: white;
+        font-size: 1rem;
+        text-align: center; }
+    div.lightbox.active section h2 {
+      text-align: center;
       color: white;
-      text-decoration: underline; }
-    div.lightbox.active section form a:hover {
-      color: #d61232; }
-    div.lightbox.active section form label {
-      margin: 0 0 1rem 0;
-      position: relative;
-      display: block; }
-      div.lightbox.active section form label input {
+      font-size: 2rem;
+      margin-bottom: 15px; }
+    div.lightbox.active section form {
+      background-color: transparent;
+      padding: 20px 100px 20px 100px; }
+      div.lightbox.active section form p {
+        font-weight: 300;
+        font-size: 1rem;
+        color: white; }
+      div.lightbox.active section form p.remember {
+        float: left;
+        z-index: 1000000000; }
+        div.lightbox.active section form p.remember input[type="checkbox"]:not(:checked) {
+          margin-right: 10px;
+          -webkit-appearance: none;
+          width: 17px;
+          height: 17px;
+          border: 0px none transparent;
+          background: white;
+          border-radius: 0;
+          box-shadow: inset 0 0px 0px transparent;
+          box-shadow: 0px;
+          outline-color: transparent; }
+        div.lightbox.active section form p.remember input[type="checkbox"]:checked {
+          margin-right: 10px;
+          width: 17px;
+          height: 17px; }
+      div.lightbox.active section form a.forget {
+        float: right;
+        z-index: 1000000000; }
+      div.lightbox.active section form a {
+        font-weight: 300;
+        font-size: 1rem;
+        color: white;
+        text-decoration: underline; }
+        div.lightbox.active section form a:hover {
+          color: #d61232; }
+      div.lightbox.active section form div {
+        margin: 0 0 1rem 0;
+        position: relative;
+        display: block; }
+        div.lightbox.active section form div input {
+          display: block;
+          width: 100%;
+          height: 76px;
+          outline: none;
+          font-family: "Roboto", sans-serif; }
+        div.lightbox.active section form div input[type="email"], div.lightbox.active section form div input[type="password"], div.lightbox.active section form div input[type="text"] {
+          border: 0;
+          background: #EEE8D8;
+          padding: 1.4rem 1rem 1.4rem 1rem;
+          font-size: 1.2em;
+          font-weight: 100; }
+      div.lightbox.active section form input[type="submit"], div.lightbox.active section form input[type="submit"].facebook, div.lightbox.active section form input[type="submit"].twitter, div.lightbox.active section form input[type="submit"].google {
         display: block;
         width: 100%;
         outline: none;
-        font-family: "Roboto", sans-serif; }
-      div.lightbox.active section form label input[type="email"], div.lightbox.active section form label input[type="password"] {
-        border: 0;
-        background: #EEE8D8;
-        padding: 1.4rem 1rem 1.4rem 1rem;
-        font-size: 1.2em;
-        font-weight: 100; }
-      div.lightbox.active section form label input[type="submit"] {
+        font-family: "Roboto", sans-serif;
+        margin: 0 0 1rem 0;
+        position: relative;
         display: block;
         border: none;
         border-radius: 4px;
         outline: none;
-        margin: 2em 0 0;
-        padding: 1em 0;
+        padding: 1.4rem 1rem 1.4rem 1rem;
         /*0.7em 0*/
         color: white;
         background: #d61232;
@@ -84,11 +131,57 @@ div.lightbox.active {
         line-height: 1.6em;
         cursor: pointer;
         font-weight: 400; }
-      div.lightbox.active section form label input[type="submit"]:hover {
-        color: #302a2b;
-        background: white; }
-  div.lightbox.active section div.large-1 {
-    background-color: yellow; }
+        div.lightbox.active section form input[type="submit"]:hover {
+          color: #302a2b;
+          background: white; }
+      div.lightbox.active section form input.facebook[type="submit"] {
+        background: #3A5795; }
+        div.lightbox.active section form input.facebook[type="submit"]:hover {
+          color: #302a2b;
+          background: white; }
+      div.lightbox.active section form input.twitter[type="submit"] {
+        background: #1DA1F2; }
+        div.lightbox.active section form input.twitter[type="submit"]:hover {
+          color: #302a2b;
+          background: white; }
+      div.lightbox.active section form input.google[type="submit"] {
+        background: #D73D32; }
+        div.lightbox.active section form input.google[type="submit"]:hover {
+          color: #302a2b;
+          background: white; }
+
+div.lightbox.active.search section form div {
+  margin: 0 0 1rem 0;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 76px; }
+  div.lightbox.active.search section form div label {
+    float: left;
+    display: block;
+    outline: none;
+    width: 49%;
+    font-family: "Roboto", sans-serif; }
+  div.lightbox.active.search section form div input {
+    float: right;
+    display: block;
+    outline: none;
+    width: 49%;
+    height: initial;
+    font-family: "Roboto", sans-serif; }
+  div.lightbox.active.search section form div select {
+    float: right;
+    border: 0 !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url("../img/iconset_yokoso_sprite_black.svg");
+    background-repeat: no-repeat;
+    background-position: right -2654px;
+    background-size: auto;
+    height: 38px;
+    width: 49%;
+    outline-color: transparent;
+    padding-left: 10px; }
 
 div.lightbox > button.close {
   color: white;
@@ -96,7 +189,7 @@ div.lightbox > button.close {
   line-height: 2rem;
   width: 100%;
   height: 50px;
-  margin: 50px auto 50px auto; }
+  margin: 15px auto 10px auto; }
 
 div.lightbox {
   width: 0vw;

@@ -100,6 +100,16 @@ $(document).ready(function(){
 				e.preventDefault();
 				$('.lightbox.login').addClass('active');							 
 	});	
+	// ouvrir la light box du signup
+	$('.signup.button').click(function(e){
+				e.preventDefault();
+				$('.lightbox.signup').addClass('active');							 
+	});	
+	// ouvrir la light box du search
+	$('li>a.search').click(function(e){
+				e.preventDefault();
+				$('.lightbox.search').addClass('active');							 
+	});
 	// Fermer n'importe quelle lightbox en cliquant sur la croix
 	$('button.close').click(function(e){
 				e.preventDefault();
