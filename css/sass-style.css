@@ -222,7 +222,7 @@ section#slider {
   position: relative;
   overflow: hidden;
   margin: 20px auto 0 auto;
-  border-radius: 4px; }
+  width: 100vw; }
   section#slider .control_next, section#slider .control_prev {
     position: absolute;
     top: 40%;
@@ -250,16 +250,18 @@ section#slider {
     position: relative;
     margin: 0;
     padding: 0;
-    height: 200px;
-    list-style: none; }
+    height: 450px;
+    width: 100vw;
+    list-style: none;
+    margin-left: 0; }
     section#slider ul li {
       position: relative;
       display: block;
       float: left;
       margin: 0;
       padding: 0;
-      width: 500px;
-      height: 300px;
+      width: 100vw;
+      height: 450px;
       background: #ccc;
       text-align: center;
       line-height: 300px; }
