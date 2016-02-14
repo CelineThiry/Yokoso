@@ -217,3 +217,34 @@ main#base header.second-nav section div.right-panel {
         display: block; }
   main#base header.second-nav section div.right-panel section.read-letter {
     display: none; }
+
+.slideshow .slides {
+  position: relative;
+  overflow: hidden;
+  height: 80vh; }
+  .slideshow .slides .slides-view {
+    position: relative;
+    width: 1200%;
+    transition-duration: 0.6s; }
+    .slideshow .slides .slides-view li {
+      width: 960px;
+      float: left;
+      display: block; }
+      .slideshow .slides .slides-view li article, .slideshow .slides .slides-view li img {
+        display: block; }
+      .slideshow .slides .slides-view li img {
+        width: 70%; }
+      .slideshow .slides .slides-view li article {
+        float: left;
+        width: 30%; }
+        .slideshow .slides .slides-view li article div:nth-child(1) {
+          float: left;
+          width: 20%; }
+        .slideshow .slides .slides-view li article div:nth-child(2) {
+          width: 80%; }
+    .slideshow .slides .slides-view li:nth-child(1) {
+      background-color: red; }
+    .slideshow .slides .slides-view li:nth-child(2) {
+      background-color: blue; }
+    .slideshow .slides .slides-view li:nth-child(3) {
+      background-color: green; }

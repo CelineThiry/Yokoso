@@ -431,6 +431,84 @@ main#base{
 	}
 }
 
+
+.slideshow{
+
+	
+
+	.slides{
+
+		position: relative;
+		overflow: hidden;
+		height: 80vh;
+
+		.slides-view{
+			position: relative;
+			width: 1200%;
+    		transition-duration: 0.6s;
+    		// transform: translate3d(-1041px, 0px, 0px);	
+
+			li{				
+				width: 960px;
+    			float: left;
+    			display: block;
+
+				
+
+				article, img{display: block;}
+
+				img{width: 70%;}
+
+				article{
+					float: left;
+					width: 30%;
+
+					div:nth-child(1){
+						float: left;
+						width: 20%;						
+						// padding: 20px 20px 0 20px;
+						// height:50vh;
+						
+					}
+
+					div:nth-child(2){
+						width: 80%;
+						// padding: 20px;
+						// margin-right: 0;
+						
+
+					}
+
+
+				}
+
+			}		
+			
+			li:nth-child(1){
+				
+				background-color: red;				
+								
+				
+			}
+
+			li:nth-child(2){
+				
+				background-color: blue;
+				
+				
+			}
+
+			li:nth-child(3){
+				
+				background-color: green;
+				
+				
+			}
+
+		}
+
+	}
+}
 	
 
 

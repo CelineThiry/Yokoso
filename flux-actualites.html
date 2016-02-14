@@ -1,0 +1,235 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yokoso | Courrier</title>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/foundation.css" />
+  <link rel="stylesheet" href="css/app.css" />
+  <link rel="stylesheet" href="css/sass-style.css" />
+</head>
+
+<body>
+
+  <header class="callout first-nav"> <!-- OFFLINE Navigation bar -->
+    
+    <nav class="row large-12 columns">
+    <div class="large-4 medium-4 columns">
+      <button class="menu-burger-trigger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      </div>    
+      <h1 class="large-4 medium-4 columns"><img src="img/logo.svg" alt="Yokoso logo"></h1>
+      <ul class="large-4 medium-4 columns fr-buttons">
+        <li><a class="login button float-right" href="javascript:void(0)">Se connecter</a></li>
+        <li><a class="signup button float-right" href="javascript:void(0)">S'inscrire</a></li>
+      </ul>
+      
+    </nav>
+  </header> <!-- END OFFLINE navigation bar -->
+
+	<nav id="menu-push">
+		<ul>
+			<li><a href="" class="search">Chercher un correspondant</a></li>
+			<li><a href="">Flux d'actualités</a></li>
+			<li><a href="">A propos</a></li>
+			<li><a href="">Contact</a></li>			
+		</ul>
+	</nav>
+
+<!-- Les ligthbox ou pop in commune à toutes les pages-->
+  <div class="lightbox login">
+    <button class="close">⨯</button>
+    <section class="row">
+      <h2>Se connecter</h2>
+      
+      <form class="large-6 medium-6 columns"> <!-- Left column -->
+        <div><input id="email" type="email" placeholder="Adresse e-mail"></div>        
+        <div><input type="password" id="password" name="password" placeholder="Mot de passe"></div>
+        <p class="remember"><input type="checkbox">Se souvenir de moi</p> <a href="javascript:void(0)" class="forget">Mot de passe oublié?</a>
+        <input type="submit" value="Je me connecte !">
+        <p>Pas encore de compte ? <a href="" class="signup">Inscrivez-vous !</a></p>
+      </form><!-- END Left column -->
+      <div class="separator">
+      <span class="line"></span>
+      <p>or</p>
+      <span class="line"></span>
+      </div>
+      <form class="large-6 medium-6 columns"><!-- Right column -->
+        <input type="submit" class="facebook" value="Se connecter avec Facebook">
+        <input type="submit" class="twitter" value="Se connecter avec Twitter">
+        <input type="submit" class="google" value="Se connecter avec Google+">
+      </form><!-- END Right column -->
+      
+    </section>
+  </div> <!-- END lightbox login -->
+  <div class="lightbox signup">
+    <button class="close">⨯</button>
+    <section class="row">
+      <h2>S'inscrire</h2>
+      
+      <form class="large-6 medium-6 columns"> <!-- Left column -->
+        <div><input id="pseudo" type="text" placeholder="Pseudo"></div> 
+        <div><input id="email" type="email" placeholder="Adresse e-mail"></div>        
+        <div><input type="password" id="password" name="password" placeholder="Mot de passe"></div>
+        <p class="remember"><input type="checkbox">J'accepte <a href="javascript:void(0)">les conditions d'utilisation</a> de Yokoso</p> 
+        <input type="submit" value="Je m'inscris !">
+        <p>Déjà un compte ? <a href="javascript:void(0)" class="signup">Connectez-vous !</a></p>
+      </form><!-- END Left column -->
+      <div class="separator">
+      <span class="line"></span>
+      <p>or</p>
+      <span class="line"></span>
+      </div>
+      <form class="large-6 medium-6 columns"><!-- Right column -->
+        <input type="submit" class="facebook" value="S'inscrire avec Facebook">
+        <input type="submit" class="twitter" value="S'inscrire avec Twitter">
+        <input type="submit" class="google" value="S'inscrire avec Google+">
+      </form><!-- END Right column -->
+      
+    </section>
+  </div><!-- END lightbox signupt -->
+  <div class="lightbox search">
+    <button class="close">⨯</button>
+    <section class="row">
+      <h2>Chercher un correspondant</h2>
+      
+      <form class="large-12 medium-12 columns"> <!-- Left column -->
+        <div>
+        <label for="">Langue maternelle</label>
+        <input id="native-lang" type="radio" value="french"><p>Français</p>
+        <input id="native-lang" type="radio" value="japanese"><p>Japonais</p>
+        </div>        
+        <div>
+        <label for="">Niveau</label>
+        <select type="select" id="level" placeholder="Sélectionnez">
+          <option value="Beginner">Débutant</option>
+          <option value="Intermediate">Intermédiaire</option>
+          <option value="Advanced">Avancé</option>
+        </select>
+        </div>
+        <div>
+        <label for="">Genre</label>
+        <input id="Gender" type="radio" value="female"><p>Femme</p>
+        <input id="Gender" type="radio" value="male"><p>Homme</p>
+        </div> 
+        <div>
+        <label for="">Age</label>
+        <select type="select" id="level" placeholder="Sélectionnez">
+          <option value="teen">15-20 ans</option>
+          <option value="young">20-30 ans</option>
+          <option value="middle">30-40 ans</option>
+          <option value="old">40-50 ans</option>
+          <option value="oldest">50+ ans</option>
+        </select>        
+        </div>
+        <div>
+          <label for="">Centre d'intérêt</label>
+          <dl class="dropdown"> 
+    
+            <dt>
+              <a href="#">
+                <span class="hida">Select</span>    
+                <p class="multiSel"></p>  
+              </a>
+            </dt>
+    
+            <dd>
+                <div class="mutliSelect">
+                    <ul>
+                        <li><input type="checkbox" value="Apple" />Apple</li>
+                        <li><input type="checkbox" value="Blackberry" />Blackberry</li>
+                        <li><input type="checkbox" value="HTC" />HTC</li>
+                        <li><input type="checkbox" value="Sony Ericson" />Sony Ericson</li>
+                        <li><input type="checkbox" value="Motorola" />Motorola</li>
+                        <li><input type="checkbox" value="Nokia" />Nokia</li>
+                    </ul>
+                </div>
+            </dd>  
+          </dl> <!-- FIN DROPDOWN MENU -->
+        </div> 
+              
+        <!-- <input type="submit" value="Chercher"> -->
+        
+      </form><!-- END Left column -->      
+      </div>            
+    </section>
+  </div><!-- END lightbox search -->
+
+
+<main id="base"> <!-- My main block -->
+
+<section class="slideshow">
+  <div class="slides">
+    <ul class="slides-view">
+      <li class="active"> <!-- Slide 1 -->
+        <article class=""> <!-- Zone de texte du slideshow -->
+          <div class="left-column">
+          <p class="date">17.10.2015</p>
+          <p class="tag">Recettes</p>
+          <p class="tag">Voyages</p>
+          </div>
+          <div class="right-column">
+            <h2>Titre article 1</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error unde, saepe tenetur, maiores sapiente molestias.</p>
+            <a href="">Lire plus</a>
+          </div>
+        </article><!-- FIN Zone de texte du slideshow -->
+        <img src="img/slide1.jpg" alt="">        
+      </li><!-- FIN Slide 1 -->
+      <li> <!-- Slide 2 -->
+        <article class=""> <!-- Zone de texte du slideshow -->
+          <div class="">
+          <p class="date">17.10.2015</p>
+          <p class="tag">Recettes</p>
+          <p class="tag">Voyages</p>
+          </div>
+          <div class="">
+            <h2>Titre article 2</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error unde, saepe tenetur, maiores sapiente molestias.</p>
+            <a href="">Lire plus</a>
+          </div>
+        </article><!-- FIN Zone de texte du slideshow -->
+        <img src="img/slide2.jpg" alt="">        
+      </li><!-- FIN Slide 2 -->
+      <li> <!-- Slide 3 -->
+        <article class=""> <!-- Zone de texte du slideshow -->
+          <div class="">
+          <p class="date">17.10.2015</p>
+          <p class="tag">Recettes</p>
+          <p class="tag">Voyages</p>
+          </div>
+          <div class="">
+            <h2>Titre article 3</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error unde, saepe tenetur, maiores sapiente molestias.</p>
+            <a href="">Lire plus</a>
+          </div>
+        </article><!-- FIN Zone de texte du slideshow -->
+        <img src="img/slide3.jpg" alt="">        
+      </li><!-- FIN Slide 3 -->      
+    </ul><!-- FIN Slide VIEW -->
+
+    <ul class="slides-control"> <!-- Fleche de control -->
+      <li><a href=""></a></li>
+      <li><a href=""></a></li>
+    </ul><!-- FIN Fleche de control -->
+
+  </div><!-- FIN Slides -->
+</section><!-- FIN Section slideswho -->
+
+</main> <!-- End My main block -->
+  
+
+  <script src="js/vendor/jquery.min.js"></script>
+  <script src="js/vendor/what-input.min.js"></script>
+  <script src="js/foundation.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
