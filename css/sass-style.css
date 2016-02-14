@@ -218,33 +218,138 @@ main#base header.second-nav section div.right-panel {
   main#base header.second-nav section div.right-panel section.read-letter {
     display: none; }
 
-.slideshow .slides {
-  position: relative;
-  overflow: hidden;
-  height: 80vh; }
-  .slideshow .slides .slides-view {
+.slideshow .slides .slides-view li:nth-child(1) {
+  background-color: red; }
+.slideshow .slides .slides-view li:nth-child(2) {
+  background-color: blue; }
+.slideshow .slides .slides-view li:nth-child(3) {
+  background-color: green; }
+
+section.line-of-article article {
+  margin-bottom: 20px; }
+  section.line-of-article article figcaption .column-left {
+    text-align: right; }
+    section.line-of-article article figcaption .column-left p {
+      margin-bottom: 0; }
+    section.line-of-article article figcaption .column-left .article-date {
+      color: grey;
+      line-height: 3rem; }
+    section.line-of-article article figcaption .column-left .article-tag {
+      color: #d61232; }
+  section.line-of-article article figcaption .column-right div a {
+    float: left;
+    padding: 0 10px 0 10px;
+    height: 50px;
+    line-height: 50px;
+    border-color: #d61232;
+    border-width: 1px;
+    border-style: solid;
+    text-align: right;
+    color: #d61232;
+    transition: background-color;
+    transition-duration: 0.30s;
+    transition-timing-function: ease-out; }
+  section.line-of-article article figcaption .column-right div button {
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    color: #d61232;
+    padding: 0;
+    border-color: #d61232;
+    border-width: 1px 1px 1px 0;
+    border-style: solid solid solid none; }
+    section.line-of-article article figcaption .column-right div button:hover {
+      color: white;
+      border: none;
+      background-color: #d61232; }
+
+section.pagination ul {
+  text-align: center; }
+  section.pagination ul li {
+    display: inline-block;
+    vertical-align: top;
     position: relative;
-    width: 1200%;
-    transition-duration: 0.6s; }
-    .slideshow .slides .slides-view li {
-      width: 960px;
-      float: left;
-      display: block; }
-      .slideshow .slides .slides-view li article, .slideshow .slides .slides-view li img {
-        display: block; }
-      .slideshow .slides .slides-view li img {
-        width: 70%; }
-      .slideshow .slides .slides-view li article {
-        float: left;
-        width: 30%; }
-        .slideshow .slides .slides-view li article div:nth-child(1) {
-          float: left;
-          width: 20%; }
-        .slideshow .slides .slides-view li article div:nth-child(2) {
-          width: 80%; }
-    .slideshow .slides .slides-view li:nth-child(1) {
-      background-color: red; }
-    .slideshow .slides .slides-view li:nth-child(2) {
-      background-color: blue; }
-    .slideshow .slides .slides-view li:nth-child(3) {
-      background-color: green; }
+    padding: 0 10px 0 10px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border: none;
+    text-align: center;
+    color: #302a2b;
+    outline-color: transparent;
+    cursor: pointer; }
+    section.pagination ul li a {
+      color: #302a2b; }
+  section.pagination ul li:last-child, section.pagination ul li:first-child {
+    display: inline-block;
+    vertical-align: top; }
+    section.pagination ul li:last-child a:hover, section.pagination ul li:first-child a:hover {
+      color: white;
+      display: block;
+      background-color: #302a2b;
+      position: relative;
+      padding: 0 10px 0 10px;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      text-align: center;
+      color: white;
+      outline-color: transparent;
+      cursor: pointer; }
+
+footer {
+  background-color: white;
+  padding: 40px;
+  margin-top: 20px; }
+  footer div nav .footer-nav {
+    margin-bottom: 30px; }
+    footer div nav .footer-nav li {
+      display: inline-block;
+      margin-right: 20px; }
+      footer div nav .footer-nav li a {
+        color: #302a2b; }
+        footer div nav .footer-nav li a:hover {
+          color: #d61232; }
+  footer div nav .footer-sub-nav li {
+    display: inline-block;
+    font-size: 0.9rem;
+    color: grey;
+    margin-right: 20px; }
+    footer div nav .footer-sub-nav li a {
+      color: grey; }
+      footer div nav .footer-sub-nav li a:hover {
+        color: #d61232; }
+  footer div div .newsletter input {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    padding: 0 10px 0 10px;
+    height: 50px;
+    line-height: 50px;
+    border-color: #302a2b;
+    border-width: 1px;
+    border-style: solid;
+    text-align: left;
+    color: #302a2b;
+    transition: background-color;
+    transition-duration: 0.30s;
+    transition-timing-function: ease-out;
+    outline-color: transparent; }
+  footer div div .newsletter button {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    padding: 0;
+    border-color: #302a2b;
+    border-width: 1px 1px 1px 0;
+    border-style: solid solid solid none; }
+    footer div div .newsletter button:hover {
+      color: white;
+      border: none;
+      background-color: #302a2b; }
+  footer div div .social-media li {
+    display: inline-block; }

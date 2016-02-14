@@ -438,43 +438,31 @@ main#base{
 
 	.slides{
 
-		position: relative;
-		overflow: hidden;
-		height: 80vh;
+		
 
 		.slides-view{
-			position: relative;
-			width: 1200%;
-    		transition-duration: 0.6s;
+			
     		// transform: translate3d(-1041px, 0px, 0px);	
 
 			li{				
-				width: 960px;
-    			float: left;
-    			display: block;
+				
 
 				
 
-				article, img{display: block;}
+				article, img{}
 
-				img{width: 70%;}
+				img{}
 
 				article{
-					float: left;
-					width: 30%;
+					
 
 					div:nth-child(1){
-						float: left;
-						width: 20%;						
-						// padding: 20px 20px 0 20px;
-						// height:50vh;
+						
 						
 					}
 
 					div:nth-child(2){
-						width: 80%;
-						// padding: 20px;
-						// margin-right: 0;
+						
 						
 
 					}
@@ -510,7 +498,269 @@ main#base{
 	}
 }
 	
+section.line-of-article{
+
+	article{
+
+		margin-bottom: 20px;
+
+		figure{
+
+			img{
+				
+			}
+		}
+
+		figcaption{
+
+			.column-left{
+
+				text-align: right;
+
+				p{
+					margin-bottom: 0;
+				}
+
+				.article-date{
+
+					color: grey;
+					line-height: 3rem;
+
+				}
+
+				.article-tag{
+
+					color: $cherry-red;					
+				}
 
 
+			}
 
+			.column-right{
+
+				h3{
+
+				}
+
+				p{
+
+				}
+
+				div{
+
+					a{	
+					float: left;				
+					// display: inline-block;
+					// vertical-align: top;
+					padding: 0 10px 0 10px;					
+					height: 50px;
+					line-height: 50px;
+					border-color: $cherry-red;
+					border-width: 1px;
+					border-style: solid;
+					text-align: right;					
+					color: $cherry-red;
+					transition: background-color;
+					transition-duration: 0.30s;
+					transition-timing-function: ease-out;
+
+					
+				}
+
+				button{
+					// display: inline-block;
+					// vertical-align: top;
+					text-align: center;						
+					width: 50px;
+					height: 50px;	
+					line-height: 50px;	
+					color: $cherry-red;				
+					padding: 0;
+					border-color: $cherry-red;
+					border-width: 1px 1px 1px 0;
+					border-style: solid solid solid none;
+
+					&:hover{
+						color: white;
+						border: none;
+						background-color: $cherry-red;
+
+					}
+
+				}
+
+				}
+
+				
+
+			}
+
+		}
+	}
+}
+
+section.pagination{
+	ul{
+
+		text-align: center;
+
+		li{
+			display: inline-block;
+			vertical-align: top;
+			position: relative;
+			padding: 0 10px 0 10px;
+			width: 50px;
+			height: 50px;
+			line-height: 50px;
+			border: none;
+			text-align: center;					
+			color: $my-black;			
+			outline-color: transparent;	
+			cursor: pointer;				
+
+			a{
+
+				color: $my-black;			
+
+			}
+		}
+
+		li:last-child, li:first-child{
+			display: inline-block;
+			vertical-align: top;							
+
+			a:hover{
+				color: white;	
+				display: block;			
+				background-color: $my-black;
+				position: relative;
+				padding: 0 10px 0 10px;
+				width: 50px;
+				height: 50px;
+				line-height: 50px;			
+				text-align: center;					
+				color: white;			
+				outline-color: transparent;	
+				cursor: pointer;
+
+			}
+		}
+	}
+}
+
+
+footer{
+
+	background-color: white;
+	padding: 40px;
+	margin-top: 20px;
+
+	div{
+
+		nav{
+
+			.footer-nav{
+
+				margin-bottom: 30px;
+
+				li{
+
+					display: inline-block;
+					margin-right: 20px;
+
+					a{
+						color: $my-black;
+						&:hover{
+							color: $cherry-red;
+						}
+
+					}
+				}
+			}
+
+			.footer-sub-nav{
+				li{
+
+					display: inline-block;
+					font-size: 0.9rem;
+					color: grey;
+					margin-right: 20px;
+
+					a{
+						color: grey;
+
+						&:hover{
+							color: $cherry-red;
+						}
+					}
+
+					select{
+
+					}
+				}
+			}
+
+		}
+
+		div{
+			.newsletter{
+
+				label{
+
+				}
+
+				input{
+
+					display: inline-block;
+					vertical-align: top;
+					position: relative;
+					padding: 0 10px 0 10px;
+					height: 50px;
+					line-height: 50px;
+					border-color: $my-black;
+					border-width: 1px;
+					border-style: solid;
+					text-align: left;					
+					color: $my-black;
+					transition: background-color;
+					transition-duration: 0.30s;
+					transition-timing-function: ease-out;
+					outline-color: transparent;					
+				}
+
+				button{
+					display: inline-block;
+					vertical-align: top;
+					text-align: center;						
+					width: 50px;
+					height: 50px;	
+					line-height: 50px;					
+					padding: 0;
+					border-color: $my-black;
+					border-width: 1px 1px 1px 0;
+					border-style: solid solid solid none;
+
+					&:hover{
+						color: white;
+						border: none;
+						background-color: $my-black;
+
+					}
+					
+				}
+			}	
+
+			.social-media{
+				li{
+
+					display: inline-block;
+
+					a{
+
+					}
+				}
+			}
+		}
+	}
+}
 

@@ -36,7 +36,7 @@
 	<nav id="menu-push">
 		<ul>
 			<li><a href="" class="search">Chercher un correspondant</a></li>
-			<li><a href="">Flux d'actualités</a></li>
+			<li><a href="flux-actualites">Flux d'actualités</a></li>
 			<li><a href="">A propos</a></li>
 			<li><a href="">Contact</a></li>			
 		</ul>
@@ -165,22 +165,22 @@
 <main id="base"> <!-- My main block -->
 
 <section class="slideshow">
-  <div class="slides">
-    <ul class="slides-view">
-      <li class="active"> <!-- Slide 1 -->
-        <article class=""> <!-- Zone de texte du slideshow -->
-          <div class="left-column">
+  <div class="slides expanded row">
+    <ul class="slides-view large-12 columns">
+      <li class="active large-12 columns row"> <!-- Slide 1 -->
+        <article class="large-4 columns"> <!-- Zone de texte du slideshow -->
+          <div class="left-column large-4 column">
           <p class="date">17.10.2015</p>
           <p class="tag">Recettes</p>
           <p class="tag">Voyages</p>
           </div>
-          <div class="right-column">
+          <div class="right-column large-8 columns">
             <h2>Titre article 1</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error unde, saepe tenetur, maiores sapiente molestias.</p>
             <a href="">Lire plus</a>
           </div>
         </article><!-- FIN Zone de texte du slideshow -->
-        <img src="img/slide1.jpg" alt="">        
+        <img class="large-8 columns" src="img/slide1.jpg" alt="">        
       </li><!-- FIN Slide 1 -->
       <li> <!-- Slide 2 -->
         <article class=""> <!-- Zone de texte du slideshow -->
@@ -222,7 +222,160 @@
   </div><!-- FIN Slides -->
 </section><!-- FIN Section slideswho -->
 
+<section class="line-of-article row">
+  <article class="large-4 medium-4 columns">
+    <figure class="row">
+      <img class="large-12 medium-12 columns" src="img/slide1.jpg" alt="">
+    </figure>
+    <figcaption class="row">
+    <div class="column-left large-3 medium-3 columns">
+      <p class="article-date">17.10.2015</p>
+      <p class="article-tag">Voyages</p>
+      <p class="article-tag">Tokyo</p>     
+    </div>
+    <div class="column-right large-9 medium-9 columns">
+      <h3>Titre de l'article</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam molestiae, voluptatibus soluta eos esse totam!</p>
+      <div><a href="">Lire plus</a><button>></button></div>
+    </div>      
+    </figcaption>
+  </article>
+  <article class="large-4 medium-4 columns">
+    <figure class="row">
+      <img class="large-12 medium-12 columns" src="img/slide2.jpg" alt="">
+    </figure>
+    <figcaption class="row">
+    <div class="column-left large-3 medium-3 columns">
+      <p class="article-date">tags</p>
+      <p class="article-tag">tags</p>
+      <p class="article-tag">tags</p>     
+    </div>
+    <div class="column-right large-9 medium-9 columns">
+      <h3>Titre de l'article</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam molestiae, voluptatibus soluta eos esse totam!</p>
+      <div><a href="">Lire plus</a><button>></button></div>
+    </div>      
+    </figcaption>
+  </article> 
+  <article class="large-4 medium-4 columns">
+    <figure class="row">
+      <img class="large-12 medium-12 columns" src="img/slide3.jpg" alt="">
+    </figure>
+    <figcaption class="row">
+    <div class="column-left large-3 medium-3 columns">
+      <p class="article-date">tags</p>
+      <p class="article-tag">tags</p>
+      <p class="article-tag">tags</p>     
+    </div>
+    <div class="column-right large-9 medium-9 columns">
+      <h3>Titre de l'article</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam molestiae, voluptatibus soluta eos esse totam!</p>
+      <div><a href="">Lire plus</a><button>></button></div>
+    </div>      
+    </figcaption>
+  </article> 
+</section> <!-- Fin article-line -->
+
+<section class="line-of-article row">
+  <article class="large-4 medium-4 columns">
+    <figure class="row">
+      <img class="large-12 medium-12 columns" src="img/slide1.jpg" alt="">
+    </figure>
+    <figcaption class="row">
+    <div class="column-left large-3 medium-3 columns">
+      <p class="article-date">17.10.2015</p>
+      <p class="article-tag">Voyages</p>
+      <p class="article-tag">Tokyo</p>     
+    </div>
+    <div class="column-right large-9 medium-9 columns">
+      <h3>Titre de l'article</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam molestiae, voluptatibus soluta eos esse totam!</p>
+      <div><a href="">Lire plus</a><button>></button></div>
+    </div>      
+    </figcaption>
+  </article>
+  <article class="large-4 medium-4 columns">
+    <figure class="row">
+      <img class="large-12 medium-12 columns" src="img/slide2.jpg" alt="">
+    </figure>
+    <figcaption class="row">
+    <div class="column-left large-3 medium-3 columns">
+      <p class="article-date">tags</p>
+      <p class="article-tag">tags</p>
+      <p class="article-tag">tags</p>     
+    </div>
+    <div class="column-right large-9 medium-9 columns">
+      <h3>Titre de l'article</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam molestiae, voluptatibus soluta eos esse totam!</p>
+      <div><a href="">Lire plus</a><button>></button></div>
+    </div>      
+    </figcaption>
+  </article> 
+  <article class="large-4 medium-4 columns">
+    <figure class="row">
+      <img class="large-12 medium-12 columns" src="img/slide3.jpg" alt="">
+    </figure>
+    <figcaption class="row">
+    <div class="column-left large-3 medium-3 columns">
+      <p class="article-date">tags</p>
+      <p class="article-tag">tags</p>
+      <p class="article-tag">tags</p>     
+    </div>
+    <div class="column-right large-9 medium-9 columns">
+      <h3>Titre de l'article</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam molestiae, voluptatibus soluta eos esse totam!</p>
+      <div><a href="">Lire plus</a><button>></button></div>
+    </div>      
+    </figcaption>
+  </article> 
+</section> <!-- Fin article-line -->
+
+<section class="pagination row">
+  <ul class="large-12 medium-12 large-centered medium-centered columns">
+    <li><a href=""><</a></li>
+    <li><a href="">1</a></li>
+    <li><a href="">2</a></li>
+    <li><a href="">3</a></li>
+    <li><a href="">></a></li>
+  </ul>
+</section>
+
 </main> <!-- End My main block -->
+
+<footer>
+  <div class="row">
+    <nav class="large-8 medium-8 columns">
+      <ul class="footer-nav row">
+        <li><a href="">Chercher un correspondant</a></li>
+        <li><a href="flux-actualites.html">Flux d'actualités</a></li>
+        <li><a href="">A propos</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
+      <ul class="footer-sub-nav row">
+        <li>© 2016 Yokoso</li>
+        <li><a href="">Conditions</a></li>
+        <li><a href="">Protection des données</a></li>
+        <li>
+        <select name="lang" id="lang">
+          <option value="jp">Japonais</option>
+          <option value="fr">Français</option>
+        </select>
+        </li>
+      </ul>
+    </nav>
+    <div class="large-4 medium-4 columns">
+      <div class="newsletter">
+        <label for="">S'abonner à la newsletter</label>
+        <input type="email" placeholder="Entrer votre email"><button>></button>
+      </div>
+      <ul class="social-media">
+        <li><a href="">fb</a></li>
+        <li><a href="">tw</a></li>
+        <li><a href="">g+</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
   
 
   <script src="js/vendor/jquery.min.js"></script>
