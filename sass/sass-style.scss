@@ -433,41 +433,44 @@ main#base{
 
 
 section#slider{
-
+	
 	position: relative;
-  	overflow: hidden;
-  	margin: 20px auto 0 auto;
+  	overflow: hidden;  	
+  	margin: 76px auto 0 auto;
   	width: 100vw;
 
 	.control_next, .control_prev{
 		position: absolute;
-  		top: 40%;
+  		top: 45%;
   		z-index: 999;
+  		margin: 0px 33.33% 0px 33.33%;
   		display: block;
-  		padding: 4% 3%;
- 		width: auto;
-  		height: auto;
-  		background: #2a2a2a;
-  		color: #fff;
-  		text-decoration: none;
-  		font-weight: 600;
-  		font-size: 18px;
-  		opacity: 0.8;
+  		line-height: 50px;
+  		text-align: center;
+ 		width: 50px;
+  		height: 50px;
+  		background: white;
+  		color: $cherry-red;
+  		text-decoration: none;  		
   		cursor: pointer;
+  		border-color: $cherry-red;
+  		border-style: solid;
+  		border-width: 1px;
 
   		&:hover{
-  			opacity: 1;
+  			background: $cherry-red;
+  			color: white;
   			-webkit-transition: all 0.2s ease;
   		}  		
 	}
 
 	.control_prev{
-  		border-radius: 0 2px 2px 0;
+  		border-radius: 0;
   	}
 
   	.control_next{
   		right: 0;
-  		border-radius: 2px 0 0 2px;
+  		border-radius: 0;
   	}
 	
 
@@ -491,6 +494,31 @@ section#slider{
   			background: #ccc;
   			text-align: center;
   			line-height: 300px;
+
+  			img{
+  				opacity: 0.5;
+  			}
+
+  			div{
+
+  				position: absolute;
+  				top: 0;
+  				right: 0;
+  				left: 0;
+  				width: 30vw;
+  				margin: 0px auto 0px auto;
+  				height: 100%;
+  				background-color: white;
+
+  				h2{
+  				color: $my-black;
+  				}
+
+  				p{
+  				color: $my-black;
+  				}
+
+  			}  			
 		}
 	}
 }

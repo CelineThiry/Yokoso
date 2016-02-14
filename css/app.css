@@ -582,7 +582,7 @@ nav#menu-push>ul>li>a:hover{
 }
 
 main#base{
-	margin-top: 96px;
+	
 	transition-property: transform;
 	transition-duration: 0.4s;
 	transition-timing-function: cubic-bezier(0, 0.99, 0.13, 0.995);

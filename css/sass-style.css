@@ -221,31 +221,34 @@ main#base header.second-nav section div.right-panel {
 section#slider {
   position: relative;
   overflow: hidden;
-  margin: 20px auto 0 auto;
+  margin: 76px auto 0 auto;
   width: 100vw; }
   section#slider .control_next, section#slider .control_prev {
     position: absolute;
-    top: 40%;
+    top: 45%;
     z-index: 999;
+    margin: 0px 33.33% 0px 33.33%;
     display: block;
-    padding: 4% 3%;
-    width: auto;
-    height: auto;
-    background: #2a2a2a;
-    color: #fff;
+    line-height: 50px;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    background: white;
+    color: #d61232;
     text-decoration: none;
-    font-weight: 600;
-    font-size: 18px;
-    opacity: 0.8;
-    cursor: pointer; }
+    cursor: pointer;
+    border-color: #d61232;
+    border-style: solid;
+    border-width: 1px; }
     section#slider .control_next:hover, section#slider .control_prev:hover {
-      opacity: 1;
+      background: #d61232;
+      color: white;
       -webkit-transition: all 0.2s ease; }
   section#slider .control_prev {
-    border-radius: 0 2px 2px 0; }
+    border-radius: 0; }
   section#slider .control_next {
     right: 0;
-    border-radius: 2px 0 0 2px; }
+    border-radius: 0; }
   section#slider ul {
     position: relative;
     margin: 0;
@@ -265,6 +268,21 @@ section#slider {
       background: #ccc;
       text-align: center;
       line-height: 300px; }
+      section#slider ul li img {
+        opacity: 0.5; }
+      section#slider ul li div {
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        width: 30vw;
+        margin: 0px auto 0px auto;
+        height: 100%;
+        background-color: white; }
+        section#slider ul li div h2 {
+          color: #302a2b; }
+        section#slider ul li div p {
+          color: #302a2b; }
 
 section.line-of-article article {
   margin-bottom: 20px; }
