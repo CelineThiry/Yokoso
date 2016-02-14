@@ -3,7 +3,7 @@ $(document).ready(function(){
 	$('nav button.menu-burger-trigger').click(function(e){
 		e.preventDefault();
 		$(this).toggleClass('open');
-		$('main#base,nav#menu-push').toggleClass('open');
+		$('main#base,nav#menu-push,body>footer').toggleClass('open');
 
 				$('main#base').click(function(e){ 
 				e.preventDefault();

@@ -61,7 +61,7 @@ body{
 
 div.lightbox.active{
 	background-color: $lightbox-bgc;
-	width: 100vw;
+	width: 100%;
 	height: 100vh;
 	position: absolute;
 	top: 0;
@@ -436,8 +436,8 @@ section#slider{
 	
 	position: relative;
   	overflow: hidden;  	
-  	margin: 76px auto 0 auto;
-  	width: 100vw;
+  	margin: 76px auto 20px auto;
+  	width: 100%;
 
 	.control_next, .control_prev{
 		position: absolute;
@@ -479,7 +479,7 @@ section#slider{
   		margin: 0;
   		padding: 0;
   		height: 450px;
-  		width: 100vw;
+  		width: 100%;
   		list-style: none;
   		margin-left: 0;
 
@@ -489,14 +489,14 @@ section#slider{
   			float: left;
   			margin: 0;
   			padding: 0;
-  			width: 100vw;
+  			width: 100%;
   			height: 450px;
   			background: #ccc;
   			text-align: center;
   			line-height: 300px;
 
   			img{
-  				opacity: 0.5;
+  				width: 100vw;
   			}
 
   			div{
@@ -675,11 +675,15 @@ section.pagination{
 }
 
 
-footer{
+body>footer{
 
 	background-color: white;
 	padding: 40px;
 	margin-top: 20px;
+	transition-property: transform;
+	transition-duration: 0.4s;
+	transition-timing-function: cubic-bezier(0, 0.99, 0.13, 0.995);
+	transform: translate(0px, 0px);	
 
 	div{
 
@@ -788,5 +792,9 @@ footer{
 			}
 		}
 	}
+}
+
+body>footer.open{
+	transform: translate(300px, 0px);	
 }
 

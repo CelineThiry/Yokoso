@@ -26,7 +26,7 @@ body {
 
 div.lightbox.active {
   background-color: rgba(48, 42, 43, 0.9);
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   position: absolute;
   top: 0;
@@ -221,8 +221,8 @@ main#base header.second-nav section div.right-panel {
 section#slider {
   position: relative;
   overflow: hidden;
-  margin: 76px auto 0 auto;
-  width: 100vw; }
+  margin: 76px auto 20px auto;
+  width: 100%; }
   section#slider .control_next, section#slider .control_prev {
     position: absolute;
     top: 45%;
@@ -254,7 +254,7 @@ section#slider {
     margin: 0;
     padding: 0;
     height: 450px;
-    width: 100vw;
+    width: 100%;
     list-style: none;
     margin-left: 0; }
     section#slider ul li {
@@ -263,13 +263,13 @@ section#slider {
       float: left;
       margin: 0;
       padding: 0;
-      width: 100vw;
+      width: 100%;
       height: 450px;
       background: #ccc;
       text-align: center;
       line-height: 300px; }
       section#slider ul li img {
-        opacity: 0.5; }
+        width: 100vw; }
       section#slider ul li div {
         position: absolute;
         top: 0;
@@ -357,29 +357,33 @@ section.pagination ul {
       outline-color: transparent;
       cursor: pointer; }
 
-footer {
+body > footer {
   background-color: white;
   padding: 40px;
-  margin-top: 20px; }
-  footer div nav .footer-nav {
+  margin-top: 20px;
+  transition-property: transform;
+  transition-duration: 0.4s;
+  transition-timing-function: cubic-bezier(0, 0.99, 0.13, 0.995);
+  transform: translate(0px, 0px); }
+  body > footer div nav .footer-nav {
     margin-bottom: 30px; }
-    footer div nav .footer-nav li {
+    body > footer div nav .footer-nav li {
       display: inline-block;
       margin-right: 20px; }
-      footer div nav .footer-nav li a {
+      body > footer div nav .footer-nav li a {
         color: #302a2b; }
-        footer div nav .footer-nav li a:hover {
+        body > footer div nav .footer-nav li a:hover {
           color: #d61232; }
-  footer div nav .footer-sub-nav li {
+  body > footer div nav .footer-sub-nav li {
     display: inline-block;
     font-size: 0.9rem;
     color: grey;
     margin-right: 20px; }
-    footer div nav .footer-sub-nav li a {
+    body > footer div nav .footer-sub-nav li a {
       color: grey; }
-      footer div nav .footer-sub-nav li a:hover {
+      body > footer div nav .footer-sub-nav li a:hover {
         color: #d61232; }
-  footer div div .newsletter input {
+  body > footer div div .newsletter input {
     display: inline-block;
     vertical-align: top;
     position: relative;
@@ -395,7 +399,7 @@ footer {
     transition-duration: 0.30s;
     transition-timing-function: ease-out;
     outline-color: transparent; }
-  footer div div .newsletter button {
+  body > footer div div .newsletter button {
     display: inline-block;
     vertical-align: top;
     text-align: center;
@@ -406,9 +410,12 @@ footer {
     border-color: #302a2b;
     border-width: 1px 1px 1px 0;
     border-style: solid solid solid none; }
-    footer div div .newsletter button:hover {
+    body > footer div div .newsletter button:hover {
       color: white;
       border: none;
       background-color: #302a2b; }
-  footer div div .social-media li {
+  body > footer div div .social-media li {
     display: inline-block; }
+
+body > footer.open {
+  transform: translate(300px, 0px); }
