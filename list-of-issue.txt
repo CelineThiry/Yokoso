@@ -1,2 +1,12 @@
 - Padding and margin are diffrent between chrome and firefox
 
+- Le slideshow est sacadé et il ne se resize pas en temps reel il faut rafraichir la page.
+
+Page courrier :
+- L'accordion des messages ne fonctionnne pas encore bien.
+- profil contact : le texte passe en dessous au format tablet.
+
+
+Est-ce bien du'itliser des sprite?
+
+
