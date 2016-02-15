@@ -8,7 +8,14 @@ Page courrier :
 
 
 General
+-------
 Le background-position n'es pas le meme partout
+
+Tableau de bord
+---------------
+footer : absolute, bottom: 0 > ok pour tableau de bord mais pas pour les autres pages !
+Comment faire !
+
 
 
 Est-ce bien du'itliser des sprite?
