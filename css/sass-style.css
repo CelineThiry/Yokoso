@@ -324,8 +324,34 @@ main#base section#dashboard {
   height: 100vh; }
 
 main#base section#correspondance {
-  margin: 96px auto 20px auto;
-  height: 100vh; }
+  margin: 96px auto 20px auto; }
+  main#base section#correspondance section div.columns article .callout.profil {
+    width: 100%;
+    border-width: 0 1px 1px 1px;
+    border-style: none solid solid solid;
+    border-color: #302a2b; }
+    main#base section#correspondance section div.columns article .callout.profil .avatar {
+      padding: 10px;
+      width: 100px;
+      text-align: center;
+      display: inline-block;
+      vertical-align: top; }
+      main#base section#correspondance section div.columns article .callout.profil .avatar p {
+        text-align: center;
+        margin: auto; }
+      main#base section#correspondance section div.columns article .callout.profil .avatar .avatar-pict {
+        display: block;
+        margin: 0 auto 0 auto;
+        content: "";
+        height: 60px;
+        width: 60px;
+        background-image: url("../img/avatar2.svg");
+        background-repeat: no-repeat;
+        background-position: -236px center;
+        background-size: cover; }
+  main#base section#correspondance section div.columns article footer button.square-button.block {
+    border-width: 0 0 0 1px;
+    border-style: none none none solid; }
 
 section#slider {
   position: relative;
