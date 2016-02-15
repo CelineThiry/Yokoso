@@ -7,6 +7,10 @@ Page courrier :
 - profil contact : le texte passe en dessous au format tablet.
 
 
+General
+Le background-position n'es pas le meme partout
+
+
 Est-ce bien du'itliser des sprite?
 
 
