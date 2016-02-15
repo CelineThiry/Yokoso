@@ -7,7 +7,9 @@ $cherry-red: #d61232;
 $my-black: rgb(48,42,43);
 $global-border-radius: 4px;
 
-
+button::focus{
+	outline-color: transparent;
+}
 
 
 body{
@@ -81,7 +83,104 @@ body{
 	}
 }
 
+header.first-nav.online{
+	nav{
+		div{
 
+		}
+
+		h1{
+
+
+		}
+
+		ul{
+
+			li{
+				a{
+
+				}
+
+				.contact{
+					position: relative;
+					height: 40px;
+					width: 40px;
+					background-color: transparent;
+					background-image: url('../img/iconset_yokoso_sprite.svg');
+				    background-repeat: no-repeat;
+				    background-position: center -720px;
+				    background-size: auto;
+
+				    &:after{
+				    	content: "1";
+				    	position: absolute;				    	
+				    	bottom: 0;
+				    	right: 0;
+				    	height: 15px;
+						width: 15px;
+						border-radius: 15px;
+						background-color: $cherry-red;
+						color: white;
+						font-size: 0.7rem;
+						padding: 1px;
+				    }
+				}
+
+				.msg{
+					position: relative;
+					height: 40px;
+					width: 40px;
+					background-color: transparent;
+					background-image: url('../img/iconset_yokoso_sprite.svg');
+				    background-repeat: no-repeat;
+				    background-position: center -1020px;
+				    background-size: auto;
+
+
+				    &:after{
+				    	content: "1";
+				    	position: absolute;
+				    	bottom: 0;
+				    	right: 0;
+				    	height: 15px;
+						width: 15px;
+						border-radius: 15px;
+						background-color: $cherry-red;
+						color: white;
+						padding: 1px;
+						font-size: 0.7rem;
+				    }
+
+				}
+
+				.profil{
+					display: inline-block;
+					vertical-align: top;
+					position: relative;
+					height: 40px;
+					line-height: 40px;
+					font-size: 1rem;
+					background-color: transparent;
+					padding-right: 5px;
+									
+				}	
+
+				a.avatar{				
+					display: inline-block;
+					vertical-align: top;					
+					height: 40px;
+					width: 40px;
+					
+					background-image: url('../img/avatar2.svg');
+				    background-repeat: no-repeat;
+				    background-position: -106px center;
+				    background-size: cover;
+
+				}			
+			}
+		}
+	}
+}
 
 div.lightbox.active{
 	background-color: $lightbox-bgc;
@@ -395,6 +494,41 @@ div.lightbox{
 	// transform: translate(-100vw, 0);
 }
 
+nav#menu-push.online{
+	ul{
+		li{
+			.profil{
+					display: inline-block;
+					vertical-align: top;
+					position: relative;
+					height: 40px;
+					line-height: 40px;
+					font-size: 1.5rem;
+					background-color: transparent;
+					padding-left: 5px;
+					margin-bottom: 15px;
+
+					&:hover{
+						color: white;
+					}
+									
+			}	
+
+			a.avatar{				
+					display: inline-block;
+					vertical-align: top;					
+					height: 40px;
+					width: 40px;					
+					background-image: url('../img/avatar2.svg');
+				    background-repeat: no-repeat;
+				    background-position: -106px center;
+				    background-size: cover;
+
+			}		
+		}
+	}
+}
+
 main#base{
 
 	header.second-nav{
@@ -457,6 +591,20 @@ main#base{
 	}
 }
 
+
+main#base{
+	section#dashboard{
+		margin: 96px auto 20px auto;
+		height: 100vh;
+	}
+}
+
+main#base{
+	section#correspondance{
+		margin: 96px auto 20px auto;
+		height: 100vh;
+	}
+}
 
 section#slider{
 	
@@ -635,8 +783,12 @@ section.line-of-article{
 					&:hover{
 						color: white;
 						border: none;
-						background-color: $cherry-red;
+						background-color: $cherry-red;						
+					}
 
+					&:focus{
+						
+						outline-width: 0px;
 					}
 
 				}
@@ -710,6 +862,10 @@ body>footer{
 	transition-duration: 0.4s;
 	transition-timing-function: cubic-bezier(0, 0.99, 0.13, 0.995);
 	transform: translate(0px, 0px);	
+	// position: absolute;
+	// bottom: 0;
+	// right: 0;
+	// left: 0;
 
 	div{
 
@@ -751,6 +907,10 @@ body>footer{
 					}
 
 					select{
+
+						&:focus{
+						outline-width: 0px;
+						}
 
 					}
 				}
@@ -801,6 +961,10 @@ body>footer{
 						border: none;
 						background-color: $my-black;
 
+					}
+
+					&:focus{
+						outline-width: 0px;
 					}
 					
 				}

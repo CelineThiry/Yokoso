@@ -1,3 +1,6 @@
+button::focus {
+  outline-color: transparent; }
+
 body {
   background-color: #EEE8D8;
   font: "Roboto", sans-serif; }
@@ -36,6 +39,67 @@ body {
     body header.first-nav h1.large-4.medium-4.columns {
       text-align: center;
       padding: 5px 0 0 0; }
+
+header.first-nav.online nav ul li .contact {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  background-color: transparent;
+  background-image: url("../img/iconset_yokoso_sprite.svg");
+  background-repeat: no-repeat;
+  background-position: center -720px;
+  background-size: auto; }
+  header.first-nav.online nav ul li .contact:after {
+    content: "1";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    background-color: #d61232;
+    color: white;
+    font-size: 0.7rem;
+    padding: 1px; }
+header.first-nav.online nav ul li .msg {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  background-color: transparent;
+  background-image: url("../img/iconset_yokoso_sprite.svg");
+  background-repeat: no-repeat;
+  background-position: center -1020px;
+  background-size: auto; }
+  header.first-nav.online nav ul li .msg:after {
+    content: "1";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 15px;
+    background-color: #d61232;
+    color: white;
+    padding: 1px;
+    font-size: 0.7rem; }
+header.first-nav.online nav ul li .profil {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  height: 40px;
+  line-height: 40px;
+  font-size: 1rem;
+  background-color: transparent;
+  padding-right: 5px; }
+header.first-nav.online nav ul li a.avatar {
+  display: inline-block;
+  vertical-align: top;
+  height: 40px;
+  width: 40px;
+  background-image: url("../img/avatar2.svg");
+  background-repeat: no-repeat;
+  background-position: -106px center;
+  background-size: cover; }
 
 div.lightbox.active {
   background-color: rgba(48, 42, 43, 0.9);
@@ -206,6 +270,28 @@ div.lightbox {
   height: 0vh;
   display: none; }
 
+nav#menu-push.online ul li .profil {
+  display: inline-block;
+  vertical-align: top;
+  position: relative;
+  height: 40px;
+  line-height: 40px;
+  font-size: 1.5rem;
+  background-color: transparent;
+  padding-left: 5px;
+  margin-bottom: 15px; }
+  nav#menu-push.online ul li .profil:hover {
+    color: white; }
+nav#menu-push.online ul li a.avatar {
+  display: inline-block;
+  vertical-align: top;
+  height: 40px;
+  width: 40px;
+  background-image: url("../img/avatar2.svg");
+  background-repeat: no-repeat;
+  background-position: -106px center;
+  background-size: cover; }
+
 main#base header.second-nav {
   margin-top: 96px; }
   main#base header.second-nav section div.right-panel {
@@ -232,6 +318,14 @@ main#base header.second-nav {
           display: block; }
     main#base header.second-nav section div.right-panel section.read-letter {
       display: none; }
+
+main#base section#dashboard {
+  margin: 96px auto 20px auto;
+  height: 100vh; }
+
+main#base section#correspondance {
+  margin: 96px auto 20px auto;
+  height: 100vh; }
 
 section#slider {
   position: relative;
@@ -337,6 +431,8 @@ section.line-of-article article {
       color: white;
       border: none;
       background-color: #d61232; }
+    section.line-of-article article figcaption .column-right div button:focus {
+      outline-width: 0px; }
 
 section.pagination ul {
   text-align: center; }
@@ -398,6 +494,8 @@ body > footer {
       color: grey; }
       body > footer div nav .footer-sub-nav li a:hover {
         color: #d61232; }
+    body > footer div nav .footer-sub-nav li select:focus {
+      outline-width: 0px; }
   body > footer div div .newsletter input {
     display: inline-block;
     vertical-align: top;
@@ -429,6 +527,8 @@ body > footer {
       color: white;
       border: none;
       background-color: #302a2b; }
+    body > footer div div .newsletter button:focus {
+      outline-width: 0px; }
   body > footer div div .social-media li {
     display: inline-block; }
 
