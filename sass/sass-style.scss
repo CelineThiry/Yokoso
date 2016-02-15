@@ -1,3 +1,4 @@
+
 $body-bgc: #EEE8D8;
 $lightbox-bgc: rgba(48,42,43,0.9);
 $global-font: 'Roboto', sans-serif;
@@ -14,9 +15,23 @@ body{
   	font: $global-font;
 
 	header.first-nav{
+
+		margin: 0;
+		border: 0;
+		padding: 0;
+
 		nav{
+
+
+			.large-4.medium-4{
+				padding: 16px 16px 0 16px;
+			}
+
 			ul{
+				text-align: right;
 				li{
+					display: inline-block;
+
 					a.login.button{
 						margin: 0px;	
 						transition: background-color 0.25s ease-out 0s, color 0.25s ease-out 0s;
@@ -41,7 +56,7 @@ body{
 						border: 0px solid transparent;
 						border-radius: 0px;
 						padding: 0.85em 1em;
-						margin: 0px 0px 1rem;
+						margin: 0px 0px 16px;
 						font-size: 1rem;
 						background-color: transparent;
 						color: white;
@@ -53,6 +68,15 @@ body{
 					}
 				}
 			}
+		}
+
+		div{
+
+		}
+
+		h1.large-4.medium-4.columns{
+			text-align: center;
+			padding: 5px 0 0 0;
 		}
 	}
 }
@@ -374,6 +398,8 @@ div.lightbox{
 main#base{
 
 	header.second-nav{
+
+		margin-top: 96px;
 
 		section{
 

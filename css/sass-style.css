@@ -1,28 +1,41 @@
 body {
   background-color: #EEE8D8;
   font: "Roboto", sans-serif; }
-  body header.first-nav nav ul li a.login.button {
-    margin: 0px;
-    transition: background-color 0.25s ease-out 0s, color 0.25s ease-out 0s;
-    border: 0px solid transparent;
-    border-radius: 4px;
-    padding: 0.85em 1em;
-    margin: 0px 0px 1rem;
-    font-size: 1rem;
-    background-color: #d61232;
-    color: white; }
-  body header.first-nav nav ul li a.login.button:hover {
-    background-color: white;
-    color: #302b2a; }
-  body header.first-nav nav ul li a.signup.button {
-    transition: background-color 0.25s ease-out 0s, color 0.25s ease-out 0s;
-    border: 0px solid transparent;
-    border-radius: 0px;
-    padding: 0.85em 1em;
-    margin: 0px 0px 1rem;
-    font-size: 1rem;
-    background-color: transparent;
-    color: white; }
+  body header.first-nav {
+    margin: 0;
+    border: 0;
+    padding: 0; }
+    body header.first-nav nav .large-4.medium-4 {
+      padding: 16px 16px 0 16px; }
+    body header.first-nav nav ul {
+      text-align: right; }
+      body header.first-nav nav ul li {
+        display: inline-block; }
+        body header.first-nav nav ul li a.login.button {
+          margin: 0px;
+          transition: background-color 0.25s ease-out 0s, color 0.25s ease-out 0s;
+          border: 0px solid transparent;
+          border-radius: 4px;
+          padding: 0.85em 1em;
+          margin: 0px 0px 1rem;
+          font-size: 1rem;
+          background-color: #d61232;
+          color: white; }
+        body header.first-nav nav ul li a.login.button:hover {
+          background-color: white;
+          color: #302b2a; }
+      body header.first-nav nav ul li a.signup.button {
+        transition: background-color 0.25s ease-out 0s, color 0.25s ease-out 0s;
+        border: 0px solid transparent;
+        border-radius: 0px;
+        padding: 0.85em 1em;
+        margin: 0px 0px 16px;
+        font-size: 1rem;
+        background-color: transparent;
+        color: white; }
+    body header.first-nav h1.large-4.medium-4.columns {
+      text-align: center;
+      padding: 5px 0 0 0; }
 
 div.lightbox.active {
   background-color: rgba(48, 42, 43, 0.9);
@@ -193,30 +206,32 @@ div.lightbox {
   height: 0vh;
   display: none; }
 
-main#base header.second-nav section div.right-panel {
-  position: relative; }
-  main#base header.second-nav section div.right-panel section.read-letter.active {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: block; }
-    main#base header.second-nav section div.right-panel section.read-letter.active section ul.letter-accordion li {
-      max-width: 780px;
-      background-color: white;
-      color: black;
-      margin: 10px auto 10px auto; }
-      main#base header.second-nav section div.right-panel section.read-letter.active section ul.letter-accordion li div.letter-preview {
-        display: none; }
-      main#base header.second-nav section div.right-panel section.read-letter.active section ul.letter-accordion li div.letter-preview.active {
-        height: 76px;
-        display: block; }
-      main#base header.second-nav section div.right-panel section.read-letter.active section ul.letter-accordion li div.letter-inner {
-        display: none; }
-      main#base header.second-nav section div.right-panel section.read-letter.active section ul.letter-accordion li div.letter-inner.active {
-        display: block; }
-  main#base header.second-nav section div.right-panel section.read-letter {
-    display: none; }
+main#base header.second-nav {
+  margin-top: 96px; }
+  main#base header.second-nav section div.right-panel {
+    position: relative; }
+    main#base header.second-nav section div.right-panel section.read-letter.active {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      display: block; }
+      main#base header.second-nav section div.right-panel section.read-letter.active section ul.letter-accordion li {
+        max-width: 780px;
+        background-color: white;
+        color: black;
+        margin: 10px auto 10px auto; }
+        main#base header.second-nav section div.right-panel section.read-letter.active section ul.letter-accordion li div.letter-preview {
+          display: none; }
+        main#base header.second-nav section div.right-panel section.read-letter.active section ul.letter-accordion li div.letter-preview.active {
+          height: 76px;
+          display: block; }
+        main#base header.second-nav section div.right-panel section.read-letter.active section ul.letter-accordion li div.letter-inner {
+          display: none; }
+        main#base header.second-nav section div.right-panel section.read-letter.active section ul.letter-accordion li div.letter-inner.active {
+          display: block; }
+    main#base header.second-nav section div.right-panel section.read-letter {
+      display: none; }
 
 section#slider {
   position: relative;
