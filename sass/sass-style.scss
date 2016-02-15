@@ -615,12 +615,79 @@ main#base{
 
 		section{
 
+			article.nest{
+
+				padding-right: 0;
+
+				button{
+					h1{
+						font-size: 1.2rem;
+					}
+				}
+			}
+
+			div.nest{
+
+				padding: 0;
+			}
+
+			div.large-4{
+
+				article{
+					div.callout{}
+					footer.callout.border-button{
+						margin-bottom: 0;
+
+						button.picto-button.on{
+							background-color: $cherry-red;
+							z-index: -1;
+							color: white;
+						}
+
+						p{
+							text-align: left;
+							line-height: 1rem;
+							font-size: 1rem;
+							font-style: normal;
+							font-weight: 400;
+
+							a{color:$my-black;}	
+						}
+					}
+					div.profil.middle{
+						border-width: 0 1px 0 1px;
+						border-style: none solid none solid;
+						border-color: $my-black;
+					}
+					div.profil{
+
+						padding: 1rem;						
+						border-width: 0 1px 1px 1px;
+						border-style: none solid solid solid;
+						
+
+						a.avatar{								
+
+								p{}
+
+								.avatar-pict{}
+						}						
+
+					}
+				}
+			}
+
 			div.columns{
 
 				article{
 
-					div.callout{
-						
+					footer.callout{
+
+						p{
+							a{
+								color: $my-black;
+							}
+						}
 
 					}
 
@@ -633,12 +700,19 @@ main#base{
 
 
 							.avatar{
-
+								display: block;
 								padding: 10px;
 								width: 100px;
 								text-align: center;
 								display: inline-block;
 								vertical-align: top;
+								cursor: pointer;
+								color: $my-black;
+								font-size: 0.9rem;
+
+								&:hover{
+									opacity: 0.5;
+								}
 
 								p{
 									text-align: center;									
@@ -647,7 +721,7 @@ main#base{
 
 								.avatar-pict{										
 										display: block;
-										margin: 0 auto 0 auto;
+										margin: 0 auto 5px auto;
 										content: "";
 										height: 60px;
 										width: 60px;									
