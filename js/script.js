@@ -179,17 +179,20 @@ $(document).ready(function(){
 	// ouvrir la light box du login
 	$('.login.button').click(function(e){
 				e.preventDefault();
-				$('.lightbox.login').addClass('active');							 
+				$('.lightbox.login').addClass('active');
+				window.scrollTo(0, 0);							 
 	});	
 	// ouvrir la light box du signup
 	$('.signup.button').click(function(e){
 				e.preventDefault();
-				$('.lightbox.signup').addClass('active');							 
+				$('.lightbox.signup').addClass('active');	
+				window.scrollTo(0, 0);						 
 	});	
 	// ouvrir la light box du search
 	$('li>a.search').click(function(e){
 				e.preventDefault();
-				$('.lightbox.search').addClass('active');							 
+				$('.lightbox.search').addClass('active');
+				window.scrollTo(0, 0);							 
 	});
 	// Fermer n'importe quelle lightbox en cliquant sur la croix
 	$('button.close').click(function(e){
@@ -200,6 +203,13 @@ $(document).ready(function(){
 	// 			e.preventDefault();
 	// 			$('.lightbox').removeClass('active');							 
 	// });	
+
+	//Flexslider
+	$(window).load(function() {
+  		$('.flexslider').flexslider({
+    		animation: "slide"
+  		});
+	});
 
 
 

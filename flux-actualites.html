@@ -10,13 +10,15 @@
   <link rel="stylesheet" href="css/foundation.css" />
   <link rel="stylesheet" href="css/app.css" />
   <link rel="stylesheet" href="css/sass-style.css" />
+  <link rel="stylesheet" href="css/flexslider.css" />
+
 </head>
 
 <body>
 
   <header class="callout first-nav"> <!-- OFFLINE Navigation bar -->
     
-    <nav class="row large-12 columns">
+    <nav class="row expanded">
     <div class="large-4 medium-4 columns">
       <button class="menu-burger-trigger">
         <span></span>
@@ -26,8 +28,9 @@
       </div>    
       <h1 class="large-4 medium-4 columns"><img src="img/logo.svg" alt="Yokoso logo"></h1>
       <ul class="large-4 medium-4 columns fr-buttons">
-        <li><a class="login button float-right" href="javascript:void(0)">Se connecter</a></li>
-        <li><a class="signup button float-right" href="javascript:void(0)">S'inscrire</a></li>
+        <li><a class="signup button float-right" href="#">S'inscrire</a></li>
+        <li><a class="login button float-right" href="#">Se connecter</a></li>
+        
       </ul>
       
     </nav>
@@ -41,6 +44,7 @@
 			<li><a href="">Contact</a></li>			
 		</ul>
 	</nav>
+
 
 <!-- Les ligthbox ou pop in commune à toutes les pages-->
   <div class="lightbox login">
@@ -164,30 +168,69 @@
 
 <main id="base"> <!-- My main block -->
 
-<section id="slider">
-  <a href="#" class="control_next">></a>
-  <a href="#" class="control_prev"><</a>
-  <ul>
+<div class="flexslider">  
+  <ul class="slides">
     <li>
-      <img src="img/slide1.jpg" alt="">
-      <div><h2>Titre du slide 1</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia est sequi, debitis ducimus totam excepturi.</p></div>
-    </li>
-    <li>
-      <img src="img/slide2.jpg" alt="">
-     <div> <h2>Titre du slide 2</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia est sequi, debitis ducimus totam excepturi.</p></div>
-    </li>
-    <li>
-      <img src="img/slide3.jpg" alt="">
       <div>
-      
-      <h2>Titre du slide 3</h2>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia est sequi, debitis ducimus totam excepturi.</p>
+        <div>
+          <div>
+            <aside>
+              <p class="article-date">tags</p>
+              <p class="article-tag">tags</p>
+              <p class="article-tag">tags</p> 
+            </aside>
+            <article>
+              <h3>Titre de l'article 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos porro repellendus officia, nobis dolores suscipit!</p>
+            <div><a href="">Lire plus</a><button>></button></div>
+            </article>    
+          </div>
+        </div>
       </div>
+      <img src="img/slide1.jpg" />
     </li>
-  </ul>  
-</section>
+    <li>
+      <div>
+        <div>
+          <div>
+            <aside>
+              <p class="article-date">tags</p>
+              <p class="article-tag">tags</p>
+              <p class="article-tag">tags</p> 
+            </aside>
+            <article>
+              <h3>Titre de l'article 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos porro repellendus officia, nobis dolores suscipit!</p>
+            <div><a href="">Lire plus</a><button>></button></div>
+            </article>    
+          </div>
+        </div>
+      </div>
+      <img src="img/slide2.jpg" />
+    </li>
+    <li>
+      <div>
+        <div>
+          <div>
+            <aside>
+              <p class="article-date">tags</p>
+              <p class="article-tag">tags</p>
+              <p class="article-tag">tags</p> 
+            </aside>
+            <article>
+              <h3>Titre de l'article 1</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos porro repellendus officia, nobis dolores suscipit!</p>
+            <div><a href="">Lire plus</a><button>></button></div>
+            </article>    
+          </div>
+        </div>
+      </div>
+      <img src="img/slide3.jpg" />
+    </li>    
+  </ul>
+</div>
+
+
 
 <section class="line-of-article row">
   <article class="large-4 medium-4 columns">
@@ -350,6 +393,9 @@
   <script src="js/foundation.js"></script>
   <script src="js/app.js"></script>
   <script src="js/script.js"></script>
+  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script src="js/jquery.flexslider.js"></script>
+  
 </body>
 
 </html>
