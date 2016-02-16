@@ -296,7 +296,6 @@ div.lightbox > button.close {
 div.lightbox {
   width: 0vw;
   height: 0vh;
-  display: none;
   transform: scale(0); }
 
 nav#menu-push.online ul li .profil {

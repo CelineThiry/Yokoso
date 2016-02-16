@@ -202,7 +202,7 @@ $(document).ready(function(){
 				$('.lightbox').removeClass('active');							 
 	});	
 	// ouvrir la light box du search
-	$('li>a.search').click(function(e){
+	$('li>a#search-button').click(function(e){
 				e.preventDefault();
 				$('.lightbox.search').addClass('active');
 				window.scrollTo(0, 0);							 

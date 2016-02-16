@@ -35,34 +35,12 @@
       </ul>
       
     </nav>
-  </header> <!-- END online navigation bar -->
-
-    <!-- <header class="callout first-nav online">
-    
-    <nav class="row large-12 columns">
-    <div class="large-4 medium-4 columns">
-      <button class="menu-burger-trigger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      </div>    
-      <h1 class="large-4 medium-4 columns"><img src="img/logo.svg" alt="Yokoso logo"></h1>
-      <ul class="large-4 medium-4 columns fr-buttons">
-        <li><a class="profil button float-right" href="javascript:void(0)">Alicia_17</a></li>
-        <li><a class="courrier button float-right" href="javascript:void(0)"></a></li>
-        <li><a class="corresp button float-right" href="javascript:void(0)"></a></li>        
-      </ul>
-      
-    </nav>
-  </header>
- -->
- 
+  </header> <!-- END online navigation bar -->   
 
 
   <nav id="menu-push" class="online">
     <ul>
-      <li><a href="search">Chercher un correspondant</a></li>
+      <li><a id="search-button">Chercher un correspondant</a></li>
       <li><a href="flux-actualites.html">Flux d'actualités</a></li>
       <li><a href="a-propos.html">A propos</a></li>
       <li><a href="contact.html">Contact</a></li>   
@@ -80,59 +58,7 @@
     </ul>
   </nav>
 
-<!-- Les ligthbox ou pop in commune à toutes les pages-->
-  <div class="lightbox login">
-    <button class="close">⨯</button>
-    <section class="row">
-      <h2>Se connecter</h2>
-      
-      <form class="large-6 medium-6 columns"> <!-- Left column -->
-        <div><input id="email" type="email" placeholder="Adresse e-mail"></div>        
-        <div><input type="password" id="password" name="password" placeholder="Mot de passe"></div>
-        <p class="remember"><input type="checkbox">Se souvenir de moi</p> <a href="javascript:void(0)" class="forget">Mot de passe oublié?</a>
-        <input type="submit" value="Je me connecte !">
-        <p>Pas encore de compte ? <a href="" class="signup">Inscrivez-vous !</a></p>
-      </form><!-- END Left column -->
-      <div class="separator">
-      <span class="line"></span>
-      <p>or</p>
-      <span class="line"></span>
-      </div>
-      <form class="large-6 medium-6 columns"><!-- Right column -->
-        <input type="submit" class="facebook" value="Se connecter avec Facebook">
-        <input type="submit" class="twitter" value="Se connecter avec Twitter">
-        <input type="submit" class="google" value="Se connecter avec Google+">
-      </form><!-- END Right column -->
-      
-    </section>
-  </div> <!-- END lightbox login -->
-  <div class="lightbox signup">
-    <button class="close">⨯</button>
-    <section class="row">
-      <h2>S'inscrire</h2>
-      
-      <form class="large-6 medium-6 columns"> <!-- Left column -->
-        <div><input id="pseudo" type="text" placeholder="Pseudo"></div> 
-        <div><input id="email" type="email" placeholder="Adresse e-mail"></div>        
-        <div><input type="password" id="password" name="password" placeholder="Mot de passe"></div>
-        <p class="remember"><input type="checkbox">J'accepte <a href="javascript:void(0)">les conditions d'utilisation</a> de Yokoso</p> 
-        <input type="submit" value="Je m'inscris !">
-        <p>Déjà un compte ? <a href="javascript:void(0)" class="signup">Connectez-vous !</a></p>
-      </form><!-- END Left column -->
-      <div class="separator">
-      <span class="line"></span>
-      <p>or</p>
-      <span class="line"></span>
-      </div>
-      <form class="large-6 medium-6 columns"><!-- Right column -->
-        <input type="submit" class="facebook" value="S'inscrire avec Facebook">
-        <input type="submit" class="twitter" value="S'inscrire avec Twitter">
-        <input type="submit" class="google" value="S'inscrire avec Google+">
-      </form><!-- END Right column -->
-      
-    </section>
-  </div><!-- END lightbox signupt -->
-  <div class="lightbox search">
+  <div class="lightbox search"> <!-- lightbox search -->
     <button class="close">⨯</button>
     <section class="row">
       <h2>Chercher un correspondant</h2>
