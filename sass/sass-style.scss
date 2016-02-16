@@ -6,10 +6,13 @@ $block-height: 76px;
 $cherry-red: #d61232;
 $my-black: rgb(48,42,43);
 $global-border-radius: 4px;
+$global-button-hover-transition: background-color 0.25s ease-out 0s, color 0.25s ease-out 0s;
 
 button::focus{
 	outline-color: transparent;
 }
+
+h1, h2, h3, h4{color: $my-black;}
 
 
 body{
@@ -36,7 +39,7 @@ body{
 
 					a.login.button{
 						margin: 0px;	
-						transition: background-color 0.25s ease-out 0s, color 0.25s ease-out 0s;
+						transition: $global-button-hover-transition;
 						border: 0px solid transparent;
 						border-radius: $global-border-radius;
 						padding: 0.85em 1em;
@@ -54,7 +57,7 @@ body{
 
 				li{
 					a.signup.button{
-						transition: background-color 0.25s ease-out 0s, color 0.25s ease-out 0s;
+						transition: $global-button-hover-transition;
 						border: 0px solid transparent;
 						border-radius: 0px;
 						padding: 0.85em 1em;
@@ -602,15 +605,53 @@ main#base{
 
 			div.left-column{
 
-				img{
+				div.avatar{
+
+					position: relative;
+					display: block;
+					width: 15rem;
+					height: 15rem;
+					margin: 0 auto 1rem auto;
+
+					img{
+					position: relative;
 					display: block;
 					width: 15rem;
 					height: 15rem;
 					border-radius: 15rem;
-					background-color: lightcoral;
-					margin: 0 auto 1rem auto;
+					background-color: lightcoral;					
+					transition: opacity 0.25s ease-out 0s;
+					opacity: 1;
+					cursor: pointer;
+										
 
-				}
+						&:hover{
+							opacity: 0.5;
+												
+						}
+
+					}
+
+					p.choose-avatar{
+						content: "Choisir un avatar";
+						position: absolute;
+						display: block;
+						width: 100%;
+						line-height: 2rem;
+						top: 35%;
+						left: 0;
+						right: 0;
+						text-align: center;
+						font-size: 2rem;
+						z-index: -1;
+						color: white;
+						transition: z-index 0.25s ease-out 0s;
+
+						&:hover{
+							z-index: 2000000;							
+						}
+					}
+				}				
 
 				div{
 
@@ -674,6 +715,12 @@ main#base{
 					border-radius: $global-border-radius;
 					padding: 0 1rem 0 1rem;
 					margin-bottom: 1rem;
+					transition: $global-button-hover-transition;
+
+					&:hover{
+						background-color: $cherry-red;
+						color: white;
+					}
 				}
 
 				button.manage-account{
@@ -686,31 +733,293 @@ main#base{
 					border-radius: $global-border-radius;
 					padding: 0 1rem 0 1rem;
 					margin-bottom: 1rem;
+					transition: $global-button-hover-transition;
+
+					&:hover{
+						background-color: white;
+						color: $my-black;
+					}
 				}
 
 			}
 
 			div.right-column{
 
+				div:first-child{
+					width: 50%;
+					background-color: transparent;
+				}
+
 				div{
 
-					background-color: $my-black*5;
+					background-color: white;
 					margin-bottom: 1rem;
+					padding: 1rem 1rem 1rem 1rem;
 
-					h2{
-
+					input[type="text"][placeholder="Nouvel_inscrit"]{
+						font-size: 2rem;
+						color: $my-black;						
+						
 					}
 
-					input{
+					h2{
+						font-size: 2rem;
+						position: relative;
+
+						&:after{
+							content: "";
+							position: absolute;
+							top: 0;
+							right:0;
+							width: 30px;
+							height: 100%;
+							
+							background-image: url('../img/iconset_yokoso_sprite_black.svg');
+							background-repeat: no-repeat;
+							background-position: center -60px;
+							background-size: cover;
+						}
+					}
+
+					textarea{
+						border: 0px none transparent;
+						box-shadow: 0px;
+						width: 100%;
+						min-height: 100px;
+						max-height: 100%;
+						background-color: transparent;
+					}
+
+					input[type="text"]{
+
+						border: 0px none transparent;
+						box-shadow: 0px;
+						width: 100%;
+						height: 100%;
+						background-color: transparent;
 
 					}
 
 					div{
+
+						background-color: transparent;
+						margin-bottom: 1rem;
+						width: 100%;
+						height: 30px;
+						padding-left: 0px;
+
+
 						label{
+
+							width: 25%;
+							float: left;
 
 						}
 
 						select{
+							line-height: 30px;
+							border: 0 !important;  /*Removes border*/
+    						-webkit-appearance: none;  /*Removes default chrome and safari style*/
+    						-moz-appearance: none; /* Removes Default Firefox style*/
+    						background-image: url('../img/iconset_yokoso_sprite_black.svg');
+							background-repeat: no-repeat;
+							background-position: center -20px;
+							background-size: cover;
+							
+    						 /*Width of select dropdown to give space for arrow image*/
+    						text-indent: 0.01px; /* Removes default arrow from firefox*/
+    						text-overflow: "";  /*Removes default arrow from firefox*/
+    						outline-color: rgba(0,0,0,0);    						
+							color: grey;
+							width: 75%;							
+							background: transparent;
+							float: left;
+
+						}
+					}
+				}
+
+			}
+
+		}
+	}
+}
+
+main#base{
+	section#profil-corres{
+		
+		margin: 96px auto 20px auto;
+
+		section.row{
+
+			div.left-column{
+
+				img{
+					display: block;
+					width: 15rem;
+					height: 15rem;
+					border-radius: 15rem;
+					background-color: lightcoral;
+					margin: 0 auto 1rem auto;
+					transition: opacity ;
+
+				}
+
+				div{
+
+					margin-bottom: 10px;
+					height: 30px;
+
+					label{
+						width: 50%;
+						float: left;
+						text-align: right;
+						line-height: 30px;
+						padding-right: 1rem;
+
+					}
+
+					p{
+
+						color: grey;
+						width: 50%;
+						float: left;
+						line-height: 30px;					
+					}
+
+					div{
+
+						width: 50%;
+						float: left;
+
+						p.birthdate{
+							width: 33.33%;
+							float: left;
+							color: grey;
+							line-height: 30px;
+						}
+					}		
+
+				}
+
+				input[type="submit"].add-corres{
+					display: block;
+					height: 50px;
+					width: 100%;
+					background-color: white;
+					box-shadow: 0px;
+					border: none;
+					border-radius: $global-border-radius;
+					padding: 0 1rem 0 1rem;
+					margin-bottom: 1rem;
+					transition: $global-button-hover-transition;
+
+					&:hover{
+						background-color: $cherry-red;
+						color: white;
+					}
+				}
+
+				input[type="submit"].add-corres.on{
+					display: block;
+					height: 50px;
+					width: 100%;
+					background-color: $cherry-red;
+					box-shadow: 0px;
+					border: none;
+					border-radius: $global-border-radius;
+					padding: 0 1rem 0 1rem;
+					margin-bottom: 1rem;
+					color: white;
+					transition: $global-button-hover-transition;
+
+					&:hover{
+						background-color: white;
+						color: $my-black;
+					}
+				}
+
+				button.etc{
+					display: block;
+					border-color: $my-black;
+					border-style: solid;
+					border-width: 1px;
+					height: 50px;
+					width: 100%;
+					border-radius: $global-border-radius;
+					padding: 0 1rem 0 1rem;
+					margin-bottom: 1rem;
+					transition: $global-button-hover-transition;
+
+					&:hover{
+						background-color: white;
+						color: $my-black;
+					}
+				}
+
+			}
+
+			div.right-column{
+
+				div:first-child{
+					width: 50%;
+					background-color: transparent;
+					padding-bottom: 0;
+
+				}
+
+				div:last-child{
+					p.interest-tag{
+						display: inline-block;
+						vertical-align: top;
+						height: 30px;
+						background-color: grey;
+						padding: 0 1rem 0 1rem;
+						color: white;
+						width: initial;
+						border-radius: $global-border-radius;
+					}
+				}
+
+				div{
+
+					background-color: white;
+					margin-bottom: 1rem;
+					padding: 1rem 1rem 1rem 1rem;					
+
+					h2{
+						font-size: 2rem;
+						position: relative;						
+					}
+
+					p{					
+						width: 100%;						
+						background-color: transparent;
+						color: grey;
+					}
+
+					
+					div{
+
+						background-color: transparent;
+						margin-bottom: 1rem;
+						width: 100%;
+						// height: 30px;
+						padding-left: 0px;
+						padding-top: 0px;
+
+						label{
+
+							width: 25%;
+							float: left;
+
+						}
+
+						p{
+							
+							color: grey;
+							float: left;
+							width: 75%;
 
 						}
 					}

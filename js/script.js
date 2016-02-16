@@ -17,6 +17,8 @@ $(document).ready(function(){
 			// });		
 	});
 
+	
+
 	//Slideshow	
 	  // $('#checkbox').change(function(){
    //  setInterval(function () {

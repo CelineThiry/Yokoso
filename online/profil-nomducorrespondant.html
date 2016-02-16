@@ -40,21 +40,6 @@
     </nav>
   </header> <!-- END online navigation bar -->
 
-  <!-- Les ligthbox ou pop in commune à toutes les pages-->
-  <div class="lightbox avatar">
-    <button class="close">⨯</button>
-    <section class="row">
-      <h2>Choisir un avatar</h2>
-      
-      <div class="large-2 medium-3 columns"><img src="../img/slide2.jpg" alt=""></div>
-      <div class="large-2 medium-3 columns"><img src="" alt=""></div>
-      <div class="large-2 medium-3 columns"><img src="" alt=""></div>
-      <div class="large-2 medium-3 columns"><img src="" alt=""></div>
-      <div class="large-2 medium-3 columns"><img src="" alt=""></div>
-      <div class="large-2 medium-3 columns"><img src="" alt=""></div>     
-    </section>
-  </div> <!-- END lightbox login -->
-
 
 <nav id="menu-push" class="online">
     <ul>
@@ -79,111 +64,79 @@
    
 <main id="base">
 
-<section id="profil">
+<section id="profil-corres">
   <section class="row">
     <div class="left-column large-4 medium-4 columns"> <!-- Colonne de gauche -->
-      <div class="avatar">
       <img src="" alt="">
-      <p class="choose-avatar">Choisir<br>un avatar</p>
-      </div>
       <div class="">
         <label for="">Langue maternelle</label>
-        <select name="native-lang" id="native-lang">
-          <option value="fr">Français</option>
-          <option value="fr">Japonais</option>
-        </select>
+        <p>Japonais</p>
       </div>
 
       <div class="">
         <label for="">Date de naissance</label>
         <div>
-          <select name="birthdate" id="day">
-          <option value="Monday">Lundi</option>
-          <option value="Tuesday">Mardi</option>
-        </select>
-        <select name="birthdate" id="month">
-          <option value="January">Janvier</option>
-          <option value="February">Février</option>
-        </select>
-        <select name="birthdate" id="year">
-          <option value="fr">1920</option>
-          <option value="fr">1921</option>
-        </select>          
+          <p class="birthdate">17</p>
+          <p class="birthdate">10</p>
+          <p class="birthdate">1989</p>         
         </div>
         
       </div>
 
       <div class="">
         <label for="">Genre</label>
-        <select name="gender" id="gender">
-          <option value="male">Homme</option>
-          <option value="female">Femme</option>
-        </select>
+        <p>Femme</p>
       </div>
 
       <div class="">
         <label for="">Pays</label>
-        <select name="country" id="country">
-          <option value="belgium">Belgique</option>
-          <option value="france">France</option>
-          <option value="japan">Japon</option>
-        </select>
+        <p>Belgique</p>
       </div>
 
       <div class="">
         <label for="">Ville</label>
-        <select name="town" id="town">
-          <option value="brussels">Bruxelles</option>
-          <option value="paris">Paris</option>
-          <option value="tokyo">Tokyo</option>
-        </select>
+        <p>Bruxelles</p>
       </div>
 
       <hr>
       
-      <input type="submit" class="update" value="Mettre à jour">
-      <button class="manage-account">Gérer mon compte</button>
+      <input type="submit" class="add-corres" value="Ajouter à mes correspondants">
+      <!-- <input type="submit" value="Fait partie de vos correspondants"> -->
+      <button class="etc">...</button>
       
     </div><!-- FIN Colonne de gauche -->
 
     <div class="right-column large-8 medium-8 columns"><!-- Colonne de droite -->
     <div class="">
-      <input type="text" placeholder="Nouvel_inscrit">
+      <h2>Mayuri</h2>
     </div> 
     <div class="">
       <h2 for="">A propos</h2>
-      <textarea placeholder="Ecrivez ici votre annonce pour recevoir des lettres de futurs correspodants. Pas la peine d’écrire un roman, quelques lignes succinctes et efficaces suffiront !"></textarea> 
+      <p>Ecrivez ici votre annonce pour recevoir des lettres de futurs correspodants. Pas la peine d’écrire un roman, quelques lignes succinctes et efficaces suffiront !</p>
     </div>
     
     <div class="">
-      <h2 for="">Langues</h2>
+      <h2>Langues</h2>
         <div>
           <label for="">Anglais</label>
-
-          <select name="level" id="level">
-            <option value="level">Débutant</option>
-            <option value="level">Intermédiaire</option>
-            <option value="level">Avancé</option>
-            <option value="level">Bilingue ou langue maternelle</option>
-          </select>
+          <p>Avancé</p>
         </div>
 
         <div>
           <label for="">Français</label>
-                  
-          <select name="level" id="level">
-            <option value="level">Débutant</option>
-            <option value="level">Intermédiaire</option>
-            <option value="level">Avancé</option>
-            <option value="level">Bilingue ou langue maternelle</option>
-          </select>
+          <p>Avancé</p>
         </div>
     </div>
     
     
     <div class="">
-      <h2 for="">Centres d'intérêts</h2>
-      <input type="text" placeholder="Exemple : Tennis, Cuisine, Equitation..."> 
+      <h2>Centres d'intérêts</h2>
+      <p class="interest-tag">tennis</p>
+      <p class="interest-tag">sport</p>
+      <p class="interest-tag">violon</p>
+      <p class="interest-tag">musique classique</p>
+      <p class="interest-tag">Surf sur le net</p>
+
     </div>
       
     </div><!-- FIN Colonne de droite -->
