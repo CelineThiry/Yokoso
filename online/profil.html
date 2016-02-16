@@ -66,20 +66,78 @@
 
 <section id="profil">
   <section class="row">
-    <div class="large-4 medium-4 columns"> <!-- Colonne de gauche -->
-    
+    <div class="left-column large-4 medium-4 columns"> <!-- Colonne de gauche -->
+      <img src="" alt="">
+      <div class="">
+        <label for="">Langue maternelle</label>
+        <select name="native-lang" id="native-lang">
+          <option value="fr">Français</option>
+          <option value="fr">Japonais</option>
+        </select>
+      </div>
+
+      <div class="">
+        <label for="">Date de naissance</label>
+        <div>
+          <select name="birthdate" id="day">
+          <option value="Monday">Lundi</option>
+          <option value="Tuesday">Mardi</option>
+        </select>
+        <select name="birthdate" id="month">
+          <option value="January">Janvier</option>
+          <option value="February">Février</option>
+        </select>
+        <select name="birthdate" id="year">
+          <option value="fr">1920</option>
+          <option value="fr">1921</option>
+        </select>          
+        </div>
+        
+      </div>
+
+      <div class="">
+        <label for="">Genre</label>
+        <select name="gender" id="gender">
+          <option value="male">Homme</option>
+          <option value="female">Femme</option>
+        </select>
+      </div>
+
+      <div class="">
+        <label for="">Pays</label>
+        <select name="country" id="country">
+          <option value="belgium">Belgique</option>
+          <option value="france">France</option>
+          <option value="japan">Japon</option>
+        </select>
+      </div>
+
+      <div class="">
+        <label for="">Ville</label>
+        <select name="town" id="town">
+          <option value="brussels">Bruxelles</option>
+          <option value="paris">Paris</option>
+          <option value="tokyo">Tokyo</option>
+        </select>
+      </div>
+
+      <hr>
+      
+      <input type="submit" value="Mettre à jour">
+      <button class="manage-account">Gérer mon compte</button>
       
     </div><!-- FIN Colonne de gauche -->
-    <div class="large-8 medium-8 columns"><!-- Colonne de droite -->
-    <div class="row">
+
+    <div class="right-column large-8 medium-8 columns"><!-- Colonne de droite -->
+    <div class="">
       <input type="text" placeholder="Nouvel_inscrit">
     </div> 
-    <div class="row">
+    <div class="">
       <h2 for="">A propos</h2>
       <input type="text" placeholder="Ecrivez ici votre annonce pour recevoir des lettres de futurs correspodants. Pas la peine d’écrire un roman, quelques lignes succinctes et efficaces suffiront !"> 
     </div>
     
-    <div class="row">
+    <div class="">
       <h2 for="">Langues</h2>
         <div>
           <label for="">Anglais</label>
@@ -105,8 +163,8 @@
     </div>
     
     
-    <div class="row">
-      <h2 for="">A propos</h2>
+    <div class="">
+      <h2 for="">Centres d'intérêts</h2>
       <input type="text" placeholder="Exemple : Tennis, Cuisine, Equitation..."> 
     </div>
       
