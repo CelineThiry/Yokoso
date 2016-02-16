@@ -198,6 +198,8 @@ div.lightbox.active{
 	display: block;
 	overflow-y: hidden;
 	overflow: hidden;
+	transition: transform 0.25s ease-out 0s;
+	transform: scale(1);
 	// transition-property: transform;
 	// transition-duration: 1s;
 	// transition-timing-function: ease-out;
@@ -361,6 +363,42 @@ div.lightbox.active{
 
 }
 
+div.lightbox.avatar.active{
+	section{
+
+		
+		div{
+
+			overflow-y: auto;
+			overflow-x: hidden;
+			max-height: 450px;
+			text-align: center;
+
+			figure{
+					display: inline-block;
+					vertical-align: top;
+					margin: 1rem;
+					width:150px;
+					height: 150px;
+					border-radius: 150px;
+					cursor: pointer;
+					background-color: pink;
+					overflow: hidden;
+					opacity: 1;
+					transition: $global-button-hover-transition;
+
+					&:hover{
+						opacity: 0.5;
+					}
+
+					img{
+						height: 100%;			
+					}				
+			}
+		}	
+	}
+}
+
 div.lightbox.active.search{
 
 	section{
@@ -496,6 +534,7 @@ div.lightbox{
 	width: 0vw;
 	height: 0vh;
 	display: none;
+	transform: scale(0);
 	// transform: translate(-100vw, 0);
 }
 
@@ -605,7 +644,7 @@ main#base{
 
 			div.left-column{
 
-				div.avatar{
+				figure.avatar{
 
 					position: relative;
 					display: block;
@@ -632,8 +671,7 @@ main#base{
 
 					}
 
-					p.choose-avatar{
-						content: "Choisir un avatar";
+					figcaption.choose-avatar{						
 						position: absolute;
 						display: block;
 						width: 100%;

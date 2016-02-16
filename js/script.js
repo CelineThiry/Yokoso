@@ -17,7 +17,7 @@ $(document).ready(function(){
 			// });		
 	});
 
-	
+
 
 	//Slideshow	
 	  // $('#checkbox').change(function(){
@@ -189,6 +189,17 @@ $(document).ready(function(){
 				e.preventDefault();
 				$('.lightbox.signup').addClass('active');	
 				window.scrollTo(0, 0);						 
+	});	
+	// ouvrir la light box avatar
+	$('#profil figure.avatar').click(function(e){
+				e.preventDefault();
+				$('.lightbox.avatar').addClass('active');
+				window.scrollTo(0, 0);
+	});	
+	// Fermer la light box avatar
+	$('.lightbox.avatar figure').click(function(e){
+				e.preventDefault();
+				$('.lightbox').removeClass('active');							 
 	});	
 	// ouvrir la light box du search
 	$('li>a.search').click(function(e){

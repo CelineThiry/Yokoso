@@ -115,7 +115,9 @@ div.lightbox.active {
   z-index: 10000000000;
   display: block;
   overflow-y: hidden;
-  overflow: hidden; }
+  overflow: hidden;
+  transition: transform 0.25s ease-out 0s;
+  transform: scale(1); }
   div.lightbox.active section {
     position: relative; }
     div.lightbox.active section div.separator {
@@ -231,6 +233,28 @@ div.lightbox.active {
           color: #302a2b;
           background: white; }
 
+div.lightbox.avatar.active section div {
+  overflow-y: auto;
+  overflow-x: hidden;
+  max-height: 450px;
+  text-align: center; }
+  div.lightbox.avatar.active section div figure {
+    display: inline-block;
+    vertical-align: top;
+    margin: 1rem;
+    width: 150px;
+    height: 150px;
+    border-radius: 150px;
+    cursor: pointer;
+    background-color: pink;
+    overflow: hidden;
+    opacity: 1;
+    transition: background-color 0.25s ease-out 0s, color 0.25s ease-out 0s; }
+    div.lightbox.avatar.active section div figure:hover {
+      opacity: 0.5; }
+    div.lightbox.avatar.active section div figure img {
+      height: 100%; }
+
 div.lightbox.active.search .dropdown {
   background-color: blue;
   width: 100%; }
@@ -272,7 +296,8 @@ div.lightbox > button.close {
 div.lightbox {
   width: 0vw;
   height: 0vh;
-  display: none; }
+  display: none;
+  transform: scale(0); }
 
 nav#menu-push.online ul li .profil {
   display: inline-block;
@@ -325,13 +350,13 @@ main#base header.second-nav {
 
 main#base section#profil {
   margin: 96px auto 20px auto; }
-  main#base section#profil section.row div.left-column div.avatar {
+  main#base section#profil section.row div.left-column figure.avatar {
     position: relative;
     display: block;
     width: 15rem;
     height: 15rem;
     margin: 0 auto 1rem auto; }
-    main#base section#profil section.row div.left-column div.avatar img {
+    main#base section#profil section.row div.left-column figure.avatar img {
       position: relative;
       display: block;
       width: 15rem;
@@ -341,10 +366,9 @@ main#base section#profil {
       transition: opacity 0.25s ease-out 0s;
       opacity: 1;
       cursor: pointer; }
-      main#base section#profil section.row div.left-column div.avatar img:hover {
+      main#base section#profil section.row div.left-column figure.avatar img:hover {
         opacity: 0.5; }
-    main#base section#profil section.row div.left-column div.avatar p.choose-avatar {
-      content: "Choisir un avatar";
+    main#base section#profil section.row div.left-column figure.avatar figcaption.choose-avatar {
       position: absolute;
       display: block;
       width: 100%;
@@ -357,7 +381,7 @@ main#base section#profil {
       z-index: -1;
       color: white;
       transition: z-index 0.25s ease-out 0s; }
-      main#base section#profil section.row div.left-column div.avatar p.choose-avatar:hover {
+      main#base section#profil section.row div.left-column figure.avatar figcaption.choose-avatar:hover {
         z-index: 2000000; }
   main#base section#profil section.row div.left-column div {
     margin-bottom: 10px;
