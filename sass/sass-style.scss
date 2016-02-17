@@ -86,59 +86,6 @@ body{
 	}
 }
 
-/* ====================================================================================================================
- * Index.html
- * ====================================================================================================================*/
-#content{
-	padding-bottom: 220px;
-}
-
-// General
-section.home{
-	background-color: white;
-	padding-top: 50px;
-	padding-bottom: 50px;
-	margin-bottom: 50px;
-
-	h1{
-		text-align: center;
-		
-	}
-}
-
-.last-signed-up{
-	h1{}
-	ul{
-		text-align: center;
-
-		li{
-
-			display: inline-block;
-			vertical-align: top;
-
-			a{
-				figure.avatar{
-
-					padding: 1rem;
-
-					img{
-						height: 100px;
-						width: 100px;
-						border-radius: 100px;
-						background-color: lightcoral;
-						display: block;
-						margin: 0 auto 1rem auto;
-					}
-					figcaption{
-						text-align: center;
-
-					}
-				}
-			}
-		}
-	}
-}
-
 header.first-nav.online{
 	nav{
 		div{
@@ -243,7 +190,7 @@ div.lightbox.active{
 	background-color: $lightbox-bgc;
 	width: 100%;
 	height: 100vh;
-	position: fixed;
+	position: absolute;
 	top: 0;
 	right: 0;
 	left:0;	
@@ -262,26 +209,26 @@ div.lightbox.active{
 
 		position: relative;
 
-		// div.separator{
-		// 	width: 0px;
-		// 	background-color: yellow;
-		// 	margin: auto;
-		// 	position: absolute;
-		// 	top: 114px;
-		// 	right: 50%;
-		// 	left: 50%;
+		div.separator{
+			width: 0px;
+			background-color: yellow;
+			margin: auto;
+			position: absolute;
+			top: 114px;
+			right: 50%;
+			left: 50%;
 
-		// 	span.line{
-		// 	display: inline-block;
-		// 	width: 1px;
-		// 	height: 150px;
-		// 	background-color: white;
-		// 	text-align: center;
-		// 	}
+			span.line{
+			display: inline-block;
+			width: 1px;
+			height: 150px;
+			background-color: white;
+			text-align: center;
+			}
 
-		// 	p{margin-left: -5px; color:white; font-size: 1rem; text-align: center;}
+			p{margin-left: -5px; color:white; font-size: 1rem; text-align: center;}
 		
-		// }
+		}
 
 		h2{
 			text-align: center;
@@ -294,64 +241,56 @@ div.lightbox.active{
 			background-color: transparent;
 			padding: 20px 100px 20px 100px;
 
-			div{
-				// display: block;
-				height: $block-height;
+			p{
+				font-weight: 300;
+				font-size: 1rem;
+				color: white;								
+			}
 
-				p{
-					font-weight: 300;
-					font-size: 1rem;
-					color: white;								
+			p.remember{
+				float: left;
+				z-index: 1000000000;
+
+
+				input[type="checkbox"]:not(:checked){
+						margin-right: 10px;
+						-webkit-appearance: none;
+					    width: 17px; height: 17px;
+  						border: 0px none transparent;
+  						background: white;
+  						border-radius: 0;
+  						box-shadow: inset 0 0px 0px rgba(0,0,0,0);
+  						box-shadow: 0px;
+  						outline-color: transparent;					    
 				}
 
-				p.remember{
-					float: left;
-					z-index: 1000000000;
+				input[type="checkbox"]:checked{
+					    margin-right: 10px;
+					    width: 17px; height: 17px;
+							
+				}				
+			}
 
+			a.forget{
+				float: right;	
+				z-index: 1000000000;			
+			}
 
-					input[type="checkbox"]:not(:checked){
-							margin-right: 10px;
-							-webkit-appearance: none;
-						    width: 17px; height: 17px;
-	  						border: 0px none transparent;
-	  						background: white;
-	  						border-radius: 0;
-	  						box-shadow: inset 0 0px 0px rgba(0,0,0,0);
-	  						box-shadow: 0px;
-	  						outline-color: transparent;	
-	  						float: left;				    
-					}
+			a{
+				font-weight: 300;
+				font-size: 1rem;
+				color: white;
+				text-decoration: underline;
 
-					input[type="checkbox"]:checked{
-						    margin-right: 10px;
-						    width: 17px; height: 17px;
-						    float: left;
-								
-					}				
+				&:hover{
+				color: $cherry-red;
 				}
-
-				a.forget.simple-link{
-					float: right;	
-					z-index: 1000000000;			
-				}
-
-				a.simple-link{
-					font-weight: 300;
-					font-size: 1rem;
-					color: white;
-					text-decoration: underline;
-
-					&:hover{
-					color: $cherry-red;
-					}
-				}	
-
-			}		
+			}			
 
 			div{
 				margin: 0 0 1rem 0;
 				position: relative;
-				/* display: block; */
+				display: block;
 
 				input{
 					display: block;
@@ -371,23 +310,26 @@ div.lightbox.active{
 								
 			}
 
-			.my-button{
-					text-decoration: none;
+			input[type="submit"]{
 					display: block;
-					height: $block-height;
     				width: 100%;
     				outline: none;
-    				font-family: $global-font;				
+    				font-family: $global-font;
+					
 					margin: 0 0 1rem 0;
-					position: relative;					
+					position: relative;
+					display: block;
+					
 					border: none;
-					border-radius: $global-border-radius;							
+					border-radius: $global-border-radius;
+					outline: none;					
+					padding: 1.4rem 1rem 1.4rem 1rem;  /*0.7em 0*/
 					color: white;
 					background: $cherry-red;
-					font-size: 1.2rem;
-					line-height: $block-height;					
-					font-weight: 300;
-					text-align: center;
+					font-size: 1.2em;
+					line-height: 1.6em;
+					cursor: pointer;
+					font-weight: 400;
 
 					&:hover{
 						color: $my-black;
@@ -395,21 +337,21 @@ div.lightbox.active{
 					}
 			}
 			
-			.facebook{
-				@extend .my-button;
+			input[type="submit"].facebook{
+				@extend input[type="submit"];
 				background: #3A5795;
 
 				&:hover{color: $my-black; background: white;}
 			}
 
-			.twitter{
-				@extend .my-button;
+			input[type="submit"].twitter{
+				@extend input[type="submit"];
 				background: #1DA1F2;
 
 				&:hover{color: $my-black; background: white;}
 			}
-			.google{
-				@extend .my-button;
+			input[type="submit"].google{
+				@extend input[type="submit"];
 				background: #D73D32;
 
 				&:hover{color: $my-black; background: white;}
@@ -592,7 +534,6 @@ div.lightbox{
 	width: 0vw;
 	height: 0vh;
 	display: none;
-	position: absolute;
 	transform: scale(0);
 	// transform: translate(-100vw, 0);
 }
@@ -1070,7 +1011,7 @@ main#base{
 main#base{
 	div.flexslider{
 		margin: 76px auto 20px auto;
-		overflow-x: hidden;
+
 	}
 }
 
@@ -1383,7 +1324,7 @@ section.line-of-article{
 
 section.pagination{
 
-	/* padding-bottom: 250px; */
+	padding-bottom: 250px;
 
 	ul{
 
@@ -1493,7 +1434,7 @@ body>main#base>footer{
 	height: 200px;
 	background-color: white;
 	padding: 40px;
-	// margin-top: 20px;
+	margin-top: 20px;
 	transition-property: transform;
 	transition-duration: 0.4s;
 	transition-timing-function: cubic-bezier(0, 0.99, 0.13, 0.995);
