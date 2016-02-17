@@ -39,7 +39,7 @@
 	<nav id="menu-push">
 		<ul>
 			<li><a href="" class="search">Chercher un correspondant</a></li>
-			<li><a href="flux-actualites">Flux d'actualités</a></li>
+			<li><a href="flux-actualites.html">Flux d'actualités</a></li>
 			<li><a href="">A propos</a></li>
 			<li><a href="">Contact</a></li>			
 		</ul>
@@ -55,19 +55,24 @@
       <form class="large-6 medium-6 columns"> <!-- Left column -->
         <div><input id="email" type="email" placeholder="Adresse e-mail"></div>        
         <div><input type="password" id="password" name="password" placeholder="Mot de passe"></div>
-        <p class="remember"><input type="checkbox">Se souvenir de moi</p> <a href="javascript:void(0)" class="forget">Mot de passe oublié?</a>
-        <input type="submit" value="Je me connecte !">
-        <p>Pas encore de compte ? <a href="" class="signup">Inscrivez-vous !</a></p>
+        <div>
+          <p class="remember"><input type="checkbox">Se souvenir de moi</p> <a href="javascript:void(0)" class="forget simple-link">Mot de passe oublié?</a>
+        </div>
+        <a href="online/tableau-de-bord.html" class="login my-button">Je me connecte !</a>
+        <div>
+          <p>Pas encore de compte ? <a href="" class="simple-link">Inscrivez-vous !</a></p>
+        </div>
       </form><!-- END Left column -->
-      <div class="separator">
+      <!-- <div class="separator">
       <span class="line"></span>
       <p>or</p>
       <span class="line"></span>
-      </div>
+      </div> -->
       <form class="large-6 medium-6 columns"><!-- Right column -->
-        <input type="submit" class="facebook" value="Se connecter avec Facebook">
-        <input type="submit" class="twitter" value="Se connecter avec Twitter">
-        <input type="submit" class="google" value="Se connecter avec Google+">
+        <a href="online/tableau-de-bord.html" class="login my-button facebook">Se connecter avec Facebook</a>
+        <a href="online/tableau-de-bord.html" class="login my-button twitter">Se connecter avec Twitter</a>
+        <a href="online/tableau-de-bord.html" class="login my-button google">Se connecter avec Google+</a>
+        
       </form><!-- END Right column -->      
     </section>
   </div> <!-- END lightbox login -->
@@ -81,19 +86,23 @@
         <div><input id="pseudo" type="text" placeholder="Pseudo"></div> 
         <div><input id="email" type="email" placeholder="Adresse e-mail"></div>        
         <div><input type="password" id="password" name="password" placeholder="Mot de passe"></div>
-        <p class="remember"><input type="checkbox">J'accepte <a href="javascript:void(0)">les conditions d'utilisation</a> de Yokoso</p> 
-        <input type="submit" value="Je m'inscris !">
-        <p>Déjà un compte ? <a href="javascript:void(0)" class="signup">Connectez-vous !</a></p>
+        <div>
+          <p class="remember"><input type="checkbox">J'accepte <a class="simple-link" href="javascript:void(0)">les conditions d'utilisation</a> de Yokoso</p> 
+        </div>
+        <a href="online/tableau-de-bord.html" class="login my-button">Je m'inscris !</a>
+        <div>
+          <p>Déjà un compte ? <a href="javascript:void(0)" class="simple-link">Connectez-vous !</a></p>
+        </div>
       </form><!-- END Left column -->
-      <div class="separator">
+     <!--  <div class="separator">
       <span class="line"></span>
       <p>or</p>
       <span class="line"></span>
-      </div>
+      </div> -->
       <form class="large-6 medium-6 columns"><!-- Right column -->
-        <input type="submit" class="facebook" value="S'inscrire avec Facebook">
-        <input type="submit" class="twitter" value="S'inscrire avec Twitter">
-        <input type="submit" class="google" value="S'inscrire avec Google+">
+        <a href="online/tableau-de-bord.html" class="login my-button facebook">Se connecter avec Facebook</a>
+        <a href="online/tableau-de-bord.html" class="login my-button twitter">Se connecter avec Twitter</a>
+        <a href="online/tableau-de-bord.html" class="login my-button google">Se connecter avec Google+</a>
       </form><!-- END Right column -->
       
     </section>
@@ -168,7 +177,9 @@
 
 <main id="base"> <!-- My main block -->
 
-<div class="flexslider">  <!-- FLEXSLIDER -->
+<div id="content">
+  
+  <div class="flexslider">  <!-- FLEXSLIDER -->
   <ul class="slides">
     <li>
       <div>
@@ -229,8 +240,6 @@
     </li>    
   </ul>
 </div> <!-- FIN FLEWSLIDER -->
-
-
 
 <section class="line-of-article row">
   <article class="large-4 medium-4 columns">
@@ -350,7 +359,7 @@
   </ul>
 </section>
 
-</main> <!-- End My main block -->
+</div>
 
 <footer>
   <div class="row">
@@ -386,6 +395,10 @@
     </div>
   </div>
 </footer>
+
+</main> <!-- End My main block -->
+
+
   
 
   <script src="js/vendor/jquery.min.js"></script>
