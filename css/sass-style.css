@@ -43,6 +43,37 @@ body {
       text-align: center;
       padding: 5px 0 0 0; }
 
+/* ====================================================================================================================
+ * Index.html
+ * ====================================================================================================================*/
+#content {
+  padding-bottom: 220px; }
+
+section.home {
+  background-color: white;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-bottom: 50px; }
+  section.home h1 {
+    text-align: center; }
+
+.last-signed-up ul {
+  text-align: center; }
+  .last-signed-up ul li {
+    display: inline-block;
+    vertical-align: top; }
+    .last-signed-up ul li a figure.avatar {
+      padding: 1rem; }
+      .last-signed-up ul li a figure.avatar img {
+        height: 100px;
+        width: 100px;
+        border-radius: 100px;
+        background-color: lightcoral;
+        display: block;
+        margin: 0 auto 1rem auto; }
+      .last-signed-up ul li a figure.avatar figcaption {
+        text-align: center; }
+
 header.first-nav.online nav ul li .contact {
   position: relative;
   height: 40px;
@@ -108,7 +139,7 @@ div.lightbox.active {
   background-color: rgba(48, 42, 43, 0.9);
   width: 100%;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   left: 0;
@@ -120,25 +151,6 @@ div.lightbox.active {
   transform: scale(1); }
   div.lightbox.active section {
     position: relative; }
-    div.lightbox.active section div.separator {
-      width: 0px;
-      background-color: yellow;
-      margin: auto;
-      position: absolute;
-      top: 114px;
-      right: 50%;
-      left: 50%; }
-      div.lightbox.active section div.separator span.line {
-        display: inline-block;
-        width: 1px;
-        height: 150px;
-        background-color: white;
-        text-align: center; }
-      div.lightbox.active section div.separator p {
-        margin-left: -5px;
-        color: white;
-        font-size: 1rem;
-        text-align: center; }
     div.lightbox.active section h2 {
       text-align: center;
       color: white;
@@ -147,42 +159,46 @@ div.lightbox.active {
     div.lightbox.active section form {
       background-color: transparent;
       padding: 20px 100px 20px 100px; }
-      div.lightbox.active section form p {
-        font-weight: 300;
-        font-size: 1rem;
-        color: white; }
-      div.lightbox.active section form p.remember {
-        float: left;
-        z-index: 1000000000; }
-        div.lightbox.active section form p.remember input[type="checkbox"]:not(:checked) {
-          margin-right: 10px;
-          -webkit-appearance: none;
-          width: 17px;
-          height: 17px;
-          border: 0px none transparent;
-          background: white;
-          border-radius: 0;
-          box-shadow: inset 0 0px 0px transparent;
-          box-shadow: 0px;
-          outline-color: transparent; }
-        div.lightbox.active section form p.remember input[type="checkbox"]:checked {
-          margin-right: 10px;
-          width: 17px;
-          height: 17px; }
-      div.lightbox.active section form a.forget {
-        float: right;
-        z-index: 1000000000; }
-      div.lightbox.active section form a {
-        font-weight: 300;
-        font-size: 1rem;
-        color: white;
-        text-decoration: underline; }
-        div.lightbox.active section form a:hover {
-          color: #d61232; }
+      div.lightbox.active section form div {
+        height: 76px; }
+        div.lightbox.active section form div p {
+          font-weight: 300;
+          font-size: 1rem;
+          color: white; }
+        div.lightbox.active section form div p.remember {
+          float: left;
+          z-index: 1000000000; }
+          div.lightbox.active section form div p.remember input[type="checkbox"]:not(:checked) {
+            margin-right: 10px;
+            -webkit-appearance: none;
+            width: 17px;
+            height: 17px;
+            border: 0px none transparent;
+            background: white;
+            border-radius: 0;
+            box-shadow: inset 0 0px 0px transparent;
+            box-shadow: 0px;
+            outline-color: transparent;
+            float: left; }
+          div.lightbox.active section form div p.remember input[type="checkbox"]:checked {
+            margin-right: 10px;
+            width: 17px;
+            height: 17px;
+            float: left; }
+        div.lightbox.active section form div a.forget.simple-link {
+          float: right;
+          z-index: 1000000000; }
+        div.lightbox.active section form div a.simple-link {
+          font-weight: 300;
+          font-size: 1rem;
+          color: white;
+          text-decoration: underline; }
+          div.lightbox.active section form div a.simple-link:hover {
+            color: #d61232; }
       div.lightbox.active section form div {
         margin: 0 0 1rem 0;
         position: relative;
-        display: block; }
+        /* display: block; */ }
         div.lightbox.active section form div input {
           display: block;
           width: 100%;
@@ -195,41 +211,39 @@ div.lightbox.active {
           padding: 1.4rem 1rem 1.4rem 1rem;
           font-size: 1.2em;
           font-weight: 100; }
-      div.lightbox.active section form input[type="submit"], div.lightbox.active section form input[type="submit"].facebook, div.lightbox.active section form input[type="submit"].twitter, div.lightbox.active section form input[type="submit"].google {
+      div.lightbox.active section form .my-button, div.lightbox.active section form .facebook, div.lightbox.active section form .twitter, div.lightbox.active section form .google {
+        text-decoration: none;
         display: block;
+        height: 76px;
         width: 100%;
         outline: none;
         font-family: "Roboto", sans-serif;
         margin: 0 0 1rem 0;
         position: relative;
-        display: block;
         border: none;
         border-radius: 4px;
-        outline: none;
-        padding: 1.4rem 1rem 1.4rem 1rem;
-        /*0.7em 0*/
         color: white;
         background: #d61232;
-        font-size: 1.2em;
-        line-height: 1.6em;
-        cursor: pointer;
-        font-weight: 400; }
-        div.lightbox.active section form input[type="submit"]:hover {
+        font-size: 1.2rem;
+        line-height: 76px;
+        font-weight: 300;
+        text-align: center; }
+        div.lightbox.active section form .my-button:hover, div.lightbox.active section form .facebook:hover, div.lightbox.active section form .twitter:hover, div.lightbox.active section form .google:hover {
           color: #302a2b;
           background: white; }
-      div.lightbox.active section form input.facebook[type="submit"] {
+      div.lightbox.active section form .facebook {
         background: #3A5795; }
-        div.lightbox.active section form input.facebook[type="submit"]:hover {
+        div.lightbox.active section form .facebook:hover {
           color: #302a2b;
           background: white; }
-      div.lightbox.active section form input.twitter[type="submit"] {
+      div.lightbox.active section form .twitter {
         background: #1DA1F2; }
-        div.lightbox.active section form input.twitter[type="submit"]:hover {
+        div.lightbox.active section form .twitter:hover {
           color: #302a2b;
           background: white; }
-      div.lightbox.active section form input.google[type="submit"] {
+      div.lightbox.active section form .google {
         background: #D73D32; }
-        div.lightbox.active section form input.google[type="submit"]:hover {
+        div.lightbox.active section form .google:hover {
           color: #302a2b;
           background: white; }
 
@@ -296,6 +310,8 @@ div.lightbox > button.close {
 div.lightbox {
   width: 0vw;
   height: 0vh;
+  display: none;
+  position: absolute;
   transform: scale(0); }
 
 nav#menu-push.online ul li .profil {
@@ -319,33 +335,6 @@ nav#menu-push.online ul li a.avatar {
   background-repeat: no-repeat;
   background-position: -106px center;
   background-size: cover; }
-
-main#base header.second-nav {
-  margin-top: 96px; }
-  main#base header.second-nav section div.right-panel {
-    position: relative; }
-    main#base header.second-nav section div.right-panel section.read-letter.active {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      display: block; }
-      main#base header.second-nav section div.right-panel section.read-letter.active section ul.letter-accordion li {
-        max-width: 780px;
-        background-color: white;
-        color: black;
-        margin: 10px auto 10px auto; }
-        main#base header.second-nav section div.right-panel section.read-letter.active section ul.letter-accordion li div.letter-preview {
-          display: none; }
-        main#base header.second-nav section div.right-panel section.read-letter.active section ul.letter-accordion li div.letter-preview.active {
-          height: 76px;
-          display: block; }
-        main#base header.second-nav section div.right-panel section.read-letter.active section ul.letter-accordion li div.letter-inner {
-          display: none; }
-        main#base header.second-nav section div.right-panel section.read-letter.active section ul.letter-accordion li div.letter-inner.active {
-          display: block; }
-    main#base header.second-nav section div.right-panel section.read-letter {
-      display: none; }
 
 main#base section#profil {
   margin: 96px auto 20px auto; }
@@ -633,7 +622,8 @@ main#base section#profil-corres {
         width: 75%; }
 
 main#base div.flexslider {
-  margin: 76px auto 20px auto; }
+  margin: 76px auto 20px auto;
+  overflow-x: hidden; }
 
 main#base section#dashboard {
   margin: 96px auto 20px auto;
@@ -776,69 +766,106 @@ section.line-of-article article {
     section.line-of-article article figcaption .column-right div button:focus {
       outline-width: 0px; }
 
-section.pagination ul {
-  text-align: center; }
-  section.pagination ul li {
-    display: inline-block;
-    vertical-align: top;
-    position: relative;
-    padding: 0 10px 0 10px;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    border: none;
-    text-align: center;
-    color: #302a2b;
-    outline-color: transparent;
-    cursor: pointer; }
-    section.pagination ul li a {
-      color: #302a2b; }
-  section.pagination ul li:last-child, section.pagination ul li:first-child {
-    display: inline-block;
-    vertical-align: top; }
-    section.pagination ul li:last-child a:hover, section.pagination ul li:first-child a:hover {
-      color: white;
-      display: block;
-      background-color: #302a2b;
+section.pagination {
+  /* padding-bottom: 250px; */ }
+  section.pagination ul {
+    text-align: center; }
+    section.pagination ul li {
+      display: inline-block;
+      vertical-align: top;
       position: relative;
       padding: 0 10px 0 10px;
       width: 50px;
       height: 50px;
       line-height: 50px;
+      border: none;
       text-align: center;
-      color: white;
+      color: #302a2b;
       outline-color: transparent;
       cursor: pointer; }
+      section.pagination ul li a {
+        color: #302a2b; }
+    section.pagination ul li:last-child, section.pagination ul li:first-child {
+      display: inline-block;
+      vertical-align: top; }
+      section.pagination ul li:last-child a:hover, section.pagination ul li:first-child a:hover {
+        color: white;
+        display: block;
+        background-color: #302a2b;
+        position: relative;
+        padding: 0 10px 0 10px;
+        width: 50px;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        color: white;
+        outline-color: transparent;
+        cursor: pointer; }
 
-body > footer {
+main#base {
+  position: relative;
+  max-height: 100%; }
+  main#base section#content {
+    margin-top: 76px;
+    padding-bottom: 250px; }
+    main#base section#content aside.left-panel {
+      background-color: yellow;
+      padding: 0px;
+      position: relative; }
+      main#base section#content aside.left-panel header {
+        background-color: blue;
+        position: fixed;
+        height: 56px;
+        padding: 1rem; }
+      main#base section#content aside.left-panel ul {
+        margin-top: 56px; }
+    main#base section#content div.right-panel {
+      background-color: tomato;
+      padding: 0px;
+      position: relative; }
+      main#base section#content div.right-panel header.corres-header {
+        background-color: green;
+        position: fixed;
+        height: 56px;
+        padding: 1rem; }
+      main#base section#content div.right-panel section.messages {
+        margin-top: 56px;
+        padding: 1rem;
+        height: 100vh; }
+
+body > main#base > footer {
+  height: 200px;
   background-color: white;
   padding: 40px;
-  margin-top: 20px;
   transition-property: transform;
   transition-duration: 0.4s;
   transition-timing-function: cubic-bezier(0, 0.99, 0.13, 0.995);
-  transform: translate(0px, 0px); }
-  body > footer div nav .footer-nav {
+  transform: translate(0px, 0px);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0; }
+  body > main#base > footer div nav .footer-nav {
     margin-bottom: 30px; }
-    body > footer div nav .footer-nav li {
+    body > main#base > footer div nav .footer-nav li {
       display: inline-block;
       margin-right: 20px; }
-      body > footer div nav .footer-nav li a {
+      body > main#base > footer div nav .footer-nav li a {
         color: #302a2b; }
-        body > footer div nav .footer-nav li a:hover {
+        body > main#base > footer div nav .footer-nav li a:hover {
           color: #d61232; }
-  body > footer div nav .footer-sub-nav li {
+  body > main#base > footer div nav .footer-sub-nav li {
     display: inline-block;
     font-size: 0.9rem;
     color: grey;
     margin-right: 20px; }
-    body > footer div nav .footer-sub-nav li a {
+    body > main#base > footer div nav .footer-sub-nav li a {
       color: grey; }
-      body > footer div nav .footer-sub-nav li a:hover {
+      body > main#base > footer div nav .footer-sub-nav li a:hover {
         color: #d61232; }
-    body > footer div nav .footer-sub-nav li select:focus {
+    body > main#base > footer div nav .footer-sub-nav li select:focus {
       outline-width: 0px; }
-  body > footer div div .newsletter input {
+  body > main#base > footer div div .newsletter input {
     display: inline-block;
     vertical-align: top;
     position: relative;
@@ -854,7 +881,7 @@ body > footer {
     transition-duration: 0.30s;
     transition-timing-function: ease-out;
     outline-color: transparent; }
-  body > footer div div .newsletter button {
+  body > main#base > footer div div .newsletter button {
     display: inline-block;
     vertical-align: top;
     text-align: center;
@@ -865,13 +892,13 @@ body > footer {
     border-color: #302a2b;
     border-width: 1px 1px 1px 0;
     border-style: solid solid solid none; }
-    body > footer div div .newsletter button:hover {
+    body > main#base > footer div div .newsletter button:hover {
       color: white;
       border: none;
       background-color: #302a2b; }
-    body > footer div div .newsletter button:focus {
+    body > main#base > footer div div .newsletter button:focus {
       outline-width: 0px; }
-  body > footer div div .social-media li {
+  body > main#base > footer div div .social-media li {
     display: inline-block; }
 
 body > footer.open {
