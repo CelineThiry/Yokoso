@@ -7,9 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yokoso | Tableau de bord</title>
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="../css/foundation.css" />
-  <link rel="stylesheet" href="../css/app.css" />
-  <link rel="stylesheet" href="../css/sass-style.css" />
+  <link rel="stylesheet" href="css/foundation.css" />
+  <link rel="stylesheet" href="css/app.css" />
+  <link rel="stylesheet" href="css/sass-style.css" />
 </head>
 
 <body>
@@ -17,7 +17,8 @@
   
 
 
-  <header class="callout first-nav online"> <!-- online Navigation bar -->
+
+  <header class="callout first-nav"> <!-- OFFLINE Navigation bar -->
     
     <nav class="row expanded">
     <div class="large-4 medium-4 columns">
@@ -27,44 +28,33 @@
         <span></span>
       </button>
       </div>    
-      <h1 class="large-4 medium-4 columns"><a href="index.html"><img src="../img/logo.svg" alt="Yokoso logo"></a></h1>
+      <h1 class="large-4 medium-4 columns"><a href="index.html"><img src="img/logo.svg" alt="Yokoso logo"></a></h1>
       <ul class="large-4 medium-4 columns fr-buttons">
-        <li><a class="contact button float-right" href="correspondant.html"></a></li>        
-        <li><a class="msg button float-right" href="courrier.html"></a></li>
-        <li>
-        <a class="profil button float-right" href="tableau-de-bord.html">Alicia_17</a>
-        <a class="avatar" href="tableau-de-bord.html"></a>
-        </li>       
+        <li><a class="signup button float-right" href="#">S'inscrire</a></li>
+        <li><a class="login button float-right" href="#">Se connecter</a></li>
+        
       </ul>
       
     </nav>
-  </header> <!-- END online navigation bar -->
+  </header> <!-- END OFFLINE navigation bar -->
 
-
-<nav id="menu-push" class="online">
+  <nav id="menu-push">
     <ul>
-      <li><a href="search">Chercher un correspondant</a></li>
+      <li><a href="" class="search">Chercher un correspondant</a></li>
       <li><a href="flux-actualites.html">Flux d'actualités</a></li>
-      <li><a href="a-propos.html">A propos</a></li>
-      <li><a href="contact.html">Contact</a></li>   
-      <hr>
-      <li>
-        <a class="avatar" href="tableau-de-bord.html"></a>
-        <a class="profil" href="tableau-de-bord.html">Alicia_17</a>
-        
-        </li>
-      <li><a href="tableau-de-bord.html">Tableau de bord</a></li>
-      <li><a href="courrier.html">Courrier</a></li>
-      <li><a href="correspondant.html">Correspondants</a></li>
-      <li><a href="profil.html">Profil</a></li> 
-      <li><a href="../index.html">Déconexion</a></li>
+      <li><a href="">A propos</a></li>
+      <li><a href="">Contact</a></li>     
     </ul>
   </nav>
+
+
 
    
 <main id="base">
 
-<section id="profil-corres">
+<section id="content">
+  
+  <section id="profil-corres">
   <section class="row">
     <div class="left-column large-4 medium-4 columns"> <!-- Colonne de gauche -->
       <img src="" alt="">
@@ -146,7 +136,7 @@
 </section> <!-- Fin section Profil -->
 
 
-</main>
+</section>
 
 <footer>
   <div class="row">
@@ -182,13 +172,17 @@
     </div>
   </div>
 </footer>
+
+</main>
+
+
   
 
-  <script src="../js/vendor/jquery.min.js"></script>
-  <script src="../js/vendor/what-input.min.js"></script>
-  <script src="../js/foundation.min.js"></script>
-  <script src="../js/app.js"></script>
-  <script src="../js/script.js"></script>
+  <script src="js/vendor/jquery.min.js"></script>
+  <script src="js/vendor/what-input.min.js"></script>
+  <script src="js/foundation.min.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/script.js"></script>
 </body>
 
 </html>

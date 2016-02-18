@@ -8,18 +8,18 @@
   <title>Yokoso</title>
   <meta name="description" content="Yokoso, le site de correspondance franco-japonaise">
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="css/foundation.css" />
-  <link rel="stylesheet" href="css/app.css" />
-  <link rel="stylesheet" href="css/sass-style.css" />
-  <link rel="stylesheet" href="css/flexslider.css" />
+  <link rel="stylesheet" href="../css/foundation.css" />
+  <link rel="stylesheet" href="../css/app.css" />
+  <link rel="stylesheet" href="../css/sass-style.css" />
+  <link rel="stylesheet" href="../css/flexslider.css" />
 
 </head>
 
 <body>
 
-  <header class="callout first-nav"> <!-- OFFLINE Navigation bar -->
+  <header class="callout first-nav online"> <!-- online Navigation bar -->
     
-    <nav class="row expanded">
+    <nav class="main-nav row expanded">
     <div class="large-4 medium-4 columns">
       <button class="menu-burger-trigger">
         <span></span>
@@ -27,27 +27,51 @@
         <span></span>
       </button>
       </div>    
-      <h1 class="large-4 medium-4 columns"><a href="index.html"><img src="img/logo.svg" alt="Yokoso logo"></a></h1>
+      <h1 class="large-4 medium-4 columns"><a href="index.html"><img src="../img/logo.svg" alt="Yokoso logo"></a></h1>
       <ul class="large-4 medium-4 columns fr-buttons">
-        <li><a class="signup button float-right" href="#">S'inscrire</a></li>
-        <li><a class="login button float-right" href="#">Se connecter</a></li>
-        
+        <li><a class="contact button float-right" href="correspondant.html"></a></li>        
+        <li><a class="msg button float-right" href="courrier.html"></a></li>
+        <li>
+        <a class="profil button float-right" href="tableau-de-bord.html">Alicia_17</a>
+        <a class="avatar" href="tableau-de-bord.html"></a>
+        </li>       
       </ul>
       
     </nav>
-  </header> <!-- END OFFLINE navigation bar -->
 
-	<nav id="menu-push">
-		<ul>
-			<li><a href="" class="search">Chercher un correspondant</a></li>
-			<li><a href="flux-actualites.html">Flux d'actualités</a></li>
-			<li><a href="">A propos</a></li>
-			<li><a href="">Contact</a></li>			
-		</ul>
-	</nav>
+    
+
+  </header> <!-- END online navigation bar -->   
 
 
-<!-- Les ligthbox ou pop in commune à toutes les pages-->
+  <nav id="menu-push" class="online">
+    <ul>
+      <li><a id="search-button">Chercher un correspondant</a></li>
+      <li><a href="flux-actualites.html">Flux d'actualités</a></li>
+      <li><a href="a-propos.html">A propos</a></li>
+      <li><a href="contact.html">Contact</a></li>   
+      <hr>
+      <li>
+        <a class="avatar" href="tableau-de-bord.html"></a>
+        <a class="profil" href="tableau-de-bord.html">Alicia_17</a>
+        
+        </li>
+      <li><a href="tableau-de-bord.html">Tableau de bord</a></li>
+      <li><a href="courrier.html">Courrier</a></li>
+      <li><a href="correspondant.html">Correspondants</a></li>
+      <li><a href="profil.html">Profil</a></li> 
+      <li><a href="../index.html">Déconexion</a></li>
+    </ul>
+  </nav>
+
+
+
+
+
+
+<main id="base"> <!-- My main block -->
+
+  <!-- Les ligthbox ou pop in commune à toutes les pages-->
   <div class="lightbox login">
     <button class="close">⨯</button>
     <section class="row">
@@ -56,24 +80,19 @@
       <form class="large-6 medium-6 columns"> <!-- Left column -->
         <div><input id="email" type="email" placeholder="Adresse e-mail"></div>        
         <div><input type="password" id="password" name="password" placeholder="Mot de passe"></div>
-        <div>
-          <p class="remember"><input type="checkbox">Se souvenir de moi</p> <a href="javascript:void(0)" class="forget simple-link">Mot de passe oublié?</a>
-        </div>
-        <a href="online/tableau-de-bord.html" class="login my-button">Je me connecte !</a>
-        <div>
-          <p>Pas encore de compte ? <a href="" class="simple-link">Inscrivez-vous !</a></p>
-        </div>
+        <p class="remember"><input type="checkbox">Se souvenir de moi</p> <a href="javascript:void(0)" class="forget">Mot de passe oublié?</a>
+        <a href="online/tableau-de-bord.html">Je me connecte !<!-- <input type="submit" value="Je me connecte !"> --></a>
+        <p>Pas encore de compte ? <a href="" class="signup">Inscrivez-vous !</a></p>
       </form><!-- END Left column -->
-      <!-- <div class="separator">
+      <div class="separator">
       <span class="line"></span>
       <p>or</p>
       <span class="line"></span>
-      </div> -->
+      </div>
       <form class="large-6 medium-6 columns"><!-- Right column -->
-        <a href="online/tableau-de-bord.html" class="login my-button facebook">Se connecter avec Facebook</a>
-        <a href="online/tableau-de-bord.html" class="login my-button twitter">Se connecter avec Twitter</a>
-        <a href="online/tableau-de-bord.html" class="login my-button google">Se connecter avec Google+</a>
-        
+        <a href="online/tableau-de-bord.html"><input type="submit" class="facebook" value="Se connecter avec Facebook"></a>
+        <a href="online/tableau-de-bord.html"><input type="submit" class="twitter" value="Se connecter avec Twitter"></a>
+        <a href="online/tableau-de-bord.html"><input type="submit" class="google" value="Se connecter avec Google+"></a>
       </form><!-- END Right column -->      
     </section>
   </div> <!-- END lightbox login -->
@@ -87,23 +106,19 @@
         <div><input id="pseudo" type="text" placeholder="Pseudo"></div> 
         <div><input id="email" type="email" placeholder="Adresse e-mail"></div>        
         <div><input type="password" id="password" name="password" placeholder="Mot de passe"></div>
-        <div>
-          <p class="remember"><input type="checkbox">J'accepte <a class="simple-link" href="javascript:void(0)">les conditions d'utilisation</a> de Yokoso</p> 
-        </div>
-        <a href="online/tableau-de-bord.html" class="login my-button">Je m'inscris !</a>
-        <div>
-          <p>Déjà un compte ? <a href="javascript:void(0)" class="simple-link">Connectez-vous !</a></p>
-        </div>
+        <p class="remember"><input type="checkbox">J'accepte <a href="javascript:void(0)">les conditions d'utilisation</a> de Yokoso</p> 
+        <a href="online/tableau-de-bord.html"><input type="submit" value="Je m'inscris !"></a>
+        <p>Déjà un compte ? <a href="javascript:void(0)" class="signup">Connectez-vous !</a></p>
       </form><!-- END Left column -->
-     <!--  <div class="separator">
+      <div class="separator">
       <span class="line"></span>
       <p>or</p>
       <span class="line"></span>
-      </div> -->
+      </div>
       <form class="large-6 medium-6 columns"><!-- Right column -->
-        <a href="online/tableau-de-bord.html" class="login my-button facebook">Se connecter avec Facebook</a>
-        <a href="online/tableau-de-bord.html" class="login my-button twitter">Se connecter avec Twitter</a>
-        <a href="online/tableau-de-bord.html" class="login my-button google">Se connecter avec Google+</a>
+        <input type="submit" class="facebook" value="S'inscrire avec Facebook">
+        <input type="submit" class="twitter" value="S'inscrire avec Twitter">
+        <input type="submit" class="google" value="S'inscrire avec Google+">
       </form><!-- END Right column -->
       
     </section>
@@ -177,12 +192,6 @@
 
 
 
-
-
-<main id="base"> <!-- My main block -->
-
-
-
 <div id="content"> 
 
     <div class="home flexslider">  <!-- FLEXSLIDER -->
@@ -204,7 +213,7 @@
             </div>
           </div>
         </div>
-        <img src="img/slide1.jpg" />
+        <img src="../img/slide1.jpg" />
       </li>
       <li>
         <div>
@@ -223,7 +232,7 @@
             </div>
           </div>
         </div>
-        <img src="img/slide2.jpg" />
+        <img src="../img/slide2.jpg" />
       </li>
       <li>
         <div>
@@ -242,7 +251,7 @@
             </div>
           </div>
         </div>
-        <img src="img/slide3.jpg" />
+        <img src="../img/slide3.jpg" />
       </li>    
     </ul>
   </div> <!-- FIN FLEWSLIDER -->
@@ -251,7 +260,7 @@
   <h1>Derniers inscrits</h1>
     <ul class="large-12 medium-12 columns">
       <li>
-        <a href="profil-nomducorrespondant.html">
+        <a href="online/profil-nomducorrespondant.html">
         <figure class="avatar">
           <img src="" alt="">
           <figcaption>Noémie</figcaption>
@@ -259,7 +268,7 @@
         </a>
       </li>
       <li>
-        <a href="profil-nomducorrespondant.html">
+        <a href="online/profil-nomducorrespondant.html">
         <figure class="avatar">
           <img src="" alt="">
           <figcaption>あかね</figcaption>
@@ -267,7 +276,7 @@
         </a>
       </li>
       <li>
-        <a href="profil-nomducorrespondant.html">
+        <a href="online/profil-nomducorrespondant.html">
         <figure class="avatar">
           <img src="" alt="">
           <figcaption>Nicolas</figcaption>
@@ -275,7 +284,7 @@
         </a>
       </li>
       <li>
-        <a href="profil-nomducorrespondant.html">
+        <a href="online/profil-nomducorrespondant.html">
         <figure class="avatar">
           <img src="" alt="">
           <figcaption>Yato</figcaption>
@@ -284,7 +293,7 @@
       </li>
       
       <li>
-        <a href="profil-nomducorrespondant.html">
+        <a href="online/profil-nomducorrespondant.html">
         <figure class="avatar">
           <img src="" alt="">
           <figcaption>杏里</figcaption>
@@ -298,7 +307,7 @@
     <h1>Derniers articles</h1>
     <article class="large-4 medium-4 columns">
       <figure class="row">
-        <img class="large-12 medium-12 columns" src="img/slide1.jpg" alt="">
+        <img class="large-12 medium-12 columns" src="../img/slide1.jpg" alt="">
       </figure>
       <figcaption class="row">
       <div class="column-left large-3 medium-3 columns">
@@ -315,7 +324,7 @@
     </article>
     <article class="large-4 medium-4 columns">
       <figure class="row">
-        <img class="large-12 medium-12 columns" src="img/slide2.jpg" alt="">
+        <img class="large-12 medium-12 columns" src="../img/slide2.jpg" alt="">
       </figure>
       <figcaption class="row">
       <div class="column-left large-3 medium-3 columns">
@@ -334,7 +343,7 @@
     </article> 
     <article class="large-4 medium-4 columns">
       <figure class="row">
-        <img class="large-12 medium-12 columns" src="img/slide3.jpg" alt="">
+        <img class="large-12 medium-12 columns" src="../img/slide3.jpg" alt="">
       </figure>
       <figcaption class="row">
       <div class="column-left large-3 medium-3 columns">
@@ -362,7 +371,7 @@
   </section> <!-- Fin a-propos row -->
 
   <section class="home expanded signup-section row">
-        <h1>S'inscrire</h1>
+        <h2>S'inscrire</h2>
         
         <form class="large-6 medium-6 columns"> <!-- Left column -->
           <div><input id="pseudo" type="text" placeholder="Pseudo"></div> 
@@ -372,11 +381,11 @@
           <a href="online/tableau-de-bord.html"><input type="submit" value="Je m'inscris !"></a>
           <p>Déjà un compte ? <a href="javascript:void(0)" class="signup">Connectez-vous !</a></p>
         </form><!-- END Left column -->
-        <!-- <div class="separator">
+        <div class="separator">
         <span class="line"></span>
         <p>or</p>
         <span class="line"></span>
-        </div> -->
+        </div>
         <form class="large-6 medium-6 columns"><!-- Right column -->
           <input type="submit" class="facebook" value="S'inscrire avec Facebook">
           <input type="submit" class="twitter" value="S'inscrire avec Twitter">
@@ -426,13 +435,13 @@
 
   
 
-  <script src="js/vendor/jquery.min.js"></script>
-  <script src="js/vendor/what-input.min.js"></script>
-  <script src="js/foundation.js"></script>
-  <script src="js/app.js"></script>
-  <script src="js/script.js"></script>
+  <script src="../js/vendor/jquery.min.js"></script>
+  <script src="../js/vendor/what-input.min.js"></script>
+  <script src="../js/foundation.js"></script>
+  <script src="../js/app.js"></script>
+  <script src="../js/script.js"></script>
   <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script src="js/jquery.flexslider.js"></script>
+  <script src="../js/jquery.flexslider.js"></script>
   
 </body>
 
