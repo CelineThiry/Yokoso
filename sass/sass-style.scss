@@ -1449,20 +1449,35 @@ main#base{
 
 
 			
-				aside.left-panel{
+			aside.left-panel{
+				display: none;
 				top: $block-height;
 				background-color: yellow;
 				padding: 0px;	
 				overflow-y: scroll;
 				overflow-x: hidden;	
 				position: absolute;
-				height: 100vh;				
+				height: 100vh;	
+				// transform: scaleX(0);
+				// transform-origin: 0 0;
+				// -webkit-transform: scaleX(0);
+				// -webkit-transform-origin: 0 0;				
+				// transition: transform 0.30s ease-out 0s;			
 
 				ul{
 				
 				
 				}
 
+			}
+
+			.left-panel.open{
+				display: block;
+				// transform: scaleX(1);
+				// transform-origin: 0 0;
+				// -webkit-transform: scaleX(1);
+				// -webkit-transform-origin: 0 0;
+				
 			}
 
 			div.right-panel{
@@ -1475,18 +1490,73 @@ main#base{
 				// position: absolute;
 				height: 100vh;		
 
-				section.messages{				
-					
-										
-
+				.messages{
+					display: none;
 				}
 
+				.messages.active{
+					display: block;
+				}
 			}
 
 		
 		}
 
 	}
+}
+
+ul.letter-accordion{
+
+	max-width: 780px;
+	margin: 1rem auto 1rem auto;
+
+	.one-letter{
+		padding: 1rem;
+		margin-bottom: 1rem;
+		border-radius: $global-border-radius;
+	}
+
+	.you{
+		@extend .one-letter;
+		background-color: yellow;
+	}
+
+	.me{
+		@extend .one-letter;
+		background-color: blue;
+	}
+
+	.letter-preview{display: none;}
+	.letter-inner{display: none;}
+
+	.letter-preview.active{
+		background-color: grey;
+		display: block;
+		height: $block-height/2;
+
+
+		p:first-child{
+			float: left;
+			line-height: $block-height/2;
+		}
+		p:last-child{
+			float: right;
+			line-height: $block-height/2;
+		}
+		
+	}
+	.letter-inner.active{
+		background-color: white;
+		display: block;
+
+		p{
+		margin-bottom: 0;
+		padding-bottom: 1rem;
+		}
+
+	}
+
+	
 }
 
 .main-nav{
@@ -1498,11 +1568,25 @@ main#base{
 	position: relative;
 	z-index: 100;
 
+	.list-contact-header.open{
+				// transform: scaleX(1);
+				// transform-origin: 0 0;
+				// -webkit-transform: scaleX(1);
+				// -webkit-transform-origin: 0 0;
+				display: block;
+	}
+
 	.list-contact-header{
-					
+					display: none;
 					background-color: blue;							
 					height: $block-height;
 					padding: 1rem;
+					// transform: scaleX(0);
+					// transform-origin: 0 0;
+					// -webkit-transform: scaleX(0);
+					// -webkit-transform-origin: 0 0;
+					// transition: transform 0.30s ease-out 0s;
+
 					
 
 					select{
@@ -1522,7 +1606,9 @@ main#base{
 					}
 	}
 
-	.corres-header{
+	.corres-header{display: none;}
+
+	.corres-header.active{
 
 		background-color: green;
 		height: $block-height;
@@ -1530,8 +1616,7 @@ main#base{
 		padding-right: 0;
 		z-index: 100;
 		position: relative;
-
-			
+		display: block;			
 
 			button.contact-panel{
 
@@ -1576,6 +1661,10 @@ main#base{
 				padding: 1rem;
 				background-image: url('../img/slide1.jpg');
 				background-size: cover;
+			}
+
+			.action-button.active{
+
 			}
 
 			.new-msg{
@@ -1652,16 +1741,22 @@ ul.contact-panel{
 
 	margin: 0;
 	li{
-		height: $block-height*1.5;		
+		height: $block-height*1.5;	
+		opacity: 0.5;
+
+		&:hover{
+			opacity: 1;
+		}	
+	}
+
+	li.active{
+		opacity: 1;
 	}
 
 	a{
 		display: block;
 		min-width: 300px;
-		opacity: 0.5;
-		&:hover{
-			opacity: 1;
-		}
+		
 	}
 
 	figure{

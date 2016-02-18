@@ -107,31 +107,38 @@ $(document).ready(function(){
 			});	
 
 	// Animation of the left panel button
-	$('#base > header > section > div > section > header > button').click(function(e){
+	$('.corres-header > button.contact-panel').click(function(e){
 				e.preventDefault();
 				$('this').toggleClass('open');
-				$('#base > header > section > aside').toggleClass('open');
-				  if ($('#base > header > section > div').hasClass('large-9 medium-9')) {
-				  		$('#base > header > section > div').removeClass('large-9 medium-9');
-				  		$('#base > header > section > div').addClass('large-12 medium-12');
+				$('.left-panel').toggleClass('open');
+				$('.list-contact-header').toggleClass('open');				
+				  if ($('.right-panel').hasClass('large-9 medium-9') | $('.corres-header').hasClass('large-9 medium-9')) {
+				  		$('.right-panel').removeClass('large-9 medium-9');
+				  		$('.right-panel').addClass('large-12 medium-12');
+				  		$('.corres-header').removeClass('large-9 medium-9');
+				  		$('.corres-header').addClass('large-12 medium-12');
 				  } 
 				  else {
-				  		$('#base > header > section > div').removeClass('large-12 medium-12');
-				  		$('#base > header > section > div').addClass('large-9 medium-9');
+				  		$('.right-panel').removeClass('large-12 medium-12');
+				  		$('.right-panel').addClass('large-9 medium-9');
+				  		$('.corres-header').removeClass('large-12 medium-12');
+				  		$('.corres-header').addClass('large-9 medium-9');
 				  }
 			});	
 	//Contact panel tabs
-	$('#base > header > section > aside > ul > li').click(function(e){
+	$('.contact-panel > li').click(function(e){
 				e.preventDefault();
 
 
 				var profilView = $(this).children('a').attr('href');
-				$('#base > header > section > aside > ul > li').removeClass('active');
-				$('#base > header > section > div.right-panel > section.read-letter').removeClass('active');
+				$('.contact-panel > li').removeClass('active');
+				$('.right-panel > .messages').removeClass('active');
+				$('.corres-header').removeClass('active');
 				console.log(profilView);
 
 				$(this).addClass('active');
 				$(profilView).addClass('active');
+				$(profilView+'-header').addClass('active');
 				// en mode actif la page de lettre change z-index				 
 	});	
 
