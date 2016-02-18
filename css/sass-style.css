@@ -830,6 +830,21 @@ main#base {
         display: none; }
       main#base section#content section.expanded.row div.right-panel .messages.active {
         display: block; }
+        main#base section#content section.expanded.row div.right-panel .messages.active button.big-button {
+          display: block;
+          max-width: 350px;
+          margin: 0 auto 0 auto;
+          padding: 1rem;
+          border: none;
+          border-radius: 4px;
+          position: relative;
+          color: white;
+          background-color: #d61232;
+          height: 76px;
+          outline-color: transparent; }
+          main#base section#content section.expanded.row div.right-panel .messages.active button.big-button h1 {
+            color: white;
+            font-size: 1.2rem; }
 
 ul.letter-accordion {
   max-width: 780px;
@@ -862,6 +877,26 @@ ul.letter-accordion {
     ul.letter-accordion .letter-inner.active p {
       margin-bottom: 0;
       padding-bottom: 1rem; }
+
+form.new-messages {
+  max-width: 780px;
+  margin: 1rem auto 1rem auto; }
+  form.new-messages textarea {
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 4px; }
+  form.new-messages input[type="submit"] {
+    display: block;
+    max-width: 350px;
+    margin: 0 auto 0 auto;
+    padding: 1rem;
+    border: none;
+    border-radius: 4px;
+    position: relative;
+    color: white;
+    background-color: #d61232;
+    height: 76px;
+    outline-color: transparent; }
 
 .main-nav {
   height: 76px; }

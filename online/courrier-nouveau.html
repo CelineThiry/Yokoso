@@ -45,7 +45,7 @@
               </select>
       </header>
 
-      <header id="hiyori-header" class="active corres-header large-9 medium-9 columns"> <!-- Header with contact title and tools button -->
+      <header id="hiyori-header" class="corres-header large-9 medium-9 columns"> <!-- Header with contact title and tools button -->
             <button class="contact-panel"></button> <!-- Button to close/open left-panel -->
             <figure class="avatar">
               <img src="../img/slide1.jpg" alt="">
@@ -103,7 +103,7 @@
             </section>  <!-- FIN Contact Description -->
       </header> <!-- END Header with contact title and tools button -->
 
-      <header id="yamamoto-header" class="corres-header large-9 medium-9 columns"> <!-- Header with contact title and tools button -->
+      <header id="yamamoto-header" class="corres-header large-9 medium-9 columns active"> <!-- Header with contact title and tools button -->
             <button class="contact-panel"></button> <!-- Button to close/open left-panel -->
             <figure class="avatar">
               <img src="../img/slide1.jpg" alt="">
@@ -214,121 +214,31 @@
 
        
           <section id="hiyori" class="messages active"> <!-- HIYORI Section écriture, lecture, historique des lettres --> 
-            <ul class="letter-accordion"> <!-- Letter -->
-              <li class="one-letter you">
-                <div class="letter-preview active">
-                <p>1 Hiyori Preview active</p>
-                <p>28 février 2015 - 25:17</p>
-                </div>
-                <div class="letter-inner"> <!-- Time and date with after and before -->
-                <p>28 février 2015 - 25:17</p>
-                <p>1 Hiyori Inner active officia cumque, animi minima et laborum autem. Tempora possimus provident ex enim dolores hic quibusdam, velit beatae tempore. Quos amet a cupiditate! <br> Alicia</p>
-                </div> 
-              </li>
-              <li class="one-letter me">
-                <div class="letter-preview active">
-                <p>2 Hiyori Preview active</p>
-                <p>28 février 2015 - 25:17</p>
-                </div>
-                <div class="letter-inner"> <!-- Time and date with after and before -->
-                <p>28 février 2015 - 25:17</p>
-                <p>2 Hiyori Inner active animi minima et laborum autem. Tempora possimus provident ex enim dolores hic quibusdam, velit beatae tempore. Quos amet a cupiditate! <br> Alicia</p>
-                </div> 
-              </li>
-              <li class="one-letter you">
-                <div class="letter-preview">
-                <p>3 Hiyori Preview active</p>
-                <p>28 février 2015 - 25:17</p>
-                </div>
-                <div class="letter-inner active"> <!-- Time and date with after and before -->
-                <p>28 février 2015 - 25:17</p>
-                <p>3 Hiyori Inner active Hiyori Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam esse laboriosam, tenetur totam culpa, repellendus porro quisquam necessitatibus, recusandae odio ullam similique. Itaque ducimus perferendis consectetur, architecto debitis explicabo, voluptate inventore possimus in dicta enim. Inventore culpa omnis ex illo. Magnam dolor, quo veritatis delectus ab officiis maxime eos, placeat.</p>
-                </div> 
-              </li>       
-            </ul> <!-- END Letter -->
-            <a href="courrier-nouveau.html"><button class="big-button">
-                  <div class="picto-button"></div>
-                  <h1>Ecrire une nouvelle lettre</h1>    
-            </button></a>
+            <form action="courrier.html" class="new-messages"> <!-- Letter -->
+              <textarea placeholder="" required>          
+                
+              </textarea>  
+              <input type="submit" value="Send letter !">            
+            </form> <!-- END Letter --> 
           </section>  <!-- END HIYORI Section écriture, lecture, historique des lettres -->   
 
           <section id="yato" class="messages"> <!-- HIYORI Section écriture, lecture, historique des lettres --> 
-            <ul class="letter-accordion"> <!-- Letter -->
-              <li class="one-letter you">
-                <div class="letter-preview active">
-                <p>1 yato Preview active</p>
-                <p>28 février 2015 - 25:17</p>
-                </div>
-                <div class="letter-inner"> <!-- Time and date with after and before -->
-                <p>28 février 2015 - 25:17</p>
-                <p>1 yato Inner active officia cumque, animi minima et laborum autem. Tempora possimus provident ex enim dolores hic quibusdam, velit beatae tempore. Quos amet a cupiditate! <br> Alicia</p>
-                </div> 
-              </li>
-              <li class="one-letter me">
-                <div class="letter-preview active">
-                <p>2 yato Preview active</p>
-                <p>28 février 2015 - 25:17</p>
-                </div>
-                <div class="letter-inner"> <!-- Time and date with after and before -->
-                <p>28 février 2015 - 25:17</p>
-                <p>2 yato Inner active animi minima et laborum autem. Tempora possimus provident ex enim dolores hic quibusdam, velit beatae tempore. Quos amet a cupiditate! <br> Alicia</p>
-                </div> 
-              </li>
-              <li class="one-letter you">
-                <div class="letter-preview">
-                <p>3 yato Preview active</p>
-                <p>28 février 2015 - 25:17</p>
-                </div>
-                <div class="letter-inner active"> <!-- Time and date with after and before -->
-                <p>28 février 2015 - 25:17</p>
-                <p>3 yato Inner active yato Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam esse laboriosam, tenetur totam culpa, repellendus porro quisquam necessitatibus, recusandae odio ullam similique. Itaque ducimus perferendis consectetur, architecto debitis explicabo, voluptate inventore possimus in dicta enim. Inventore culpa omnis ex illo. Magnam dolor, quo veritatis delectus ab officiis maxime eos, placeat.</p>
-                </div> 
-              </li>       
-            </ul> <!-- END Letter -->
-            <a href="courrier-nouveau.html"><a href="courrier-nouveau.html"><button class="big-button">
-                  <div class="picto-button"></div>
-                  <h1>Ecrire une nouvelle lettre</h1>    
-            </button></a></a>
+            <form action="courrier.html" class="new-messages"> <!-- Letter -->
+              <textarea placeholder="" required>          
+                
+              </textarea>  
+              <input type="submit" value="Send letter !">            
+            </form> <!-- END Letter -->            
           </section>  <!-- END HIYORI Section écriture, lecture, historique des lettres -->   
 
-          <section id="yamamoto" class="messages"> <!-- HIYORI Section écriture, lecture, historique des lettres --> 
-            <ul class="letter-accordion"> <!-- Letter -->
-              <li class="one-letter you">
-                <div class="letter-preview active">
-                <p>1 yamamoto Preview active</p>
-                <p>28 février 2015 - 25:17</p>
-                </div>
-                <div class="letter-inner"> <!-- Time and date with after and before -->
-                <p>28 février 2015 - 25:17</p>
-                <p>1 yamamoto Inner active officia cumque, animi minima et laborum autem. Tempora possimus provident ex enim dolores hic quibusdam, velit beatae tempore. Quos amet a cupiditate! <br> Alicia</p>
-                </div> 
-              </li>
-              <li class="one-letter me">
-                <div class="letter-preview active">
-                <p>2 yamamoto Preview active</p>
-                <p>28 février 2015 - 25:17</p>
-                </div>
-                <div class="letter-inner"> <!-- Time and date with after and before -->
-                <p>28 février 2015 - 25:17</p>
-                <p>2 yamamoto Inner active animi minima et laborum autem. Tempora possimus provident ex enim dolores hic quibusdam, velit beatae tempore. Quos amet a cupiditate! <br> Alicia</p>
-                </div> 
-              </li>
-              <li class="one-letter you">
-                <div class="letter-preview">
-                <p>3 yamamoto Preview active</p>
-                <p>28 février 2015 - 25:17</p>
-                </div>
-                <div class="letter-inner active"> <!-- Time and date with after and before -->
-                <p>28 février 2015 - 25:17</p>
-                <p>3 yamamoto Inner active yamamoto Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam esse laboriosam, tenetur totam culpa, repellendus porro quisquam necessitatibus, recusandae odio ullam similique. Itaque ducimus perferendis consectetur, architecto debitis explicabo, voluptate inventore possimus in dicta enim. Inventore culpa omnis ex illo. Magnam dolor, quo veritatis delectus ab officiis maxime eos, placeat.</p>
-                </div> 
-              </li>       
-            </ul> <!-- END Letter -->
-            <a href="courrier-nouveau.html"><button class="big-button">
-                  <div class="picto-button"></div>
-                  <h1>Ecrire une nouvelle lettre</h1>    
-            </button></a>
-          </section>  <!-- END yamamoto Section écriture, lecture, historique des lettres -->   
+         <section id="yamamoto" class="messages"> <!-- HIYORI Section écriture, lecture, historique des lettres --> 
+            <form action="courrier.html" class="new-messages"> <!-- Letter -->
+              <textarea placeholder="" required>          
+                
+              </textarea>  
+              <input type="submit" value="Send letter !">            
+            </form> <!-- END Letter -->            
+          </section>  <!-- END HIYORI Section écriture, lecture, historique des lettres -->   
 
 
 
