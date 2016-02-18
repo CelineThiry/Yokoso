@@ -816,8 +816,6 @@ main#base {
       overflow-x: hidden;
       position: absolute;
       height: 100vh; }
-      main#base section#content section.expanded.row aside.left-panel ul {
-        padding: 1rem; }
     main#base section#content section.expanded.row div.right-panel {
       background-color: tomato;
       padding: 0px;
@@ -825,8 +823,6 @@ main#base {
       overflow-y: scroll;
       overflow-x: hidden;
       height: 100vh; }
-      main#base section#content section.expanded.row div.right-panel section.messages {
-        padding: 1rem; }
 
 .main-nav {
   height: 76px; }
@@ -905,7 +901,7 @@ main#base {
       background-color: pink;
       height: 304px;
       transform: scaleY(0);
-      transform-origin: 0, 0;
+      transform-origin: 0 0;
       -webkit-transform: scaleY(0);
       -webkit-transform-origin: 0 0;
       transition: transform 0.30s ease-out 0s;
@@ -925,9 +921,37 @@ main#base {
         text-align: center; }
     .courrier-nav .corres-header .contact-description.active {
       transform: scaleY(1);
-      transform-origin: 0, 0;
+      transform-origin: 0 0;
       -webkit-transform: scaleY(1);
       -webkit-transform-origin: 0 0; }
+
+ul.contact-panel {
+  margin: 0; }
+  ul.contact-panel li {
+    height: 114px; }
+  ul.contact-panel a {
+    display: block;
+    min-width: 300px;
+    opacity: 0.5; }
+    ul.contact-panel a:hover {
+      opacity: 1; }
+  ul.contact-panel figure {
+    margin: 0; }
+  ul.contact-panel img {
+    height: 114px;
+    width: 114px;
+    background-color: blue;
+    border: 0px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 1rem; }
+  ul.contact-panel figcaption {
+    display: inline-block;
+    vertical-align: middle; }
+  ul.contact-panel h3 {
+    margin: 0; }
+  ul.contact-panel p {
+    margin: 0; }
 
 body > main#base > footer {
   height: 200px;
