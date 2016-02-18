@@ -101,9 +101,9 @@ $(document).ready(function(){
 	// });
 
 	// Animation of description profil panel
-	$('#base > header > section > div > section > header > h2').click(function(e){
+	$('.corres-header > figure.avatar').click(function(e){
 				e.preventDefault();
-				$('main#base>header.second-nav section div section.read-letter section.contact-description').toggleClass('open');
+				$('.corres-header > .contact-description').toggleClass('active');
 			});	
 
 	// Animation of the left panel button
