@@ -5,6 +5,8 @@ $global-font: 'Roboto', sans-serif;
 $block-height: 76px;
 $cherry-red: #d61232;
 $my-black: rgb(48,42,43);
+$my-black-half: #776B69;
+$my-black-quarter: #B7A5A1;
 $global-border-radius: 4px;
 $global-button-hover-transition: background-color 0.25s ease-out 0s, color 0.25s ease-out 0s;
 
@@ -1452,7 +1454,7 @@ main#base{
 			aside.left-panel{
 				display: none;
 				top: $block-height;
-				background-color: yellow;
+				background-color: $my-black-quarter;
 				padding: 0px;	
 				overflow-y: scroll;
 				overflow-x: hidden;	
@@ -1482,7 +1484,7 @@ main#base{
 
 			div.right-panel{
 
-				background-color: tomato;
+				background-color: $body-bgc;
 				padding: 0px;			
 				top: $block-height;
 				overflow-y: scroll;
@@ -1537,19 +1539,19 @@ ul.letter-accordion{
 
 	.you{
 		@extend .one-letter;
-		background-color: yellow;
+		background-color: white;
 	}
 
 	.me{
 		@extend .one-letter;
-		background-color: blue;
+		border: 1px solid $my-black;
 	}
 
 	.letter-preview{display: none;}
 	.letter-inner{display: none;}
 
 	.letter-preview.active{
-		background-color: grey;
+		
 		display: block;
 		height: $block-height/2;
 
@@ -1565,7 +1567,7 @@ ul.letter-accordion{
 		
 	}
 	.letter-inner.active{
-		background-color: white;
+		
 		display: block;
 
 		p{
@@ -1578,19 +1580,23 @@ ul.letter-accordion{
 }
 
 form.new-messages{
-
+	
 	max-width: 780px;
 	margin: 1rem auto 1rem auto;
 
 	textarea{
+		width: 100%;
+		min-height: 300px;
 		padding: 1rem;
 		margin-bottom: 1rem;
 		border-radius: $global-border-radius;
+		border: 0px;
 	}
 
 	input[type="submit"]{
 		display: block;
-					max-width: 350px;					
+					max-width: 350px;
+					width: 250px;					
 					margin: 0 auto 0 auto;		
 					padding: 1rem;	
 					border: none;
@@ -1600,6 +1606,12 @@ form.new-messages{
 					background-color: #d61232;
 					height: 76px;		
 					outline-color: rgba(0,0,0,0);
+					font-size: 1.2rem;
+					opacity: 0.5;
+
+					&:hover{
+						opacity: 1;
+					}
 	}	
 	
 }
@@ -1623,7 +1635,7 @@ form.new-messages{
 
 	.list-contact-header{
 					display: none;
-					background-color: blue;							
+					background-color: $my-black-half;						
 					height: $block-height;
 					padding: 1rem;
 					// transform: scaleX(0);
@@ -1655,7 +1667,7 @@ form.new-messages{
 
 	.corres-header.active{
 
-		background-color: green;
+		background-color: $my-black-half;
 		height: $block-height;
 		padding-left: 0;
 		padding-right: 0;
@@ -1666,18 +1678,40 @@ form.new-messages{
 			button.contact-panel{
 
 				float: left;
-				background-color: violet;
+				background-color: $my-black-quarter;
 				height: 100%;
 				width: 50px;
-						
+				background-image: url('../img/iconset_yokoso_sprite_black_arrow-left.svg');
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: auto;		
+
+				&:hover{
+					opacity: 0.5;
+				}				
+			}
+
+			button.contact-panel.open{
+				background-color: red;
+				background-image: url('../img/iconset_yokoso_sprite_black_arrow-right.svg');
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: auto;
 			}
 
 			.avatar{
 
-				
+				cursor: pointer;
 				height: $block-height;
 				margin: 0;
+				padding-right: 1rem;
 				float: left;
+
+				&:hover{
+					background-color: $cherry-red;
+				}
+
+
 
 					img{
 						height: $block-height;
@@ -1694,18 +1728,26 @@ form.new-messages{
 					margin-bottom: 0;
 					height: $block-height;
 					float: left;
+					color: white;
 
 					}
 			}
 
 			.action-button{
 				float: right;
-				background-color: orange;
+				background-color: $cherry-red;
 				height: 100%;
 				width: $block-height;
 				padding: 1rem;
-				background-image: url('../img/slide1.jpg');
-				background-size: cover;
+				background-image: url('../img/iconset_yokoso_sprite_black_add.svg');
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: auto;
+
+				&:hover{
+					background-color: white;
+				}
+
 			}
 
 			.action-button.active{
@@ -1717,21 +1759,35 @@ form.new-messages{
 			}
 
 			.tools{
-				float: right;
-				
-				height: 100%;
-				width: $block-height;
+				float: right;				
+				height: $block-height/1.5;
+				border-radius: $block-height/1.5;
+				background-color: $my-black-quarter;
+				width: $block-height/1.5;
 				padding: 1rem;
+				margin: 0.8rem 1rem 0 0;
+
+				&:hover{
+					opacity: 0.5;
+				}
 			}
 
 			.translate{
 				@extend .tools;
-				background-color: blue;
+				
+				background-image: url('../img/iconset_yokoso_sprite_black_translate.svg');
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: auto;
 			}
 
 			.search{
 				@extend .tools;
-				background-color: grey;
+				
+				background-image: url('../img/iconset_yokoso_sprite_black_search.svg');
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: auto;
 			}
 
 			.contact-description{
@@ -1739,7 +1795,7 @@ form.new-messages{
 				position: absolute;
 				top: $block-height;
 				padding: 2rem 0 2rem 0;
-				background-color: pink;				
+				background-color: $my-black-half;				
 				height: $block-height*4;
 				transform: scaleY(0);
 				transform-origin: 0 0;
@@ -1748,6 +1804,12 @@ form.new-messages{
 				// transform: translate(0, -$block-height*3);
 				transition: transform 0.30s ease-out 0s;
 				overflow: hidden;
+				color: white;
+
+				h1{
+					color: white;
+					font-size: 1.5rem;
+				}
 
 				figure.avatar{
 					img{

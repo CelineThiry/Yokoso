@@ -811,7 +811,7 @@ main#base {
     main#base section#content section.expanded.row aside.left-panel {
       display: none;
       top: 76px;
-      background-color: yellow;
+      background-color: #B7A5A1;
       padding: 0px;
       overflow-y: scroll;
       overflow-x: hidden;
@@ -820,7 +820,7 @@ main#base {
     main#base section#content section.expanded.row .left-panel.open {
       display: block; }
     main#base section#content section.expanded.row div.right-panel {
-      background-color: tomato;
+      background-color: #EEE8D8;
       padding: 0px;
       top: 76px;
       overflow-y: scroll;
@@ -854,15 +854,14 @@ ul.letter-accordion {
     margin-bottom: 1rem;
     border-radius: 4px; }
   ul.letter-accordion .you {
-    background-color: yellow; }
+    background-color: white; }
   ul.letter-accordion .me {
-    background-color: blue; }
+    border: 1px solid #302a2b; }
   ul.letter-accordion .letter-preview {
     display: none; }
   ul.letter-accordion .letter-inner {
     display: none; }
   ul.letter-accordion .letter-preview.active {
-    background-color: grey;
     display: block;
     height: 38px; }
     ul.letter-accordion .letter-preview.active p:first-child {
@@ -872,7 +871,6 @@ ul.letter-accordion {
       float: right;
       line-height: 38px; }
   ul.letter-accordion .letter-inner.active {
-    background-color: white;
     display: block; }
     ul.letter-accordion .letter-inner.active p {
       margin-bottom: 0;
@@ -882,12 +880,16 @@ form.new-messages {
   max-width: 780px;
   margin: 1rem auto 1rem auto; }
   form.new-messages textarea {
+    width: 100%;
+    min-height: 300px;
     padding: 1rem;
     margin-bottom: 1rem;
-    border-radius: 4px; }
+    border-radius: 4px;
+    border: 0px; }
   form.new-messages input[type="submit"] {
     display: block;
     max-width: 350px;
+    width: 250px;
     margin: 0 auto 0 auto;
     padding: 1rem;
     border: none;
@@ -896,7 +898,11 @@ form.new-messages {
     color: white;
     background-color: #d61232;
     height: 76px;
-    outline-color: transparent; }
+    outline-color: transparent;
+    font-size: 1.2rem;
+    opacity: 0.5; }
+    form.new-messages input[type="submit"]:hover {
+      opacity: 1; }
 
 .main-nav {
   height: 76px; }
@@ -908,7 +914,7 @@ form.new-messages {
     display: block; }
   .courrier-nav .list-contact-header {
     display: none;
-    background-color: blue;
+    background-color: #776B69;
     height: 76px;
     padding: 1rem; }
     .courrier-nav .list-contact-header select {
@@ -927,7 +933,7 @@ form.new-messages {
   .courrier-nav .corres-header {
     display: none; }
   .courrier-nav .corres-header.active {
-    background-color: green;
+    background-color: #776B69;
     height: 76px;
     padding-left: 0;
     padding-right: 0;
@@ -936,13 +942,29 @@ form.new-messages {
     display: block; }
     .courrier-nav .corres-header.active button.contact-panel {
       float: left;
-      background-color: violet;
+      background-color: #B7A5A1;
       height: 100%;
-      width: 50px; }
+      width: 50px;
+      background-image: url("../img/iconset_yokoso_sprite_black_arrow-left.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: auto; }
+      .courrier-nav .corres-header.active button.contact-panel:hover {
+        opacity: 0.5; }
+    .courrier-nav .corres-header.active button.contact-panel.open {
+      background-color: red;
+      background-image: url("../img/iconset_yokoso_sprite_black_arrow-right.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: auto; }
     .courrier-nav .corres-header.active .avatar {
+      cursor: pointer;
       height: 76px;
       margin: 0;
+      padding-right: 1rem;
       float: left; }
+      .courrier-nav .corres-header.active .avatar:hover {
+        background-color: #d61232; }
       .courrier-nav .corres-header.active .avatar img {
         height: 76px;
         width: 76px;
@@ -955,37 +977,57 @@ form.new-messages {
         line-height: 76px;
         margin-bottom: 0;
         height: 76px;
-        float: left; }
+        float: left;
+        color: white; }
     .courrier-nav .corres-header.active .action-button {
       float: right;
-      background-color: orange;
+      background-color: #d61232;
       height: 100%;
       width: 76px;
       padding: 1rem;
-      background-image: url("../img/slide1.jpg");
-      background-size: cover; }
+      background-image: url("../img/iconset_yokoso_sprite_black_add.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: auto; }
+      .courrier-nav .corres-header.active .action-button:hover {
+        background-color: white; }
     .courrier-nav .corres-header.active .tools, .courrier-nav .corres-header.active .translate, .courrier-nav .corres-header.active .search {
       float: right;
-      height: 100%;
-      width: 76px;
-      padding: 1rem; }
+      height: 50.66667px;
+      border-radius: 50.66667px;
+      background-color: #B7A5A1;
+      width: 50.66667px;
+      padding: 1rem;
+      margin: 0.8rem 1rem 0 0; }
+      .courrier-nav .corres-header.active .tools:hover, .courrier-nav .corres-header.active .translate:hover, .courrier-nav .corres-header.active .search:hover {
+        opacity: 0.5; }
     .courrier-nav .corres-header.active .translate {
-      background-color: blue; }
+      background-image: url("../img/iconset_yokoso_sprite_black_translate.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: auto; }
     .courrier-nav .corres-header.active .search {
-      background-color: grey; }
+      background-image: url("../img/iconset_yokoso_sprite_black_search.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: auto; }
     .courrier-nav .corres-header.active .contact-description {
       z-index: 99;
       position: absolute;
       top: 76px;
       padding: 2rem 0 2rem 0;
-      background-color: pink;
+      background-color: #776B69;
       height: 304px;
       transform: scaleY(0);
       transform-origin: 0 0;
       -webkit-transform: scaleY(0);
       -webkit-transform-origin: 0 0;
       transition: transform 0.30s ease-out 0s;
-      overflow: hidden; }
+      overflow: hidden;
+      color: white; }
+      .courrier-nav .corres-header.active .contact-description h1 {
+        color: white;
+        font-size: 1.5rem; }
       .courrier-nav .corres-header.active .contact-description figure.avatar img {
         height: 76px;
         width: 76px;
