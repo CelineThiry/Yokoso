@@ -68,41 +68,6 @@ section.home {
   background-color: white; }
   .home.a-propos blockquote {
     font-size: 2rem; }
-  .home.a-propos article div {
-    height: 50px;
-    display: inline-block;
-    text-align: center;
-    margin: 0 auto 0 auto; }
-    .home.a-propos article div a {
-      float: left;
-      padding: 0 10px 0 10px;
-      height: 50px;
-      line-height: 50px;
-      border-color: #d61232;
-      border-width: 1px;
-      border-style: solid;
-      text-align: right;
-      color: #d61232;
-      transition: background-color;
-      transition-duration: 0.30s;
-      transition-timing-function: ease-out; }
-    .home.a-propos article div button {
-      text-align: center;
-      width: 50px;
-      height: 50px;
-      line-height: 50px;
-      color: #d61232;
-      padding: 0;
-      border-color: #d61232;
-      border-width: 1px 1px 1px 0;
-      border-style: solid solid solid none;
-      float: left; }
-      .home.a-propos article div button:hover {
-        color: white;
-        border: none;
-        background-color: #d61232; }
-      .home.a-propos article div button:focus {
-        outline-width: 0px; }
 
 .home.signup-section {
   background-color: #B7A5A1; }
@@ -162,11 +127,10 @@ section.home {
 
 a.cat {
   height: 50px;
-  display: block;
-  text-align: center;
+  display: inline-block;
   margin: 0 auto 0 auto;
   border: 1px solid #d61232;
-  padding: 0;
+  padding-left: 1rem;
   line-height: 50px;
   text-align: right;
   width: none;
@@ -217,7 +181,9 @@ a.cat {
   font-family: "Droid Serif", serif; }
 .signup-section p {
   text-align: center;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300; }
 .signup-section form {
   background-color: transparent;
   padding: 20px 100px 20px 100px; }

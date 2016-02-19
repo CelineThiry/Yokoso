@@ -57,13 +57,13 @@
     <section class="row">
       <h2>Se connecter</h2>
       
-      <form class="large-6 medium-6 columns"> <!-- Left column -->
-        <div class="my-input"><input id="email" type="email" placeholder="Adresse e-mail"></div>        
-        <div class="my-input"><input type="password" id="password" name="password" placeholder="Mot de passe"></div>
+      <form action="online/tableau-de-bord.html" class="large-6 medium-6 columns"> <!-- Left column -->
+        <div class="my-input"><input required id="email" type="email" placeholder="Adresse e-mail"></div>        
+        <div class="my-input"><input required type="password" id="password" name="password" placeholder="Mot de passe"></div>
         <div class="signup-div-style">
           <p class="remember"><input type="checkbox">Se souvenir de moi</p> <a href="javascript:void(0)" class="forget simple-link">Mot de passe oublié?</a>
         </div>
-        <a href="online/tableau-de-bord.html" class="login my-button">Je me connecte !</a>
+        <input type="submit" class="login my-button" value="Je me connecte !">
         <div class="signup-div-style">
           <p>Pas encore de compte ? <a href="" class="simple-link">Inscrivez-vous !</a></p>
         </div>
@@ -87,18 +87,18 @@
     <section class="row">
       <h2>S'inscrire</h2>
       
-      <form class="large-6 medium-6 columns"> <!-- Left column -->
-        <div class="my-input"><input id="pseudo" type="text" placeholder="Pseudo"></div> 
-        <div class="my-input"><input id="email" type="email" placeholder="Adresse e-mail"></div>        
-        <div class="my-input"><input type="password" id="password" name="password" placeholder="Mot de passe"></div>
-        <div class="signup-div-style">
-          <p class="remember"><input type="checkbox">J'accepte <a class="simple-link" href="javascript:void(0)">les conditions d'utilisation</a> de Yokoso</p> 
-        </div>
-        <a href="online/tableau-de-bord.html" class="login my-button">Je m'inscris !</a>
-        <div class="signup-div-style">
-          <p>Déjà un compte ? <a href="javascript:void(0)" class="simple-link">Connectez-vous !</a></p>
-        </div>
-      </form><!-- END Left column -->
+        <form action="online/profil.html" class="large-6 medium-6 columns"> <!-- Left column -->
+          <div class="my-input"><input id="pseudo" type="text" placeholder="Pseudo" required></div> 
+          <div class="my-input"><input id="email" type="email" placeholder="Adresse e-mail" required></div>        
+          <div class="my-input"><input type="password" id="password" name="password" placeholder="Mot de passe" required></div>
+          <div class="signup-div-style">
+            <p class="remember"><input type="checkbox" required>J'accepte <a class="simple-link" href="javascript:void(0)">les conditions d'utilisation</a> de Yokoso</p> 
+          </div>
+          <input type="submit" class="login my-button" value="Je m'inscris !">
+          <div class="signup-div-style">
+            <p>Déjà un compte ? <a href="javascript:void(0)" class="simple-link">Connectez-vous !</a></p>
+          </div>
+        </form><!-- END Left column -->
      <!--  <div class="separator">
       <span class="line"></span>
       <p>or</p>
@@ -203,14 +203,14 @@
         <div class="callout">
         <img src="img/iconset_yokoso_sprite_black_conversation.svg" alt="">
         <p>Apprenez ou entretenez votre japonais avec de vrais natifs</p>
-        <a class="cat" href="">En savoir plus</a>
+        <a class="cat" href="#a-propos">En savoir plus</a>
         </div>
       </div>
       <div class="large-4 medium-4 columns">
         <div class="callout">
         <img src="img/iconset_yokoso_sprite_black_dashboard.svg" alt="">
         <p>Découvrez une autre culture gràce à l’échange et au flux d’actulités !</p>
-        <a class="cat" href="">Consulter les derniers articles</a>
+        <a class="cat" href="#last-articles">Consulter les derniers articles</a>
         </div>
       </div>
       <div class="large-4 medium-4 columns">
@@ -283,7 +283,7 @@
     </div>
   </section>
 
-  <section class="home expanded line-of-article row">
+  <section class="home expanded line-of-article row" id="last-articles">
   <div class="row">
     <h1>Derniers articles</h1>
     <article class="large-4 medium-4 columns">
@@ -299,7 +299,7 @@
       <div class="column-right large-9 medium-9 columns">
         <h3>Titre de l'article</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam molestiae, voluptatibus soluta eos esse totam!</p>
-        <div><a href="">Lire plus</a><button>></button></div>
+        <a class="cat" href="">Lire plus</a>
       </div>      
       </figcaption>
     </article>
@@ -318,7 +318,7 @@
         <p>みなさん、こんにちは。つんです。
 前回の大福に欠かせないあんこのレシピの紹介です。順番が逆になってスイマセン(´･ω･`;)
 まずは普通のあんこからです。</p>
-        <div><a href="">Lire plus</a><button>></button></div>
+        <a class="cat" href="">Lire plus</a>
       </div>      
       </figcaption>
     </article> 
@@ -335,14 +335,14 @@
       <div class="column-right large-9 medium-9 columns">
         <h3>Titre de l'article</h3>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam molestiae, voluptatibus soluta eos esse totam!</p>
-        <div><a href="">Lire plus</a><button>></button></div>
+        <a class="cat" href="">Lire plus</a>
       </div>      
       </figcaption>
     </article> 
     </div>
   </section> <!-- Fin article-line -->
 
-  <section class="home expanded a-propos row">
+  <section class="home expanded a-propos row" id="a-propos">
     <div class="row">
     <article class="large-6 medium-6 columns">
       <blockquote>Le but de Yokoso est de favoriser la découverte de la culture japonaise par les francophones</blockquote>
@@ -351,7 +351,7 @@
       <p>Yokoso est un outils de correspodance franco-japoanise créer par l’ambasse Française du japon. Son ambition est d'ouvrir aux passionnés et féru de langues les portes de la culture japonaise et française. </p>
 
 <p>Ici, rechercher des correspondants de votre âge avec des centres d’intéreet similaires. Vous pourrez ainsi découvrir la culture de l’autre, échanger des idées, des photo, surtout vous perfectionner en japonais/français et pourquoi pas décider plus tard de faire un beau voyage.</p>
-      <div><a href="">En savoir plus</a><button>></button></div>
+      <a class="cat" href="">En savoir plus</a>
     </article>
     </div>
   </section> <!-- Fin a-propos row -->
@@ -361,18 +361,18 @@
         <h1>Convaincu ? Inscrivez-vous maintenant !</h1>
         <p>Et profitez de tous les services de Yokoso</p>
         
-        <form class="large-6 medium-6 columns"> <!-- Left column -->
-        <div class="my-input"><input id="pseudo" type="text" placeholder="Pseudo"></div> 
-        <div class="my-input"><input id="email" type="email" placeholder="Adresse e-mail"></div>        
-        <div class="my-input"><input type="password" id="password" name="password" placeholder="Mot de passe"></div>
-        <div class="signup-div-style">
-          <p class="remember"><input type="checkbox">J'accepte <a class="simple-link" href="javascript:void(0)">les conditions d'utilisation</a> de Yokoso</p> 
-        </div>
-        <a href="online/tableau-de-bord.html" class="login my-button">Je m'inscris !</a>
-        <div class="signup-div-style">
-          <p>Déjà un compte ? <a href="javascript:void(0)" class="simple-link">Connectez-vous !</a></p>
-        </div>
-      </form><!-- END Left column -->
+        <form action="online/profil.html" class="large-6 medium-6 columns"> <!-- Left column -->
+          <div class="my-input"><input id="pseudo" type="text" placeholder="Pseudo" required></div> 
+          <div class="my-input"><input id="email" type="email" placeholder="Adresse e-mail" required></div>        
+          <div class="my-input"><input type="password" id="password" name="password" placeholder="Mot de passe" required></div>
+          <div class="signup-div-style">
+            <p class="remember"><input type="checkbox" required>J'accepte <a class="simple-link" href="javascript:void(0)">les conditions d'utilisation</a> de Yokoso</p> 
+          </div>
+          <input type="submit" class="login my-button" value="Je m'inscris !">
+          <div class="signup-div-style">
+            <p>Déjà un compte ? <a href="javascript:void(0)" class="simple-link">Connectez-vous !</a></p>
+          </div>
+        </form><!-- END Left column -->
      <!--  <div class="separator">
       <span class="line"></span>
       <p>or</p>
