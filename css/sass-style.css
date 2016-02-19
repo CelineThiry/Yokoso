@@ -67,7 +67,8 @@ section.home {
 .home.a-propos {
   background-color: white; }
   .home.a-propos blockquote {
-    font-size: 2rem; }
+    font-size: 2rem;
+    text-align: right; }
 
 .home.signup-section {
   background-color: #B7A5A1; }
