@@ -8,6 +8,10 @@
   <title>Yokoso</title>
   <meta name="description" content="Yokoso, le site de correspondance franco-japonaise">
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,800' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/foundation.css" />
   <link rel="stylesheet" href="css/app.css" />
   <link rel="stylesheet" href="css/sass-style.css" />
@@ -37,14 +41,14 @@
     </nav>
   </header> <!-- END OFFLINE navigation bar -->
 
-	<nav id="menu-push">
-		<ul>
-			<li><a href="" class="search">Chercher un correspondant</a></li>
-			<li><a href="flux-actualites.html">Flux d'actualités</a></li>
-			<li><a href="">A propos</a></li>
-			<li><a href="">Contact</a></li>			
-		</ul>
-	</nav>
+  <nav id="menu-push">
+    <ul>
+      <li><a href="" class="search">Chercher un correspondant</a></li>
+      <li><a href="flux-actualites.html">Flux d'actualités</a></li>
+      <li><a href="">A propos</a></li>
+      <li><a href="">Contact</a></li>     
+    </ul>
+  </nav>
 
 
 <!-- Les ligthbox ou pop in commune à toutes les pages-->
@@ -54,13 +58,13 @@
       <h2>Se connecter</h2>
       
       <form class="large-6 medium-6 columns"> <!-- Left column -->
-        <div><input id="email" type="email" placeholder="Adresse e-mail"></div>        
-        <div><input type="password" id="password" name="password" placeholder="Mot de passe"></div>
-        <div>
+        <div class="my-input"><input id="email" type="email" placeholder="Adresse e-mail"></div>        
+        <div class="my-input"><input type="password" id="password" name="password" placeholder="Mot de passe"></div>
+        <div class="signup-div-style">
           <p class="remember"><input type="checkbox">Se souvenir de moi</p> <a href="javascript:void(0)" class="forget simple-link">Mot de passe oublié?</a>
         </div>
         <a href="online/tableau-de-bord.html" class="login my-button">Je me connecte !</a>
-        <div>
+        <div class="signup-div-style">
           <p>Pas encore de compte ? <a href="" class="simple-link">Inscrivez-vous !</a></p>
         </div>
       </form><!-- END Left column -->
@@ -84,14 +88,14 @@
       <h2>S'inscrire</h2>
       
       <form class="large-6 medium-6 columns"> <!-- Left column -->
-        <div><input id="pseudo" type="text" placeholder="Pseudo"></div> 
-        <div><input id="email" type="email" placeholder="Adresse e-mail"></div>        
-        <div><input type="password" id="password" name="password" placeholder="Mot de passe"></div>
-        <div>
+        <div class="my-input"><input id="pseudo" type="text" placeholder="Pseudo"></div> 
+        <div class="my-input"><input id="email" type="email" placeholder="Adresse e-mail"></div>        
+        <div class="my-input"><input type="password" id="password" name="password" placeholder="Mot de passe"></div>
+        <div class="signup-div-style">
           <p class="remember"><input type="checkbox">J'accepte <a class="simple-link" href="javascript:void(0)">les conditions d'utilisation</a> de Yokoso</p> 
         </div>
         <a href="online/tableau-de-bord.html" class="login my-button">Je m'inscris !</a>
-        <div>
+        <div class="signup-div-style">
           <p>Déjà un compte ? <a href="javascript:void(0)" class="simple-link">Connectez-vous !</a></p>
         </div>
       </form><!-- END Left column -->
@@ -184,105 +188,103 @@
 
 
 <div id="content"> 
+
 <section class="expanded row video-intro">
-<<<<<<< HEAD
   <div class="intro-content">
-  <div class="row intro">
-    <div class="large-12 medium-12 columns">
-      <h1>Bienvenue sur Yokoso</h1>
-      <p>Le site de correspondance franco-japonaise</p>
-    </div>
-  </div>
-
-   <div class="row anchors">
-    <div class="large-4 medium-4 columns">
-      <div class="callout">
-      <img src="img/iconset_yokoso_sprite_black_conversation.svg" alt="">
-      <p>Apprenez ou entretenez votre japonais avec de vrais natifs</p>
-      <a class="cat" href="">En savoir plus</a>
+    <div class="row intro">
+      <div class="large-12 medium-12 columns">
+        <h1>Bienvenue sur Yokoso</h1>
+        <p>Le site de correspondance franco-japonaise</p>
       </div>
     </div>
-    <div class="large-4 medium-4 columns">
-      <div class="callout">
-      <img src="img/iconset_yokoso_sprite_black_dashboard.svg" alt="">
-      <p>Découvrez une autre culture gràce à l’échange et au flux d’actulités !</p>
-      <a class="cat" href="">Consulter les derniers articles</a>
+
+    <div class="row anchors">
+      <div class="large-4 medium-4 columns">
+        <div class="callout">
+        <img src="img/iconset_yokoso_sprite_black_conversation.svg" alt="">
+        <p>Apprenez ou entretenez votre japonais avec de vrais natifs</p>
+        <a class="cat" href="">En savoir plus</a>
+        </div>
       </div>
-    </div>
-    <div class="large-4 medium-4 columns">
-      <div class="callout">
-      <img src="img/iconset_yokoso_sprite_black_add-contact.svg" alt="">
-      <p>Faites vous de nouveaux amis parmis des gens passionés et motivés !</p>
-      <a class="cat" href="">Chercher un correspondant</a>
-    </div>
+      <div class="large-4 medium-4 columns">
+        <div class="callout">
+        <img src="img/iconset_yokoso_sprite_black_dashboard.svg" alt="">
+        <p>Découvrez une autre culture gràce à l’échange et au flux d’actulités !</p>
+        <a class="cat" href="">Consulter les derniers articles</a>
+        </div>
+      </div>
+      <div class="large-4 medium-4 columns">
+        <div class="callout">
+          <img src="img/iconset_yokoso_sprite_black_add-contact.svg" alt="">
+          <p>Faites vous de nouveaux amis parmis des gens passionés et motivés !</p>
+          <a class="cat" href="">Chercher un correspondant</a>
+        </div>
+      </div>
   </div>
 
-   
+  </div> <!-- fin intro content -->
 
-
-  </div>
   <div class="wrap">
-    <video autoplay loop>
+    <video autoplay loop muted>
         <source src="video/japon-small.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>  
         Video not supported.
     </video>
   </div>
-=======
- <div class="flex-video widescreen vimeo">
-        <iframe src="http://player.vimeo.com/video/60122989" width="100%" height="300px" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
-</div> 
->>>>>>> parent of 3220f8f... Work in progress
+
 </section>
 
 
   <section class="home expanded last-signed-up row">
-  <h1>Derniers inscrits</h1>
-    <ul class="large-12 medium-12 columns">
-      <li>
-        <a href="profil-nomducorrespondant.html">
-        <figure class="avatar">
-          <img src="" alt="">
-          <figcaption>Noémie</figcaption>
-        </figure>
-        </a>
-      </li>
-      <li>
-        <a href="profil-nomducorrespondant.html">
-        <figure class="avatar">
-          <img src="" alt="">
-          <figcaption>あかね</figcaption>
-        </figure>
-        </a>
-      </li>
-      <li>
-        <a href="profil-nomducorrespondant.html">
-        <figure class="avatar">
-          <img src="" alt="">
-          <figcaption>Nicolas</figcaption>
-        </figure>
-        </a>
-      </li>
-      <li>
-        <a href="profil-nomducorrespondant.html">
-        <figure class="avatar">
-          <img src="" alt="">
-          <figcaption>Yato</figcaption>
-        </figure>
-        </a>
-      </li>
-      
-      <li>
-        <a href="profil-nomducorrespondant.html">
-        <figure class="avatar">
-          <img src="" alt="">
-          <figcaption>杏里</figcaption>
-        </figure>
-        </a>
-      </li>
-    </ul>
+    <div class="row">
+    <h1>Derniers inscrits</h1>
+      <ul class="large-12 medium-12 columns">
+        <li>
+          <a href="profil-nomducorrespondant.html">
+          <figure class="avatar">
+            <img src="" alt="">
+            <figcaption>Noémie</figcaption>
+          </figure>
+          </a>
+        </li>
+        <li>
+          <a href="profil-nomducorrespondant.html">
+          <figure class="avatar">
+            <img src="" alt="">
+            <figcaption>あかね</figcaption>
+          </figure>
+          </a>
+        </li>
+        <li>
+          <a href="profil-nomducorrespondant.html">
+          <figure class="avatar">
+            <img src="" alt="">
+            <figcaption>Nicolas</figcaption>
+          </figure>
+          </a>
+        </li>
+        <li>
+          <a href="profil-nomducorrespondant.html">
+          <figure class="avatar">
+            <img src="" alt="">
+            <figcaption>Yato</figcaption>
+          </figure>
+          </a>
+        </li>
+        
+        <li>
+          <a href="profil-nomducorrespondant.html">
+          <figure class="avatar">
+            <img src="" alt="">
+            <figcaption>杏里</figcaption>
+          </figure>
+          </a>
+        </li>
+      </ul>
+    </div>
   </section>
 
   <section class="home expanded line-of-article row">
+  <div class="row">
     <h1>Derniers articles</h1>
     <article class="large-4 medium-4 columns">
       <figure class="row">
@@ -337,39 +339,51 @@
       </div>      
       </figcaption>
     </article> 
+    </div>
   </section> <!-- Fin article-line -->
 
   <section class="home expanded a-propos row">
+    <div class="row">
     <article class="large-6 medium-6 columns">
-      <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae quod, molestias officiis blanditiis incidunt, atque!</blockquote>
+      <blockquote>Le but de Yokoso est de favoriser la découverte de la culture japonaise par les francophones</blockquote>
     </article>
     <article class="large-6 medium-6 columns">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus cum eaque corrupti minus est qui! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate error quo deserunt accusantium culpa ullam sit id animi, provident modi nulla amet, est dolorum at?</p>
-      <a href="a-propos.html" class="cat">En savoir plus</a>
+      <p>Yokoso est un outils de correspodance franco-japoanise créer par l’ambasse Française du japon. Son ambition est d'ouvrir aux passionnés et féru de langues les portes de la culture japonaise et française. </p>
+
+<p>Ici, rechercher des correspondants de votre âge avec des centres d’intéreet similaires. Vous pourrez ainsi découvrir la culture de l’autre, échanger des idées, des photo, surtout vous perfectionner en japonais/français et pourquoi pas décider plus tard de faire un beau voyage.</p>
+      <div><a href="">En savoir plus</a><button>></button></div>
     </article>
+    </div>
   </section> <!-- Fin a-propos row -->
 
   <section class="home expanded signup-section row">
-        <h1>S'inscrire</h1>
+    <div class="row">
+        <h1>Convaincu ? Inscrivez-vous maintenant !</h1>
+        <p>Et profitez de tous les services de Yokoso</p>
         
         <form class="large-6 medium-6 columns"> <!-- Left column -->
-          <div><input id="pseudo" type="text" placeholder="Pseudo"></div> 
-          <div><input id="email" type="email" placeholder="Adresse e-mail"></div>        
-          <div><input type="password" id="password" name="password" placeholder="Mot de passe"></div>
-          <p class="remember"><input type="checkbox">J'accepte <a href="javascript:void(0)">les conditions d'utilisation</a> de Yokoso</p> 
-          <a href="online/tableau-de-bord.html"><input type="submit" value="Je m'inscris !"></a>
-          <p>Déjà un compte ? <a href="javascript:void(0)" class="signup">Connectez-vous !</a></p>
-        </form><!-- END Left column -->
-        <!-- <div class="separator">
-        <span class="line"></span>
-        <p>or</p>
-        <span class="line"></span>
-        </div> -->
-        <form class="large-6 medium-6 columns"><!-- Right column -->
-          <input type="submit" class="facebook" value="S'inscrire avec Facebook">
-          <input type="submit" class="twitter" value="S'inscrire avec Twitter">
-          <input type="submit" class="google" value="S'inscrire avec Google+">
-        </form><!-- END Right column -->      
+        <div class="my-input"><input id="pseudo" type="text" placeholder="Pseudo"></div> 
+        <div class="my-input"><input id="email" type="email" placeholder="Adresse e-mail"></div>        
+        <div class="my-input"><input type="password" id="password" name="password" placeholder="Mot de passe"></div>
+        <div class="signup-div-style">
+          <p class="remember"><input type="checkbox">J'accepte <a class="simple-link" href="javascript:void(0)">les conditions d'utilisation</a> de Yokoso</p> 
+        </div>
+        <a href="online/tableau-de-bord.html" class="login my-button">Je m'inscris !</a>
+        <div class="signup-div-style">
+          <p>Déjà un compte ? <a href="javascript:void(0)" class="simple-link">Connectez-vous !</a></p>
+        </div>
+      </form><!-- END Left column -->
+     <!--  <div class="separator">
+      <span class="line"></span>
+      <p>or</p>
+      <span class="line"></span>
+      </div> -->
+      <form class="large-6 medium-6 columns"><!-- Right column -->
+        <a href="online/tableau-de-bord.html" class="login my-button facebook">Se connecter avec Facebook</a>
+        <a href="online/tableau-de-bord.html" class="login my-button twitter">Se connecter avec Twitter</a>
+        <a href="online/tableau-de-bord.html" class="login my-button google">Se connecter avec Google+</a>
+      </form><!-- END Right column -->
+    </div>
   </section> <!-- END signup row --> 
 
 </div> <!-- fin div#content -->

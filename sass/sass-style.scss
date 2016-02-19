@@ -2,11 +2,15 @@
 $body-bgc: #EEE8D8;
 $lightbox-bgc: rgba(48,42,43,0.9);
 $global-font: 'Roboto', sans-serif;
+$droid-serif: 'Droid Serif', serif;
+$open-sans: 'Open Sans', sans-serif;
+$open-sans-condensed: 'Open Sans Condensed', sans-serif;
 $block-height: 76px;
 $cherry-red: #d61232;
 $my-black: rgb(48,42,43);
 $my-black-half: #776B69;
 $my-black-quarter: #B7A5A1;
+$my-black-lightest: rgb(229, 206, 201);
 $global-border-radius: 4px;
 $global-button-hover-transition: background-color 0.25s ease-out 0s, color 0.25s ease-out 0s;
 $japanese-font: "Japanese Brush";
@@ -96,20 +100,97 @@ body{
  * Index.html
  * ====================================================================================================================*/
 #content{
-	padding-bottom: 220px;
+	padding-bottom: 200px;
 }
 
 // General
 section.home{
-	background-color: white;
+	
 	padding-top: 50px;
 	padding-bottom: 50px;
-	margin-bottom: 50px;
-
+	min-height: 400px;
+	// margin-bottom: 50px;	
 	h1{
 		text-align: center;
 		
 	}
+}
+
+.home.last-signed-up{
+		background-color: white;
+}
+
+.home.line-of-article{
+		background-color: $my-black-quarter;
+}
+
+.home.a-propos{
+		background-color: white;
+
+		blockquote{
+			font-size: 2rem;			
+		}
+
+		article{
+			div{
+
+				height: 50px;
+				display: inline-block;
+				text-align: center;
+				margin: 0 auto 0 auto;
+
+					a{	
+					float: left;				
+					// display: inline-block;
+					// vertical-align: top;
+					padding: 0 10px 0 10px;					
+					height: 50px;
+					line-height: 50px;
+					border-color: $cherry-red;
+					border-width: 1px;
+					border-style: solid;
+					text-align: right;					
+					color: $cherry-red;
+					transition: background-color;
+					transition-duration: 0.30s;
+					transition-timing-function: ease-out;
+
+					
+				}
+
+				button{
+					// display: inline-block;
+					// vertical-align: top;
+					text-align: center;						
+					width: 50px;
+					height: 50px;	
+					line-height: 50px;	
+					color: $cherry-red;				
+					padding: 0;
+					border-color: $cherry-red;
+					border-width: 1px 1px 1px 0;
+					border-style: solid solid solid none;
+					float: left;
+
+					&:hover{
+						color: white;
+						border: none;
+						background-color: $cherry-red;						
+					}
+
+					&:focus{
+						
+						outline-width: 0px;
+					}
+
+				}
+
+			}
+		}
+}
+
+.home.signup-section{
+		background-color: $my-black-quarter;
 }
 
 .video-intro{
@@ -176,23 +257,26 @@ section.home{
 .anchors{
 	div.columns{
 		div.callout{
-=======
-	div{
-		position: relative;
->>>>>>> parent of 3220f8f... Work in progress
 
-		iframe{
-			position: absolute;
-			top: 0px;
-			right: 0;
-			left:0;
-			width: 100vw;
-			height: 100vh;
+			padding: 1rem;
+			background-color: rgba(255,255,255,0.5);
+			border-radius: $global-border-radius;
+			text-align: center;
+			img{
+				margin-bottom: 1rem;
+				height: 70px;
+			}
+			p{
+				font-size: 1.2rem;
+				font-family: $droid-serif;
+				font-weight: 400;
+				font-style: italic;
+			}
+			
 		}
 	}
 }
 
-<<<<<<< HEAD
 a.cat{	
 					height: 50px;
 					display: block;
@@ -232,12 +316,12 @@ a.cat{
 					}		
 }
 
-=======
->>>>>>> parent of 3220f8f... Work in progress
 .last-signed-up{
+
+	background-color: white;
 	a{}
 	h1{
-		font-family: "Japanese Brush", roboto, serif;
+		font-family: $droid-serif;
 	}
 	ul{
 		text-align: center;
@@ -272,7 +356,8 @@ a.cat{
 
 .signup-section{
 
-	h1{font-family: $japanese-font;}
+	h1{font-family: $droid-serif;}
+	p{text-align: center;font-size: 1.5rem;}
 
 	form{
 			background-color: transparent;
@@ -280,7 +365,7 @@ a.cat{
 
 			div{
 				// display: block;
-				height: $block-height;
+				
 
 				p{
 					font-weight: 300;
@@ -347,7 +432,7 @@ a.cat{
 
 				input[type="email"], input[type="password"], input[type="text"]{
 					border: 0;
-				    background: $body-bgc;
+				    background: white;
 				    padding: 1.4rem 1rem 1.4rem 1rem;
 				    font-size: 1.2em;
 				    font-weight: 100;
@@ -400,6 +485,18 @@ a.cat{
 			}		
 
 		}
+}
+
+div.signup-div-style{
+	height: 25px;	
+}
+
+a.login.my-button{
+		text-align: center;
+	}
+
+div.my-input{
+	height: $block-height;
 }
 
 header.first-nav.online{
@@ -559,7 +656,7 @@ div.lightbox.active{
 
 			div{
 				// display: block;
-				height: $block-height;
+				// height: $block-height;
 
 				p{
 					font-weight: 300;
@@ -626,7 +723,7 @@ div.lightbox.active{
 
 				input[type="email"], input[type="password"], input[type="text"]{
 					border: 0;
-				    background: $body-bgc;
+				    background: white;
 				    padding: 1.4rem 1rem 1.4rem 1rem;
 				    font-size: 1.2em;
 				    font-weight: 100;
@@ -863,6 +960,7 @@ div.lightbox{
 nav#menu-push.online{
 	ul{
 		li{
+
 			.profil{
 					display: inline-block;
 					vertical-align: top;
@@ -1542,7 +1640,7 @@ div.flexslider {
 section.line-of-article{
 
 	h1{
-		font-family: $japanese-font;
+		font-family: $droid-serif;
 	}
 
 	article{
@@ -2291,5 +2389,6 @@ body>main#base>footer{
 }
 
 body>footer.open{
-	transform: translate(300px, 0px);
+	transform: translate(300px, 0px);	
 }
+
