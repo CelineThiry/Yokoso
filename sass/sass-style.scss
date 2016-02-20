@@ -32,7 +32,7 @@ body{
 		margin: 0;
 		border: 0;
 		padding: 0;
-		position: relative;
+		position: fixed;
 		z-index: 100;
 
 		nav{
@@ -121,7 +121,7 @@ section.home{
 }
 
 .home.line-of-article{
-		background-color: $my-black-quarter;
+		background-color: $body-bgc;
 }
 
 .home.a-propos{
@@ -278,9 +278,16 @@ a.cat{
 			vertical-align: top;
 
 			a{
+				color: $my-black;
+				font-family: $open-sans;
+				font-weight: 400;
 				figure.avatar{
 
 					padding: 1rem;
+
+					&:hover{
+						opacity: 0.5;
+					}
 
 					img{
 						height: 100px;
@@ -316,7 +323,7 @@ a.cat{
 				p{
 					font-weight: 300;
 					font-size: 1rem;
-					color: white;								
+					color: black;								
 				}
 
 				p.remember{
@@ -1586,40 +1593,102 @@ div.flexslider {
 section.line-of-article{
 
 	h1{
-		font-family: $droid-serif;
+		font-family: $droid-serif;		
 	}
 
 	article{
 
 		margin-bottom: 20px;
 
-		figure{
+		div.callout{
 
-			img{
+			background-color: white;
+			padding-top: 1rem;
+			padding-bottom: 1rem;
+			border-radius: $global-border-radius;
+
+			figure{
+
+				margin-top: 0;
+				padding-left: 1rem;
+				padding-right: 1rem;
+				height: 180px;
+				width: 100%;
+				overflow: hidden;
+				position: relative;
+				cursor: pointer;
+
+
+				img{
+					width: 100%;
+					transition: 0.3s opacity ease-out 0s;
+					padding: 0;					
+				}				
+
+				span{
+					position: absolute;
+    				display: inline-block;
+    				text-align: center;
+    				line-height: 180px;
+    				top: 0;
+    				left: 0;
+    				height: 180px;
+					width: 100%;    				
+					color: $my-black;  					   				
+    				font-family: $droid-serif;
+    				font-size: 1.5rem;
+    				font-style: italic;
+    				font-weight: 400;
+    				transition: 0.3s transform ease-out 0s;
+    				transform: scale(0);   				   
+    								
+				}	
+				
 				
 			}
-		}
 
-		figcaption{
+			figure:hover span{
+				transform: scale(1);												
+			}
+
+			figure:hover img{
+				opacity: 0.3;				
+			}
+
+			figcaption{
 
 			.column-left{
 
 				text-align: right;
+				padding-right: 0;
+
 
 				p{
 					margin-bottom: 0;
+					text-align: right;
+					font-family: $open-sans-condensed;
+					font-weight: 300;
+					padding-right: 1rem;
+
 				}
 
 				.article-date{
 
 					color: grey;
 					line-height: 3rem;
+					text-align: right;
 
 				}
 
 				.article-tag{
 
-					color: $cherry-red;					
+					color: $cherry-red;	
+					text-align: right;	
+					cursor: pointer;
+
+					&:hover{
+						text-decoration: underline;
+					}			
 				}
 
 
@@ -1627,68 +1696,25 @@ section.line-of-article{
 
 			.column-right{
 
-				h3{
-
+				h1{
+					font-size: 1.5rem;
+					font-family: $open-sans;
+					font-weight: 300;
+					text-align: left;
 				}
 
 				p{
+					font-family: $droid-serif;
+					font-weight: 400;
+					text-align: left;
+				}			
 
-				}
-
-				div{
-
-					a{	
-					float: left;				
-					// display: inline-block;
-					// vertical-align: top;
-					padding: 0 10px 0 10px;					
-					height: 50px;
-					line-height: 50px;
-					border-color: $cherry-red;
-					border-width: 1px;
-					border-style: solid;
-					text-align: right;					
-					color: $cherry-red;
-					transition: background-color;
-					transition-duration: 0.30s;
-					transition-timing-function: ease-out;
-
-					
-				}
-
-				button{
-					// display: inline-block;
-					// vertical-align: top;
-					text-align: center;						
-					width: 50px;
-					height: 50px;	
-					line-height: 50px;	
-					color: $cherry-red;				
-					padding: 0;
-					border-color: $cherry-red;
-					border-width: 1px 1px 1px 0;
-					border-style: solid solid solid none;
-
-					&:hover{
-						color: white;
-						border: none;
-						background-color: $cherry-red;						
-					}
-
-					&:focus{
-						
-						outline-width: 0px;
-					}
-
-				}
-
-				}
-
-				
+			}
 
 			}
 
 		}
+
 	}
 }
 
@@ -1746,6 +1772,7 @@ section.pagination{
 
 main#base{
 	
+	margin-top: 76px;
 	max-height: 100%;
 
 	section#content{

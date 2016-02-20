@@ -11,7 +11,7 @@ body {
     margin: 0;
     border: 0;
     padding: 0;
-    position: relative;
+    position: fixed;
     z-index: 100; }
     body header.first-nav nav .large-4.medium-4 {
       padding: 16px 16px 0 16px; }
@@ -62,7 +62,7 @@ section.home {
   background-color: white; }
 
 .home.line-of-article {
-  background-color: #B7A5A1; }
+  background-color: #EEE8D8; }
 
 .home.a-propos {
   background-color: white; }
@@ -166,17 +166,23 @@ a.cat {
     .last-signed-up ul li {
       display: inline-block;
       vertical-align: top; }
-      .last-signed-up ul li a figure.avatar {
-        padding: 1rem; }
-        .last-signed-up ul li a figure.avatar img {
-          height: 100px;
-          width: 100px;
-          border-radius: 100px;
-          background-color: lightcoral;
-          display: block;
-          margin: 0 auto 1rem auto; }
-        .last-signed-up ul li a figure.avatar figcaption {
-          text-align: center; }
+      .last-signed-up ul li a {
+        color: #302a2b;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400; }
+        .last-signed-up ul li a figure.avatar {
+          padding: 1rem; }
+          .last-signed-up ul li a figure.avatar:hover {
+            opacity: 0.5; }
+          .last-signed-up ul li a figure.avatar img {
+            height: 100px;
+            width: 100px;
+            border-radius: 100px;
+            background-color: lightcoral;
+            display: block;
+            margin: 0 auto 1rem auto; }
+          .last-signed-up ul li a figure.avatar figcaption {
+            text-align: center; }
 
 .signup-section h1 {
   font-family: "Droid Serif", serif; }
@@ -191,7 +197,7 @@ a.cat {
   .signup-section form div p {
     font-weight: 300;
     font-size: 1rem;
-    color: white; }
+    color: black; }
   .signup-section form div p.remember {
     float: left;
     z-index: 1000000000; }
@@ -936,44 +942,72 @@ section.line-of-article h1 {
   font-family: "Droid Serif", serif; }
 section.line-of-article article {
   margin-bottom: 20px; }
-  section.line-of-article article figcaption .column-left {
-    text-align: right; }
-    section.line-of-article article figcaption .column-left p {
-      margin-bottom: 0; }
-    section.line-of-article article figcaption .column-left .article-date {
-      color: grey;
-      line-height: 3rem; }
-    section.line-of-article article figcaption .column-left .article-tag {
-      color: #d61232; }
-  section.line-of-article article figcaption .column-right div a {
-    float: left;
-    padding: 0 10px 0 10px;
-    height: 50px;
-    line-height: 50px;
-    border-color: #d61232;
-    border-width: 1px;
-    border-style: solid;
-    text-align: right;
-    color: #d61232;
-    transition: background-color;
-    transition-duration: 0.30s;
-    transition-timing-function: ease-out; }
-  section.line-of-article article figcaption .column-right div button {
-    text-align: center;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    color: #d61232;
-    padding: 0;
-    border-color: #d61232;
-    border-width: 1px 1px 1px 0;
-    border-style: solid solid solid none; }
-    section.line-of-article article figcaption .column-right div button:hover {
-      color: white;
-      border: none;
-      background-color: #d61232; }
-    section.line-of-article article figcaption .column-right div button:focus {
-      outline-width: 0px; }
+  section.line-of-article article div.callout {
+    background-color: white;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 4px; }
+    section.line-of-article article div.callout figure {
+      margin-top: 0;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      height: 180px;
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      cursor: pointer; }
+      section.line-of-article article div.callout figure img {
+        width: 100%;
+        transition: 0.3s opacity ease-out 0s;
+        padding: 0; }
+      section.line-of-article article div.callout figure span {
+        position: absolute;
+        display: inline-block;
+        text-align: center;
+        line-height: 180px;
+        top: 0;
+        left: 0;
+        height: 180px;
+        width: 100%;
+        color: #302a2b;
+        font-family: "Droid Serif", serif;
+        font-size: 1.5rem;
+        font-style: italic;
+        font-weight: 400;
+        transition: 0.3s transform ease-out 0s;
+        transform: scale(0); }
+    section.line-of-article article div.callout figure:hover span {
+      transform: scale(1); }
+    section.line-of-article article div.callout figure:hover img {
+      opacity: 0.3; }
+    section.line-of-article article div.callout figcaption .column-left {
+      text-align: right;
+      padding-right: 0; }
+      section.line-of-article article div.callout figcaption .column-left p {
+        margin-bottom: 0;
+        text-align: right;
+        font-family: "Open Sans Condensed", sans-serif;
+        font-weight: 300;
+        padding-right: 1rem; }
+      section.line-of-article article div.callout figcaption .column-left .article-date {
+        color: grey;
+        line-height: 3rem;
+        text-align: right; }
+      section.line-of-article article div.callout figcaption .column-left .article-tag {
+        color: #d61232;
+        text-align: right;
+        cursor: pointer; }
+        section.line-of-article article div.callout figcaption .column-left .article-tag:hover {
+          text-decoration: underline; }
+    section.line-of-article article div.callout figcaption .column-right h1 {
+      font-size: 1.5rem;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 300;
+      text-align: left; }
+    section.line-of-article article div.callout figcaption .column-right p {
+      font-family: "Droid Serif", serif;
+      font-weight: 400;
+      text-align: left; }
 
 section.pagination {
   /* padding-bottom: 250px; */ }
@@ -1012,6 +1046,7 @@ section.pagination {
         cursor: pointer; }
 
 main#base {
+  margin-top: 76px;
   max-height: 100%; }
   main#base section#content {
     padding-bottom: 200px; }
