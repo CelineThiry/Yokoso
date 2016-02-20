@@ -262,6 +262,41 @@ a.cat{
 					}		
 }
 
+a.cat-2{	
+					height: 50px;
+					display: inline-block;
+					text-align: center;
+					margin: 0 auto 0 auto;
+					border: 1px solid $my-black;							
+					// display: inline-block;
+					// vertical-align: top;
+					padding-left: 1rem;	
+					padding-right: 1rem;					
+					line-height: 50px;										
+					text-align: right;
+					width: none;					
+					color: $my-black;
+					font-family: $open-sans;
+					font-weight: 400;
+					font-style: normal;	
+					transition: background-color;
+					transition-duration: 0.30s;
+					transition-timing-function: ease-out;	
+
+					&:hover{
+						color: white;
+						border: none;
+						background-color: $my-black;						
+					}	
+					
+}
+
+.line-of-articles-bottom-button{
+	width: 100%;
+	margin: 2rem auto 0 auto;
+	text-align: center;
+}
+
 .last-signed-up{
 
 	background-color: white;
@@ -323,7 +358,8 @@ a.cat{
 				p{
 					font-weight: 300;
 					font-size: 1rem;
-					color: black;								
+					color: black;
+					text-align: left;								
 				}
 
 				p.remember{
@@ -333,7 +369,7 @@ a.cat{
 
 					input[type="checkbox"]:not(:checked){
 							margin-right: 10px;
-							-webkit-appearance: none;
+							// -webkit-appearance: none;
 						    width: 17px; height: 17px;
 	  						border: 0px none transparent;
 	  						background: white;
@@ -360,8 +396,9 @@ a.cat{
 				a.simple-link{
 					font-weight: 300;
 					font-size: 1rem;
-					color: white;
+					color: black;
 					text-decoration: underline;
+					text-align: left;
 
 					&:hover{
 					color: $cherry-red;
@@ -380,7 +417,7 @@ a.cat{
     				width: 100%;
     				height: $block-height;
     				outline: none;
-    				font-family: $global-font;
+    				font-family: $open-sans;
 				}
 
 				input[type="email"], input[type="password"], input[type="text"]{
@@ -410,6 +447,7 @@ a.cat{
 					line-height: $block-height;					
 					font-weight: 300;
 					text-align: center;
+					transition: $global-button-hover-transition;
 
 					&:hover{
 						color: $my-black;
@@ -701,6 +739,7 @@ div.lightbox.active{
 					line-height: $block-height;					
 					font-weight: 300;
 					text-align: center;
+					transition: $global-button-hover-transition;
 
 					&:hover{
 						color: $my-black;

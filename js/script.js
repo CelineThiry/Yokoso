@@ -65,6 +65,58 @@ $(document).ready(function(){
         moveRight();
     });
 
+
+    //waypoints
+ //    var waypoint = new Waypoint({
+	//   element: document.getElementById('waypoint'),
+	//   handler: function(direction) {
+	//     console.log('Scrolled to waypoint!')
+	//   }
+	// })
+
+	//smooth scrolling
+// 	$(function() {
+//   $('a[href*="#"]:not([href="#"])').click(function() {
+//     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+//       var target = $(this.hash);
+//       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+//       if (target.length) {
+//         $('html, body').animate({
+//           scrollTop: target.offset().top
+//         }, 1000);
+//         return false;
+//       }
+//     }
+//   });
+// });
+
+	$('a#last-articles').on('click', function(e) {
+		event.preventDefault();
+	    $('html, body').animate({
+	    scrollTop: $("#last-articles").offset().top
+		}, 1000);
+});
+	
+// 	$('a[href="#"]').on('click', function(event) {
+		
+//     var target = $(this.href);
+//     if( target.length ) {
+//         event.preventDefault();
+//         $('html, body').animate({
+//             scrollTop: target.offset().top
+//         }, 10000);
+//     }
+// });
+// 	$('a[href^="#"]').on('click', function(event) {
+		
+//     var target = $(this.href);
+    
+//         event.preventDefault();
+//         $('html, body').animate({
+//             scrollTop: target.offset().top
+//         }, 10000);    
+// });
+
    
 
 	//Search lightbox multiselect

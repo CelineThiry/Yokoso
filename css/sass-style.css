@@ -157,6 +157,34 @@ a.cat {
     text-align: center;
     margin-left: 1rem; }
 
+a.cat-2 {
+  height: 50px;
+  display: inline-block;
+  text-align: center;
+  margin: 0 auto 0 auto;
+  border: 1px solid #302a2b;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  line-height: 50px;
+  text-align: right;
+  width: none;
+  color: #302a2b;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  transition: background-color;
+  transition-duration: 0.30s;
+  transition-timing-function: ease-out; }
+  a.cat-2:hover {
+    color: white;
+    border: none;
+    background-color: #302a2b; }
+
+.line-of-articles-bottom-button {
+  width: 100%;
+  margin: 2rem auto 0 auto;
+  text-align: center; }
+
 .last-signed-up {
   background-color: white; }
   .last-signed-up h1 {
@@ -197,13 +225,13 @@ a.cat {
   .signup-section form div p {
     font-weight: 300;
     font-size: 1rem;
-    color: black; }
+    color: black;
+    text-align: left; }
   .signup-section form div p.remember {
     float: left;
     z-index: 1000000000; }
     .signup-section form div p.remember input[type="checkbox"]:not(:checked) {
       margin-right: 10px;
-      -webkit-appearance: none;
       width: 17px;
       height: 17px;
       border: 0px none transparent;
@@ -224,8 +252,9 @@ a.cat {
   .signup-section form div a.simple-link {
     font-weight: 300;
     font-size: 1rem;
-    color: white;
-    text-decoration: underline; }
+    color: black;
+    text-decoration: underline;
+    text-align: left; }
     .signup-section form div a.simple-link:hover {
       color: #d61232; }
   .signup-section form div {
@@ -237,7 +266,7 @@ a.cat {
       width: 100%;
       height: 76px;
       outline: none;
-      font-family: "Roboto", sans-serif; }
+      font-family: "Open Sans", sans-serif; }
     .signup-section form div input[type="email"], .signup-section form div input[type="password"], .signup-section form div input[type="text"] {
       border: 0;
       background: white;
@@ -260,7 +289,8 @@ a.cat {
     font-size: 1.2rem;
     line-height: 76px;
     font-weight: 300;
-    text-align: center; }
+    text-align: center;
+    transition: background-color 0.25s ease-out 0s, color 0.25s ease-out 0s; }
     .signup-section form .my-button:hover, .signup-section form .facebook:hover, .signup-section form .twitter:hover, .signup-section form .google:hover, .signup-section div.lightbox.active section form .facebook:hover, div.lightbox.active section .signup-section form .facebook:hover, .signup-section div.lightbox.active section form .twitter:hover, div.lightbox.active section .signup-section form .twitter:hover, .signup-section div.lightbox.active section form .google:hover, div.lightbox.active section .signup-section form .google:hover {
       color: #302a2b;
       background: white; }
@@ -440,7 +470,8 @@ div.lightbox.active {
         font-size: 1.2rem;
         line-height: 76px;
         font-weight: 300;
-        text-align: center; }
+        text-align: center;
+        transition: background-color 0.25s ease-out 0s, color 0.25s ease-out 0s; }
         div.lightbox.active section form .my-button:hover, div.lightbox.active section form .facebook:hover, div.lightbox.active section form .twitter:hover, div.lightbox.active section form .google:hover {
           color: #302a2b;
           background: white; }
