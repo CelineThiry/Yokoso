@@ -90,10 +90,11 @@ $(document).ready(function(){
 //   });
 // });
 
-	$('a#last-articles').on('click', function(e) {
+	$('#last-articles').on('click', function(e) {
+		console.log('#last-articles');
 		event.preventDefault();
 	    $('html, body').animate({
-	    scrollTop: $("#last-articles").offset().top
+	    scrollTop: $("section.line-of-articles").offset().top
 		}, 1000);
 });
 	
