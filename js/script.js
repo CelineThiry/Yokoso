@@ -90,12 +90,11 @@ $(document).ready(function(){
 //   });
 // });
 
-	$('#last-articles').on('click', function(e) {
-		console.log('#last-articles');
+	$('a[href="#last-articles"]').on('click', function(event) {
+		console.log('last-articles');
 		event.preventDefault();
 	    $('html, body').animate({
-	    scrollTop: $("section.line-of-articles").offset().top
-		}, 1000);
+	    	scrollTop: $("section.line-of-article").offset().top}, 1000);
 });
 	
 // 	$('a[href="#"]').on('click', function(event) {
