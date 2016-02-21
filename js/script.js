@@ -94,7 +94,7 @@ $(document).ready(function(){
 		console.log('last-articles');
 		event.preventDefault();
 	    $('html, body').animate({
-	    	scrollTop: $("section.line-of-article").offset().top}, 1000);
+	    	scrollTop: $("section.line-of-article").offset().top - 76}, 1000);
 });
 	
 // 	$('a[href="#"]').on('click', function(event) {
