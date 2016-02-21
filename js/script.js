@@ -96,6 +96,20 @@ $(document).ready(function(){
 	    $('html, body').animate({
 	    	scrollTop: $("section.line-of-article").offset().top - 76}, 1000);
 });
+
+		$('a[href="#a-propos"]').on('click', function(event) {
+	
+		event.preventDefault();
+	    $('html, body').animate({
+	    	scrollTop: $("section.a-propos").offset().top - 76}, 1000);
+});
+
+				$('a[href="#signup-section"]').on('click', function(event) {
+	
+		event.preventDefault();
+	    $('html, body').animate({
+	    	scrollTop: $("section.signup-section").offset().top - 76}, 1000);
+});
 	
 // 	$('a[href="#"]').on('click', function(event) {
 		

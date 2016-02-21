@@ -17,6 +17,8 @@ body {
       padding: 16px 16px 0 16px; }
     body header.first-nav nav ul {
       text-align: right; }
+      body header.first-nav nav ul img {
+        display: none; }
       body header.first-nav nav ul li {
         display: inline-block; }
         body header.first-nav nav ul li a.login.button {
@@ -66,9 +68,35 @@ section.home {
 
 .home.a-propos {
   background-color: white; }
+  .home.a-propos h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300; }
+  .home.a-propos p.exergue {
+    font-family: "Droid Serif", serif;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    font-size: 1.25rem;
+    padding-bottom: 2rem; }
+  .home.a-propos p {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300; }
   .home.a-propos blockquote {
     font-size: 2rem;
-    text-align: right; }
+    text-align: right;
+    font-family: "Droid Serif", serif;
+    font-style: italic;
+    position: relative;
+    border: none;
+    margin: 0; }
+    .home.a-propos blockquote:before {
+      content: "\201C";
+      position: absolute;
+      top: -25px;
+      left: -25px;
+      font-size: 5rem; }
 
 .home.signup-section {
   background-color: #B7A5A1; }
@@ -112,19 +140,21 @@ section.home {
   font-size: 1.5rem;
   padding-bottom: 2rem; }
 
-.anchors div.columns div.callout {
-  padding: 1rem;
-  background-color: rgba(255, 255, 255, 0.5);
-  border-radius: 4px;
-  text-align: center; }
-  .anchors div.columns div.callout img {
-    margin-bottom: 1rem;
-    height: 70px; }
-  .anchors div.columns div.callout p {
-    font-size: 1.2rem;
-    font-family: "Droid Serif", serif;
-    font-weight: 400;
-    font-style: italic; }
+.anchors div.columns {
+  margin-bottom: 1rem; }
+  .anchors div.columns div.callout {
+    padding: 1rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 4px;
+    text-align: center; }
+    .anchors div.columns div.callout img {
+      margin-bottom: 1rem;
+      height: 70px; }
+    .anchors div.columns div.callout p {
+      font-size: 1.2rem;
+      font-family: "Droid Serif", serif;
+      font-weight: 400;
+      font-style: italic; }
 
 a.cat {
   height: 50px;
@@ -188,7 +218,17 @@ a.cat-2 {
 .last-signed-up {
   background-color: white; }
   .last-signed-up h1 {
-    font-family: "Droid Serif", serif; }
+    text-align: center;
+    font-size: 2.5rem;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300; }
+  .last-signed-up p.exergue {
+    font-family: "Droid Serif", serif;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    font-size: 1.25rem;
+    padding-bottom: 2rem; }
   .last-signed-up ul {
     text-align: center; }
     .last-signed-up ul li {
@@ -213,12 +253,18 @@ a.cat-2 {
             text-align: center; }
 
 .signup-section h1 {
-  font-family: "Droid Serif", serif; }
-.signup-section p {
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-family: "Open Sans", sans-serif;
   font-weight: 300; }
+.signup-section p.exergue {
+  font-family: "Droid Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+  font-size: 1.25rem;
+  padding-bottom: 2rem;
+  text-align: center; }
 .signup-section form {
   background-color: transparent;
   padding: 20px 100px 20px 100px; }
@@ -580,15 +626,15 @@ nav#menu-push.online ul li a.avatar {
   background-position: -106px center;
   background-size: cover; }
 
-main#base section#profil {
-  margin: 20px auto 20px auto; }
-  main#base section#profil section.row div.left-column figure.avatar {
+section#profil {
+  margin: 96px auto 20px auto; }
+  section#profil section.row div.left-column figure.avatar {
     position: relative;
     display: block;
     width: 15rem;
     height: 15rem;
     margin: 0 auto 1rem auto; }
-    main#base section#profil section.row div.left-column figure.avatar img {
+    section#profil section.row div.left-column figure.avatar img {
       position: relative;
       display: block;
       width: 15rem;
@@ -598,9 +644,9 @@ main#base section#profil {
       transition: opacity 0.25s ease-out 0s;
       opacity: 1;
       cursor: pointer; }
-      main#base section#profil section.row div.left-column figure.avatar img:hover {
+      section#profil section.row div.left-column figure.avatar img:hover {
         opacity: 0.5; }
-    main#base section#profil section.row div.left-column figure.avatar figcaption.choose-avatar {
+    section#profil section.row div.left-column figure.avatar figcaption.choose-avatar {
       position: absolute;
       display: block;
       width: 100%;
@@ -613,18 +659,18 @@ main#base section#profil {
       z-index: -1;
       color: white;
       transition: z-index 0.25s ease-out 0s; }
-      main#base section#profil section.row div.left-column figure.avatar figcaption.choose-avatar:hover {
+      section#profil section.row div.left-column figure.avatar figcaption.choose-avatar:hover {
         z-index: 2000000; }
-  main#base section#profil section.row div.left-column div {
+  section#profil section.row div.left-column div {
     margin-bottom: 10px;
     height: 30px; }
-    main#base section#profil section.row div.left-column div label {
+    section#profil section.row div.left-column div label {
       width: 50%;
       float: left;
       text-align: right;
       line-height: 30px;
       padding-right: 1rem; }
-    main#base section#profil section.row div.left-column div select {
+    section#profil section.row div.left-column div select {
       line-height: 30px;
       border: 0 !important;
       /*Removes border*/
@@ -647,15 +693,15 @@ main#base section#profil {
       width: 50%;
       float: left;
       background: transparent; }
-      main#base section#profil section.row div.left-column div select option {
+      section#profil section.row div.left-column div select option {
         width: 100%; }
-    main#base section#profil section.row div.left-column div div {
+    section#profil section.row div.left-column div div {
       width: 50%;
       float: left; }
-      main#base section#profil section.row div.left-column div div select[name="birthdate"] {
+      section#profil section.row div.left-column div div select[name="birthdate"] {
         width: 33.33%;
         float: left; }
-  main#base section#profil section.row div.left-column input[type="submit"] {
+  section#profil section.row div.left-column input[type="submit"] {
     display: block;
     height: 50px;
     width: 100%;
@@ -666,10 +712,10 @@ main#base section#profil {
     padding: 0 1rem 0 1rem;
     margin-bottom: 1rem;
     transition: background-color 0.25s ease-out 0s, color 0.25s ease-out 0s; }
-    main#base section#profil section.row div.left-column input[type="submit"]:hover {
+    section#profil section.row div.left-column input[type="submit"]:hover {
       background-color: #d61232;
       color: white; }
-  main#base section#profil section.row div.left-column button.manage-account {
+  section#profil section.row div.left-column button.manage-account {
     display: block;
     border-color: #302a2b;
     border-style: solid;
@@ -680,23 +726,23 @@ main#base section#profil {
     padding: 0 1rem 0 1rem;
     margin-bottom: 1rem;
     transition: background-color 0.25s ease-out 0s, color 0.25s ease-out 0s; }
-    main#base section#profil section.row div.left-column button.manage-account:hover {
+    section#profil section.row div.left-column button.manage-account:hover {
       background-color: white;
       color: #302a2b; }
-  main#base section#profil section.row div.right-column div:first-child {
+  section#profil section.row div.right-column div:first-child {
     width: 50%;
     background-color: transparent; }
-  main#base section#profil section.row div.right-column div {
+  section#profil section.row div.right-column div {
     background-color: white;
     margin-bottom: 1rem;
     padding: 1rem 1rem 1rem 1rem; }
-    main#base section#profil section.row div.right-column div input[type="text"][placeholder="Nouvel_inscrit"] {
+    section#profil section.row div.right-column div input[type="text"][placeholder="Nouvel_inscrit"] {
       font-size: 2rem;
       color: #302a2b; }
-    main#base section#profil section.row div.right-column div h2 {
+    section#profil section.row div.right-column div h2 {
       font-size: 2rem;
       position: relative; }
-      main#base section#profil section.row div.right-column div h2:after {
+      section#profil section.row div.right-column div h2:after {
         content: "";
         position: absolute;
         top: 0;
@@ -707,29 +753,29 @@ main#base section#profil {
         background-repeat: no-repeat;
         background-position: center -60px;
         background-size: cover; }
-    main#base section#profil section.row div.right-column div textarea {
+    section#profil section.row div.right-column div textarea {
       border: 0px none transparent;
       box-shadow: 0px;
       width: 100%;
       min-height: 100px;
       max-height: 100%;
       background-color: transparent; }
-    main#base section#profil section.row div.right-column div input[type="text"] {
+    section#profil section.row div.right-column div input[type="text"] {
       border: 0px none transparent;
       box-shadow: 0px;
       width: 100%;
       height: 100%;
       background-color: transparent; }
-    main#base section#profil section.row div.right-column div div {
+    section#profil section.row div.right-column div div {
       background-color: transparent;
       margin-bottom: 1rem;
       width: 100%;
       height: 30px;
       padding-left: 0px; }
-      main#base section#profil section.row div.right-column div div label {
+      section#profil section.row div.right-column div div label {
         width: 25%;
         float: left; }
-      main#base section#profil section.row div.right-column div div select {
+      section#profil section.row div.right-column div div select {
         line-height: 30px;
         border: 0 !important;
         /*Removes border*/
@@ -752,9 +798,9 @@ main#base section#profil {
         background: transparent;
         float: left; }
 
-main#base section#profil-corres {
-  margin: 20px auto 20px auto; }
-  main#base section#profil-corres section.row div.left-column img {
+section#profil-corres {
+  margin: 96px auto 20px auto; }
+  section#profil-corres section.row div.left-column img {
     display: block;
     width: 15rem;
     height: 15rem;
@@ -762,29 +808,29 @@ main#base section#profil-corres {
     background-color: lightcoral;
     margin: 0 auto 1rem auto;
     transition: opacity; }
-  main#base section#profil-corres section.row div.left-column div {
+  section#profil-corres section.row div.left-column div {
     margin-bottom: 10px;
     height: 30px; }
-    main#base section#profil-corres section.row div.left-column div label {
+    section#profil-corres section.row div.left-column div label {
       width: 50%;
       float: left;
       text-align: right;
       line-height: 30px;
       padding-right: 1rem; }
-    main#base section#profil-corres section.row div.left-column div p {
+    section#profil-corres section.row div.left-column div p {
       color: grey;
       width: 50%;
       float: left;
       line-height: 30px; }
-    main#base section#profil-corres section.row div.left-column div div {
+    section#profil-corres section.row div.left-column div div {
       width: 50%;
       float: left; }
-      main#base section#profil-corres section.row div.left-column div div p.birthdate {
+      section#profil-corres section.row div.left-column div div p.birthdate {
         width: 33.33%;
         float: left;
         color: grey;
         line-height: 30px; }
-  main#base section#profil-corres section.row div.left-column input[type="submit"].add-corres {
+  section#profil-corres section.row div.left-column input[type="submit"].add-corres {
     display: block;
     height: 50px;
     width: 100%;
@@ -795,10 +841,10 @@ main#base section#profil-corres {
     padding: 0 1rem 0 1rem;
     margin-bottom: 1rem;
     transition: background-color 0.25s ease-out 0s, color 0.25s ease-out 0s; }
-    main#base section#profil-corres section.row div.left-column input[type="submit"].add-corres:hover {
+    section#profil-corres section.row div.left-column input[type="submit"].add-corres:hover {
       background-color: #d61232;
       color: white; }
-  main#base section#profil-corres section.row div.left-column input[type="submit"].add-corres.on {
+  section#profil-corres section.row div.left-column input[type="submit"].add-corres.on {
     display: block;
     height: 50px;
     width: 100%;
@@ -810,10 +856,10 @@ main#base section#profil-corres {
     margin-bottom: 1rem;
     color: white;
     transition: background-color 0.25s ease-out 0s, color 0.25s ease-out 0s; }
-    main#base section#profil-corres section.row div.left-column input[type="submit"].add-corres.on:hover {
+    section#profil-corres section.row div.left-column input[type="submit"].add-corres.on:hover {
       background-color: white;
       color: #302a2b; }
-  main#base section#profil-corres section.row div.left-column button.etc {
+  section#profil-corres section.row div.left-column button.etc {
     display: block;
     border-color: #302a2b;
     border-style: solid;
@@ -824,14 +870,14 @@ main#base section#profil-corres {
     padding: 0 1rem 0 1rem;
     margin-bottom: 1rem;
     transition: background-color 0.25s ease-out 0s, color 0.25s ease-out 0s; }
-    main#base section#profil-corres section.row div.left-column button.etc:hover {
+    section#profil-corres section.row div.left-column button.etc:hover {
       background-color: white;
       color: #302a2b; }
-  main#base section#profil-corres section.row div.right-column div:first-child {
+  section#profil-corres section.row div.right-column div:first-child {
     width: 50%;
     background-color: transparent;
     padding-bottom: 0; }
-  main#base section#profil-corres section.row div.right-column div:last-child p.interest-tag {
+  section#profil-corres section.row div.right-column div:last-child p.interest-tag {
     display: inline-block;
     vertical-align: top;
     height: 30px;
@@ -840,77 +886,73 @@ main#base section#profil-corres {
     color: white;
     width: initial;
     border-radius: 4px; }
-  main#base section#profil-corres section.row div.right-column div {
+  section#profil-corres section.row div.right-column div {
     background-color: white;
     margin-bottom: 1rem;
     padding: 1rem 1rem 1rem 1rem; }
-    main#base section#profil-corres section.row div.right-column div h2 {
+    section#profil-corres section.row div.right-column div h2 {
       font-size: 2rem;
       position: relative; }
-    main#base section#profil-corres section.row div.right-column div p {
+    section#profil-corres section.row div.right-column div p {
       width: 100%;
       background-color: transparent;
       color: grey; }
-    main#base section#profil-corres section.row div.right-column div div {
+    section#profil-corres section.row div.right-column div div {
       background-color: transparent;
       margin-bottom: 1rem;
       width: 100%;
       padding-left: 0px;
       padding-top: 0px; }
-      main#base section#profil-corres section.row div.right-column div div label {
+      section#profil-corres section.row div.right-column div div label {
         width: 25%;
         float: left; }
-      main#base section#profil-corres section.row div.right-column div div p {
+      section#profil-corres section.row div.right-column div div p {
         color: grey;
         float: left;
         width: 75%; }
 
-main#base div.flexslider {
-  margin: 0 auto 20px auto;
-  overflow-x: hidden; }
-
-main#base section#dashboard {
-  margin: 20px auto 20px auto;
+section#dashboard {
+  margin: 96px auto 20px auto;
   height: 100vh; }
 
-main#base section#correspondance {
-  margin: 20px auto 20px auto; }
-  main#base section#correspondance section article.nest {
+section#correspondance {
+  margin: 96px auto 20px auto; }
+  section#correspondance section article.nest {
     padding-right: 0; }
-    main#base section#correspondance section article.nest button h1 {
+    section#correspondance section article.nest button h1 {
       font-size: 1.2rem; }
-  main#base section#correspondance section div.nest {
+  section#correspondance section div.nest {
     padding: 0; }
-  main#base section#correspondance section div.large-4 article footer.callout.border-button {
+  section#correspondance section div.large-4 article footer.callout.border-button {
     margin-bottom: 0; }
-    main#base section#correspondance section div.large-4 article footer.callout.border-button button.picto-button.on {
+    section#correspondance section div.large-4 article footer.callout.border-button button.picto-button.on {
       background-color: #d61232;
       z-index: -1;
       color: white; }
-    main#base section#correspondance section div.large-4 article footer.callout.border-button p {
+    section#correspondance section div.large-4 article footer.callout.border-button p {
       text-align: left;
       line-height: 1rem;
       font-size: 1rem;
       font-style: normal;
       font-weight: 400; }
-      main#base section#correspondance section div.large-4 article footer.callout.border-button p a {
+      section#correspondance section div.large-4 article footer.callout.border-button p a {
         color: #302a2b; }
-  main#base section#correspondance section div.large-4 article div.profil.middle {
+  section#correspondance section div.large-4 article div.profil.middle {
     border-width: 0 1px 0 1px;
     border-style: none solid none solid;
     border-color: #302a2b; }
-  main#base section#correspondance section div.large-4 article div.profil {
+  section#correspondance section div.large-4 article div.profil {
     padding: 1rem;
     border-width: 0 1px 1px 1px;
     border-style: none solid solid solid; }
-  main#base section#correspondance section div.columns article footer.callout p a {
+  section#correspondance section div.columns article footer.callout p a {
     color: #302a2b; }
-  main#base section#correspondance section div.columns article .callout.profil {
+  section#correspondance section div.columns article .callout.profil {
     width: 100%;
     border-width: 0 1px 1px 1px;
     border-style: none solid solid solid;
     border-color: #302a2b; }
-    main#base section#correspondance section div.columns article .callout.profil .avatar {
+    section#correspondance section div.columns article .callout.profil .avatar {
       display: block;
       padding: 10px;
       width: 100px;
@@ -920,12 +962,12 @@ main#base section#correspondance {
       cursor: pointer;
       color: #302a2b;
       font-size: 0.9rem; }
-      main#base section#correspondance section div.columns article .callout.profil .avatar:hover {
+      section#correspondance section div.columns article .callout.profil .avatar:hover {
         opacity: 0.5; }
-      main#base section#correspondance section div.columns article .callout.profil .avatar p {
+      section#correspondance section div.columns article .callout.profil .avatar p {
         text-align: center;
         margin: auto; }
-      main#base section#correspondance section div.columns article .callout.profil .avatar .avatar-pict {
+      section#correspondance section div.columns article .callout.profil .avatar .avatar-pict {
         display: block;
         margin: 0 auto 5px auto;
         content: "";
@@ -935,9 +977,13 @@ main#base section#correspondance {
         background-repeat: no-repeat;
         background-position: -236px center;
         background-size: cover; }
-  main#base section#correspondance section div.columns article footer button.square-button.block {
+  section#correspondance section div.columns article footer button.square-button.block {
     border-width: 0 0 0 1px;
     border-style: none none none solid; }
+
+div.flexslider {
+  margin: 0 auto 20px auto;
+  overflow-x: hidden; }
 
 div.flexslider div a {
   float: left;
@@ -970,7 +1016,17 @@ div.flexslider div button {
     outline-width: 0px; }
 
 section.line-of-article h1 {
-  font-family: "Droid Serif", serif; }
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300; }
+section.line-of-article p.exergue {
+  font-family: "Droid Serif", serif;
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+  font-size: 1.25rem;
+  padding-bottom: 2rem; }
 section.line-of-article article {
   margin-bottom: 20px; }
   section.line-of-article article div.callout {
@@ -1031,13 +1087,14 @@ section.line-of-article article {
         section.line-of-article article div.callout figcaption .column-left .article-tag:hover {
           text-decoration: underline; }
     section.line-of-article article div.callout figcaption .column-right h1 {
-      font-size: 1.5rem;
-      font-family: "Open Sans", sans-serif;
-      font-weight: 300;
-      text-align: left; }
-    section.line-of-article article div.callout figcaption .column-right p {
+      font-size: 1.25rem;
       font-family: "Droid Serif", serif;
       font-weight: 400;
+      text-align: left;
+      font-style: italic; }
+    section.line-of-article article div.callout figcaption .column-right p {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 300;
       text-align: left; }
 
 section.pagination {
@@ -1093,6 +1150,7 @@ main#base {
     main#base section#content section.expanded.row .left-panel.open {
       display: block; }
     main#base section#content section.expanded.row div.right-panel {
+      margin-top: 76px;
       background-color: #EEE8D8;
       padding: 0px;
       top: 76px;
@@ -1362,61 +1420,119 @@ body > main#base > footer {
   bottom: 0;
   right: 0;
   left: 0; }
-  body > main#base > footer div nav .footer-nav {
-    margin-bottom: 30px; }
-    body > main#base > footer div nav .footer-nav li {
+  body > main#base > footer div nav {
+    padding-left: 1rem; }
+    body > main#base > footer div nav .footer-nav {
+      margin-bottom: 30px; }
+      body > main#base > footer div nav .footer-nav li {
+        font-family: "Droid Serif", serif;
+        font-style: italic;
+        font-weight: 400;
+        display: inline-block;
+        margin-right: 20px; }
+        body > main#base > footer div nav .footer-nav li a {
+          color: #302a2b; }
+          body > main#base > footer div nav .footer-nav li a:hover {
+            color: #d61232; }
+    body > main#base > footer div nav .footer-sub-nav li {
       display: inline-block;
-      margin-right: 20px; }
-      body > main#base > footer div nav .footer-nav li a {
-        color: #302a2b; }
-        body > main#base > footer div nav .footer-nav li a:hover {
+      font-size: 0.9rem;
+      color: grey;
+      margin-right: 20px;
+      font-family: "Open Sans", sans-serif;
+      font-style: normal;
+      font-weight: 300; }
+      body > main#base > footer div nav .footer-sub-nav li a {
+        color: grey; }
+        body > main#base > footer div nav .footer-sub-nav li a:hover {
           color: #d61232; }
-  body > main#base > footer div nav .footer-sub-nav li {
-    display: inline-block;
-    font-size: 0.9rem;
-    color: grey;
-    margin-right: 20px; }
-    body > main#base > footer div nav .footer-sub-nav li a {
-      color: grey; }
-      body > main#base > footer div nav .footer-sub-nav li a:hover {
-        color: #d61232; }
-    body > main#base > footer div nav .footer-sub-nav li select:focus {
-      outline-width: 0px; }
-  body > main#base > footer div div .newsletter input {
-    display: inline-block;
-    vertical-align: top;
-    position: relative;
-    padding: 0 10px 0 10px;
-    height: 50px;
-    line-height: 50px;
-    border-color: #302a2b;
-    border-width: 1px;
-    border-style: solid;
-    text-align: left;
-    color: #302a2b;
-    transition: background-color;
-    transition-duration: 0.30s;
-    transition-timing-function: ease-out;
-    outline-color: transparent; }
-  body > main#base > footer div div .newsletter button {
-    display: inline-block;
-    vertical-align: top;
-    text-align: center;
-    width: 50px;
-    height: 50px;
-    line-height: 50px;
-    padding: 0;
-    border-color: #302a2b;
-    border-width: 1px 1px 1px 0;
-    border-style: solid solid solid none; }
-    body > main#base > footer div div .newsletter button:hover {
-      color: white;
-      border: none;
-      background-color: #302a2b; }
-    body > main#base > footer div div .newsletter button:focus {
-      outline-width: 0px; }
-  body > main#base > footer div div .social-media li {
-    display: inline-block; }
+      body > main#base > footer div nav .footer-sub-nav li select:focus {
+        outline-width: 0px; }
+  body > main#base > footer div div.columns {
+    border-left: 1px solid grey; }
+    body > main#base > footer div div.columns .newsletter label {
+      font-family: "Droid Serif", serif;
+      font-style: italic;
+      font-weight: 400;
+      margin-bottom: 1rem;
+      display: block; }
+    body > main#base > footer div div.columns .newsletter input {
+      display: inline-block;
+      vertical-align: top;
+      position: relative;
+      padding: 0 10px 0 10px;
+      height: 50px;
+      line-height: 50px;
+      border-color: #302a2b;
+      border-width: 1px;
+      border-style: solid;
+      text-align: left;
+      color: #302a2b;
+      transition: background-color;
+      transition-duration: 0.30s;
+      transition-timing-function: ease-out;
+      outline-color: transparent; }
+    body > main#base > footer div div.columns .newsletter button {
+      display: inline-block;
+      vertical-align: top;
+      text-align: center;
+      width: 50px;
+      height: 50px;
+      line-height: 50px;
+      padding: 0;
+      border-color: #302a2b;
+      border-width: 1px 1px 1px 0;
+      border-style: solid solid solid none;
+      transition: background-color 0.25s ease-out 0s, color 0.25s ease-out 0s; }
+      body > main#base > footer div div.columns .newsletter button:hover {
+        color: white;
+        border: none;
+        background-color: #302a2b; }
+      body > main#base > footer div div.columns .newsletter button:focus {
+        outline-width: 0px; }
+    body > main#base > footer div div.columns .social-media li {
+      display: inline-block;
+      vertical-align: middle;
+      padding: 1rem 1rem 0 0;
+      opacity: 1;
+      transition: 0.3s opacity ease-out 0s; }
+      body > main#base > footer div div.columns .social-media li:hover {
+        opacity: 0.5; }
+      body > main#base > footer div div.columns .social-media li img {
+        height: 30px; }
 
 body > footer.open {
   transform: translate(300px, 0px); }
+
+@media (max-width: 800px) {
+  body header.first-nav nav ul.fr-buttons li {
+    display: none; }
+
+  body header.first-nav nav ul.fr-buttons img {
+    display: block;
+    float: right; }
+
+  .intro-content {
+    padding-top: 5%; }
+
+  .intro div.columns h1 {
+    font-size: 4rem; }
+
+  .intro div.columns p {
+    font-size: 1.5rem; } }
+@media (max-width: 600px) {
+  .intro div.columns h1 {
+    font-size: 2.3rem; }
+
+  .intro div.columns p {
+    font-size: 1rem; }
+
+  .anchors img {
+    display: inline-block;
+    vertical-align: middle; }
+  .anchors p {
+    display: inline-block;
+    vertical-align: middle; }
+  .anchors a {
+    display: inline-block;
+    vertical-align: middle; } }

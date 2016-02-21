@@ -6,6 +6,7 @@ $droid-serif: 'Droid Serif', serif;
 $open-sans: 'Open Sans', sans-serif;
 $open-sans-condensed: 'Open Sans Condensed', sans-serif;
 $block-height: 76px;
+
 $cherry-red: #d61232;
 $my-black: rgb(48,42,43);
 $my-black-half: #776B69;
@@ -44,6 +45,11 @@ body{
 
 			ul{
 				text-align: right;
+
+				img{
+					display: none;
+				}
+
 				li{
 					display: inline-block;
 
@@ -127,9 +133,44 @@ section.home{
 .home.a-propos{
 		background-color: white;
 
+		h1{
+			text-align: center;			
+			font-size: 2.5rem;
+			font-family: $open-sans;
+			font-weight: 300;
+		}
+
+	p.exergue{
+			font-family: $droid-serif;
+			font-weight: 400;
+			font-style: italic;
+			text-align: center;
+			font-size: 1.25rem;
+			padding-bottom: 2rem;
+	}
+
+		p{
+			font-family: $open-sans;
+			font-weight: 300;
+		}
+
 		blockquote{
 			font-size: 2rem;	
-			text-align: right;		
+			text-align: right;	
+			font-family: $droid-serif;
+			font-style: italic;
+			position: relative;
+			border: none;
+			margin: 0;
+			// padding: 0;
+
+			&:before{
+				content: "\201C";
+				position: absolute;
+				top:-25px;
+				left: -25px;
+				font-size: 5rem;
+			}	
 		}
 
 		
@@ -202,6 +243,7 @@ section.home{
 
 .anchors{
 	div.columns{
+		margin-bottom: 1rem;
 		div.callout{
 
 			padding: 1rem;
@@ -302,7 +344,19 @@ a.cat-2{
 	background-color: white;
 	a{}
 	h1{
-		font-family: $droid-serif;
+			text-align: center;			
+			font-size: 2.5rem;
+			font-family: $open-sans;
+			font-weight: 300;
+		}
+
+	p.exergue{
+			font-family: $droid-serif;
+			font-weight: 400;
+			font-style: italic;
+			text-align: center;
+			font-size: 1.25rem;
+			padding-bottom: 2rem;
 	}
 	ul{
 		text-align: center;
@@ -344,8 +398,22 @@ a.cat-2{
 
 .signup-section{
 
-	h1{font-family: $droid-serif;}
-	p{text-align: center;font-size: 1.5rem; font-family: $open-sans; font-weight: 300;}
+	h1{
+			text-align: center;			
+			font-size: 2.5rem;
+			font-family: $open-sans;
+			font-weight: 300;
+		}
+
+	p.exergue{
+			font-family: $droid-serif;
+			font-weight: 400;
+			font-style: italic;
+			text-align: center;
+			font-size: 1.25rem;
+			padding-bottom: 2rem;
+			text-align: center;
+	}
 
 	form{
 			background-color: transparent;
@@ -986,10 +1054,12 @@ nav#menu-push.online{
 }
 
 
-main#base{
-	section#profil{
+
+
+
+section#profil{
 		
-		margin: 20px auto 20px auto;
+		margin: 96px auto 20px auto;
 
 		section.row{
 
@@ -1231,13 +1301,13 @@ main#base{
 			}
 
 		}
-	}
 }
 
-main#base{
-	section#profil-corres{
+
+
+section#profil-corres{
 		
-		margin: 20px auto 20px auto;
+		margin: 96px auto 20px auto;
 
 		section.row{
 
@@ -1417,27 +1487,24 @@ main#base{
 			}
 
 		}
-	}
-}
-
-main#base{
-	div.flexslider{
-		margin: 0 auto 20px auto;
-		overflow-x: hidden;
-	}
 }
 
 
-main#base{
-	section#dashboard{
-		margin: 20px auto 20px auto;
+
+
+
+
+
+
+section#dashboard{
+		margin: 96px auto 20px auto;
 		height: 100vh;
-	}
 }
 
-main#base{
-	section#correspondance{
-		margin: 20px auto 20px auto;
+
+
+section#correspondance{
+		margin: 96px auto 20px auto;
 		// height: 100vh;
 
 		section{
@@ -1574,6 +1641,10 @@ main#base{
 			}
 		}
 	}
+
+div.flexslider{
+		margin: 0 auto 20px auto;
+		overflow-x: hidden;
 }
 
 div.flexslider {
@@ -1632,8 +1703,20 @@ div.flexslider {
 section.line-of-article{
 
 	h1{
-		font-family: $droid-serif;		
-	}
+			text-align: center;			
+			font-size: 2.5rem;
+			font-family: $open-sans;
+			font-weight: 300;
+		}
+
+		p.exergue{
+			font-family: $droid-serif;
+			font-weight: 400;
+			font-style: italic;
+			text-align: center;
+			font-size: 1.25rem;
+			padding-bottom: 2rem;
+		}
 
 	article{
 
@@ -1736,16 +1819,18 @@ section.line-of-article{
 			.column-right{
 
 				h1{
-					font-size: 1.5rem;
-					font-family: $open-sans;
-					font-weight: 300;
-					text-align: left;
-				}
-
-				p{
+					font-size: 1.25rem;
 					font-family: $droid-serif;
 					font-weight: 400;
 					text-align: left;
+					font-style: italic;
+					;
+				}
+
+				p{
+					font-family: $open-sans;
+					font-weight: 300;
+					text-align: left
 				}			
 
 			}
@@ -1856,7 +1941,7 @@ main#base{
 			}
 
 			div.right-panel{
-
+				margin-top: 76px;
 				background-color: $body-bgc;
 				padding: 0px;			
 				top: $block-height;
@@ -2287,14 +2372,19 @@ body>main#base>footer{
 
 		nav{
 
+			padding-left: 1rem;
+
 			.footer-nav{
 
 				margin-bottom: 30px;
 
 				li{
-
+					font-family: $droid-serif;
+					font-style: italic;
+					font-weight: 400;
 					display: inline-block;
 					margin-right: 20px;
+
 
 					a{
 						color: $my-black;
@@ -2313,6 +2403,9 @@ body>main#base>footer{
 					font-size: 0.9rem;
 					color: grey;
 					margin-right: 20px;
+					font-family: $open-sans;
+					font-style: normal;
+					font-weight: 300;
 
 					a{
 						color: grey;
@@ -2334,11 +2427,17 @@ body>main#base>footer{
 
 		}
 
-		div{
+		div.columns{
+
+			border-left: 1px solid grey;
 			.newsletter{
 
 				label{
-
+					font-family: $droid-serif;
+					font-style: italic;
+					font-weight: 400;
+					margin-bottom: 1rem;
+					display: block;
 				}
 
 				input{
@@ -2371,6 +2470,7 @@ body>main#base>footer{
 					border-color: $my-black;
 					border-width: 1px 1px 1px 0;
 					border-style: solid solid solid none;
+					transition: $global-button-hover-transition;
 
 					&:hover{
 						color: white;
@@ -2387,12 +2487,27 @@ body>main#base>footer{
 			}	
 
 			.social-media{
+
+				
+
 				li{
 
 					display: inline-block;
+					vertical-align: middle;
+					padding: 1rem 1rem 0 0;
+					opacity: 1;
+					transition: 0.3s opacity ease-out 0s;
+
+					&:hover{
+						opacity: 0.5;
+					}
 
 					a{
+		
+					}
 
+					img{
+						height: 30px;	
 					}
 				}
 			}
@@ -2403,4 +2518,59 @@ body>main#base>footer{
 body>footer.open{
 	transform: translate(300px, 0px);	
 }
+
+
+@media (max-width: 800px) {
+  body header.first-nav nav ul.fr-buttons li {
+    display: none;
+  }
+  body header.first-nav nav ul.fr-buttons img {
+    display: block;
+    float: right;
+  }
+  .intro-content {
+    padding-top: 5%;
+  }
+
+  .intro div.columns h1{
+  	font-size: 4rem;
+  }
+
+  .intro div.columns p{
+  	font-size: 1.5rem;
+  }
+
+}
+
+@media (max-width: 600px){
+
+	.intro div.columns h1{
+  	font-size: 2.3rem;
+  }
+
+  .intro div.columns p{
+  	font-size: 1rem;
+  }
+
+  .anchors{
+
+  	img {
+  	display: inline-block;
+  	vertical-align: middle;
+  	}
+
+  	p {
+  	display: inline-block;
+  	vertical-align: middle;
+  	}
+  	a{
+  	display: inline-block;
+  	vertical-align: middle;
+  	}
+  }
+
+}
+
+
+
 

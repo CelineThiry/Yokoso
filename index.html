@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yokoso</title>
   <meta name="description" content="Yokoso, le site de correspondance franco-japonaise">
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon-01.png">
   <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Oswald:700' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700' rel='stylesheet' type='text/css'>
@@ -24,18 +25,18 @@
   <header class="callout first-nav"> <!-- OFFLINE Navigation bar -->
     
     <nav class="row expanded">
-    <div class="large-4 medium-4 columns">
-      <button class="menu-burger-trigger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
+      <div class="large-4 medium-4 small-4 columns">
+        <button class="menu-burger-trigger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
       </div>    
-      <h1 class="large-4 medium-4 columns"><a href="index.html"><img src="img/logo.svg" alt="Yokoso logo"></a></h1>
-      <ul class="large-4 medium-4 columns fr-buttons">
+      <h1 class="large-4 medium-4 small-4 columns"><a href="index.html"><img src="img/logo.svg" alt="Yokoso logo"></a></h1>
+      <ul class="large-4 medium-4 small-4 columns fr-buttons">
+      <img src="img/iconset_yokoso_sprite_white_profil.svg" alt="">
         <li><a class="signup button float-right" href="#">S'inscrire</a></li>
-        <li><a class="login button float-right" href="#">Se connecter</a></li>
-        
+        <li><a class="login button float-right" href="#">Se connecter</a></li>        
       </ul>
       
     </nav>
@@ -237,6 +238,7 @@
   <section class="home expanded last-signed-up row">
     <div class="row">
     <h1>Derniers inscrits</h1>
+    <p class="exergue">Chaque jour des centaines de personnes prennent part à l'aventure, rejoignez-les !</p>
       <ul class="large-12 medium-12 columns">
         <li>
           <a href="profil-nomducorrespondant.html">
@@ -281,11 +283,13 @@
         </li>
       </ul>
     </div>
+    <div class="line-of-articles-bottom-button"><a href="#signup-section" class="cat-2">S'inscrire</a></div>
   </section>
 
   <section class="home expanded line-of-article row" id="last-articles">
   <div class="row">
     <h1>Derniers articles</h1>
+    <p class="exergue">Décourvrez nos articles quotidiens sur la culture franco-japonaise.</p>
     <article class="large-4 medium-4 columns">
     <div class="callout">
       <figure class="row">
@@ -300,7 +304,7 @@
       </div>
       <div class="column-right large-9 medium-9 columns">
         <h1>L’île de Miyajima à la saison des Sakura</h1>
-        <p>Un petit (re)tour à Miyajima (宮島), sur l’île aux  daims, proche d’Hiroshima (広島市), ça vous dit ? Alors c’est parti pour la suite du...</p>
+        <p>Un petit (re)tour à Miyajima (宮島), sur l’île aux  daims, proche d’Hiroshima (広島市), ça vous dit ? </p>
         <a class="cat" href="">Lire plus</a>
       </div>      
       </figcaption>
@@ -321,7 +325,7 @@
       <div class="column-right large-9 medium-9 columns">
         <h1>苺大福</h1>
         <p>こんにちは、つんです。今日は和菓子レシピの紹介です。みなさん、イチゴは好きですか？
-我が家では息子が苺大好きなので、よく買います。特に最近は苺大福にはまっていて、頻繁に（ひどい時は毎日(´∀｀；A）食卓に上がります。</p>
+我が家では息子が苺大好きなので、よく買います。</p>
         <a class="cat" href="">Lire plus</a>
       </div>      
       </figcaption>
@@ -353,11 +357,14 @@
 
   <section class="home expanded a-propos row" id="a-propos">
     <div class="row">
+    <h1>A propos</h1>
+    <p class="exergue">Yokoso est un outils de correspodance franco-japonaise créer par l’ambassade française du Japon.</p>
     <article class="large-6 medium-6 columns">
       <blockquote>Le but de Yokoso est de favoriser la découverte de la culture japonaise par les francophones</blockquote>
     </article>
     <article class="large-6 medium-6 columns">
-      <p>Yokoso est un outils de correspodance franco-japoanise créer par l’ambasse Française du japon. Son ambition est d'ouvrir aux passionnés et féru de langues les portes de la culture japonaise et française. </p>
+
+      <p>Son ambition est d'ouvrir aux passionnés et féru de langues les portes de la culture japonaise et française. </p>
 
 <p>Ici, rechercher des correspondants de votre âge avec des centres d’intéreet similaires. Vous pourrez ainsi découvrir la culture de l’autre, échanger des idées, des photo, surtout vous perfectionner en japonais/français et pourquoi pas décider plus tard de faire un beau voyage.</p>
       <a class="cat" href="">En savoir plus</a>
@@ -365,10 +372,10 @@
     </div>
   </section> <!-- Fin a-propos row -->
 
-  <section class="home expanded signup-section row">
+  <section class="home expanded signup-section row" id="signup-section">
     <div class="row">
         <h1>Convaincu ? Inscrivez-vous maintenant !</h1>
-        <p>Et profitez de tous les services de Yokoso</p>
+        <p class="exergue">Et profitez de tous les services de Yokoso</p>
         
         <form action="online/profil.html" class="large-6 medium-6 columns"> <!-- Left column -->
           <div class="my-input"><input id="pseudo" type="text" placeholder="Pseudo" required></div> 
@@ -388,9 +395,9 @@
       <span class="line"></span>
       </div> -->
       <form class="large-6 medium-6 columns"><!-- Right column -->
-        <a href="online/tableau-de-bord.html" class="login my-button facebook">S'inscrire avec Facebook</a>
-        <a href="online/tableau-de-bord.html" class="login my-button twitter">S'inscrire avec Twitter</a>
-        <a href="online/tableau-de-bord.html" class="login my-button google">S'inscrire avec Google+</a>
+        <a href="online/profil.html" class="login my-button facebook">S'inscrire avec Facebook</a>
+        <a href="online/profil.html" class="login my-button twitter">S'inscrire avec Twitter</a>
+        <a href="online/profil.html" class="login my-button google">S'inscrire avec Google+</a>
       </form><!-- END Right column -->
     </div>
   </section> <!-- END signup row --> 
@@ -399,14 +406,14 @@
 
 <footer>
   <div class="row">
-    <nav class="large-8 medium-8 columns">
-      <ul class="footer-nav row">
+  <nav class="large-8 medium-8 columns">
+      <ul class="footer-nav">
         <li><a href="">Chercher un correspondant</a></li>
         <li><a href="flux-actualites.html">Flux d'actualités</a></li>
         <li><a href="">A propos</a></li>
         <li><a href="">Contact</a></li>
       </ul>
-      <ul class="footer-sub-nav row">
+      <ul class="footer-sub-nav">
         <li>© 2016 Yokoso</li>
         <li><a href="">Conditions</a></li>
         <li><a href="">Protection des données</a></li>
@@ -418,17 +425,19 @@
         </li>
       </ul>
     </nav>
-    <div class="large-4 medium-4 columns">
+  <div class="large-4 medium-4 columns">
       <div class="newsletter">
         <label for="">S'abonner à la newsletter</label>
         <input type="email" placeholder="Entrer votre email"><button>></button>
       </div>
       <ul class="social-media">
-        <li><a href="">fb</a></li>
-        <li><a href="">tw</a></li>
-        <li><a href="">g+</a></li>
+        <li><a href="http://www.facebook.com"><img src="img/facebook.png" alt="facebook"></a></li>
+        <li><a href="http://plus.google.com/"><img src="img/google.png" alt="google"></a></li>
+        <li><a href="http://www.twitter.com"><img src="img/twitter.png" alt="twitter"></a></li>
       </ul>
     </div>
+    
+    
   </div>
 </footer>
 
