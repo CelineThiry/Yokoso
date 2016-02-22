@@ -235,6 +235,49 @@ a.cat-2 {
     border: none;
     background-color: #302a2b; }
 
+a.cat-3 {
+  height: 50px;
+  display: block;
+  margin: 1rem auto 0 auto;
+  border: 1px solid #d61232;
+  padding: 0;
+  line-height: 50px;
+  text-align: left;
+  width: 100%;
+  color: #d61232;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  transition: background-color;
+  transition-duration: 0.30s;
+  transition-timing-function: ease-out; }
+  a.cat-3:hover {
+    color: white;
+    border: none;
+    background-color: #d61232; }
+  a.cat-3:before {
+    content: "1";
+    display: block;
+    border-width: 0 1px 0 0;
+    border-style: none solid none none;
+    border-color: #d61232;
+    width: 50px;
+    height: 100%;
+    text-align: center;
+    margin-right: 1rem;
+    float: left; }
+  a.cat-3:after {
+    content: ">";
+    display: block;
+    border-width: 0 0 0 1px;
+    border-style: none none none solid;
+    border-color: #d61232;
+    width: 50px;
+    height: 100%;
+    text-align: center;
+    margin-left: 1rem;
+    float: right; }
+
 .line-of-articles-bottom-button {
   width: 100%;
   margin: 2rem auto 0 auto;
@@ -571,6 +614,35 @@ div.hidden-menu-signup {
   bottom: -76px;
   left: 0;
   display: none; }
+  div.hidden-menu-signup .fr-buttons {
+    height: 76px;
+    background-color: transparent;
+    display: block;
+    line-height: 76px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center; }
+    div.hidden-menu-signup .fr-buttons li.fr-buttons {
+      display: inline-block;
+      height: 76px;
+      vertical-align: top;
+      padding: 0 0.5rem 0 0.5rem; }
+      div.hidden-menu-signup .fr-buttons li.fr-buttons a.tools, div.hidden-menu-signup .fr-buttons li.fr-buttons .courrier-nav .corres-header.active a.translate, .courrier-nav .corres-header.active div.hidden-menu-signup .fr-buttons li.fr-buttons a.translate, div.hidden-menu-signup .fr-buttons li.fr-buttons .courrier-nav .corres-header.active a.search, .courrier-nav .corres-header.active div.hidden-menu-signup .fr-buttons li.fr-buttons a.search {
+        position: relative;
+        height: 40px;
+        width: 40px;
+        display: block; }
+      div.hidden-menu-signup .fr-buttons li.fr-buttons a.profil {
+        color: white;
+        font-size: 1rem;
+        padding-right: 0.5rem;
+        display: inline-block;
+        vertical-align: middle; }
+      div.hidden-menu-signup .fr-buttons li.fr-buttons img.profil {
+        width: 40px;
+        display: inline-block;
+        vertical-align: middle; }
   div.hidden-menu-signup a.signup.hidden {
     background-color: transparent;
     display: block;
@@ -972,8 +1044,25 @@ section#profil-corres {
         width: 75%; }
 
 section#dashboard {
-  margin: 96px auto 20px auto;
-  height: 100vh; }
+  margin: 96px auto 20px auto; }
+  section#dashboard article.columns {
+    margin-bottom: 1rem; }
+    section#dashboard article.columns div.callout {
+      background-color: white;
+      border-radius: 4px;
+      border: none; }
+  section#dashboard h1 {
+    text-align: left;
+    font-size: 2.5rem;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300; }
+  section#dashboard p.exergue {
+    font-family: "Droid Serif", serif;
+    font-weight: 400;
+    font-style: italic;
+    text-align: left;
+    font-size: 1.25rem;
+    padding-bottom: 2rem; }
 
 section#correspondance {
   margin: 96px auto 20px auto; }
