@@ -1056,6 +1056,9 @@ section#dashboard {
     font-size: 2.5rem;
     font-family: "Open Sans", sans-serif;
     font-weight: 300; }
+  section#dashboard h1.jetlag {
+    padding-top: 1rem;
+    text-align: center; }
   section#dashboard p.exergue {
     font-family: "Droid Serif", serif;
     font-weight: 400;
@@ -1063,6 +1066,36 @@ section#dashboard {
     text-align: left;
     font-size: 1.25rem;
     padding-bottom: 2rem; }
+  section#dashboard .big-button {
+    margin-top: 1rem; }
+    section#dashboard .big-button h1 {
+      font-size: 1.25rem;
+      font-family: "Open Sans", sans-serif;
+      color: white;
+      font-weight: 400; }
+    section#dashboard .big-button .picto-button {
+      background-image: url("../img/iconset_yokoso_sprite_white_add.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: auto; }
+
+.jetlag {
+  text-align: center; }
+  .jetlag .utc {
+    font-family: "Open Sans Condensed", sans-serif;
+    color: grey;
+    font-size: 0.9rem;
+    font-weight: 300; }
+  .jetlag .time {
+    font-size: 2rem;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    color: #d61232; }
+  .jetlag .date {
+    font-family: "Droid Serif", serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 1rem; }
 
 section#correspondance {
   margin: 96px auto 20px auto; }
