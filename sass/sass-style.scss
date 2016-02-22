@@ -39,6 +39,10 @@ body{
 		position: fixed;
 		z-index: 100;
 
+		nav.courrier-nav{
+			padding: 0;
+		}
+
 		nav{
 			padding: 1rem 1rem 0 1rem;
 
@@ -56,9 +60,15 @@ body{
 			ul{
 				text-align: right;
 
-				img.login-and-signup-small-device{
+				li.small{
 					display: none;
+
+					img.login-and-signup-small-device{
+					display: none;
+					}
 				}
+
+				
 
 				
 				li{
@@ -895,6 +905,51 @@ div.lightbox.active{
 
 }
 
+div.hidden-menu-signup{
+	height: $block-height;
+    width: 100%;
+    position: absolute;
+    background-color: $cherry-red;
+    bottom: -76px;
+    left: 0;
+    display: none;
+
+
+
+    a.signup.hidden{
+    	background-color: transparent;
+    	display: block;
+    	line-height: $block-height;
+    	font-family: $open-sans;
+    	font-size: 1rem;
+    	font-weight: 400;
+
+    }
+}
+
+div.hidden-menu-login{
+	height: $block-height;
+    width: 100%;
+    position: absolute;
+    background-color: $my-black-half;
+    bottom: -76px*2;
+    left: 0;
+    display: none;
+    
+
+    a.login.hidden{
+    	background-color: transparent;
+    	display: block;
+    	line-height: $block-height;
+    	font-family: $open-sans;
+    	font-size: 1rem;
+    	font-weight: 400;
+    	&:hover{
+    		color: $cherry-red;
+    	}
+    }
+}
+
 div.lightbox.avatar.active{
 	section{
 
@@ -1097,9 +1152,9 @@ nav#menu-push.online{
 					vertical-align: top;					
 					height: 40px;
 					width: 40px;					
-					background-image: url('../img/avatar2.svg');
+					background-image: url('../img/avatar_doll.png');
 				    background-repeat: no-repeat;
-				    background-position: -106px center;
+				    background-position: center center;
 				    background-size: cover;
 
 			}		
@@ -2137,6 +2192,7 @@ form.new-messages{
 
 	position: relative;
 	z-index: 100;
+	padding: 0;
 
 	.list-contact-header.open{
 				// transform: scaleX(1);
@@ -2579,7 +2635,11 @@ body>footer.open{
   body header.first-nav nav ul.fr-buttons li {
     display: none;
   }
-  body header.first-nav nav ul.fr-buttons img.login-and-signup-small-device {
+
+  body header.first-nav nav ul.fr-buttons li.small{
+  	display: block;
+  }
+  body header.first-nav nav ul.fr-buttons li.small img.login-and-signup-small-device {
     display: block;
     float: right;
     padding-top: 0.2rem;
@@ -2599,6 +2659,11 @@ body>footer.open{
 }
 
 @media (max-width: 600px){
+
+	div.hidden-menu-signup.active{display: block;}
+	div.hidden-menu-login.active{display: block;}
+	div.hidden-menu-signup{display: none;}
+	div.hidden-menu-login{display: none;}
 
 	a.cat{
 		font-size: 0.8rem;
@@ -2753,10 +2818,52 @@ body>footer.open{
   	padding-bottom: 470px;
   }
 
+  div.lightbox.active{
+  	section{
+  		form{
+  			padding: 1rem 1rem 0 1rem;
+  		}
+  	}
+  }
 
+  div.lightbox.active section h2{
+  	font-size: 1.5rem;
+  }
 
-
+div.lightbox.active section form div {
+	p{
+		font-size: 0.9rem;
+		
+	}
+	a.simple-link{
+			font-size: 0.9rem;
+		}
 }
+
+  div.my-input{
+	height: 40px;
+	line-height: 40px;
+	margin: 0;
+	padding: 0;
+	
+  }
+
+	div.lightbox.active section form div input[type="email"], div.lightbox.active section form div input[type="password"], div.lightbox.active section form div input[type="text"]{
+		padding: 0 1rem 0 1rem;
+		font-size: 0.9rem;
+		margin-bottom: 1rem;
+		height: 40px;
+
+	}
+
+	div.lightbox.active section form .my-button, div.lightbox.active section form .facebook, div.lightbox.active section form .twitter, div.lightbox.active section form .google{
+		height: 40px;
+		line-height: 40px;
+		font-size: 1rem;
+	}
+
+
+} /*fin media max-width: 600px*/
 
 @media (max-height: 600px){
 	.intro-content{

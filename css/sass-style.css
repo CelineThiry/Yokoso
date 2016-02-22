@@ -16,6 +16,8 @@ body {
     padding: 0;
     position: fixed;
     z-index: 100; }
+    body header.first-nav nav.courrier-nav {
+      padding: 0; }
     body header.first-nav nav {
       padding: 1rem 1rem 0 1rem; }
       body header.first-nav nav .large-4.medium-4 {
@@ -24,8 +26,10 @@ body {
         padding: 0; }
       body header.first-nav nav ul {
         text-align: right; }
-        body header.first-nav nav ul img.login-and-signup-small-device {
+        body header.first-nav nav ul li.small {
           display: none; }
+          body header.first-nav nav ul li.small img.login-and-signup-small-device {
+            display: none; }
         body header.first-nav nav ul li {
           display: inline-block; }
           body header.first-nav nav ul li a.login.button {
@@ -559,6 +563,40 @@ div.lightbox.active {
           color: #302a2b;
           background: white; }
 
+div.hidden-menu-signup {
+  height: 76px;
+  width: 100%;
+  position: absolute;
+  background-color: #d61232;
+  bottom: -76px;
+  left: 0;
+  display: none; }
+  div.hidden-menu-signup a.signup.hidden {
+    background-color: transparent;
+    display: block;
+    line-height: 76px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 400; }
+
+div.hidden-menu-login {
+  height: 76px;
+  width: 100%;
+  position: absolute;
+  background-color: #776B69;
+  bottom: -152px;
+  left: 0;
+  display: none; }
+  div.hidden-menu-login a.login.hidden {
+    background-color: transparent;
+    display: block;
+    line-height: 76px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 400; }
+    div.hidden-menu-login a.login.hidden:hover {
+      color: #d61232; }
+
 div.lightbox.avatar.active section div {
   overflow-y: auto;
   overflow-x: hidden;
@@ -643,9 +681,9 @@ nav#menu-push.online ul li a.avatar {
   vertical-align: top;
   height: 40px;
   width: 40px;
-  background-image: url("../img/avatar2.svg");
+  background-image: url("../img/avatar_doll.png");
   background-repeat: no-repeat;
-  background-position: -106px center;
+  background-position: center center;
   background-size: cover; }
 
 section#profil {
@@ -1263,7 +1301,8 @@ form.new-messages {
 
 .courrier-nav {
   position: relative;
-  z-index: 100; }
+  z-index: 100;
+  padding: 0; }
   .courrier-nav .list-contact-header.open {
     display: block; }
   .courrier-nav .list-contact-header {
@@ -1531,7 +1570,10 @@ body > footer.open {
   body header.first-nav nav ul.fr-buttons li {
     display: none; }
 
-  body header.first-nav nav ul.fr-buttons img.login-and-signup-small-device {
+  body header.first-nav nav ul.fr-buttons li.small {
+    display: block; }
+
+  body header.first-nav nav ul.fr-buttons li.small img.login-and-signup-small-device {
     display: block;
     float: right;
     padding-top: 0.2rem; }
@@ -1545,6 +1587,18 @@ body > footer.open {
   .intro div.columns p {
     font-size: 1.5rem; } }
 @media (max-width: 600px) {
+  div.hidden-menu-signup.active {
+    display: block; }
+
+  div.hidden-menu-login.active {
+    display: block; }
+
+  div.hidden-menu-signup {
+    display: none; }
+
+  div.hidden-menu-login {
+    display: none; }
+
   a.cat {
     font-size: 0.8rem;
     text-align: left; }
@@ -1628,7 +1682,36 @@ body > footer.open {
       border-left: 0; }
 
   #content {
-    padding-bottom: 470px; } }
+    padding-bottom: 470px; }
+
+  div.lightbox.active section form {
+    padding: 1rem 1rem 0 1rem; }
+
+  div.lightbox.active section h2 {
+    font-size: 1.5rem; }
+
+  div.lightbox.active section form div p {
+    font-size: 0.9rem; }
+  div.lightbox.active section form div a.simple-link {
+    font-size: 0.9rem; }
+
+  div.my-input {
+    height: 40px;
+    line-height: 40px;
+    margin: 0;
+    padding: 0; }
+
+  div.lightbox.active section form div input[type="email"], div.lightbox.active section form div input[type="password"], div.lightbox.active section form div input[type="text"] {
+    padding: 0 1rem 0 1rem;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    height: 40px; }
+
+  div.lightbox.active section form .my-button, div.lightbox.active section form .facebook, div.lightbox.active section form .twitter, div.lightbox.active section form .google, div.lightbox.active section form .facebook, div.lightbox.active section form .twitter, div.lightbox.active section form .google {
+    height: 40px;
+    line-height: 40px;
+    font-size: 1rem; } }
+/*fin media max-width: 600px*/
 @media (max-height: 600px) {
   .intro-content {
     padding-top: 5%; } }

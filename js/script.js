@@ -17,6 +17,14 @@ $(document).ready(function(){
 			// });		
 	});
 
+	//animation menu connexion pour mobile
+	$('.login-and-signup-small-device').click(function(e){
+		e.preventDefault();
+		$('.hidden-menu-login').toggleClass('active');
+		$('.hidden-menu-signup').toggleClass('active');
+			
+	});
+
 	
 
 

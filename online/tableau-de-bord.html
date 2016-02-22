@@ -64,7 +64,8 @@
    
 <main id="base">
 
-  <section id="dashboard" class="row large-12 columns"> <!-- First row -->
+  <div id="content">
+      <section id="dashboard" class="row large-12 columns"> <!-- First row -->
     <article class="large-4 medium-4 columns">
     <div class="callout inside-right">
       <h1>Profil</h1>
@@ -116,40 +117,93 @@
        
   </section> <!-- END first row -->
 
+  </div> <!-- fin content -->
+
+
+
 <footer>
-  <div class="row">
-    <nav class="large-8 medium-8 columns">
-      <ul class="footer-nav row">
-        <li><a href="search">Chercher un correspondant</a></li>
-        <li><a href="flux-actualites.html">Flux d'actualités</a></li>
-        <li><a href="a-propos.html">A propos</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <ul class="footer-sub-nav row">
-        <li>© 2016 Yokoso</li>
-        <li><a href="#">Conditions</a></li>
-        <li><a href="#">Protection des données</a></li>
-        <li>
-        <select name="lang" id="lang">
-          <option value="jp">Japonais</option>
-          <option value="fr">Français</option>
-        </select>
-        </li>
-      </ul>
-    </nav>
-    <div class="large-4 medium-4 columns">
-      <div class="newsletter">
-        <label for="">S'abonner à la newsletter</label>
-        <input type="email" placeholder="Entrer votre email"><button>></button>
-      </div>
-      <ul class="social-media">
-        <li><a href="#">fb</a></li>
-        <li><a href="#">tw</a></li>
-        <li><a href="#">g+</a></li>
-      </ul>
-    </div>
-  </div>
-</footer>
+            <div class="row">
+                <nav class="large-8 medium-8 columns">
+                    <ul class="footer-nav">
+                        <li>
+                            <a href="">Chercher un correspondant</a>
+                        </li>
+
+
+                        <li>
+                            <a href="flux-actualites.html">Flux
+                            d'actualités</a>
+                        </li>
+
+
+                        <li>
+                            <a href="">A propos</a>
+                        </li>
+
+
+                        <li>
+                            <a href="">Contact</a>
+                        </li>
+                    </ul>
+
+
+                    <ul class="footer-sub-nav">
+                        <li>© 2016 Yokoso</li>
+
+
+                        <li>
+                            <a href="">Conditions</a>
+                        </li>
+
+
+                        <li>
+                            <a href="">Protection des données</a>
+                        </li>
+
+
+                        <li><select id="lang" name="lang">
+                            <option value="jp">
+                                Japonais
+                            </option>
+
+                            <option value="fr">
+                                Français
+                            </option>
+                        </select>
+                        </li>
+                    </ul>
+                </nav>
+
+
+                <div class="large-4 medium-4 columns">
+                    <div class="newsletter">
+                        <label for="">S'abonner à la newsletter</label>
+                        <input placeholder="Entrer votre email" type=
+                        "email"><button>&gt;</button>
+                    </div>
+
+
+                    <ul class="social-media">
+                        <li>
+                            <a href="http://www.facebook.com"><img alt=
+                            "facebook" src="img/facebook.png"></a>
+                        </li>
+
+
+                        <li>
+                            <a href="http://plus.google.com/"><img alt="google"
+                            src="img/google.png"></a>
+                        </li>
+
+
+                        <li>
+                            <a href="http://www.twitter.com"><img alt="twitter"
+                            src="img/twitter.png"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
 
 </main>
 
