@@ -1,448 +1,644 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="fr">
-
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Yokoso</title>
-  <meta name="description" content="Yokoso, le site de correspondance franco-japonaise">
-  <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="../css/foundation.css" />
-  <link rel="stylesheet" href="../css/app.css" />
-  <link rel="stylesheet" href="../css/sass-style.css" />
-  <link rel="stylesheet" href="../css/flexslider.css" />
-
+    <meta charset="utf-8">
+    <meta content="ie=edge" http-equiv="x-ua-compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Yokoso</title>
+    <meta content="Yokoso, le site de correspondance franco-japonaise" name=
+    "description">
+    <link href=
+    'https://fonts.googleapis.com/css?family=Roboto:400,500,700,300,100' rel=
+    'stylesheet' type='text/css'>
+    <link href="../css/foundation.css" rel="stylesheet">
+    <link href="../css/app.css" rel="stylesheet">
+    <link href="../css/sass-style.css" rel="stylesheet">
+    <link href="../css/flexslider.css" rel="stylesheet">
 </head>
-
 <body>
-
-  <header class="callout first-nav online"> <!-- online Navigation bar -->
-    
-    <nav class="main-nav row expanded">
-    <div class="large-4 medium-4 columns">
-      <button class="menu-burger-trigger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      </div>    
-      <h1 class="large-4 medium-4 columns"><a href="index.html"><img src="../img/logo.svg" alt="Yokoso logo"></a></h1>
-      <ul class="large-4 medium-4 columns fr-buttons">
-        <li><a class="contact button float-right" href="correspondant.html"></a></li>        
-        <li><a class="msg button float-right" href="courrier.html"></a></li>
-        <li>
-        <a class="profil button float-right" href="tableau-de-bord.html">Alicia_17</a>
-        <a class="avatar" href="tableau-de-bord.html"></a>
-        </li>       
-      </ul>
-      
+    <header class="callout first-nav online">
+        <!-- online Navigation bar -->
+        <nav class="main-nav row expanded">
+            <div class="large-4 medium-4 columns burger-div">
+                <button class="menu-burger-trigger"><span></span> <span></span>
+                <span></span></button>
+            </div>
+            <h1 class="large-4 medium-4 columns"><a href="index.html"><img alt=
+            "Yokoso logo" src="../img/logo.svg"></a></h1>
+            <ul class="large-4 medium-4 columns fr-buttons">
+                <li>
+                    <a class="contact button float-right" href=
+                    "correspondant.html"><img class="corres" src="../img/iconset_yokoso_sprite_white_contact.svg" alt=""></a>
+                </li>
+                <li>
+                    <a class="msg button float-right" href="courrier.html"><img class="letter" src="../img/iconset_yokoso_sprite_white_msg.svg" alt=""></a>
+                </li>
+                <li>
+                    <a class="profil button float-right" href=
+                    "tableau-de-bord.html">Alicia_17 <img class="profil" src="../img/avatar_doll.png" alt=""></a>
+                </li>
+            </ul>
+        </nav>
+    </header><!-- END online navigation bar -->
+    <nav class="online" id="menu-push">
+        <ul>
+            <li>
+                <a id="search-button">Chercher un correspondant</a>
+            </li>
+            <li>
+                <a href="flux-actualites.html">Flux d'actualités</a>
+            </li>
+            <li>
+                <a href="a-propos.html">A propos</a>
+            </li>
+            <li>
+                <a href="contact.html">Contact</a>
+            </li>
+            <li style="list-style: none; display: inline">
+                <hr>
+            </li>
+            <li>
+                <a class="avatar" href="tableau-de-bord.html"></a> <a class=
+                "profil" href="tableau-de-bord.html">Alicia_17</a>
+            </li>
+            <li>
+                <a href="tableau-de-bord.html">Tableau de bord</a>
+            </li>
+            <li>
+                <a href="courrier.html">Courrier</a>
+            </li>
+            <li>
+                <a href="correspondant.html">Correspondants</a>
+            </li>
+            <li>
+                <a href="profil.html">Profil</a>
+            </li>
+            <li>
+                <a href="../index.html">Déconexion</a>
+            </li>
+        </ul>
     </nav>
-
-    
-
-  </header> <!-- END online navigation bar -->   
-
-
-  <nav id="menu-push" class="online">
-    <ul>
-      <li><a id="search-button">Chercher un correspondant</a></li>
-      <li><a href="flux-actualites.html">Flux d'actualités</a></li>
-      <li><a href="a-propos.html">A propos</a></li>
-      <li><a href="contact.html">Contact</a></li>   
-      <hr>
-      <li>
-        <a class="avatar" href="tableau-de-bord.html"></a>
-        <a class="profil" href="tableau-de-bord.html">Alicia_17</a>
+    <main id="base">
+        <!-- My main block -->
+        <!-- Les ligthbox ou pop in commune à toutes les pages-->
         
-        </li>
-      <li><a href="tableau-de-bord.html">Tableau de bord</a></li>
-      <li><a href="courrier.html">Courrier</a></li>
-      <li><a href="correspondant.html">Correspondants</a></li>
-      <li><a href="profil.html">Profil</a></li> 
-      <li><a href="../index.html">Déconexion</a></li>
-    </ul>
-  </nav>
+        <div class="lightbox search">
+            <button class="close">⨯</button>
+            <section class="row">
+                <h2>Chercher un correspondant</h2>
+                <form class="large-12 medium-12 columns">
+                    <!-- Left column -->
+                    <div>
+                        <label for="">Langue maternelle</label> <input id=
+                        "native-lang" type="radio" value="french">
+                        <p>Français</p><input id="native-lang" type="radio"
+                        value="japanese">
+                        <p>Japonais</p>
+                    </div>
+                    <div>
+                        <label for="">Niveau</label> <select id="level">
+                            <option value="Beginner">
+                                Débutant
+                            </option>
+                            <option value="Intermediate">
+                                Intermédiaire
+                            </option>
+                            <option value="Advanced">
+                                Avancé
+                            </option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="">Genre</label> <input id="Gender" type=
+                        "radio" value="female">
+                        <p>Femme</p><input id="Gender" type="radio" value=
+                        "male">
+                        <p>Homme</p>
+                    </div>
+                    <div>
+                        <label for="">Age</label> <select id="level">
+                            <option value="teen">
+                                15-20 ans
+                            </option>
+                            <option value="young">
+                                20-30 ans
+                            </option>
+                            <option value="middle">
+                                30-40 ans
+                            </option>
+                            <option value="old">
+                                40-50 ans
+                            </option>
+                            <option value="oldest">
+                                50+ ans
+                            </option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="">Centre d'intérêt</label>
+                        <dl class="dropdown">
+                            <dt>
+                                <a href="#"><span class="hida">Select</span>
+                                <p class="multiSel"></p></a>
+                            </dt>
+                            <dd>
+                                <div class="mutliSelect">
+                                    <ul>
+                                        <li><input type="checkbox" value=
+                                        "Apple">Apple</li>
+                                        <li><input type="checkbox" value=
+                                        "Blackberry">Blackberry</li>
+                                        <li><input type="checkbox" value=
+                                        "HTC">HTC</li>
+                                        <li><input type="checkbox" value=
+                                        "Sony Ericson">Sony Ericson</li>
+                                        <li><input type="checkbox" value=
+                                        "Motorola">Motorola</li>
+                                        <li><input type="checkbox" value=
+                                        "Nokia">Nokia</li>
+                                    </ul>
+                                </div>
+                            </dd>
+                        </dl><!-- FIN DROPDOWN MENU -->
+                    </div><!-- <input type="submit" value="Chercher"> -->
+                </form><!-- END Left column -->
+            </section>
+        </div><!-- END lightbox search -->
+                <div id="content">
+            <section class="expanded row video-intro">
+                <div class="intro-content">
+                    <div class="row intro">
+                        <div class="large-12 medium-12 columns">
+                            <h1>Bienvenue sur Yokoso</h1>
 
 
+                            <p>Le site de correspondance franco-japonaise</p>
+                        </div>
+                    </div>
 
 
+                    <div class="row anchors">
+                        <div class="large-4 medium-4 columns">
+                            <div class="callout">
+                                <img alt="" src=
+                                "../img/iconset_yokoso_sprite_black_conversation.svg">
+
+                                <p>Apprenez ou entretenez votre japonais avec
+                                de vrais natifs</p>
+                                <a class="cat" href="#a-propos">En
+                                savoir plus</a>
+                            </div>
+                        </div>
 
 
-<main id="base"> <!-- My main block -->
+                        <div class="large-4 medium-4 columns">
+                            <div class="callout">
+                                <img alt="" src=
+                                "../img/iconset_yokoso_sprite_black_dashboard.svg">
 
-  <!-- Les ligthbox ou pop in commune à toutes les pages-->
-  <div class="lightbox login">
-    <button class="close">⨯</button>
-    <section class="row">
-      <h2>Se connecter</h2>
-      
-      <form class="large-6 medium-6 columns"> <!-- Left column -->
-        <div><input id="email" type="email" placeholder="Adresse e-mail"></div>        
-        <div><input type="password" id="password" name="password" placeholder="Mot de passe"></div>
-        <p class="remember"><input type="checkbox">Se souvenir de moi</p> <a href="javascript:void(0)" class="forget">Mot de passe oublié?</a>
-        <a href="online/tableau-de-bord.html">Je me connecte !<!-- <input type="submit" value="Je me connecte !"> --></a>
-        <p>Pas encore de compte ? <a href="" class="signup">Inscrivez-vous !</a></p>
-      </form><!-- END Left column -->
-      <div class="separator">
-      <span class="line"></span>
-      <p>or</p>
-      <span class="line"></span>
-      </div>
-      <form class="large-6 medium-6 columns"><!-- Right column -->
-        <a href="online/tableau-de-bord.html"><input type="submit" class="facebook" value="Se connecter avec Facebook"></a>
-        <a href="online/tableau-de-bord.html"><input type="submit" class="twitter" value="Se connecter avec Twitter"></a>
-        <a href="online/tableau-de-bord.html"><input type="submit" class="google" value="Se connecter avec Google+"></a>
-      </form><!-- END Right column -->      
-    </section>
-  </div> <!-- END lightbox login -->
+                                <p>Découvrez une autre culture gràce à
+                                l’échange et au flux d’actulités !</p>
+                                <a class="cat" href="#last-articles">Consulter
+                                les derniers articles</a>
+                            </div>
+                        </div>
 
-  <div class="lightbox signup">
-    <button class="close">⨯</button>
-    <section class="row">
-      <h2>S'inscrire</h2>
-      
-      <form class="large-6 medium-6 columns"> <!-- Left column -->
-        <div><input id="pseudo" type="text" placeholder="Pseudo"></div> 
-        <div><input id="email" type="email" placeholder="Adresse e-mail"></div>        
-        <div><input type="password" id="password" name="password" placeholder="Mot de passe"></div>
-        <p class="remember"><input type="checkbox">J'accepte <a href="javascript:void(0)">les conditions d'utilisation</a> de Yokoso</p> 
-        <a href="online/tableau-de-bord.html"><input type="submit" value="Je m'inscris !"></a>
-        <p>Déjà un compte ? <a href="javascript:void(0)" class="signup">Connectez-vous !</a></p>
-      </form><!-- END Left column -->
-      <div class="separator">
-      <span class="line"></span>
-      <p>or</p>
-      <span class="line"></span>
-      </div>
-      <form class="large-6 medium-6 columns"><!-- Right column -->
-        <input type="submit" class="facebook" value="S'inscrire avec Facebook">
-        <input type="submit" class="twitter" value="S'inscrire avec Twitter">
-        <input type="submit" class="google" value="S'inscrire avec Google+">
-      </form><!-- END Right column -->
-      
-    </section>
-  </div><!-- END lightbox signupt -->
-  <div class="lightbox search">
-    <button class="close">⨯</button>
-    <section class="row">
-      <h2>Chercher un correspondant</h2>
-      
-      <form class="large-12 medium-12 columns"> <!-- Left column -->
-        <div>
-        <label for="">Langue maternelle</label>
-        <input id="native-lang" type="radio" value="french"><p>Français</p>
-        <input id="native-lang" type="radio" value="japanese"><p>Japonais</p>
-        </div>        
-        <div>
-        <label for="">Niveau</label>
-        <select type="select" id="level" placeholder="Sélectionnez">
-          <option value="Beginner">Débutant</option>
-          <option value="Intermediate">Intermédiaire</option>
-          <option value="Advanced">Avancé</option>
-        </select>
-        </div>
-        <div>
-        <label for="">Genre</label>
-        <input id="Gender" type="radio" value="female"><p>Femme</p>
-        <input id="Gender" type="radio" value="male"><p>Homme</p>
-        </div> 
-        <div>
-        <label for="">Age</label>
-        <select type="select" id="level" placeholder="Sélectionnez">
-          <option value="teen">15-20 ans</option>
-          <option value="young">20-30 ans</option>
-          <option value="middle">30-40 ans</option>
-          <option value="old">40-50 ans</option>
-          <option value="oldest">50+ ans</option>
-        </select>        
-        </div>
-        <div>
-          <label for="">Centre d'intérêt</label>
-          <dl class="dropdown"> 
-    
-            <dt>
-              <a href="#">
-                <span class="hida">Select</span>    
-                <p class="multiSel"></p>  
-              </a>
-            </dt>
-    
-            <dd>
-                <div class="mutliSelect">
-                    <ul>
-                        <li><input type="checkbox" value="Apple" />Apple</li>
-                        <li><input type="checkbox" value="Blackberry" />Blackberry</li>
-                        <li><input type="checkbox" value="HTC" />HTC</li>
-                        <li><input type="checkbox" value="Sony Ericson" />Sony Ericson</li>
-                        <li><input type="checkbox" value="Motorola" />Motorola</li>
-                        <li><input type="checkbox" value="Nokia" />Nokia</li>
+
+                        <div class="large-4 medium-4 columns">
+                            <div class="callout">
+                                <img alt="" src=
+                                "../img/iconset_yokoso_sprite_black_add-contact.svg">
+
+                                <p>Faites vous de nouveaux amis parmis des gens
+                                passionés et motivés !</p>
+                                <a class="cat" href="">Chercher un
+                                correspondant</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- fin intro content -->
+
+
+                <div class="wrap">
+                    <video autoplay="" loop=""><source src=
+                    "../video/japon-small.mp4" type=
+                    'video/mp4; codecs="avc1.42E01E, mp4a.40.2"'> Video not
+                    supported.</video>
+                </div>
+            </section>
+
+
+            <section class="home expanded last-signed-up row">
+                <div class="row">
+                    <h1>Derniers inscrits</h1>
+
+
+                    <p class="exergue">Chaque jour des centaines de personnes
+                    prennent part à l'aventure, rejoignez-les !</p>
+
+
+                    <ul class="large-12 medium-12 columns">
+                        <li>
+                            <a href="profil-nomducorrespondant.html">
+                            <figure class="avatar">
+                                <img alt="" src="../img/avatar_watermelon.png">
+
+                                <figcaption>
+                                    Noémie
+                                </figcaption>
+                            </figure></a>
+                        </li>
+
+
+                        <li>
+                            <a href="profil-nomducorrespondant.html">
+                            <figure class="avatar">
+                                <img alt="" src="../img/avatar_robot.png">
+
+                                <figcaption>
+                                    あかね
+                                </figcaption>
+                            </figure></a>
+                        </li>
+
+
+                        <li>
+                            <a href="profil-nomducorrespondant.html">
+                            <figure class="avatar">
+                                <img alt="" src="../img/avatar_whale.png">
+
+                                <figcaption>
+                                    Nicolas
+                                </figcaption>
+                            </figure></a>
+                        </li>
+
+
+                        <li>
+                            <a href="profil-nomducorrespondant.html">
+                            <figure class="avatar">
+                                <img alt="" src="../img/avatar_doll.png">
+
+                                <figcaption>
+                                    Yato
+                                </figcaption>
+                            </figure></a>
+                        </li>
+
+
+                        <li>
+                            <a href="profil-nomducorrespondant.html">
+                            <figure class="avatar">
+                                <img alt="" src="../img/avatar_coffee.png">
+
+                                <figcaption>
+                                    杏里
+                                </figcaption>
+                            </figure></a>
+                        </li>
                     </ul>
                 </div>
-            </dd>  
-          </dl> <!-- FIN DROPDOWN MENU -->
-        </div> 
-              
-        <!-- <input type="submit" value="Chercher"> -->
-        
-      </form><!-- END Left column -->      
-      </div>            
-    </section>
-  </div><!-- END lightbox search -->
 
 
+                <div class="line-of-articles-bottom-button">
+                    <a class="cat-2" href="#signup-section">S'inscrire</a>
+                </div>
+            </section>
 
-<div id="content"> 
 
-    <div class="home flexslider">  <!-- FLEXSLIDER -->
-    <ul class="slides">
-      <li>
-        <div>
-          <div>
-            <div>
-              <aside>
-                <p class="article-date">tags</p>
-                <p class="article-tag">tags</p>
-                <p class="article-tag">tags</p> 
-              </aside>
-              <article>
-                <h3>Titre de l'article 1</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos porro repellendus officia, nobis dolores suscipit!</p>
-              <div><a href="">Lire plus</a><button>></button></div>
-              </article>    
+            <section class="home expanded line-of-article row" id=
+            "last-articles">
+                <div class="row">
+                    <h1>Derniers articles</h1>
+
+
+                    <p class="exergue">Décourvrez nos articles quotidiens sur
+                    la culture franco-japonaise.</p>
+
+
+                    <article class="large-4 medium-4 columns">
+                        <div class="callout">
+                            <figure class="row">
+                                <img alt="" class="large-12 medium-12 columns"
+                                src="../img/miyajima.jpg"> <span>Voir
+                                l'article</span>
+                            </figure>
+
+
+                            <figcaption class="row">
+                                <div class=
+                                "column-left large-3 medium-3 columns">
+                                    <p class="article-date">14.12.2015</p>
+
+
+                                    <p class="article-tag">Voyages</p>
+
+
+                                    <p class="article-tag">Miyajima</p>
+                                </div>
+
+
+                                <div class=
+                                "column-right large-9 medium-9 columns">
+                                    <h1>L’île de Miyajima à la saison des
+                                    Sakura</h1>
+
+
+                                    <p>Un petit (re)tour à Miyajima (宮島), sur
+                                    l’île aux daims, proche d’Hiroshima (広島市),
+                                    ça vous dit ?</p>
+                                    <a class="cat" href="">Lire plus</a>
+                                </div>
+                            </figcaption>
+                        </div>
+                    </article>
+
+
+                    <article class="large-4 medium-4 columns">
+                        <div class="callout">
+                            <figure class="row">
+                                <img alt="" class="large-12 medium-12 columns"
+                                src="../img/ichigo.jpg"> <span>Voir
+                                l'article</span>
+                            </figure>
+
+
+                            <figcaption class="row">
+                                <div class=
+                                "column-left large-3 medium-3 columns">
+                                    <p class="article-date">17.09.2015</p>
+
+
+                                    <p class="article-tag">Cuisine
+                                    Japonaise</p>
+
+
+                                    <p class="article-tag">Dessert</p>
+                                </div>
+
+
+                                <div class=
+                                "column-right large-9 medium-9 columns">
+                                    <h1>苺大福</h1>
+
+
+                                    <p>
+                                    こんにちは、つんです。今日は和菓子レシピの紹介です。みなさん、イチゴは好きですか？
+                                    我が家では息子が苺大好きなので、よく買います。</p>
+                                    <a class="cat" href="">Lire plus</a>
+                                </div>
+                            </figcaption>
+                        </div>
+                    </article>
+
+
+                    <article class="large-4 medium-4 columns">
+                        <div class="callout">
+                            <figure class="row">
+                                <img alt="" class="large-12 medium-12 columns"
+                                src="../img/kinkaku.jpg"> <span>Voir
+                                l'article</span>
+                            </figure>
+
+
+                            <figcaption class="row">
+                                <div class=
+                                "column-left large-3 medium-3 columns">
+                                    <p class="article-date">25.11.2015</p>
+
+
+                                    <p class="article-tag">Voyages</p>
+
+
+                                    <p class="article-tag">Kyoto</p>
+                                </div>
+
+
+                                <div class=
+                                "column-right large-9 medium-9 columns">
+                                    <h1>Une balade d’or et d’argent</h1>
+
+
+                                    <p>On reprend le chemin du « Sakura trip
+                                    2013 » avec les visites du Kinkaku-ji
+                                    (Article complet) (金閣寺, Pavillon d’Or) et
+                                    son...</p>
+                                    <a class="cat" href="">Lire plus</a>
+                                </div>
+                            </figcaption>
+                        </div>
+                    </article>
+                </div>
+                <!-- fin div row -->
+
+
+                <div class="line-of-articles-bottom-button">
+                    <a class="cat-2" href="flux-actualites.html">Voir plus
+                    d'articles</a>
+                </div>
+            </section>
+            <!-- Fin article-line -->
+
+
+            <section class="home expanded a-propos row" id="a-propos">
+                <div class="row">
+                    <h1>A propos</h1>
+
+
+                    <p class="exergue">Yokoso est un outils de correspodance
+                    franco-japonaise créer par l’ambassade française du
+                    Japon.</p>
+
+
+                    <article class="large-6 medium-6 columns">
+                        <blockquote>
+                            Le but de Yokoso est de favoriser la découverte de
+                            la culture japonaise par les francophones
+                        </blockquote>
+                    </article>
+
+
+                    <article class="large-6 medium-6 columns">
+                        <p>Son ambition est d'ouvrir aux passionnés et féru de
+                        langues les portes de la culture japonaise et
+                        française.</p>
+
+
+                        <p>Ici, rechercher des correspondants de votre âge avec
+                        des centres d’intéreet similaires. Vous pourrez ainsi
+                        découvrir la culture de l’autre, échanger des idées,
+                        des photo, surtout vous perfectionner en
+                        japonais/français et pourquoi pas décider plus tard de
+                        faire un beau voyage.</p>
+                        <a class="cat" href="">En savoir plus</a>
+                    </article>
+                </div>
+            </section>
+            <!-- Fin a-propos row -->
+
+
+            <section class="home expanded signup-section row" id=
+            "signup-section">
+                <div class="row">
+                    <h1>Convaincu ? Inscrivez-vous maintenant !</h1>
+
+
+                    <p class="exergue">Et profitez de tous les services de
+                    Yokoso</p>
+
+
+                    <form action="online/profil.html" class=
+                    "large-6 medium-6 columns">
+                        <!-- Left column -->
+
+
+                        <div class="my-input">
+                            <input id="pseudo" placeholder="Pseudo" required=""
+                            type="text">
+                        </div>
+
+
+                        <div class="my-input">
+                            <input id="email" placeholder="Adresse e-mail"
+                            required="" type="email">
+                        </div>
+
+
+                        <div class="my-input">
+                            <input id="password" name="password" placeholder=
+                            "Mot de passe" required="" type="password">
+                        </div>
+
+
+                        <div class="signup-div-style">
+                            <p class="remember"><input required="" type=
+                            "checkbox">J'accepte <a class="simple-link" href=
+                            "javascript:void(0)">les conditions
+                            d'utilisation</a> de Yokoso</p>
+                        </div>
+                        <input class="login my-button" type="submit" value=
+                        "Je m'inscris !">
+
+                        <div class="signup-div-style">
+                            <p>Déjà un compte ? <a class="simple-link" href=
+                            "javascript:void(0)">Connectez-vous !</a></p>
+                        </div>
+                    </form>
+                    <!-- END Left column -->
+                    
+                    <form class="large-6 medium-6 columns">
+                        <!-- Right column -->
+                        <a class="login my-button facebook" href=
+                        "online/profil.html">S'inscrire avec Facebook</a>
+                        <a class="login my-button twitter" href=
+                        "online/profil.html">S'inscrire avec Twitter</a>
+                        <a class="login my-button google" href=
+                        "online/profil.html">S'inscrire avec Google+</a>
+                    </form>
+                    <!-- END Right column -->
+                </div>
+            </section>
+            <!-- END signup row -->
+        </div>
+        <!-- fin div#content -->
+        <footer>
+            <div class="row">
+                <nav class="large-8 medium-8 columns">
+                    <ul class="footer-nav">
+                        <li>
+                            <a href="">Chercher un correspondant</a>
+                        </li>
+
+
+                        <li>
+                            <a href="flux-actualites.html">Flux
+                            d'actualités</a>
+                        </li>
+
+
+                        <li>
+                            <a href="">A propos</a>
+                        </li>
+
+
+                        <li>
+                            <a href="">Contact</a>
+                        </li>
+                    </ul>
+
+
+                    <ul class="footer-sub-nav">
+                        <li>© 2016 Yokoso</li>
+
+
+                        <li>
+                            <a href="">Conditions</a>
+                        </li>
+
+
+                        <li>
+                            <a href="">Protection des données</a>
+                        </li>
+
+
+                        <li><select id="lang" name="lang">
+                            <option value="jp">
+                                Japonais
+                            </option>
+
+                            <option value="fr">
+                                Français
+                            </option>
+                        </select>
+                        </li>
+                    </ul>
+                </nav>
+
+
+                <div class="large-4 medium-4 columns">
+                    <div class="newsletter">
+                        <label for="">S'abonner à la newsletter</label>
+                        <input placeholder="Entrer votre email" type=
+                        "email"><button>&gt;</button>
+                    </div>
+
+
+                    <ul class="social-media">
+                        <li>
+                            <a href="http://www.facebook.com"><img alt=
+                            "facebook" src="../img/facebook.png"></a>
+                        </li>
+
+
+                        <li>
+                            <a href="http://plus.google.com/"><img alt="google"
+                            src="../img/google.png"></a>
+                        </li>
+
+
+                        <li>
+                            <a href="http://www.twitter.com"><img alt="twitter"
+                            src="../img/twitter.png"></a>
+                        </li>
+                    </ul>
+                </div>
             </div>
-          </div>
-        </div>
-        <img src="../img/slide1.jpg" />
-      </li>
-      <li>
-        <div>
-          <div>
-            <div>
-              <aside>
-                <p class="article-date">tags</p>
-                <p class="article-tag">tags</p>
-                <p class="article-tag">tags</p> 
-              </aside>
-              <article>
-                <h3>Titre de l'article 1</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos porro repellendus officia, nobis dolores suscipit!</p>
-              <div><a href="">Lire plus</a><button>></button></div>
-              </article>    
-            </div>
-          </div>
-        </div>
-        <img src="../img/slide2.jpg" />
-      </li>
-      <li>
-        <div>
-          <div>
-            <div>
-              <aside>
-                <p class="article-date">tags</p>
-                <p class="article-tag">tags</p>
-                <p class="article-tag">tags</p> 
-              </aside>
-              <article>
-                <h3>Titre de l'article 1</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos porro repellendus officia, nobis dolores suscipit!</p>
-              <div><a href="">Lire plus</a><button>></button></div>
-              </article>    
-            </div>
-          </div>
-        </div>
-        <img src="../img/slide3.jpg" />
-      </li>    
-    </ul>
-  </div> <!-- FIN FLEWSLIDER -->
-
-  <section class="home expanded last-signed-up row">
-  <h1>Derniers inscrits</h1>
-    <ul class="large-12 medium-12 columns">
-      <li>
-        <a href="online/profil-nomducorrespondant.html">
-        <figure class="avatar">
-          <img src="" alt="">
-          <figcaption>Noémie</figcaption>
-        </figure>
-        </a>
-      </li>
-      <li>
-        <a href="online/profil-nomducorrespondant.html">
-        <figure class="avatar">
-          <img src="" alt="">
-          <figcaption>あかね</figcaption>
-        </figure>
-        </a>
-      </li>
-      <li>
-        <a href="online/profil-nomducorrespondant.html">
-        <figure class="avatar">
-          <img src="" alt="">
-          <figcaption>Nicolas</figcaption>
-        </figure>
-        </a>
-      </li>
-      <li>
-        <a href="online/profil-nomducorrespondant.html">
-        <figure class="avatar">
-          <img src="" alt="">
-          <figcaption>Yato</figcaption>
-        </figure>
-        </a>
-      </li>
-      
-      <li>
-        <a href="online/profil-nomducorrespondant.html">
-        <figure class="avatar">
-          <img src="" alt="">
-          <figcaption>杏里</figcaption>
-        </figure>
-        </a>
-      </li>
-    </ul>
-  </section>
-
-  <section class="home expanded line-of-article row">
-    <h1>Derniers articles</h1>
-    <article class="large-4 medium-4 columns">
-      <figure class="row">
-        <img class="large-12 medium-12 columns" src="../img/slide1.jpg" alt="">
-      </figure>
-      <figcaption class="row">
-      <div class="column-left large-3 medium-3 columns">
-        <p class="article-date">17.10.2015</p>
-        <p class="article-tag">Voyages</p>
-        <p class="article-tag">Tokyo</p>     
-      </div>
-      <div class="column-right large-9 medium-9 columns">
-        <h3>Titre de l'article</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam molestiae, voluptatibus soluta eos esse totam!</p>
-        <div><a href="">Lire plus</a><button>></button></div>
-      </div>      
-      </figcaption>
-    </article>
-    <article class="large-4 medium-4 columns">
-      <figure class="row">
-        <img class="large-12 medium-12 columns" src="../img/slide2.jpg" alt="">
-      </figure>
-      <figcaption class="row">
-      <div class="column-left large-3 medium-3 columns">
-        <p class="article-date">17.09.2015</p>
-        <p class="article-tag">Cuisine Japonaise</p>
-        <p class="article-tag">Dessert</p>     
-      </div>
-      <div class="column-right large-9 medium-9 columns">
-        <h3>あんこ</h3>
-        <p>みなさん、こんにちは。つんです。
-前回の大福に欠かせないあんこのレシピの紹介です。順番が逆になってスイマセン(´･ω･`;)
-まずは普通のあんこからです。</p>
-        <div><a href="">Lire plus</a><button>></button></div>
-      </div>      
-      </figcaption>
-    </article> 
-    <article class="large-4 medium-4 columns">
-      <figure class="row">
-        <img class="large-12 medium-12 columns" src="../img/slide3.jpg" alt="">
-      </figure>
-      <figcaption class="row">
-      <div class="column-left large-3 medium-3 columns">
-        <p class="article-date">tags</p>
-        <p class="article-tag">tags</p>
-        <p class="article-tag">tags</p>     
-      </div>
-      <div class="column-right large-9 medium-9 columns">
-        <h3>Titre de l'article</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam molestiae, voluptatibus soluta eos esse totam!</p>
-        <div><a href="">Lire plus</a><button>></button></div>
-      </div>      
-      </figcaption>
-    </article> 
-  </section> <!-- Fin article-line -->
-
-  <section class="home expanded a-propos row">
-    <article class="large-6 medium-6 columns">
-      <blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae quod, molestias officiis blanditiis incidunt, atque!</blockquote>
-    </article>
-    <article class="large-6 medium-6 columns">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus cum eaque corrupti minus est qui! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate error quo deserunt accusantium culpa ullam sit id animi, provident modi nulla amet, est dolorum at?</p>
-      <a href="a-propos.html" class="cat">En savoir plus</a>
-    </article>
-  </section> <!-- Fin a-propos row -->
-
-  <section class="home expanded signup-section row">
-        <h2>S'inscrire</h2>
-        
-        <form class="large-6 medium-6 columns"> <!-- Left column -->
-          <div><input id="pseudo" type="text" placeholder="Pseudo"></div> 
-          <div><input id="email" type="email" placeholder="Adresse e-mail"></div>        
-          <div><input type="password" id="password" name="password" placeholder="Mot de passe"></div>
-          <p class="remember"><input type="checkbox">J'accepte <a href="javascript:void(0)">les conditions d'utilisation</a> de Yokoso</p> 
-          <a href="online/tableau-de-bord.html"><input type="submit" value="Je m'inscris !"></a>
-          <p>Déjà un compte ? <a href="javascript:void(0)" class="signup">Connectez-vous !</a></p>
-        </form><!-- END Left column -->
-        <div class="separator">
-        <span class="line"></span>
-        <p>or</p>
-        <span class="line"></span>
-        </div>
-        <form class="large-6 medium-6 columns"><!-- Right column -->
-          <input type="submit" class="facebook" value="S'inscrire avec Facebook">
-          <input type="submit" class="twitter" value="S'inscrire avec Twitter">
-          <input type="submit" class="google" value="S'inscrire avec Google+">
-        </form><!-- END Right column -->      
-  </section> <!-- END signup row --> 
-
-</div> <!-- fin div#content -->
-
-<footer>
-  <div class="row">
-    <nav class="large-8 medium-8 columns">
-      <ul class="footer-nav row">
-        <li><a href="">Chercher un correspondant</a></li>
-        <li><a href="flux-actualites.html">Flux d'actualités</a></li>
-        <li><a href="">A propos</a></li>
-        <li><a href="">Contact</a></li>
-      </ul>
-      <ul class="footer-sub-nav row">
-        <li>© 2016 Yokoso</li>
-        <li><a href="">Conditions</a></li>
-        <li><a href="">Protection des données</a></li>
-        <li>
-        <select name="lang" id="lang">
-          <option value="jp">Japonais</option>
-          <option value="fr">Français</option>
-        </select>
-        </li>
-      </ul>
-    </nav>
-    <div class="large-4 medium-4 columns">
-      <div class="newsletter">
-        <label for="">S'abonner à la newsletter</label>
-        <input type="email" placeholder="Entrer votre email"><button>></button>
-      </div>
-      <ul class="social-media">
-        <li><a href="">fb</a></li>
-        <li><a href="">tw</a></li>
-        <li><a href="">g+</a></li>
-      </ul>
-    </div>
-  </div>
-</footer>
-
-</main> <!-- End My main block -->
-
-
-  
-
-  <script src="../js/vendor/jquery.min.js"></script>
-  <script src="../js/vendor/what-input.min.js"></script>
-  <script src="../js/foundation.js"></script>
-  <script src="../js/app.js"></script>
-  <script src="../js/script.js"></script>
-  <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-  <script src="../js/jquery.flexslider.js"></script>
-  
+        </footer>
+    </main><!-- End My main block -->
+    <script src="../js/vendor/jquery.min.js">
+    </script> 
+    <script src="../js/vendor/what-input.min.js">
+    </script> 
+    <script src="../js/foundation.js">
+    </script> 
+    <script src="../js/app.js">
+    </script> 
+    <script src="../js/script.js">
+    </script> 
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js">
+    </script> 
+    <script src="../js/jquery.flexslider.js">
+    </script>
 </body>
-
 </html>

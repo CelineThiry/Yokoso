@@ -4,6 +4,9 @@ button::focus {
 h1, h2, h3, h4 {
   color: #302a2b; }
 
+body header.first-nav nav div.burger-div.large-4.medium-4 {
+  padding-top: 0.5rem; }
+
 body {
   background-color: #EEE8D8;
   font: "Roboto", sans-serif; }
@@ -13,39 +16,45 @@ body {
     padding: 0;
     position: fixed;
     z-index: 100; }
-    body header.first-nav nav .large-4.medium-4 {
-      padding: 16px 16px 0 16px; }
-    body header.first-nav nav ul {
-      text-align: right; }
-      body header.first-nav nav ul img {
-        display: none; }
-      body header.first-nav nav ul li {
-        display: inline-block; }
-        body header.first-nav nav ul li a.login.button {
-          margin: 0px;
+    body header.first-nav nav {
+      padding: 1rem 1rem 0 1rem; }
+      body header.first-nav nav .large-4.medium-4 {
+        padding: 0; }
+      body header.first-nav nav ul.fr-buttons {
+        padding: 0; }
+      body header.first-nav nav ul {
+        text-align: right; }
+        body header.first-nav nav ul img.login-and-signup-small-device {
+          display: none; }
+        body header.first-nav nav ul li {
+          display: inline-block; }
+          body header.first-nav nav ul li a.login.button {
+            margin: 0px;
+            transition: background-color 0.25s ease-out 0s, color 0.25s ease-out 0s;
+            border: 0px solid transparent;
+            border-radius: 4px;
+            padding: 0.85em 1em;
+            margin: 0px 0px 1rem;
+            font-size: 1rem;
+            background-color: #d61232;
+            color: white; }
+          body header.first-nav nav ul li a.login.button:hover {
+            background-color: white;
+            color: #302b2a; }
+        body header.first-nav nav ul li a.signup.button {
           transition: background-color 0.25s ease-out 0s, color 0.25s ease-out 0s;
           border: 0px solid transparent;
-          border-radius: 4px;
+          border-radius: 0px;
           padding: 0.85em 1em;
-          margin: 0px 0px 1rem;
+          margin: 0px 0px 16px;
           font-size: 1rem;
-          background-color: #d61232;
+          background-color: transparent;
           color: white; }
-        body header.first-nav nav ul li a.login.button:hover {
-          background-color: white;
-          color: #302b2a; }
-      body header.first-nav nav ul li a.signup.button {
-        transition: background-color 0.25s ease-out 0s, color 0.25s ease-out 0s;
-        border: 0px solid transparent;
-        border-radius: 0px;
-        padding: 0.85em 1em;
-        margin: 0px 0px 16px;
-        font-size: 1rem;
-        background-color: transparent;
-        color: white; }
     body header.first-nav h1.large-4.medium-4.columns {
       text-align: center;
-      padding: 5px 0 0 0; }
+      padding: 0 0 0 0;
+      margin: 0;
+      font-size: 0; }
 
 /* ====================================================================================================================
  * Index.html
@@ -72,30 +81,42 @@ section.home {
     text-align: center;
     font-size: 2.5rem;
     font-family: "Open Sans", sans-serif;
-    font-weight: 300; }
+    font-weight: 300;
+    text-align: left; }
   .home.a-propos p.exergue {
     font-family: "Droid Serif", serif;
     font-weight: 400;
     font-style: italic;
-    text-align: center;
+    text-align: left;
     font-size: 1.25rem;
     padding-bottom: 2rem; }
   .home.a-propos p {
     font-family: "Open Sans", sans-serif;
     font-weight: 300; }
+  .home.a-propos .quote {
+    height: auto;
+    padding: 0 3rem 0 3rem; }
+  .home.a-propos .cat {
+    margin-top: 2rem; }
   .home.a-propos blockquote {
     font-size: 2rem;
     text-align: right;
     font-family: "Droid Serif", serif;
     font-style: italic;
+    font-weight: 400;
+    color: #d61232;
     position: relative;
     border: none;
-    margin: 0; }
+    padding-top: 0;
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle; }
     .home.a-propos blockquote:before {
       content: "\201C";
       position: absolute;
+      color: #d61232;
       top: -25px;
-      left: -25px;
+      left: -1rem;
       font-size: 5rem; }
 
 .home.signup-section {
@@ -365,66 +386,67 @@ a.login.my-button, .signup-section form a.login.facebook, .signup-section form a
 div.my-input {
   height: 76px; }
 
-header.first-nav.online nav ul li .contact {
-  position: relative;
+header.first-nav.online nav ul li {
   height: 40px;
-  width: 40px;
-  background-color: transparent;
-  background-image: url("../img/iconset_yokoso_sprite.svg");
-  background-repeat: no-repeat;
-  background-position: center -720px;
-  background-size: auto; }
-  header.first-nav.online nav ul li .contact:after {
-    content: "1";
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    height: 15px;
-    width: 15px;
-    border-radius: 15px;
-    background-color: #d61232;
-    color: white;
-    font-size: 0.7rem;
-    padding: 1px; }
-header.first-nav.online nav ul li .msg {
-  position: relative;
-  height: 40px;
-  width: 40px;
-  background-color: transparent;
-  background-image: url("../img/iconset_yokoso_sprite.svg");
-  background-repeat: no-repeat;
-  background-position: center -1020px;
-  background-size: auto; }
-  header.first-nav.online nav ul li .msg:after {
-    content: "1";
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    height: 15px;
-    width: 15px;
-    border-radius: 15px;
-    background-color: #d61232;
-    color: white;
-    padding: 1px;
-    font-size: 0.7rem; }
-header.first-nav.online nav ul li .profil {
   display: inline-block;
-  vertical-align: top;
-  position: relative;
-  height: 40px;
-  line-height: 40px;
-  font-size: 1rem;
-  background-color: transparent;
-  padding-right: 5px; }
-header.first-nav.online nav ul li a.avatar {
-  display: inline-block;
-  vertical-align: top;
-  height: 40px;
-  width: 40px;
-  background-image: url("../img/avatar2.svg");
-  background-repeat: no-repeat;
-  background-position: -106px center;
-  background-size: cover; }
+  vertical-align: top; }
+  header.first-nav.online nav ul li a img.corres, header.first-nav.online nav ul li a img.letter {
+    display: block; }
+  header.first-nav.online nav ul li a img.profil {
+    display: inline-block;
+    height: 40px;
+    padding: 0; }
+  header.first-nav.online nav ul li .contact {
+    position: relative;
+    height: 40px;
+    width: 40px;
+    background-color: transparent;
+    background-image: url("../img/iconset_yokoso_sprite.svg");
+    background-repeat: no-repeat;
+    background-position: center -720px;
+    background-size: auto;
+    margin-right: 0.5rem; }
+    header.first-nav.online nav ul li .contact:after {
+      content: "1";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      height: 15px;
+      width: 15px;
+      border-radius: 15px;
+      background-color: #d61232;
+      color: white;
+      font-size: 0.7rem;
+      padding: 1px; }
+  header.first-nav.online nav ul li .msg {
+    position: relative;
+    height: 40px;
+    width: 40px;
+    background-color: transparent;
+    background-image: url("../img/iconset_yokoso_sprite.svg");
+    background-repeat: no-repeat;
+    background-position: center -1020px;
+    background-size: auto;
+    margin-right: 0.5rem; }
+    header.first-nav.online nav ul li .msg:after {
+      content: "1";
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      height: 15px;
+      width: 15px;
+      border-radius: 15px;
+      background-color: #d61232;
+      color: white;
+      padding: 1px;
+      font-size: 0.7rem; }
+  header.first-nav.online nav ul li .profil {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    line-height: 40px;
+    font-size: 1.25rem;
+    background-color: transparent; }
 
 div.lightbox.active {
   background-color: rgba(48, 42, 43, 0.9);
@@ -1236,7 +1258,8 @@ form.new-messages {
       opacity: 1; }
 
 .main-nav {
-  height: 76px; }
+  height: 76px;
+  padding: 1rem 1rem 0 1rem; }
 
 .courrier-nav {
   position: relative;
@@ -1508,9 +1531,10 @@ body > footer.open {
   body header.first-nav nav ul.fr-buttons li {
     display: none; }
 
-  body header.first-nav nav ul.fr-buttons img {
+  body header.first-nav nav ul.fr-buttons img.login-and-signup-small-device {
     display: block;
-    float: right; }
+    float: right;
+    padding-top: 0.2rem; }
 
   .intro-content {
     padding-top: 5%; }
@@ -1521,6 +1545,14 @@ body > footer.open {
   .intro div.columns p {
     font-size: 1.5rem; } }
 @media (max-width: 600px) {
+  a.cat {
+    font-size: 0.8rem;
+    text-align: left; }
+
+  a.cat-2 {
+    font-size: 0.8rem;
+    text-align: left; }
+
   .intro div.columns h1 {
     font-size: 2.3rem; }
 
@@ -1535,4 +1567,68 @@ body > footer.open {
     vertical-align: middle; }
   .anchors a {
     display: inline-block;
-    vertical-align: middle; } }
+    vertical-align: middle; }
+
+  p.exergue {
+    padding: 0 1rem 0 1rem; }
+
+  .video-intro {
+    height: auto; }
+    .video-intro div.intro-content {
+      height: auto;
+      padding-bottom: 25%; }
+    .video-intro div.wrap {
+      position: relative;
+      height: 1080px; }
+
+  section.last-signed-up ul li a figure.avatar {
+    padding: 1rem;
+    margin: 0; }
+    section.last-signed-up ul li a figure.avatar img {
+      width: 50px;
+      height: 50px; }
+
+  section.line-of-article article div.callout figcaption .column-left {
+    text-align: left; }
+    section.line-of-article article div.callout figcaption .column-left p {
+      display: inline-block; }
+    section.line-of-article article div.callout figcaption .column-left .article-date {
+      text-align: left; }
+    section.line-of-article article div.callout figcaption .column-left .article-tag {
+      text-align: left; }
+
+  .home.a-propos article.quote {
+    padding: 0; }
+    .home.a-propos article.quote blockquote {
+      font-size: 1.5rem;
+      text-align: center;
+      padding: 1rem 1rem 3rem 1rem; }
+      .home.a-propos article.quote blockquote:before {
+        left: 0; }
+  .home.a-propos h1 {
+    text-align: center; }
+  .home.a-propos p.exergue {
+    text-align: center; }
+
+  .signup-section div form {
+    padding: 1rem; }
+
+  body > main#base > footer {
+    height: 470px;
+    padding: 3rem 1rem 1rem 1rem; }
+    body > main#base > footer div nav {
+      padding: 0; }
+      body > main#base > footer div nav .footer-nav li {
+        display: block;
+        margin: 0; }
+      body > main#base > footer div nav .footer-sub-nav li {
+        display: block; }
+    body > main#base > footer div div.columns {
+      padding: 2rem 0 0 0;
+      border-left: 0; }
+
+  #content {
+    padding-bottom: 470px; } }
+@media (max-height: 600px) {
+  .intro-content {
+    padding-top: 5%; } }

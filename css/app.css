@@ -62,8 +62,8 @@ header.callout > nav.row.large-12.columns h1{
 /*Burger button*/
 
 header > nav > div{
-	line-height: 43px;
-	padding-top: 10px;
+	/*line-height: 43px;
+	padding-top: 10px;*/
 }
 
 nav button.menu-burger-trigger{
@@ -77,6 +77,16 @@ nav button.menu-burger-trigger{
 	transition-timing-function: ease;
 	transform-origin: 50% 50%;
 	transform: rotate(0deg);
+	-moz-transition-property: transform;
+	-moz-transition-duration: 1s;
+	-moz-transition-timing-function: ease;
+	-moz-transform-origin: 50% 50%;
+	-moz-transform: rotate(0deg);
+	-webkit-transition-property: transform;
+	-webkit-transition-duration: 1s;
+	-webkit-transition-timing-function: ease;
+	-webkit-transform-origin: 50% 50%;
+	-webkit-transform: rotate(0deg);
 	outline-color: rgba(0,0,0,0);
 }
 
@@ -93,6 +103,18 @@ nav button.menu-burger-trigger span{
 	transform: translate(0 0);
 	transform-origin: 50% 50%;
 	transform: rotate(0deg);
+	-moz-transition-property: transform, top;
+	-moz-transition-duration: 0.30s;
+	-moz-transition-timing-function: ease;
+	-moz-transform: translate(0 0);
+	-moz-transform-origin: 50% 50%;
+	-moz-transform: rotate(0deg);
+	-webkit-transition-property: transform, top;
+	-webkit-transition-duration: 0.30s;
+	-webkit-transition-timing-function: ease;
+	-webkit-transform: translate(0 0);
+	-webkit-transform-origin: 50% 50%;
+	-webkit-transform: rotate(0deg);
 }
 
 /*When  menu is opened change from burger to cross*/
@@ -107,6 +129,10 @@ nav button.menu-burger-trigger.open span:nth-child(1){
 	top: 12px;
 	transform-origin: 50% 50%;
 	transform: rotate(45deg);
+	-moz-transform-origin: 50% 50%;
+	-moz-transform: rotate(45deg);
+	-webkit-transform-origin: 50% 50%;
+	-webkit-transform: rotate(45deg);
 }
 
 nav button.menu-burger-trigger span:nth-child(2){
@@ -129,6 +155,10 @@ nav button.menu-burger-trigger.open span:nth-child(3){
 	top: 12px;
 	transform-origin: 50% 50%;
 	transform: rotate(-45deg);
+	-webkit-transform-origin: 50% 50%;
+	-webkit-transform: rotate(-45deg);
+	-moz-transform-origin: 50% 50%;
+	-moz-transform: rotate(-45deg);
 }
 
 nav.row.large-12.columns ul{
@@ -212,7 +242,8 @@ nav#menu-push>ul{
 }
 
 nav#menu-push>ul>li>a{
-	color: white;	
+	color: white;
+	font-size: 1.25rem;
 }
 
 nav#menu-push>ul>li>a:hover{

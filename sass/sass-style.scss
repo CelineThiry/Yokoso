@@ -23,6 +23,9 @@ button::focus{
 
 h1, h2, h3, h4{color: $my-black;}
 
+body header.first-nav nav div.burger-div.large-4.medium-4{
+				padding-top: 0.5rem;
+			}
 
 body{
 	background-color: $body-bgc;
@@ -37,19 +40,27 @@ body{
 		z-index: 100;
 
 		nav{
-
+			padding: 1rem 1rem 0 1rem;
 
 			.large-4.medium-4{
-				padding: 16px 16px 0 16px;
+				// padding: 16px 16px 0 16px;
+				padding: 0;
+				// height: 76px;
+				// line-height: 76px;
+			}
+
+			ul.fr-buttons{
+				padding: 0;
 			}
 
 			ul{
 				text-align: right;
 
-				img{
+				img.login-and-signup-small-device{
 					display: none;
 				}
 
+				
 				li{
 					display: inline-block;
 
@@ -97,7 +108,9 @@ body{
 
 		h1.large-4.medium-4.columns{
 			text-align: center;
-			padding: 5px 0 0 0;
+			padding: 0 0 0 0;
+			margin: 0;
+			font-size: 0;
 		}
 	}
 }
@@ -138,13 +151,14 @@ section.home{
 			font-size: 2.5rem;
 			font-family: $open-sans;
 			font-weight: 300;
+			text-align: left;
 		}
 
 	p.exergue{
 			font-family: $droid-serif;
 			font-weight: 400;
 			font-style: italic;
-			text-align: center;
+			text-align: left;
 			font-size: 1.25rem;
 			padding-bottom: 2rem;
 	}
@@ -154,23 +168,49 @@ section.home{
 			font-weight: 300;
 		}
 
+		.quote{
+			// border: 1px solid #000;
+			height: auto;
+			// min-height: 300px;
+			padding: 0 3rem 0 3rem;
+		}
+
+		.cat{
+			margin-top: 2rem;
+		}
+
 		blockquote{
 			font-size: 2rem;	
 			text-align: right;	
 			font-family: $droid-serif;
 			font-style: italic;
+			font-weight: 400;
+			color: $cherry-red;
 			position: relative;
 			border: none;
+			padding-top: 0;
 			margin: 0;
+			display: inline-block;
+			vertical-align: middle;
 			// padding: 0;
 
 			&:before{
 				content: "\201C";
 				position: absolute;
+				color: $cherry-red;
 				top:-25px;
-				left: -25px;
+				left: -1rem;
 				font-size: 5rem;
 			}	
+
+			// &:after{
+			// 	content: "\201C";
+			// 	position: absolute;
+			// 	color: $cherry-red;
+			// 	bottom: -75px;
+			// 	right: -25px;
+			// 	font-size: 5rem;
+			// }
 		}
 
 		
@@ -559,7 +599,12 @@ div.my-input{
 }
 
 header.first-nav.online{
+
+	.main-nav{
+		// padding: 1rem 1rem 0 1rem;
+	}
 	nav{
+
 		div{
 
 		}
@@ -571,8 +616,26 @@ header.first-nav.online{
 
 		ul{
 
+
+
 			li{
+
+				height: 40px;
+				display: inline-block;
+				vertical-align: top;
 				a{
+
+					img.corres, img.letter{
+					display: block;
+
+				}
+
+					img.profil{
+					display: inline-block;
+					height: 40px;
+					// width: 100%;
+					padding: 0;
+					}
 
 				}
 
@@ -585,6 +648,7 @@ header.first-nav.online{
 				    background-repeat: no-repeat;
 				    background-position: center -720px;
 				    background-size: auto;
+				    margin-right: 0.5rem;
 
 				    &:after{
 				    	content: "1";
@@ -610,6 +674,7 @@ header.first-nav.online{
 				    background-repeat: no-repeat;
 				    background-position: center -1020px;
 				    background-size: auto;
+				    margin-right: 0.5rem;
 
 
 				    &:after{
@@ -632,26 +697,15 @@ header.first-nav.online{
 					display: inline-block;
 					vertical-align: top;
 					position: relative;
-					height: 40px;
+					// height: 40px;
 					line-height: 40px;
-					font-size: 1rem;
+					font-size: 1.25rem;
 					background-color: transparent;
-					padding-right: 5px;
+
 									
 				}	
 
-				a.avatar{				
-					display: inline-block;
-					vertical-align: top;					
-					height: 40px;
-					width: 40px;
-					
-					background-image: url('../img/avatar2.svg');
-				    background-repeat: no-repeat;
-				    background-position: -106px center;
-				    background-size: cover;
-
-				}			
+				
 			}
 		}
 	}
@@ -2076,6 +2130,7 @@ form.new-messages{
 
 .main-nav{
 	height: $block-height;
+	padding: 1rem 1rem 0 1rem;
 }
 
 .courrier-nav{
@@ -2524,9 +2579,10 @@ body>footer.open{
   body header.first-nav nav ul.fr-buttons li {
     display: none;
   }
-  body header.first-nav nav ul.fr-buttons img {
+  body header.first-nav nav ul.fr-buttons img.login-and-signup-small-device {
     display: block;
     float: right;
+    padding-top: 0.2rem;
   }
   .intro-content {
     padding-top: 5%;
@@ -2543,6 +2599,18 @@ body>footer.open{
 }
 
 @media (max-width: 600px){
+
+	a.cat{
+		font-size: 0.8rem;
+		text-align: left;
+
+	}
+
+	a.cat-2{
+		font-size: 0.8rem;
+		text-align: left;
+
+	}
 
 	.intro div.columns h1{
   	font-size: 2.3rem;
@@ -2569,6 +2637,131 @@ body>footer.open{
   	}
   }
 
+  p.exergue{
+  	padding: 0 1rem 0 1rem;
+  }
+
+  .video-intro{
+  		height: auto;
+  	div.intro-content{
+		height: auto;
+		padding-bottom: 25%;
+  	}
+  	div.wrap{
+  		position: relative;
+  		height: 1080px;
+  	}
+  }
+
+  section.last-signed-up{
+
+  	ul{
+  		li{
+  			a{
+  				figure.avatar{
+
+  					padding: 1rem;
+  					margin: 0;
+			  		img{
+			  			width: 50px;
+			  			height: 50px;
+			  		}
+	  			}
+  			}
+  		}
+  	}
+  	
+  }
+
+  section.line-of-article article div.callout figcaption {
+	
+	.column-left {
+		text-align: left;
+	  	p{display: inline-block;}
+
+	  	.article-date{text-align: left;}
+	  	.article-tag{text-align: left;}
+  	
+  	  }
+
+  }
+
+  .home.a-propos {
+
+  	  	article.quote{
+  			padding: 0;
+			  	blockquote{
+				font-size: 1.5rem;
+				text-align: center;
+				padding: 1rem 1rem 3rem 1rem;
+
+
+				&:before{
+					left: 0;
+				}
+	  		}
+  		}
+
+  		h1{text-align: center;}
+  		p.exergue{text-align: center;} 
+  }
+
+  .signup-section{
+  	div{
+  		form{
+  			padding: 1rem;
+  		}
+  	}
+  }
+
+  body>main#base>footer{
+	height: 470px;
+	padding: 3rem 1rem 1rem 1rem;
+
+	div{
+		nav{
+			padding: 0;
+
+			.footer-nav{
+				li{
+					display: block;
+					// text-align: center;
+					margin: 0;
+				}
+			}
+			.footer-sub-nav{
+				li{display: block;}
+			}
+		}
+
+		div.columns{
+			padding: 2rem 0 0 0;
+			border-left: 0;
+
+			.newsletter{
+				// text-align: center;
+			}
+
+			.social-media{
+				// text-align: center;
+			}
+		}
+	}
+  }
+
+  #content{
+  	padding-bottom: 470px;
+  }
+
+
+
+
+}
+
+@media (max-height: 600px){
+	.intro-content{
+		padding-top: 5%;
+	}
 }
 
 
