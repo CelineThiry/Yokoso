@@ -17,7 +17,14 @@ body {
     position: fixed;
     z-index: 100; }
     body header.first-nav nav.courrier-nav {
-      padding: 0; }
+      padding: 0;
+      transform: translate(0px, 0px); }
+    body header.first-nav nav.courrier-nav.open {
+      padding: 0;
+      transition-property: transform;
+      transition-duration: 0.4s;
+      transition-timing-function: cubic-bezier(0, 0.99, 0.13, 0.995);
+      transform: translate(300px, 0px); }
     body header.first-nav nav {
       padding: 1rem 1rem 0 1rem; }
       body header.first-nav nav .large-4.medium-4 {
@@ -1067,7 +1074,11 @@ section#dashboard {
     font-size: 1.25rem;
     padding-bottom: 2rem; }
   section#dashboard .big-button {
-    margin-top: 1rem; }
+    margin-top: 1rem;
+    background-color: #d61232; }
+    section#dashboard .big-button:hover {
+      background-color: white;
+      transition: background-color 0.3s ease-out 0s; }
     section#dashboard .big-button h1 {
       font-size: 1.25rem;
       font-family: "Open Sans", sans-serif;
@@ -1077,7 +1088,16 @@ section#dashboard {
       background-image: url("../img/iconset_yokoso_sprite_white_add.svg");
       background-repeat: no-repeat;
       background-position: center center;
-      background-size: auto; }
+      background-size: auto;
+      height: 100%;
+      border-style: solid;
+      border-color: #EEE8D8;
+      border-width: 0 1px 0 0; }
+  section#dashboard .big-button:hover h1 {
+    color: #302a2b; }
+  section#dashboard .big-button:hover .picto-button {
+    background-image: url("../img/iconset_yokoso_sprite_black_add.svg");
+    border-width: 0; }
 
 .jetlag {
   text-align: center; }
@@ -1099,6 +1119,46 @@ section#dashboard {
 
 section#correspondance {
   margin: 96px auto 20px auto; }
+  section#correspondance section .big-button {
+    margin-top: 0;
+    background-color: #d61232; }
+    section#correspondance section .big-button:hover {
+      background-color: white;
+      transition: background-color 0.3s ease-out 0s; }
+    section#correspondance section .big-button h1 {
+      font-size: 1.25rem;
+      font-family: "Open Sans", sans-serif;
+      color: white;
+      font-weight: 400; }
+    section#correspondance section .big-button .picto-button {
+      background-image: url("../img/iconset_yokoso_sprite_white_add.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: auto;
+      height: 100%;
+      border-style: solid;
+      border-color: #EEE8D8;
+      border-width: 0 1px 0 0; }
+  section#correspondance section .big-button:hover h1 {
+    color: #302a2b; }
+  section#correspondance section .big-button:hover .picto-button {
+    background-image: url("../img/iconset_yokoso_sprite_black_add.svg");
+    border-width: 0; }
+  section#correspondance section h1 {
+    text-align: left;
+    font-size: 2.5rem;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300; }
+  section#correspondance section p.exergue {
+    font-family: "Droid Serif", serif;
+    font-weight: 400;
+    font-style: italic;
+    text-align: left;
+    font-size: 1.25rem;
+    padding-bottom: 0rem; }
+  section#correspondance section p {
+    font-family: "Open Sans", sans-serif;
+    color: #302a2b; }
   section#correspondance section article.nest {
     padding-right: 0; }
     section#correspondance section article.nest button h1 {
@@ -1127,38 +1187,45 @@ section#correspondance {
     padding: 1rem;
     border-width: 0 1px 1px 1px;
     border-style: none solid solid solid; }
+    section#correspondance section div.large-4 article div.profil p {
+      color: #302a2b;
+      font-weight: 300;
+      font-style: italic;
+      font-family: "Open Sans", sans-serif;
+      font-size: 1rem; }
+      section#correspondance section div.large-4 article div.profil p a {
+        color: #d61232; }
+        section#correspondance section div.large-4 article div.profil p a:hover {
+          text-decoration: underline; }
+  section#correspondance section div.columns article li.avatar {
+    display: inline-block;
+    vertical-align: top;
+    opacity: 1; }
+    section#correspondance section div.columns article li.avatar:hover {
+      opacity: 0.5;
+      transition: 0.3s opacity ease-out 0s; }
+    section#correspondance section div.columns article li.avatar a {
+      color: #302a2b; }
+    section#correspondance section div.columns article li.avatar figure {
+      text-align: center;
+      margin: 0;
+      padding: 1rem; }
+    section#correspondance section div.columns article li.avatar img {
+      display: inline-block;
+      height: 70px;
+      margin-bottom: 0.5rem; }
+    section#correspondance section div.columns article li.avatar figcaption {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 400;
+      text-align: center; }
   section#correspondance section div.columns article footer.callout p a {
     color: #302a2b; }
   section#correspondance section div.columns article .callout.profil {
     width: 100%;
     border-width: 0 1px 1px 1px;
     border-style: none solid solid solid;
-    border-color: #302a2b; }
-    section#correspondance section div.columns article .callout.profil .avatar {
-      display: block;
-      padding: 10px;
-      width: 100px;
-      text-align: center;
-      display: inline-block;
-      vertical-align: top;
-      cursor: pointer;
-      color: #302a2b;
-      font-size: 0.9rem; }
-      section#correspondance section div.columns article .callout.profil .avatar:hover {
-        opacity: 0.5; }
-      section#correspondance section div.columns article .callout.profil .avatar p {
-        text-align: center;
-        margin: auto; }
-      section#correspondance section div.columns article .callout.profil .avatar .avatar-pict {
-        display: block;
-        margin: 0 auto 5px auto;
-        content: "";
-        height: 60px;
-        width: 60px;
-        background-image: url("../img/avatar2.svg");
-        background-repeat: no-repeat;
-        background-position: -236px center;
-        background-size: cover; }
+    border-color: #302a2b;
+    text-align: left; }
   section#correspondance section div.columns article footer button.square-button.block {
     border-width: 0 0 0 1px;
     border-style: none none none solid; }
@@ -1320,30 +1387,30 @@ main#base {
   max-height: 100%; }
   main#base section#content {
     padding-bottom: 200px; }
-    main#base section#content section.expanded.row aside.left-panel {
+    main#base section#content #courrier aside.left-panel {
       display: none;
       top: 76px;
       background-color: #B7A5A1;
       padding: 0px;
-      overflow-y: scroll;
+      overflow-y: auto;
       overflow-x: hidden;
       position: absolute;
       height: 100vh; }
-    main#base section#content section.expanded.row .left-panel.open {
+    main#base section#content #courrier .left-panel.open {
       display: block; }
-    main#base section#content section.expanded.row div.right-panel {
+    main#base section#content #courrier div.right-panel {
       margin-top: 76px;
       background-color: #EEE8D8;
       padding: 0px;
       top: 76px;
-      overflow-y: scroll;
+      overflow-y: auto;
       overflow-x: hidden;
       height: 100vh; }
-      main#base section#content section.expanded.row div.right-panel .messages {
+      main#base section#content #courrier div.right-panel .messages {
         display: none; }
-      main#base section#content section.expanded.row div.right-panel .messages.active {
+      main#base section#content #courrier div.right-panel .messages.active {
         display: block; }
-        main#base section#content section.expanded.row div.right-panel .messages.active button.big-button {
+        main#base section#content #courrier div.right-panel .messages.active button.big-button {
           display: block;
           max-width: 350px;
           margin: 0 auto 0 auto;
@@ -1355,7 +1422,7 @@ main#base {
           background-color: #d61232;
           height: 76px;
           outline-color: transparent; }
-          main#base section#content section.expanded.row div.right-panel .messages.active button.big-button h1 {
+          main#base section#content #courrier div.right-panel .messages.active button.big-button h1 {
             color: white;
             font-size: 1.2rem; }
 
@@ -1488,24 +1555,27 @@ form.new-messages {
         float: left;
         padding: 1rem; }
       .courrier-nav .corres-header.active .avatar figcaption {
-        font-size: 2rem;
+        font-size: 1.75rem;
         line-height: 76px;
         margin-bottom: 0;
         height: 76px;
         float: left;
-        color: white; }
+        color: white;
+        font-family: "Open Sans", sans-serif; }
     .courrier-nav .corres-header.active .action-button {
       float: right;
       background-color: #d61232;
       height: 100%;
       width: 76px;
       padding: 1rem;
-      background-image: url("../img/iconset_yokoso_sprite_black_add.svg");
+      background-image: url("../img/iconset_yokoso_sprite_white_add.svg");
       background-repeat: no-repeat;
       background-position: center center;
-      background-size: auto; }
+      background-size: auto;
+      transition: background-image 0.3s ease-out 0s, background-color 0.3s ease-out 0s; }
       .courrier-nav .corres-header.active .action-button:hover {
-        background-color: white; }
+        background-color: white;
+        background-image: url("../img/iconset_yokoso_sprite_black_add.svg"); }
     .courrier-nav .corres-header.active .tools, .courrier-nav .corres-header.active .translate, .courrier-nav .corres-header.active .search {
       float: right;
       height: 50.66667px;
@@ -1530,7 +1600,7 @@ form.new-messages {
       z-index: 99;
       position: absolute;
       top: 76px;
-      padding: 2rem 0 2rem 0;
+      padding: 2rem 0 2rem 50px;
       background-color: #776B69;
       height: 304px;
       transform: scaleY(0);
@@ -1540,22 +1610,32 @@ form.new-messages {
       transition: transform 0.30s ease-out 0s;
       overflow: hidden;
       color: white; }
+      .courrier-nav .corres-header.active .contact-description p {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        font-size: 1rem; }
       .courrier-nav .corres-header.active .contact-description h1 {
         color: white;
-        font-size: 1.5rem; }
-      .courrier-nav .corres-header.active .contact-description figure.avatar img {
+        font-size: 1.5rem;
+        font-family: "Droid Serif", serif;
+        font-style: italic;
+        font-weight: 400; }
+      .courrier-nav .corres-header.active .contact-description figure img {
         height: 76px;
         width: 76px;
         border-radius: 76px;
-        background-color: green;
+        padding: 0;
         float: left;
         display: block;
         margin: 0 auto 1rem auto;
         float: none; }
-      .courrier-nav .corres-header.active .contact-description figure.avatar figcaption {
+      .courrier-nav .corres-header.active .contact-description figure figcaption {
         font-size: 1rem;
         line-height: 1rem;
-        text-align: center; }
+        text-align: center;
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        font-size: 1rem; }
     .courrier-nav .corres-header.active .contact-description.active {
       transform: scaleY(1);
       transform-origin: 0 0;
@@ -1565,12 +1645,11 @@ form.new-messages {
 ul.contact-panel {
   margin: 0; }
   ul.contact-panel li {
-    height: 114px;
-    opacity: 0.5; }
+    height: 114px; }
     ul.contact-panel li:hover {
-      opacity: 1; }
+      background-color: rgba(255, 255, 255, 0.5); }
   ul.contact-panel li.active {
-    opacity: 1; }
+    background-color: white; }
   ul.contact-panel a {
     display: block;
     min-width: 300px; }
@@ -1579,7 +1658,7 @@ ul.contact-panel {
   ul.contact-panel img {
     height: 114px;
     width: 114px;
-    background-color: blue;
+    padding: 1rem;
     border: 0px;
     display: inline-block;
     vertical-align: middle;
@@ -1588,9 +1667,14 @@ ul.contact-panel {
     display: inline-block;
     vertical-align: middle; }
   ul.contact-panel h3 {
-    margin: 0; }
+    margin: 0;
+    font-size: 1.5rem;
+    font-family: "Open Sans", sans-serif; }
   ul.contact-panel p {
-    margin: 0; }
+    margin: 0;
+    font-family: "Droid Serif", serif;
+    font-style: italic;
+    color: #302a2b; }
 
 body > main#base > footer {
   height: 200px;
@@ -1612,6 +1696,7 @@ body > main#base > footer {
         font-family: "Droid Serif", serif;
         font-style: italic;
         font-weight: 400;
+        font-size: 1.1rem;
         display: inline-block;
         margin-right: 20px; }
         body > main#base > footer div nav .footer-nav li a {
@@ -1639,7 +1724,8 @@ body > main#base > footer {
       font-style: italic;
       font-weight: 400;
       margin-bottom: 1rem;
-      display: block; }
+      display: block;
+      font-size: 1.1rem; }
     body > main#base > footer div div.columns .newsletter input {
       display: inline-block;
       vertical-align: top;

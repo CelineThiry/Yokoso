@@ -17,23 +17,52 @@
   <header class="callout first-nav online"> <!-- online Navigation bar -->
     
     <nav class="main-nav row expanded">
-      <div class="large-4 medium-4 columns">
-      <button class="menu-burger-trigger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      </div>    
-      <h1 class="large-4 medium-4 columns"><a href="index.html"><img src="../img/logo.svg" alt="Yokoso logo"></a></h1>
-      <ul class="large-4 medium-4 columns fr-buttons">
-        <li><a class="contact button float-right" href="correspondant.html"></a></li>        
-        <li><a class="msg button float-right" href="courrier.html"></a></li>
-        <li>
-        <a class="profil button float-right" href="tableau-de-bord.html">Alicia_17</a>
-        <a class="avatar" href="tableau-de-bord.html"></a>
-        </li>       
-      </ul>      
-    </nav>
+            <div class="large-4 medium-4 small-4 columns burger-div">
+                <button class="menu-burger-trigger"><span></span> <span></span>
+                <span></span></button>
+            </div>
+            <h1 class="large-4 medium-4 small-4 columns"><a href=
+            "index.html"><img alt="Yokoso logo" src="../img/logo.svg"></a></h1>
+            <ul class="large-4 medium-4 small-4 columns fr-buttons">
+                <li class="small"><img alt="" class=
+                "login-and-signup-small-device" src=
+                "../img/iconset_yokoso_sprite_white_profil.svg"></li>
+                <li>
+                    <a class="contact button float-right" href=
+                    "correspondant.html"><img alt="" class="corres" src=
+                    "../img/iconset_yokoso_sprite_white_contact.svg"></a>
+                </li>
+                <li>
+                    <a class="msg button float-right" href=
+                    "courrier.html"><img alt="" class="letter" src=
+                    "../img/iconset_yokoso_sprite_white_msg.svg"></a>
+                </li>
+                <li>
+                    <a class="profil button float-right" href=
+                    "tableau-de-bord.html">Alicia_17 <img alt="" class="profil"
+                    src="../img/avatar_doll.png"></a>
+                </li>
+            </ul>
+            <div class="hidden-menu-signup">
+                <ul class="fr-buttons">
+                    <li class="fr-buttons">
+                        <a class="tools" href="correspondant.html"><img alt=""
+                        class="" src=
+                        "../img/iconset_yokoso_sprite_white_contact.svg"></a>
+                    </li>
+                    <li class="fr-buttons">
+                        <a class="tools" href="courrier.html"><img alt=""
+                        class="" src=
+                        "../img/iconset_yokoso_sprite_white_msg.svg"></a>
+                    </li>
+                    <li class="fr-buttons">
+                        <a class="profil" href="tableau-de-bord.html">Alicia_17
+                        <img alt="" class="profil" src=
+                        "../img/avatar_doll.png"></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
 
     <nav class="expanded row courrier-nav">
 
@@ -47,7 +76,7 @@
       <header id="hiyori-header" class="active corres-header large-9 medium-9 columns"> <!-- Header with contact title and tools button -->
             <button class="contact-panel"></button> <!-- Button to close/open left-panel -->
             <figure class="avatar">
-              <img src="../img/slide1.jpg" alt="">
+              <img src="../img/avatar_mouse.png" alt="">
               <figcaption>Hiyori_17</figcaption>
             </figure>
             <a class="action-button"></a>
@@ -56,15 +85,15 @@
             <button class="tools search"></button>            
            
               <section class="contact-description expanded row"> <!-- Contact Description -->
-              <figure class="large-2 medium-2 columns avatar">
-                <img src="" alt="">
-                <figcaption>Lorem ipsum dolor.</figcaption>
+              <!-- <figure class="large-2 medium-2 columns avatar">
+                <img src="../img/avatar_mouse.png" alt="">
+                <figcaption>Hiyori_17</figcaption>
               </figure> <!-- Image de profil -->
-              <div class="large-5 medium-5 columns"> <!-- Column description -->
+              <div class="large-6 medium-6 columns"> <!-- Column description -->
                 <h1>Annonce</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium dicta corporis tempore quod, aliquam, voluptatem minima magni eius veniam quia reprehenderit ut voluptatibus perspiciatis at!</p>
                 </div> <!-- FIN Column description -->
-                <div class="large-5 medium-5 columns"> <!-- 3e Column description -->
+                <div class="large-6 medium-6 columns"> <!-- 3e Column description -->
                 <h1>Langues maitrisées</h1>
                 <p>Lorem ipsum dolor sit</p>
                 <h1>Centres d'intérêts</h1>
@@ -161,7 +190,7 @@
 
  <section id="content"> <!-- Section content -->
     
-    <section class="expanded row"> <!-- La ligne de la page courrier -->
+    <section id="courrier" class="expanded row"> <!-- La ligne de la page courrier -->
 
         <aside class="open left-panel large-3 medium-3 columns"> <!-- Panel des contacts -->
           
@@ -169,7 +198,7 @@
             <li class="active">
               <a href="#hiyori">
                 <figure>
-                  <img src="" alt="">
+                  <img src="../img/avatar_mouse.png" alt="">
                   <figcaption>
                     <h3>Hiyori_17</h3>
                     <p>25 ans</p>
@@ -181,7 +210,7 @@
             <li>
             <a href="#yato">
               <figure>
-                  <img src="" alt="">
+                  <img src="../img/avatar_panda.png" alt="">
                   <figcaption>
                     <h3>Yato</h3>
                     <p>26 ans</p>
@@ -193,7 +222,7 @@
             <li>
             <a href="#yamamoto">
              <figure>
-                  <img src="" alt="">
+                  <img src="../img/avatar_coffee.png" alt="">
                   <figcaption>
                     <h3>Yamamoto</h3>
                     <p>30 ans</p>
@@ -334,39 +363,64 @@
   </section> <!-- END Section content -->
 
 <footer>
-  <div class="row">
-    <nav class="large-8 medium-8 columns">
-      <ul class="footer-nav row">
-        <li><a href="search">Chercher un correspondant</a></li>
-        <li><a href="flux-actualites.html">Flux d'actualités</a></li>
-        <li><a href="a-propos.html">A propos</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <ul class="footer-sub-nav row">
-        <li>© 2016 Yokoso</li>
-        <li><a href="#">Conditions</a></li>
-        <li><a href="#">Protection des données</a></li>
-        <li>
-        <select name="lang" id="lang">
-          <option value="jp">Japonais</option>
-          <option value="fr">Français</option>
-        </select>
-        </li>
-      </ul>
-    </nav>
-    <div class="large-4 medium-4 columns">
-      <div class="newsletter">
-        <label for="">S'abonner à la newsletter</label>
-        <input type="email" placeholder="Entrer votre email"><button>></button>
-      </div>
-      <ul class="social-media">
-        <li><a href="#">fb</a></li>
-        <li><a href="#">tw</a></li>
-        <li><a href="#">g+</a></li>
-      </ul>
-    </div>
-  </div>
-</footer>
+            <div class="row">
+                <nav class="large-8 medium-8 columns">
+                    <ul class="footer-nav">
+                        <li>
+                            <a href="">Chercher un correspondant</a>
+                        </li>
+                        <li>
+                            <a href="flux-actualites.html">Flux
+                            d'actualités</a>
+                        </li>
+                        <li>
+                            <a href="">A propos</a>
+                        </li>
+                        <li>
+                            <a href="">Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="footer-sub-nav">
+                        <li>© 2016 Yokoso</li>
+                        <li>
+                            <a href="">Conditions</a>
+                        </li>
+                        <li>
+                            <a href="">Protection des données</a>
+                        </li>
+                        <li><select id="lang" name="lang">
+                            <option value="jp">
+                                Japonais
+                            </option>
+                            <option value="fr">
+                                Français
+                            </option>
+                        </select></li>
+                    </ul>
+                </nav>
+                <div class="large-4 medium-4 columns">
+                    <div class="newsletter">
+                        <label for="">S'abonner à la newsletter</label>
+                        <input placeholder="Entrer votre email" type=
+                        "email"><button>&gt;</button>
+                    </div>
+                    <ul class="social-media">
+                        <li>
+                            <a href="http://www.facebook.com"><img alt=
+                            "facebook" src="../img/facebook.png"></a>
+                        </li>
+                        <li>
+                            <a href="http://plus.google.com/"><img alt="google"
+                            src="../img/google.png"></a>
+                        </li>
+                        <li>
+                            <a href="http://www.twitter.com"><img alt="twitter"
+                            src="../img/twitter.png"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
 
 </main> <!-- End My main block -->
 

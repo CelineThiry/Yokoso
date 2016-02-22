@@ -40,7 +40,16 @@ body{
 		z-index: 100;
 
 		nav.courrier-nav{
+			padding: 0;			
+			transform: translate(0px, 0px);
+		}
+
+		nav.courrier-nav.open{
 			padding: 0;
+			transition-property: transform;
+			transition-duration: 0.4s;
+			transition-timing-function: cubic-bezier(0, 0.99, 0.13, 0.995);
+			transform: translate(300px, 0px);
 		}
 
 		nav{
@@ -1742,20 +1751,44 @@ section#dashboard{
 		}
 
 		.big-button{
+			
 			margin-top: 1rem;
+			background-color: $cherry-red;
+
+			&:hover{
+			background-color: white;
+			transition: background-color 0.3s ease-out 0s;
+			}
 			h1{
 				font-size: 1.25rem;
 				font-family: $open-sans;
 				color: white;
 				font-weight: 400;
+				// transition: color 0.3s ease-out 0s;
 			}
 			.picto-button{
 				background-image: url('../img/iconset_yokoso_sprite_white_add.svg');
-				    	background-repeat: no-repeat;
-				    	background-position: center center;
-				    	background-size: auto;
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: auto;
+				// transition: background-image 0.3s ease-out 0s, border-width 0.3s ease-out 0s;
+				height: 100%;
+				border-style: solid;
+    			border-color: #EEE8D8;
+    			border-width: 0 1px 0 0;
 			}
 		}
+
+		.big-button:hover h1{
+			color: $my-black;
+		}
+
+		.big-button:hover .picto-button{
+			background-image: url('../img/iconset_yokoso_sprite_black_add.svg');
+			border-width: 0;
+		}
+
+		
 }
 
 .jetlag{
@@ -1773,6 +1806,63 @@ section#correspondance{
 		// height: 100vh;
 
 		section{
+
+			.big-button{
+			
+			margin-top: 0;
+			background-color: $cherry-red;
+
+			&:hover{
+			background-color: white;
+			transition: background-color 0.3s ease-out 0s;
+			}
+			h1{
+				font-size: 1.25rem;
+				font-family: $open-sans;
+				color: white;
+				font-weight: 400;
+				// transition: color 0.3s ease-out 0s;
+			}
+			.picto-button{
+				background-image: url('../img/iconset_yokoso_sprite_white_add.svg');
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: auto;
+				// transition: background-image 0.3s ease-out 0s, border-width 0.3s ease-out 0s;
+				height: 100%;
+				border-style: solid;
+    			border-color: #EEE8D8;
+    			border-width: 0 1px 0 0;
+			}
+		}
+
+		.big-button:hover h1{
+			color: $my-black;
+		}
+
+		.big-button:hover .picto-button{
+			background-image: url('../img/iconset_yokoso_sprite_black_add.svg');
+			border-width: 0;
+		}
+
+			h1{
+			text-align: left;			
+			font-size: 2.5rem;
+			font-family: $open-sans;
+			font-weight: 300;
+		}
+
+		p.exergue{
+			font-family: $droid-serif;
+			font-weight: 400;
+			font-style: italic;
+			text-align: left;
+			font-size: 1.25rem;
+			padding-bottom: 0rem;
+		}
+
+		p{font-family: $open-sans;
+			color: $my-black;}
 
 			article.nest{
 
@@ -1823,6 +1913,23 @@ section#correspondance{
 						padding: 1rem;						
 						border-width: 0 1px 1px 1px;
 						border-style: none solid solid solid;
+
+						p {
+							color: $my-black;
+							font-weight: 300;
+							font-style: italic;
+							font-family: $open-sans;
+							font-size: 1rem;
+							a{
+							color: $cherry-red;
+							&:hover{
+								
+								text-decoration: underline;
+							}
+						}
+
+						}
+						
 						
 
 						a.avatar{								
@@ -1840,6 +1947,29 @@ section#correspondance{
 
 				article{
 
+					li.avatar{
+								display: inline-block;
+								vertical-align: top;
+								opacity: 1;
+
+								&:hover{
+									opacity: 0.5;
+									transition: 0.3s opacity ease-out 0s;
+								}
+
+								a{color: $my-black;}
+								figure{text-align: center; margin: 0; padding: 1rem;}
+								img{
+									display: inline-block;
+									height: 70px;
+									margin-bottom: 0.5rem;
+								}
+								figcaption{
+									font-family: $open-sans;
+									font-weight: 400;
+									text-align: center;}
+							}
+
 					footer.callout{
 
 						p{
@@ -1855,42 +1985,7 @@ section#correspondance{
 							border-width: 0 1px 1px 1px;
 							border-style: none solid solid solid;
 							border-color: $my-black;
-
-
-
-							.avatar{
-								display: block;
-								padding: 10px;
-								width: 100px;
-								text-align: center;
-								display: inline-block;
-								vertical-align: top;
-								cursor: pointer;
-								color: $my-black;
-								font-size: 0.9rem;
-
-								&:hover{
-									opacity: 0.5;
-								}
-
-								p{
-									text-align: center;									
-									margin: auto;							
-								}
-
-								.avatar-pict{										
-										display: block;
-										margin: 0 auto 5px auto;
-										content: "";
-										height: 60px;
-										width: 60px;									
-										background-image: url('../img/avatar2.svg');
-					    				background-repeat: no-repeat;
-					    				background-position: -236px center;
-					    				background-size: cover;
-								}
-
-							}
+							text-align: left;							
 					}
 
 					footer{
@@ -2169,7 +2264,7 @@ main#base{
 		padding-bottom: 200px;	
 			
 
-		section.expanded.row{
+		#courrier{
 			
 
 
@@ -2179,7 +2274,7 @@ main#base{
 				top: $block-height;
 				background-color: $my-black-quarter;
 				padding: 0px;	
-				overflow-y: scroll;
+				overflow-y: auto;
 				overflow-x: hidden;	
 				position: absolute;
 				height: 100vh;	
@@ -2210,7 +2305,7 @@ main#base{
 				background-color: $body-bgc;
 				padding: 0px;			
 				top: $block-height;
-				overflow-y: scroll;
+				overflow-y: auto;
 				overflow-x: hidden;	
 				// position: absolute;
 				height: 100vh;		
@@ -2448,12 +2543,13 @@ form.new-messages{
 					}
 
 					figcaption{
-					font-size: 2rem;
+					font-size: 1.75rem;
 					line-height: $block-height;						
 					margin-bottom: 0;
 					height: $block-height;
 					float: left;
 					color: white;
+					font-family: $open-sans;
 
 					}
 			}
@@ -2464,13 +2560,15 @@ form.new-messages{
 				height: 100%;
 				width: $block-height;
 				padding: 1rem;
-				background-image: url('../img/iconset_yokoso_sprite_black_add.svg');
+				background-image: url('../img/iconset_yokoso_sprite_white_add.svg');
 				background-repeat: no-repeat;
 				background-position: center center;
 				background-size: auto;
+				transition: background-image 0.3s ease-out 0s, background-color 0.3s ease-out 0s;
 
 				&:hover{
 					background-color: white;
+					background-image: url('../img/iconset_yokoso_sprite_black_add.svg');
 				}
 
 			}
@@ -2519,7 +2617,7 @@ form.new-messages{
 				z-index: 99;
 				position: absolute;
 				top: $block-height;
-				padding: 2rem 0 2rem 0;
+				padding: 2rem 0 2rem 50px;
 				background-color: $my-black-half;				
 				height: $block-height*4;
 				transform: scaleY(0);
@@ -2531,17 +2629,27 @@ form.new-messages{
 				overflow: hidden;
 				color: white;
 
+				p{
+					font-family: $open-sans;
+					font-weight: 400;
+					
+					font-size: 1rem;
+				}
+
 				h1{
 					color: white;
 					font-size: 1.5rem;
+					font-family: $droid-serif;
+					font-style: italic;
+					font-weight: 400;
 				}
 
-				figure.avatar{
+				figure{
 					img{
 						height: $block-height;
 						width: $block-height;
 						border-radius: $block-height;
-						background-color: green;
+						padding: 0;
 						float: left;						
 						display: block;
 						margin: 0 auto 1rem auto;
@@ -2551,6 +2659,10 @@ form.new-messages{
 						font-size: 1rem;
 						line-height: 1rem;
 						text-align: center;
+						font-family: $open-sans;
+					font-weight: 400;
+					
+					font-size: 1rem;
 					}
 				}
 			}
@@ -2574,15 +2686,15 @@ ul.contact-panel{
 	margin: 0;
 	li{
 		height: $block-height*1.5;	
-		opacity: 0.5;
+		// opacity: 0.5;
 
 		&:hover{
-			opacity: 1;
+			background-color: rgba(255,255,255,0.5);
 		}	
 	}
 
 	li.active{
-		opacity: 1;
+		background-color: white;
 	}
 
 	a{
@@ -2598,12 +2710,14 @@ ul.contact-panel{
 	img{
 		height: $block-height*1.5;
 		width: $block-height*1.5;
-		background-color: blue;
+		padding: 1rem;
 		border: 0px;
 		display: inline-block;
 		vertical-align: middle;
 		margin-right: 1rem;		
 	}
+
+	
 
 	figcaption{
 		display: inline-block;
@@ -2612,10 +2726,15 @@ ul.contact-panel{
 
 	h3{
 		margin: 0;
+		font-size: 1.5rem;
+		font-family: $open-sans;
 	}
 
 	p{
 		margin: 0;
+		font-family: $droid-serif;
+		font-style: italic;
+		color: $my-black;
 	}
 }
 
@@ -2649,6 +2768,7 @@ body>main#base>footer{
 					font-family: $droid-serif;
 					font-style: italic;
 					font-weight: 400;
+					font-size: 1.1rem;
 					display: inline-block;
 					margin-right: 20px;
 
@@ -2705,6 +2825,7 @@ body>main#base>footer{
 					font-weight: 400;
 					margin-bottom: 1rem;
 					display: block;
+					font-size: 1.1rem;
 				}
 
 				input{

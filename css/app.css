@@ -479,9 +479,9 @@ button.big-button div.picto-button{
 	border-color: #EEE8D8;
 	border-width: 0 1px 0 0;
 	outline-color: rgba(0,0,0,0);
-	background-image: url('../img/iconset_yokoso_sprite.svg');
+	background-image: url('../img/iconset_yokoso_sprite_white_add.svg');
 	background-repeat: no-repeat;
-	background-position: center -2448px;
+	background-position: center center;
 	background-size: auto;
 }
 

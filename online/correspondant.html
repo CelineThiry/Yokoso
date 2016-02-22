@@ -17,28 +17,56 @@
   
 
 
-  <header class="callout first-nav online"> <!-- online Navigation bar -->
-    
-    <nav class="row expanded">
-    <div class="large-4 medium-4 columns">
-      <button class="menu-burger-trigger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      </div>    
-      <h1 class="large-4 medium-4 columns"><a href="index.html"><img src="../img/logo.svg" alt="Yokoso logo"></a></h1>
-      <ul class="large-4 medium-4 columns fr-buttons">
-        <li><a class="contact button float-right" href="correspondant.html"></a></li>        
-        <li><a class="msg button float-right" href="courrier.html"></a></li>
-        <li>
-        <a class="profil button float-right" href="tableau-de-bord.html">Alicia_17</a>
-        <a class="avatar" href="tableau-de-bord.html"></a>
-        </li>       
-      </ul>
-      
-    </nav>
-  </header> <!-- END online navigation bar -->
+    <header class="callout first-nav online">
+        <!-- online Navigation bar -->
+        <nav class="main-nav row expanded">
+            <div class="large-4 medium-4 small-4 columns burger-div">
+                <button class="menu-burger-trigger"><span></span> <span></span>
+                <span></span></button>
+            </div>
+            <h1 class="large-4 medium-4 small-4 columns"><a href=
+            "index.html"><img alt="Yokoso logo" src="../img/logo.svg"></a></h1>
+            <ul class="large-4 medium-4 small-4 columns fr-buttons">
+                <li class="small"><img alt="" class=
+                "login-and-signup-small-device" src=
+                "../img/iconset_yokoso_sprite_white_profil.svg"></li>
+                <li>
+                    <a class="contact button float-right" href=
+                    "correspondant.html"><img alt="" class="corres" src=
+                    "../img/iconset_yokoso_sprite_white_contact.svg"></a>
+                </li>
+                <li>
+                    <a class="msg button float-right" href=
+                    "courrier.html"><img alt="" class="letter" src=
+                    "../img/iconset_yokoso_sprite_white_msg.svg"></a>
+                </li>
+                <li>
+                    <a class="profil button float-right" href=
+                    "tableau-de-bord.html">Alicia_17 <img alt="" class="profil"
+                    src="../img/avatar_doll.png"></a>
+                </li>
+            </ul>
+            <div class="hidden-menu-signup">
+                <ul class="fr-buttons">
+                    <li class="fr-buttons">
+                        <a class="tools" href="correspondant.html"><img alt=""
+                        class="" src=
+                        "../img/iconset_yokoso_sprite_white_contact.svg"></a>
+                    </li>
+                    <li class="fr-buttons">
+                        <a class="tools" href="courrier.html"><img alt=""
+                        class="" src=
+                        "../img/iconset_yokoso_sprite_white_msg.svg"></a>
+                    </li>
+                    <li class="fr-buttons">
+                        <a class="profil" href="tableau-de-bord.html">Alicia_17
+                        <img alt="" class="profil" src=
+                        "../img/avatar_doll.png"></a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header><!-- END online navigation bar -->
 
 
 <nav id="menu-push" class="online">
@@ -64,57 +92,44 @@
    
 <main id="base">
 
+<div id="content">
   <section id="correspondance"> 
     <section class="row column"><!-- First row -->
 
-    <div class="large-8 medium-8 columns"> <!-- ligne de 8 -->
+    <div class="large-8 medium-12 columns"> <!-- ligne de 8 -->
       
       <article>
-      <div class="callout inside-right">
-        <h2>Mes correspondants</h2>         
+      <div class="my-corres callout inside-right">
+        <h1>Mes correspondants</h1>         
       </div>
-      <div class="callout profil"> <!-- Profil icon one -->
-        <a class="avatar">
-          <span class="avatar-pict"></span>
-          <p>Mayuri</p>
-        </a>
-        <a class="avatar">
-          <span class="avatar-pict"></span>
-          <p>Tsubaki</p>
-        </a>
-        <a class="avatar">
-          <span class="avatar-pict"></span>
-          <p>Tsubaki</p>
-        </a>
-        <a class="avatar">
-          <span class="avatar-pict"></span>
-          <p>Tsubaki</p>
-        </a>
-        <a class="avatar">
-          <span class="avatar-pict"></span>
-          <p>Tsubaki</p>
-        </a>
-        <a class="avatar">
-          <span class="avatar-pict"></span>
-          <p>Tsubaki</p>
-        </a>
-        <a class="avatar">
-          <span class="avatar-pict"></span>
-          <p>Tsubaki</p>
-        </a>
-        <a class="avatar">
-          <span class="avatar-pict"></span>
-          <p>Tsubaki</p>
-        </a>
-        <a class="avatar">
-          <span class="avatar-pict"></span>
-          <p>Tsubaki</p>
-        </a>
-        <a class="avatar">
-          <span class="avatar-pict"></span>
-          <p>Tsubaki</p>
-        </a>
-      </div> <!-- FIN Profil icone zone -->      
+      <ul class="callout profil"> <!-- Profil icon one -->
+         <li class="avatar">
+          <a>
+            <figure>
+              <img src="../img/avatar_mouse.png" alt="">
+              <figcaption>Hiyori_17</figcaption>
+            </figure>
+          </a>
+        </li>
+        <li class="avatar">
+          <a>
+            <figure>
+              <img src="../img/avatar_panda.png" alt="">
+              <figcaption>Yamamoto</figcaption>
+            </figure>
+          </a>
+        </li>
+         <li class="avatar">
+          <a>
+            <figure>
+              <img src="../img/avatar_coffee.png" alt="">
+              <figcaption>Yato</figcaption>
+            </figure>
+          </a>
+        </li>
+        
+        
+      </ul> <!-- FIN Profil icone zone -->      
 
       <footer class="callout inside-right">
                   <p><a href="">Bloquer et supprimer</a></p>
@@ -123,25 +138,38 @@
       </article>
 
       <section class="row column"> <!-- Deuxieme ligne sous Mes correspondants -->
-    <div class="nest large-6 medium-6 columns"> <!-- Block Suggestions de correspondants -->
+    <div class="nest large-6 medium-12 columns"> <!-- Block Suggestions de correspondants -->
       
       <article>
       <div class="callout inside-right">
-        <h2>Suggestions de correspondants</h2>         
+        <h1>Suggestions</h1>    
+        <p class="exergue">de correspondants</p>     
       </div>
       <div class="callout profil"> <!-- Profil icon one -->
-        <a class="avatar">
-          <span class="avatar-pict"></span>
-          <p>Mayuri</p>
-        </a>
-        <a class="avatar">
-          <span class="avatar-pict"></span>
-          <p>Tsubaki</p>
-        </a>
-        <a class="avatar">
-          <span class="avatar-pict"></span>
-          <p>Tsubaki</p>
-        </a>       
+        <li class="avatar">
+          <a>
+            <figure>
+              <img src="../img/avatar_pig.png" alt="">
+              <figcaption>Iro</figcaption>
+            </figure>
+          </a>
+        </li>
+        <li class="avatar">
+          <a>
+            <figure>
+              <img src="../img/avatar_bird.png" alt="">
+              <figcaption>Tsubaki</figcaption>
+            </figure>
+          </a>
+        </li>
+        <li class="avatar">
+          <a>
+            <figure>
+              <img src="../img/avatar_space.png" alt="">
+              <figcaption>Mayuri</figcaption>
+            </figure>
+          </a>
+        </li>   
         
       </div> <!-- FIN Profil icone zone -->      
 
@@ -152,7 +180,7 @@
       </article>
     </div><!-- FIN Block Suggestions de correspondants -->
 
-    <article class="nest large-6 medium-6 columns"> <!-- Bouton nouvelle lettre -->
+    <article class="nest large-6 medium-12 columns"> <!-- Bouton nouvelle lettre -->
       <button class="callout big-button">
         <div class="picto-button"></div>
         <h1>Ecrire une nouvelle lettre</h1>    
@@ -163,10 +191,10 @@
 
     </div><!-- FIN de la ligne de 8 -->
 
-    <div class="large-4 medium-4 columns"> <!-- panel demande de correspodances -->
+    <div class="large-4 medium-12 columns"> <!-- panel demande de correspodances -->
     <article>
     <div class="callout inside-right">
-    <h2>Demandes de correspondances</h2>     
+    <h1>Demandes de correspondances</h1>     
     </div>
       <footer class="callout border-button">
                   <button class="picto-button on">1</button>
@@ -177,18 +205,30 @@
         <!-- <div>
           <p>Vous n'avez envoyé aucune demande de correspondance. <a href="">Chercher un nouveau correspondant ?</a></p>
         </div> -->
-        <a class="avatar" href="#">
-          <span class="avatar-pict"></span>
-          <p>Mayuri</p>
-        </a>
-        <a class="avatar" href="#">
-          <span class="avatar-pict"></span>
-          <p>Tsubaki</p>
-        </a>
-        <a class="avatar" href="#">
-          <span class="avatar-pict"></span>
-          <p>Tsubaki</p>
-        </a>          
+        <li class="avatar">
+          <a>
+            <figure>
+              <img src="../img/avatar_pinguin.png" alt="">
+              <figcaption>Kyoma</figcaption>
+            </figure>
+          </a>
+        </li>
+        <li class="avatar">
+          <a>
+            <figure>
+              <img src="../img/avatar_rabbit.png" alt="">
+              <figcaption>Nobunaga</figcaption>
+            </figure>
+          </a>
+        </li>
+        <li class="avatar">
+          <a>
+            <figure>
+              <img src="../img/avatar_watermelon.png" alt="">
+              <figcaption>Sato</figcaption>
+            </figure>
+          </a>
+        </li>        
       </div> <!-- FIN Profil icone zone --> 
       <footer class="callout border-button">
                   <button class="picto-button off">0</button>
@@ -220,43 +260,71 @@
     </section> <!-- Fin de la section row column -->      
   </section> 
 
+</div>
+  
+<footer>
+            <div class="row">
+                <nav class="large-8 medium-8 columns">
+                    <ul class="footer-nav">
+                        <li>
+                            <a href="">Chercher un correspondant</a>
+                        </li>
+                        <li>
+                            <a href="flux-actualites.html">Flux
+                            d'actualités</a>
+                        </li>
+                        <li>
+                            <a href="">A propos</a>
+                        </li>
+                        <li>
+                            <a href="">Contact</a>
+                        </li>
+                    </ul>
+                    <ul class="footer-sub-nav">
+                        <li>© 2016 Yokoso</li>
+                        <li>
+                            <a href="">Conditions</a>
+                        </li>
+                        <li>
+                            <a href="">Protection des données</a>
+                        </li>
+                        <li><select id="lang" name="lang">
+                            <option value="jp">
+                                Japonais
+                            </option>
+                            <option value="fr">
+                                Français
+                            </option>
+                        </select></li>
+                    </ul>
+                </nav>
+                <div class="large-4 medium-4 columns">
+                    <div class="newsletter">
+                        <label for="">S'abonner à la newsletter</label>
+                        <input placeholder="Entrer votre email" type=
+                        "email"><button>&gt;</button>
+                    </div>
+                    <ul class="social-media">
+                        <li>
+                            <a href="http://www.facebook.com"><img alt=
+                            "facebook" src="../img/facebook.png"></a>
+                        </li>
+                        <li>
+                            <a href="http://plus.google.com/"><img alt="google"
+                            src="../img/google.png"></a>
+                        </li>
+                        <li>
+                            <a href="http://www.twitter.com"><img alt="twitter"
+                            src="../img/twitter.png"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
 
 </main>
 
-<footer>
-  <div class="row">
-    <nav class="large-8 medium-8 columns">
-      <ul class="footer-nav row">
-        <li><a href="search">Chercher un correspondant</a></li>
-        <li><a href="flux-actualites.html">Flux d'actualités</a></li>
-        <li><a href="a-propos.html">A propos</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <ul class="footer-sub-nav row">
-        <li>© 2016 Yokoso</li>
-        <li><a href="#">Conditions</a></li>
-        <li><a href="#">Protection des données</a></li>
-        <li>
-        <select name="lang" id="lang">
-          <option value="jp">Japonais</option>
-          <option value="fr">Français</option>
-        </select>
-        </li>
-      </ul>
-    </nav>
-    <div class="large-4 medium-4 columns">
-      <div class="newsletter">
-        <label for="">S'abonner à la newsletter</label>
-        <input type="email" placeholder="Entrer votre email"><button>></button>
-      </div>
-      <ul class="social-media">
-        <li><a href="#">fb</a></li>
-        <li><a href="#">tw</a></li>
-        <li><a href="#">g+</a></li>
-      </ul>
-    </div>
-  </div>
-</footer>
+
   
 
   <script src="../js/vendor/jquery.min.js"></script>
