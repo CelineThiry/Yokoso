@@ -1051,7 +1051,9 @@ section#profil-corres {
         width: 75%; }
 
 section#dashboard {
-  margin: 96px auto 20px auto; }
+  margin: 96px auto 250px auto; }
+  section#dashboard .callout {
+    height: 300px; }
   section#dashboard article.columns {
     margin-bottom: 1rem; }
     section#dashboard article.columns div.callout {
@@ -1073,9 +1075,17 @@ section#dashboard {
     text-align: left;
     font-size: 1.25rem;
     padding-bottom: 2rem; }
+  section#dashboard .logout-buttons li {
+    float: left;
+    width: 50%; }
+  section#dashboard .logout-buttons li:first-child {
+    padding: 0 1rem 1rem 0; }
+  section#dashboard .logout-buttons li:last-child {
+    padding: 0 0 1rem 1rem; }
   section#dashboard .big-button {
     margin-top: 1rem;
-    background-color: #d61232; }
+    background-color: #d61232;
+    margin-bottom: 0; }
     section#dashboard .big-button:hover {
       background-color: white;
       transition: background-color 0.3s ease-out 0s; }
@@ -1098,6 +1108,34 @@ section#dashboard {
   section#dashboard .big-button:hover .picto-button {
     background-image: url("../img/iconset_yokoso_sprite_black_add.svg");
     border-width: 0; }
+  section#dashboard .big-button.logout {
+    background-color: #776B69;
+    position: relative; }
+    section#dashboard .big-button.logout .picto-button.logout {
+      background-image: url("../img/iconset_yokoso_sprite_white_exit.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 50%; }
+  section#dashboard .big-button.settings {
+    background-color: transparent;
+    border: 1px solid #302a2b; }
+    section#dashboard .big-button.settings .picto-button.settings {
+      background-image: url("../img/iconset_yokoso_sprite_black_option.svg");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 50%;
+      border-style: solid;
+      border-color: #302a2b;
+      border-width: 0px 1px 0px 0px; }
+    section#dashboard .big-button.settings h1 {
+      color: #302a2b;
+      line-height: 50px;
+      margin-bottom: 0; }
+  section#dashboard .big-button.settings:hover {
+    background-color: white;
+    border: none; }
+  section#dashboard .big-button.settings:hover .picto-button.settings {
+    border: none; }
 
 .jetlag {
   text-align: center; }
@@ -1387,7 +1425,7 @@ main#base {
   max-height: 100%; }
   main#base section#content {
     padding-bottom: 200px; }
-    main#base section#content #courrier aside.left-panel {
+    main#base section#content #courrier aside.left-panel, main#base section#content #courrier-new aside.left-panel {
       display: none;
       top: 76px;
       background-color: #B7A5A1;
@@ -1396,9 +1434,9 @@ main#base {
       overflow-x: hidden;
       position: absolute;
       height: 100vh; }
-    main#base section#content #courrier .left-panel.open {
+    main#base section#content #courrier .left-panel.open, main#base section#content #courrier-new .left-panel.open {
       display: block; }
-    main#base section#content #courrier div.right-panel {
+    main#base section#content #courrier div.right-panel, main#base section#content #courrier-new div.right-panel {
       margin-top: 76px;
       background-color: #EEE8D8;
       padding: 0px;
@@ -1406,11 +1444,12 @@ main#base {
       overflow-y: auto;
       overflow-x: hidden;
       height: 100vh; }
-      main#base section#content #courrier div.right-panel .messages {
+      main#base section#content #courrier div.right-panel .messages, main#base section#content #courrier-new div.right-panel .messages {
         display: none; }
-      main#base section#content #courrier div.right-panel .messages.active {
-        display: block; }
-        main#base section#content #courrier div.right-panel .messages.active button.big-button {
+      main#base section#content #courrier div.right-panel .messages.active, main#base section#content #courrier-new div.right-panel .messages.active {
+        display: block;
+        padding: 0 1rem 0 1rem; }
+        main#base section#content #courrier div.right-panel .messages.active button.big-button, main#base section#content #courrier-new div.right-panel .messages.active button.big-button {
           display: block;
           max-width: 350px;
           margin: 0 auto 0 auto;
@@ -1421,10 +1460,26 @@ main#base {
           color: white;
           background-color: #d61232;
           height: 76px;
-          outline-color: transparent; }
-          main#base section#content #courrier div.right-panel .messages.active button.big-button h1 {
+          outline-color: transparent;
+          transition: 0.3s background-color ease-out 0s, 0.3s color ease-out 0s; }
+          main#base section#content #courrier div.right-panel .messages.active button.big-button .picto-button, main#base section#content #courrier-new div.right-panel .messages.active button.big-button .picto-button {
+            background-image: url("../img/iconset_yokoso_sprite_white_add.svg");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: auto; }
+          main#base section#content #courrier div.right-panel .messages.active button.big-button h1, main#base section#content #courrier-new div.right-panel .messages.active button.big-button h1 {
             color: white;
             font-size: 1.2rem; }
+          main#base section#content #courrier div.right-panel .messages.active button.big-button:hover, main#base section#content #courrier-new div.right-panel .messages.active button.big-button:hover {
+            background-color: white;
+            color: #302a2b; }
+        main#base section#content #courrier div.right-panel .messages.active button.big-button:hover h1, main#base section#content #courrier-new div.right-panel .messages.active button.big-button:hover h1 {
+          transition: 0.3s color ease-out 0s;
+          color: #302a2b; }
+        main#base section#content #courrier div.right-panel .messages.active button.big-button:hover .picto-button, main#base section#content #courrier-new div.right-panel .messages.active button.big-button:hover .picto-button {
+          transition: 0.3s background-image ease-out 0s, 0.3s border ease-out 0s;
+          background-image: url("../img/iconset_yokoso_sprite_black_add.svg");
+          border: none; }
 
 ul.letter-accordion {
   max-width: 780px;
@@ -1480,9 +1535,10 @@ form.new-messages {
     height: 76px;
     outline-color: transparent;
     font-size: 1.2rem;
-    opacity: 0.5; }
+    transition: 0.30s background-color ease-out 0s, 0.30s color ease-out 0s; }
     form.new-messages input[type="submit"]:hover {
-      opacity: 1; }
+      background-color: white;
+      color: #302a2b; }
 
 .main-nav {
   height: 76px;
@@ -1503,15 +1559,16 @@ form.new-messages {
       border: 0 !important;
       -webkit-appearance: none;
       -moz-appearance: none;
-      background-image: url("../img/iconset_yokoso_sprite_black.svg");
+      background-image: url("../img/iconset_yokoso_sprite_black_bottom-arrow.svg");
       background-repeat: no-repeat;
-      background-position: right -2654px;
+      background-position: 95% center;
       background-size: auto;
       height: 38px;
       width: 100%;
       height: 100%;
       outline-color: transparent;
-      padding-left: 10px; }
+      padding-left: 10px;
+      padding-right: 10px; }
   .courrier-nav .corres-header {
     display: none; }
   .courrier-nav .corres-header.active {

@@ -139,6 +139,7 @@ body{
  * ====================================================================================================================*/
 #content{
 	padding-bottom: 200px;
+
 }
 
 // General
@@ -1719,7 +1720,9 @@ section#profil-corres{
 
 
 section#dashboard{
-		margin: 96px auto 20px auto;
+		margin: 96px auto 250px auto;
+
+		.callout{height: 300px;}
 		
 
 		article.columns{
@@ -1750,10 +1753,25 @@ section#dashboard{
 			padding-bottom: 2rem;
 		}
 
+		.logout-buttons{
+			li{float: left;
+				width: 50%;
+			}
+
+			li:first-child{
+				padding: 0 1rem 1rem 0;
+			}
+
+			li:last-child{
+				padding: 0 0 1rem 1rem ;
+			}
+		}
+
 		.big-button{
 			
 			margin-top: 1rem;
 			background-color: $cherry-red;
+			margin-bottom: 0;
 
 			&:hover{
 			background-color: white;
@@ -1786,6 +1804,47 @@ section#dashboard{
 		.big-button:hover .picto-button{
 			background-image: url('../img/iconset_yokoso_sprite_black_add.svg');
 			border-width: 0;
+		}
+
+		.big-button.logout{
+			background-color: $my-black-half;
+			position: relative;	
+			.picto-button.logout{
+				background-image: url('../img/iconset_yokoso_sprite_white_exit.svg');
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: 50%;
+						
+			}
+			
+		}
+
+		.big-button.settings{
+			background-color: transparent;
+			border: 1px solid $my-black;
+			.picto-button.settings{
+				background-image: url('../img/iconset_yokoso_sprite_black_option.svg');
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: 50%;				
+				border-style: solid;
+				border-color: $my-black;
+				border-width: 0px 1px 0px 0px;						
+			}			
+			h1{
+				color: $my-black;
+				line-height: 50px;
+				margin-bottom: 0;
+			}
+		}
+
+		.big-button.settings:hover{
+			background-color: white;
+			border: none;
+		}
+
+		.big-button.settings:hover .picto-button.settings{
+			border: none;
 		}
 
 		
@@ -2264,7 +2323,7 @@ main#base{
 		padding-bottom: 200px;	
 			
 
-		#courrier{
+		#courrier, #courrier-new{
 			
 
 
@@ -2316,6 +2375,9 @@ main#base{
 
 				.messages.active{
 					display: block;
+					padding: 0 1rem 0 1rem;
+
+					
 
 					button.big-button{
 					display: block;
@@ -2326,15 +2388,42 @@ main#base{
 					border-radius: 4px;
 					position: relative;
 					color: white;
-					background-color: #d61232;
+					background-color: $cherry-red;
 					height: 76px;		
 					outline-color: rgba(0,0,0,0);
+					transition: 0.3s background-color ease-out 0s, 0.3s color ease-out 0s;
 
-					h1{
+						.picto-button{
+							background-image: url('../img/iconset_yokoso_sprite_white_add.svg');
+							background-repeat: no-repeat;
+							background-position: center center;
+							background-size: auto;
+						}
+
+
+						h1{
 						color: white;
 						font-size: 1.2rem;
+						}
+
+						&:hover{
+							background-color: white;
+							color: $my-black;
+						}					
 					}
-	}
+
+					button.big-button:hover h1{
+						transition: 0.3s color ease-out 0s;
+						color: $my-black;
+					}
+
+					button.big-button:hover .picto-button{
+						transition: 0.3s background-image ease-out 0s, 0.3s border ease-out 0s;				
+						background-image: url('../img/iconset_yokoso_sprite_black_add.svg');
+						border: none;
+					}
+
+
 				}
 			}
 
@@ -2421,14 +2510,16 @@ form.new-messages{
 					border-radius: 4px;
 					position: relative;
 					color: white;
-					background-color: #d61232;
+					background-color: $cherry-red;
 					height: 76px;		
 					outline-color: rgba(0,0,0,0);
 					font-size: 1.2rem;
-					opacity: 0.5;
+					
+					transition: 0.30s background-color ease-out 0s, 0.30s color ease-out 0s; 
 
 					&:hover{
-						opacity: 1;
+						background-color: white;
+						color: $my-black;
 					}
 	}	
 	
@@ -2471,15 +2562,16 @@ form.new-messages{
 						border: 0 !important;
 				    	-webkit-appearance: none;
 				    	-moz-appearance: none;
-				    	background-image: url('../img/iconset_yokoso_sprite_black.svg');
+				    	background-image: url('../img/iconset_yokoso_sprite_black_bottom-arrow.svg');
 				    	background-repeat: no-repeat;
-				    	background-position: right -2654px;
+				    	background-position: 95% center;
 				    	background-size: auto;
 				    	height: $block-height/2;
 				    	width: 100%;
 				    	height: 100%;				    
 				    	outline-color: rgba(0,0,0,0);
 				    	padding-left: 10px;
+				    	padding-right: 10px;
 					}
 	}
 
@@ -3093,6 +3185,7 @@ body>footer.open{
 
   #content{
   	padding-bottom: 470px;
+
   }
 
   div.lightbox.active{
