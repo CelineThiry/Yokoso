@@ -307,7 +307,7 @@ a.cat-4 {
     background-color: #d61232; }
   a.cat-4:after {
     content: "";
-    background-image: url("../img/iconset_yokoso_sprite_black_delete.svg");
+    background-image: url("../img/iconset_yokoso_sprite_red_delete.svg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 50%;
@@ -320,6 +320,9 @@ a.cat-4 {
     text-align: center;
     margin-left: 1rem;
     float: right; }
+
+a.cat-4:hover:after {
+  background-image: url("../img/iconset_yokoso_sprite_white_delete.svg"); }
 
 .line-of-articles-bottom-button {
   width: 100%;

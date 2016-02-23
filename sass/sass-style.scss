@@ -472,13 +472,12 @@ a.cat-4{
 					&:hover{
 						color: white;
 						border: none;
-						background-color: $cherry-red;						
-					}
-						
+						background-color: $cherry-red;							
+					}						
 
 					&:after{
 						content: "";
-						background-image: url('../img/iconset_yokoso_sprite_black_delete.svg');
+						background-image: url('../img/iconset_yokoso_sprite_red_delete.svg');
 						background-repeat: no-repeat;
 						background-position: center center;
 						background-size: 50%;
@@ -494,7 +493,9 @@ a.cat-4{
 					}		
 }
 
-
+a.cat-4:hover:after{
+	background-image: url('../img/iconset_yokoso_sprite_white_delete.svg');		
+}
 
 .line-of-articles-bottom-button{
 	width: 100%;
