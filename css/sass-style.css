@@ -439,7 +439,7 @@ a.cat-4:hover:after {
     height: 76px;
     width: 100%;
     outline: none;
-    font-family: "Roboto", sans-serif;
+    font-family: "Open Sans", sans-serif;
     margin: 0 0 1rem 0;
     position: relative;
     border: none;
@@ -608,7 +608,7 @@ div.lightbox.active {
           width: 100%;
           height: 76px;
           outline: none;
-          font-family: "Roboto", sans-serif; }
+          font-family: "Open Sans", sans-serif; }
         div.lightbox.active section form div input[type="email"], div.lightbox.active section form div input[type="password"], div.lightbox.active section form div input[type="text"] {
           border: 0;
           background: white;
@@ -621,7 +621,7 @@ div.lightbox.active {
         height: 76px;
         width: 100%;
         outline: none;
-        font-family: "Roboto", sans-serif;
+        font-family: "Open Sans", sans-serif;
         margin: 0 0 1rem 0;
         position: relative;
         border: none;
@@ -745,14 +745,14 @@ div.lightbox.active.search label {
   display: block;
   outline: none;
   width: 49%;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Open Sans", sans-serif; }
 div.lightbox.active.search input {
   float: right;
   display: block;
   outline: none;
   width: 49%;
   height: initial;
-  font-family: "Roboto", sans-serif; }
+  font-family: "Open Sans", sans-serif; }
 div.lightbox.active.search select {
   float: right;
   border: 0 !important;
@@ -805,7 +805,9 @@ nav#menu-push.online ul li a.avatar {
   background-size: cover; }
 
 section#profil {
-  margin: 96px auto 20px auto; }
+  margin: 96px auto 20px auto;
+  font-family: "Open Sans", sans-serif;
+  color: #302a2b; }
   section#profil section.row div.left-column figure.avatar {
     position: relative;
     display: block;
@@ -818,12 +820,9 @@ section#profil {
       width: 15rem;
       height: 15rem;
       border-radius: 15rem;
-      background-color: lightcoral;
       transition: opacity 0.25s ease-out 0s;
       opacity: 1;
       cursor: pointer; }
-      section#profil section.row div.left-column figure.avatar img:hover {
-        opacity: 0.5; }
     section#profil section.row div.left-column figure.avatar figcaption.choose-avatar {
       position: absolute;
       display: block;
@@ -834,11 +833,17 @@ section#profil {
       right: 0;
       text-align: center;
       font-size: 2rem;
-      z-index: -1;
-      color: white;
-      transition: z-index 0.25s ease-out 0s; }
-      section#profil section.row div.left-column figure.avatar figcaption.choose-avatar:hover {
-        z-index: 2000000; }
+      color: black;
+      transform: scale(0);
+      transition: transform 0.25s ease-out 0s;
+      font-family: "Droid Serif", serif;
+      font-style: italic;
+      font-weight: 700;
+      cursor: pointer; }
+  section#profil section.row div.left-column figure.avatar:hover figcaption.choose-avatar {
+    transform: scale(1); }
+  section#profil section.row div.left-column figure.avatar:hover img {
+    opacity: 0.3; }
   section#profil section.row div.left-column div {
     margin-bottom: 10px;
     height: 30px; }
@@ -847,7 +852,11 @@ section#profil {
       float: left;
       text-align: right;
       line-height: 30px;
-      padding-right: 1rem; }
+      padding-right: 1rem;
+      font-family: "Open Sans Condensed", sans-serif;
+      font-weight: 400;
+      text-transform: uppercase;
+      font-size: 0.8rem; }
     section#profil section.row div.left-column div select {
       line-height: 30px;
       border: 0 !important;
@@ -856,11 +865,10 @@ section#profil {
       /*Removes default chrome and safari style*/
       -moz-appearance: none;
       /* Removes Default Firefox style*/
-      background-image: url("../img/iconset_yokoso_sprite_black.svg");
+      background-image: url("../img/iconset_yokoso_sprite_black_bottom-arrow.svg");
       background-repeat: no-repeat;
-      background-position: center -20px;
-      background-size: cover;
-      height: 100%;
+      background-position: center center;
+      background-size: 50px;
       /*Width of select dropdown to give space for arrow image*/
       text-indent: 0.01px;
       /* Removes default arrow from firefox*/
@@ -919,7 +927,9 @@ section#profil {
       color: #302a2b; }
     section#profil section.row div.right-column div h2 {
       font-size: 2rem;
-      position: relative; }
+      position: relative;
+      font-family: "Droid Serif", serif;
+      font-style: italic; }
       section#profil section.row div.right-column div h2:after {
         content: "";
         position: absolute;
@@ -952,7 +962,13 @@ section#profil {
       padding-left: 0px; }
       section#profil section.row div.right-column div div label {
         width: 25%;
-        float: left; }
+        float: left;
+        padding-right: 1rem;
+        font-family: "Open Sans Condensed", sans-serif;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 0.8rem;
+        line-height: 30px; }
       section#profil section.row div.right-column div div select {
         line-height: 30px;
         border: 0 !important;
@@ -961,9 +977,9 @@ section#profil {
         /*Removes default chrome and safari style*/
         -moz-appearance: none;
         /* Removes Default Firefox style*/
-        background-image: url("../img/iconset_yokoso_sprite_black.svg");
+        background-image: url("../img/iconset_yokoso_sprite_black_bottom-arrow.svg");
         background-repeat: no-repeat;
-        background-position: center -20px;
+        background-position: center center;
         background-size: cover;
         /*Width of select dropdown to give space for arrow image*/
         text-indent: 0.01px;
@@ -1286,7 +1302,8 @@ section#correspondance {
         background-position: center center;
         background-size: 40%; }
       section#correspondance section div.columns article.suggest-corres a.cat-4:hover {
-        background-color: white; }
+        background-color: white;
+        border: 1px solid #302a2b; }
   section#correspondance section div.columns article.nest {
     background-color: transparent;
     padding: 0 0 1rem 1rem; }
