@@ -15,28 +15,48 @@
 
 <body>
 
-  <header class="callout first-nav online"> <!-- online Navigation bar -->
-    
-    <nav class="row expanded">
-    <div class="large-4 medium-4 columns">
-      <button class="menu-burger-trigger">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      </div>    
-      <h1 class="large-4 medium-4 columns"><a href="index.html"><img src="../img/logo.svg" alt="Yokoso logo"></a></h1>
-      <ul class="large-4 medium-4 columns fr-buttons">
-        <li><a class="contact button float-right" href="correspondant.html"></a></li>        
-        <li><a class="msg button float-right" href="courrier.html"></a></li>
-        <li>
-        <a class="profil button float-right" href="tableau-de-bord.html">Alicia_17</a>
-        <a class="avatar" href="tableau-de-bord.html"></a>
-        </li>       
-      </ul>
-      
-    </nav>
-  </header> <!-- END online navigation bar -->
+  <header class="callout first-nav online">
+        <!-- online Navigation bar -->
+        <nav class="main-nav row expanded">
+            <div class="large-4 medium-4 small-4 columns burger-div">
+                <button class="menu-burger-trigger"><span></span> <span></span>
+                <span></span></button>
+            </div>
+            <h1 class="large-4 medium-4 small-4 columns"><a href="index.html"><img alt=
+            "Yokoso logo" src="../img/logo.svg"></a></h1>
+            <ul class="large-4 medium-4 small-4 columns fr-buttons">
+                <li class="small"><img class="login-and-signup-small-device" alt="" src=
+                "../img/iconset_yokoso_sprite_white_profil.svg"></li>
+                <li>
+                    <a class="contact button float-right" href=
+                    "correspondant.html"><img class="corres" src="../img/iconset_yokoso_sprite_white_contact.svg" alt=""></a>
+                </li>
+                <li>
+                    <a class="msg button float-right" href="courrier.html"><img class="letter" src="../img/iconset_yokoso_sprite_white_msg.svg" alt=""></a>
+                </li>
+                <li>
+                    <a class="profil button float-right" href=
+                    "tableau-de-bord.html">Alicia_17 <img class="profil" src="../img/avatar_doll.png" alt=""></a>
+                </li>
+            </ul>
+            <div class="hidden-menu-signup">
+            <ul class="fr-buttons">                
+                <li class="fr-buttons">
+                    <a class="tools" href=
+                    "correspondant.html"><img class="" src="../img/iconset_yokoso_sprite_white_contact.svg" alt=""></a>
+                </li>
+                <li class="fr-buttons">
+                    <a class="tools" href="courrier.html"><img class="" src="../img/iconset_yokoso_sprite_white_msg.svg" alt=""></a>
+                </li>
+                <li class="fr-buttons">
+                    <a class="profil" href=
+                    "tableau-de-bord.html">Alicia_17 <img class="profil" src="../img/avatar_doll.png" alt=""></a>
+                </li>
+            </ul>
+            </div>
+            
+        </nav>
+  </header><!-- END online navigation bar -->
 
 <nav id="menu-push" class="online">
     <ul>
@@ -59,57 +79,7 @@
   </nav>
 
 <!-- Les ligthbox ou pop in commune à toutes les pages-->
-  <div class="lightbox login">
-    <button class="close">⨯</button>
-    <section class="row">
-      <h2>Se connecter</h2>
-      
-      <form class="large-6 medium-6 columns"> <!-- Left column -->
-        <div><input id="email" type="email" placeholder="Adresse e-mail"></div>        
-        <div><input type="password" id="password" name="password" placeholder="Mot de passe"></div>
-        <p class="remember"><input type="checkbox">Se souvenir de moi</p> <a href="javascript:void(0)" class="forget">Mot de passe oublié?</a>
-        <input type="submit" value="Je me connecte !">
-        <p>Pas encore de compte ? <a href="" class="signup">Inscrivez-vous !</a></p>
-      </form><!-- END Left column -->
-      <div class="separator">
-      <span class="line"></span>
-      <p>or</p>
-      <span class="line"></span>
-      </div>
-      <form class="large-6 medium-6 columns"><!-- Right column -->
-        <input type="submit" class="facebook" value="Se connecter avec Facebook">
-        <input type="submit" class="twitter" value="Se connecter avec Twitter">
-        <input type="submit" class="google" value="Se connecter avec Google+">
-      </form><!-- END Right column -->
-      
-    </section>
-  </div> <!-- END lightbox login -->
-  <div class="lightbox signup">
-    <button class="close">⨯</button>
-    <section class="row">
-      <h2>S'inscrire</h2>
-      
-      <form class="large-6 medium-6 columns"> <!-- Left column -->
-        <div><input id="pseudo" type="text" placeholder="Pseudo"></div> 
-        <div><input id="email" type="email" placeholder="Adresse e-mail"></div>        
-        <div><input type="password" id="password" name="password" placeholder="Mot de passe"></div>
-        <p class="remember"><input type="checkbox">J'accepte <a href="javascript:void(0)">les conditions d'utilisation</a> de Yokoso</p> 
-        <input type="submit" value="Je m'inscris !">
-        <p>Déjà un compte ? <a href="javascript:void(0)" class="signup">Connectez-vous !</a></p>
-      </form><!-- END Left column -->
-      <div class="separator">
-      <span class="line"></span>
-      <p>or</p>
-      <span class="line"></span>
-      </div>
-      <form class="large-6 medium-6 columns"><!-- Right column -->
-        <input type="submit" class="facebook" value="S'inscrire avec Facebook">
-        <input type="submit" class="twitter" value="S'inscrire avec Twitter">
-        <input type="submit" class="google" value="S'inscrire avec Google+">
-      </form><!-- END Right column -->
-      
-    </section>
-  </div><!-- END lightbox signupt -->
+
   <div class="lightbox search">
     <button class="close">⨯</button>
     <section class="row">
@@ -180,7 +150,8 @@
 
 <main id="base"> <!-- My main block -->
 
-<div class="flexslider">  <!-- FLEXSLIDER -->
+<div id="content">
+  <div class="flexslider">  <!-- FLEXSLIDER -->
   <ul class="slides">
     <li>
       <div>
@@ -242,113 +213,252 @@
   </ul>
 </div> <!-- FIN FLEWSLIDER -->
 
-<section class="line-of-article row">
-  <article class="large-4 medium-4 columns">
-    <figure class="row">
-      <img class="large-12 medium-12 columns" src="../img/slide1.jpg" alt="">
-    </figure>
-    <figcaption class="row">
-    <div class="column-left large-3 medium-3 columns">
-      <p class="article-date">17.10.2015</p>
-      <p class="article-tag">Voyages</p>
-      <p class="article-tag">Tokyo</p>     
-    </div>
-    <div class="column-right large-9 medium-9 columns">
-      <h3>Titre de l'article</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam molestiae, voluptatibus soluta eos esse totam!</p>
-      <div><a href="">Lire plus</a><button>></button></div>
-    </div>      
-    </figcaption>
-  </article>
-  <article class="large-4 medium-4 columns">
-    <figure class="row">
-      <img class="large-12 medium-12 columns" src="../img/slide2.jpg" alt="">
-    </figure>
-    <figcaption class="row">
-    <div class="column-left large-3 medium-3 columns">
-      <p class="article-date">tags</p>
-      <p class="article-tag">tags</p>
-      <p class="article-tag">tags</p>     
-    </div>
-    <div class="column-right large-9 medium-9 columns">
-      <h3>Titre de l'article</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam molestiae, voluptatibus soluta eos esse totam!</p>
-      <div><a href="">Lire plus</a><button>></button></div>
-    </div>      
-    </figcaption>
-  </article> 
-  <article class="large-4 medium-4 columns">
-    <figure class="row">
-      <img class="large-12 medium-12 columns" src="../img/slide3.jpg" alt="">
-    </figure>
-    <figcaption class="row">
-    <div class="column-left large-3 medium-3 columns">
-      <p class="article-date">tags</p>
-      <p class="article-tag">tags</p>
-      <p class="article-tag">tags</p>     
-    </div>
-    <div class="column-right large-9 medium-9 columns">
-      <h3>Titre de l'article</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam molestiae, voluptatibus soluta eos esse totam!</p>
-      <div><a href="">Lire plus</a><button>></button></div>
-    </div>      
-    </figcaption>
-  </article> 
-</section> <!-- Fin article-line -->
+<section class="home expanded line-of-article row" id=
+            "last-articles">
+                <div class="row">
+                <article class="large-4 medium-4 columns">
+                        <div class="callout">
+                            <figure class="row">
+                                <img alt="" class="large-12 medium-12 columns"
+                                src="../img/miyajima.jpg"> <span>Voir
+                                l'article</span>
+                            </figure>
 
-<section class="line-of-article row">
-  <article class="large-4 medium-4 columns">
-    <figure class="row">
-      <img class="large-12 medium-12 columns" src="../img/slide1.jpg" alt="">
-    </figure>
-    <figcaption class="row">
-    <div class="column-left large-3 medium-3 columns">
-      <p class="article-date">17.10.2015</p>
-      <p class="article-tag">Voyages</p>
-      <p class="article-tag">Tokyo</p>     
-    </div>
-    <div class="column-right large-9 medium-9 columns">
-      <h3>Titre de l'article</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam molestiae, voluptatibus soluta eos esse totam!</p>
-      <div><a href="">Lire plus</a><button>></button></div>
-    </div>      
-    </figcaption>
-  </article>
-  <article class="large-4 medium-4 columns">
-    <figure class="row">
-      <img class="large-12 medium-12 columns" src="../img/slide2.jpg" alt="">
-    </figure>
-    <figcaption class="row">
-    <div class="column-left large-3 medium-3 columns">
-      <p class="article-date">tags</p>
-      <p class="article-tag">tags</p>
-      <p class="article-tag">tags</p>     
-    </div>
-    <div class="column-right large-9 medium-9 columns">
-      <h3>Titre de l'article</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam molestiae, voluptatibus soluta eos esse totam!</p>
-      <div><a href="">Lire plus</a><button>></button></div>
-    </div>      
-    </figcaption>
-  </article> 
-  <article class="large-4 medium-4 columns">
-    <figure class="row">
-      <img class="large-12 medium-12 columns" src="../img/slide3.jpg" alt="">
-    </figure>
-    <figcaption class="row">
-    <div class="column-left large-3 medium-3 columns">
-      <p class="article-date">tags</p>
-      <p class="article-tag">tags</p>
-      <p class="article-tag">tags</p>     
-    </div>
-    <div class="column-right large-9 medium-9 columns">
-      <h3>Titre de l'article</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam molestiae, voluptatibus soluta eos esse totam!</p>
-      <div><a href="">Lire plus</a><button>></button></div>
-    </div>      
-    </figcaption>
-  </article> 
-</section> <!-- Fin article-line -->
+
+                            <figcaption class="row">
+                                <div class=
+                                "column-left large-3 medium-3 columns">
+                                    <p class="article-date">14.12.2015</p>
+
+
+                                    <p class="article-tag">Voyages</p>
+
+
+                                    <p class="article-tag">Miyajima</p>
+                                </div>
+
+
+                                <div class=
+                                "column-right large-9 medium-9 columns">
+                                    <h1>L’île de Miyajima à la saison des
+                                    Sakura</h1>
+
+
+                                    <p>Un petit (re)tour à Miyajima (宮島), sur
+                                    l’île aux daims, proche d’Hiroshima (広島市),
+                                    ça vous dit ?</p>
+                                    <a class="cat" href="">Lire plus</a>
+                                </div>
+                            </figcaption>
+                        </div>
+                    </article>
+
+
+                    <article class="large-4 medium-4 columns">
+                        <div class="callout">
+                            <figure class="row">
+                                <img alt="" class="large-12 medium-12 columns"
+                                src="../img/ichigo.jpg"> <span>Voir
+                                l'article</span>
+                            </figure>
+
+
+                            <figcaption class="row">
+                                <div class=
+                                "column-left large-3 medium-3 columns">
+                                    <p class="article-date">17.09.2015</p>
+
+
+                                    <p class="article-tag">Cuisine
+                                    Japonaise</p>
+
+
+                                    <p class="article-tag">Dessert</p>
+                                </div>
+
+
+                                <div class=
+                                "column-right large-9 medium-9 columns">
+                                    <h1>苺大福</h1>
+
+
+                                    <p>
+                                    こんにちは、つんです。今日は和菓子レシピの紹介です。みなさん、イチゴは好きですか？
+                                    我が家では息子が苺大好きなので、よく買います。</p>
+                                    <a class="cat" href="">Lire plus</a>
+                                </div>
+                            </figcaption>
+                        </div>
+                    </article>
+
+
+                    <article class="large-4 medium-4 columns">
+                        <div class="callout">
+                            <figure class="row">
+                                <img alt="" class="large-12 medium-12 columns"
+                                src="../img/kinkaku.jpg"> <span>Voir
+                                l'article</span>
+                            </figure>
+
+
+                            <figcaption class="row">
+                                <div class=
+                                "column-left large-3 medium-3 columns">
+                                    <p class="article-date">25.11.2015</p>
+
+
+                                    <p class="article-tag">Voyages</p>
+
+
+                                    <p class="article-tag">Kyoto</p>
+                                </div>
+
+
+                                <div class=
+                                "column-right large-9 medium-9 columns">
+                                    <h1>Une balade d’or et d’argent</h1>
+
+
+                                    <p>On reprend le chemin du « Sakura trip
+                                    2013 » avec les visites du Kinkaku-ji
+                                    (Article complet) (金閣寺, Pavillon d’Or) et
+                                    son...</p>
+                                    <a class="cat" href="">Lire plus</a>
+                                </div>
+                            </figcaption>
+                        </div>
+                    </article>
+                </div>
+                <!-- fin div row -->
+
+
+                
+            </section>
+            <!-- Fin article-line -->
+
+<section class="home expanded line-of-article row" id=
+            "last-articles">
+                <div class="row">
+                    
+                    <article class="large-4 medium-4 columns">
+                        <div class="callout">
+                            <figure class="row">
+                                <img alt="" class="large-12 medium-12 columns"
+                                src="../img/miyajima.jpg"> <span>Voir
+                                l'article</span>
+                            </figure>
+
+
+                            <figcaption class="row">
+                                <div class=
+                                "column-left large-3 medium-3 columns">
+                                    <p class="article-date">14.12.2015</p>
+
+
+                                    <p class="article-tag">Voyages</p>
+
+
+                                    <p class="article-tag">Miyajima</p>
+                                </div>
+
+
+                                <div class=
+                                "column-right large-9 medium-9 columns">
+                                    <h1>L’île de Miyajima à la saison des
+                                    Sakura</h1>
+
+
+                                    <p>Un petit (re)tour à Miyajima (宮島), sur
+                                    l’île aux daims, proche d’Hiroshima (広島市),
+                                    ça vous dit ?</p>
+                                    <a class="cat" href="">Lire plus</a>
+                                </div>
+                            </figcaption>
+                        </div>
+                    </article>
+
+
+                    <article class="large-4 medium-4 columns">
+                        <div class="callout">
+                            <figure class="row">
+                                <img alt="" class="large-12 medium-12 columns"
+                                src="../img/ichigo.jpg"> <span>Voir
+                                l'article</span>
+                            </figure>
+
+
+                            <figcaption class="row">
+                                <div class=
+                                "column-left large-3 medium-3 columns">
+                                    <p class="article-date">17.09.2015</p>
+
+
+                                    <p class="article-tag">Cuisine
+                                    Japonaise</p>
+
+
+                                    <p class="article-tag">Dessert</p>
+                                </div>
+
+
+                                <div class=
+                                "column-right large-9 medium-9 columns">
+                                    <h1>苺大福</h1>
+
+
+                                    <p>
+                                    こんにちは、つんです。今日は和菓子レシピの紹介です。みなさん、イチゴは好きですか？
+                                    我が家では息子が苺大好きなので、よく買います。</p>
+                                    <a class="cat" href="">Lire plus</a>
+                                </div>
+                            </figcaption>
+                        </div>
+                    </article>
+
+
+                    <article class="large-4 medium-4 columns">
+                        <div class="callout">
+                            <figure class="row">
+                                <img alt="" class="large-12 medium-12 columns"
+                                src="../img/kinkaku.jpg"> <span>Voir
+                                l'article</span>
+                            </figure>
+
+
+                            <figcaption class="row">
+                                <div class=
+                                "column-left large-3 medium-3 columns">
+                                    <p class="article-date">25.11.2015</p>
+
+
+                                    <p class="article-tag">Voyages</p>
+
+
+                                    <p class="article-tag">Kyoto</p>
+                                </div>
+
+
+                                <div class=
+                                "column-right large-9 medium-9 columns">
+                                    <h1>Une balade d’or et d’argent</h1>
+
+
+                                    <p>On reprend le chemin du « Sakura trip
+                                    2013 » avec les visites du Kinkaku-ji
+                                    (Article complet) (金閣寺, Pavillon d’Or) et
+                                    son...</p>
+                                    <a class="cat" href="">Lire plus</a>
+                                </div>
+                            </figcaption>
+                        </div>
+                    </article>
+                </div>
+                <!-- fin div row -->
+
+
+                
+            </section>
+            <!-- Fin article-line -->
 
 <section class="pagination row">
   <ul class="large-12 medium-12 large-centered medium-centered columns">
@@ -359,40 +469,90 @@
     <li><a href="">></a></li>
   </ul>
 </section>
+</div>
 
 <footer>
-  <div class="row">
-    <nav class="large-8 medium-8 columns">
-      <ul class="footer-nav row">
-        <li><a href="search">Chercher un correspondant</a></li>
-        <li><a href="flux-actualites.html">Flux d'actualités</a></li>
-        <li><a href="a-propos.html">A propos</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-      <ul class="footer-sub-nav row">
-        <li>© 2016 Yokoso</li>
-        <li><a href="#">Conditions</a></li>
-        <li><a href="#">Protection des données</a></li>
-        <li>
-        <select name="lang" id="lang">
-          <option value="jp">Japonais</option>
-          <option value="fr">Français</option>
-        </select>
-        </li>
-      </ul>
-    </nav>
-    <div class="large-4 medium-4 columns">
-      <div class="newsletter">
-        <label for="">S'abonner à la newsletter</label>
-        <input type="email" placeholder="Entrer votre email"><button>></button>
-      </div>
-      <ul class="social-media">
-        <li><a href="#">fb</a></li>
-        <li><a href="#">tw</a></li>
-        <li><a href="#">g+</a></li>
-      </ul>
-    </div>
-  </div>
+            <div class="row">
+                <nav class="large-8 medium-8 columns">
+                    <ul class="footer-nav">
+                        <li>
+                            <a href="">Chercher un correspondant</a>
+                        </li>
+
+
+                        <li>
+                            <a href="flux-actualites.html">Flux
+                            d'actualités</a>
+                        </li>
+
+
+                        <li>
+                            <a href="">A propos</a>
+                        </li>
+
+
+                        <li>
+                            <a href="">Contact</a>
+                        </li>
+                    </ul>
+
+
+                    <ul class="footer-sub-nav">
+                        <li>© 2016 Yokoso</li>
+
+
+                        <li>
+                            <a href="">Conditions</a>
+                        </li>
+
+
+                        <li>
+                            <a href="">Protection des données</a>
+                        </li>
+
+
+                        <li><select id="lang" name="lang">
+                            <option value="jp">
+                                Japonais
+                            </option>
+
+                            <option value="fr">
+                                Français
+                            </option>
+                        </select>
+                        </li>
+                    </ul>
+                </nav>
+
+
+                <div class="large-4 medium-4 columns">
+                    <div class="newsletter">
+                        <label for="">S'abonner à la newsletter</label>
+                        <input placeholder="Entrer votre email" type=
+                        "email"><button>&gt;</button>
+                    </div>
+
+
+                    <ul class="social-media">
+                        <li>
+                            <a href="http://www.facebook.com"><img alt=
+                            "facebook" src="../img/facebook.png"></a>
+                        </li>
+
+
+                        <li>
+                            <a href="http://plus.google.com/"><img alt="google"
+                            src="../img/google.png"></a>
+                        </li>
+
+
+                        <li>
+                            <a href="http://www.twitter.com"><img alt="twitter"
+                            src="../img/twitter.png"></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
 </footer>
 
 </main> <!-- End My main block -->

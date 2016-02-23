@@ -22,6 +22,12 @@ $(document).ready(function(){
 		e.preventDefault();
 		$('.hidden-menu-login').toggleClass('active');
 		$('.hidden-menu-signup').toggleClass('active');
+
+		$('main#base').click(function(e){ 
+				e.preventDefault();				
+				$('.hidden-menu-signup').removeClass('active');
+				$('.hidden-menu-login').removeClass('active');
+			});
 			
 	});
 

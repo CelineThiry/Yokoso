@@ -499,6 +499,9 @@ header.first-nav.online nav ul li {
     background-position: center -720px;
     background-size: auto;
     margin-right: 0.5rem; }
+    header.first-nav.online nav ul li .contact:hover {
+      opacity: 0.5;
+      transition: opacity 0.3s ease-out 0s; }
     header.first-nav.online nav ul li .contact:after {
       content: "1";
       position: absolute;
@@ -521,6 +524,9 @@ header.first-nav.online nav ul li {
     background-position: center -1020px;
     background-size: auto;
     margin-right: 0.5rem; }
+    header.first-nav.online nav ul li .msg:hover {
+      opacity: 0.5;
+      transition: opacity 0.3s ease-out 0s; }
     header.first-nav.online nav ul li .msg:after {
       content: "1";
       position: absolute;
@@ -540,6 +546,9 @@ header.first-nav.online nav ul li {
     line-height: 40px;
     font-size: 1.25rem;
     background-color: transparent; }
+    header.first-nav.online nav ul li .profil:hover {
+      opacity: 0.5;
+      transition: opacity 0.3s ease-out 0s; }
 
 div.lightbox.active {
   background-color: rgba(48, 42, 43, 0.9);
@@ -984,13 +993,14 @@ section#profil {
         color: grey; }
 
 section#profil-corres {
-  margin: 96px auto 20px auto; }
+  margin: 96px auto 20px auto;
+  font-family: "Open Sans", sans-serif;
+  color: #302a2b; }
   section#profil-corres section.row div.left-column img {
     display: block;
     width: 15rem;
     height: 15rem;
     border-radius: 15rem;
-    background-color: lightcoral;
     margin: 0 auto 1rem auto;
     transition: opacity; }
   section#profil-corres section.row div.left-column div {
@@ -1001,8 +1011,13 @@ section#profil-corres {
       float: left;
       text-align: right;
       line-height: 30px;
-      padding-right: 1rem; }
+      padding-right: 1rem;
+      font-family: "Open Sans Condensed", sans-serif;
+      font-weight: 400;
+      text-transform: uppercase;
+      font-size: 0.75rem; }
     section#profil-corres section.row div.left-column div p {
+      font-size: 0.9rem;
       color: grey;
       width: 50%;
       float: left;
@@ -1077,7 +1092,10 @@ section#profil-corres {
     padding: 1rem 1rem 1rem 1rem; }
     section#profil-corres section.row div.right-column div h2 {
       font-size: 2rem;
-      position: relative; }
+      position: relative;
+      font-family: "Droid Serif", serif;
+      font-style: italic;
+      color: #302a2b; }
     section#profil-corres section.row div.right-column div p {
       width: 100%;
       background-color: transparent;
@@ -1090,7 +1108,12 @@ section#profil-corres {
       padding-top: 0px; }
       section#profil-corres section.row div.right-column div div label {
         width: 25%;
-        float: left; }
+        float: left;
+        font-family: "Open Sans Condensed", sans-serif;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 0.75rem;
+        line-height: 30PX; }
       section#profil-corres section.row div.right-column div div p {
         color: grey;
         float: left;
@@ -1920,7 +1943,11 @@ body > footer.open {
   body header.first-nav nav ul.fr-buttons li.small img.login-and-signup-small-device {
     display: block;
     float: right;
-    padding-top: 0.2rem; }
+    padding-top: 0.2rem;
+    cursor: pointer;
+    transition: opacity 0.3s ease-out 0s; }
+    body header.first-nav nav ul.fr-buttons li.small img.login-and-signup-small-device:hover {
+      opacity: 0.5; }
 
   .intro-content {
     padding-top: 5%; }
@@ -1931,6 +1958,10 @@ body > footer.open {
   .intro div.columns p {
     font-size: 1.5rem; } }
 @media (max-width: 600px) {
+  section#profil section.row div.left-column figure.avatar {
+    width: 5rem;
+    height: 15rem; }
+
   section#profil section.row div.left-column div {
     height: 60px; }
     section#profil section.row div.left-column div label {

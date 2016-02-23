@@ -774,6 +774,11 @@ header.first-nav.online{
 				    background-size: auto;
 				    margin-right: 0.5rem;
 
+				    &:hover{
+				    	opacity: 0.5;
+				    	transition: opacity 0.3s ease-out 0s
+				    }
+
 				    &:after{
 				    	content: "1";
 				    	position: absolute;				    	
@@ -789,6 +794,7 @@ header.first-nav.online{
 				    }
 				}
 
+				
 				.msg{
 					position: relative;
 					height: 40px;
@@ -799,6 +805,11 @@ header.first-nav.online{
 				    background-position: center -1020px;
 				    background-size: auto;
 				    margin-right: 0.5rem;
+
+				     &:hover{
+				    	opacity: 0.5;
+				    	transition: opacity 0.3s ease-out 0s
+				    }
 
 
 				    &:after{
@@ -826,7 +837,10 @@ header.first-nav.online{
 					font-size: 1.25rem;
 					background-color: transparent;
 
-									
+					 &:hover{
+				    	opacity: 0.5;
+				    	transition: opacity 0.3s ease-out 0s
+				    }									
 				}	
 
 				
@@ -1600,6 +1614,8 @@ section#profil{
 section#profil-corres{
 		
 		margin: 96px auto 20px auto;
+		font-family: $open-sans;
+		color: $my-black;
 
 		section.row{
 
@@ -1610,7 +1626,7 @@ section#profil-corres{
 					width: 15rem;
 					height: 15rem;
 					border-radius: 15rem;
-					background-color: lightcoral;
+					// background-color: lightcoral;
 					margin: 0 auto 1rem auto;
 					transition: opacity ;
 
@@ -1627,11 +1643,15 @@ section#profil-corres{
 						text-align: right;
 						line-height: 30px;
 						padding-right: 1rem;
+						font-family: $open-sans-condensed;
+						font-weight: 400;
+						text-transform: uppercase;
+						font-size: 0.75rem;
 
 					}
 
 					p{
-
+						font-size: 0.9rem;
 						color: grey;
 						width: 50%;
 						float: left;
@@ -1740,7 +1760,10 @@ section#profil-corres{
 
 					h2{
 						font-size: 2rem;
-						position: relative;						
+						position: relative;	
+						font-family: $droid-serif;
+						font-style: italic;
+						color: $my-black;					
 					}
 
 					p{					
@@ -1763,6 +1786,11 @@ section#profil-corres{
 
 							width: 25%;
 							float: left;
+							font-family: $open-sans-condensed;
+							font-weight: 400;
+							text-transform: uppercase;
+							font-size: 0.75rem;
+							line-height: 30PX;
 
 						}
 
@@ -1771,6 +1799,7 @@ section#profil-corres{
 							color: grey;
 							float: left;
 							width: 75%;
+
 
 						}
 					}
@@ -3146,6 +3175,12 @@ body>footer.open{
     display: block;
     float: right;
     padding-top: 0.2rem;
+    cursor: pointer;
+    transition: opacity 0.3s ease-out 0s;
+
+    &:hover{
+    	opacity: 0.5;
+    }
   }
   .intro-content {
     padding-top: 5%;
@@ -3162,6 +3197,11 @@ body>footer.open{
 }
 
 @media (max-width: 600px){
+
+	section#profil section.row div.left-column figure.avatar{
+		width: 5rem;
+		height: 15rem;
+	}
 
 	section#profil section.row div.left-column div{
 		height: 60px;
