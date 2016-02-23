@@ -1923,6 +1923,24 @@ body > footer.open {
   .intro div.columns p {
     font-size: 1.5rem; } }
 @media (max-width: 600px) {
+  section#correspondance section h1, section#dashboard h1 {
+    font-size: 2rem; }
+
+  section#correspondance section article.nest button h1 {
+    font-size: 1rem; }
+
+  section#dashboard ul.logout-buttons li {
+    width: 76px; }
+  section#dashboard .big-button h1 {
+    font-size: 1rem; }
+  section#dashboard .big-button.settings, section#dashboard .big-button.logout {
+    width: 76px; }
+    section#dashboard .big-button.settings h1, section#dashboard .big-button.logout h1 {
+      display: none; }
+    section#dashboard .big-button.settings .picto-button.settings, section#dashboard .big-button.settings .picto-button.logout, section#dashboard .big-button.logout .picto-button.settings, section#dashboard .big-button.logout .picto-button.logout {
+      border-style: none;
+      border-width: 0; }
+
   div.hidden-menu-signup.active {
     display: block; }
 
@@ -1939,7 +1957,7 @@ body > footer.open {
     font-size: 0.8rem;
     text-align: left; }
 
-  a.cat-2 {
+  a.cat-2, .cat-3, .cat-4 {
     font-size: 0.8rem;
     text-align: left; }
 

@@ -3146,6 +3146,41 @@ body>footer.open{
 
 @media (max-width: 600px){
 
+	section#correspondance section h1, section#dashboard h1{
+		font-size: 2rem;
+	}
+
+	section#correspondance section article.nest button h1{
+		font-size: 1rem;
+	}
+
+	section#dashboard{
+
+		ul.logout-buttons{
+			li{
+				width: $block-height;
+			}
+		}
+
+		.big-button h1{
+			font-size: 1rem;
+		}
+		.big-button.settings, .big-button.logout{
+			width: $block-height;
+			h1{
+				display: none;
+			}
+
+			.picto-button.settings, .picto-button.logout{
+				border-style: none;
+				border-width: 0;
+				
+			}
+		}
+	}
+
+
+
 	div.hidden-menu-signup.active{display: block;}
 	div.hidden-menu-login.active{display: block;}
 	div.hidden-menu-signup{display: none;}
@@ -3157,7 +3192,7 @@ body>footer.open{
 
 	}
 
-	a.cat-2{
+	a.cat-2, .cat-3, .cat-4{
 		font-size: 0.8rem;
 		text-align: left;
 
@@ -3378,7 +3413,7 @@ div.lightbox.active section form div {
 			border-width: 0;
 			
 		}
-	}
+		}
 	}
 }
 
