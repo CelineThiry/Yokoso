@@ -448,6 +448,52 @@ a.cat-3{
 					}		
 }
 
+a.cat-4{	
+					height: 50px;
+					display: block;
+					
+					margin: 1rem auto 0 auto;
+					border: 1px solid $cherry-red;							
+					// display: inline-block;
+					// vertical-align: top;
+					padding: 0;					
+					line-height: 50px;										
+					text-align: right;
+					width: 100%;					
+					color: $cherry-red;
+					font-family: $open-sans;
+					font-weight: 400;
+					font-style: normal;	
+					transition: background-color;
+					transition-duration: 0.30s;
+					transition-timing-function: ease-out;
+					// float: left;	
+
+					&:hover{
+						color: white;
+						border: none;
+						background-color: $cherry-red;						
+					}
+						
+
+					&:after{
+						content: "";
+						background-image: url('../img/iconset_yokoso_sprite_black_delete.svg');
+						background-repeat: no-repeat;
+						background-position: center center;
+						background-size: 50%;
+						display: block;
+						border-width: 0 0 0 1px;
+						border-style: none none none solid;
+						border-color: $cherry-red;
+						width: 50px;
+						height: 100%;
+						text-align: center;	
+						margin-left: 1rem;	
+						float: right;				
+					}		
+}
+
 
 
 .line-of-articles-bottom-button{
@@ -1731,6 +1777,7 @@ section#dashboard{
 			background-color: white;
 			border-radius: 4px;
 			border: none;
+			
 			}
 
 			
@@ -1880,6 +1927,7 @@ section#correspondance{
 			
 			margin-top: 0;
 			background-color: $cherry-red;
+			margin-bottom: 0;
 
 			&:hover{
 			background-color: white;
@@ -1914,7 +1962,7 @@ section#correspondance{
 			border-width: 0;
 		}
 
-			h1{
+		h1{
 			text-align: left;			
 			font-size: 2.5rem;
 			font-family: $open-sans;
@@ -1935,7 +1983,8 @@ section#correspondance{
 
 			article.nest{
 
-				padding-right: 0;
+				padding: 0;
+
 
 				button{
 					h1{
@@ -1947,12 +1996,15 @@ section#correspondance{
 			div.nest{
 
 				padding: 0;
+
 			}
 
 			div.large-4{
 
 				article{
-					div.callout{}
+					div.callout.profil{
+
+					}
 					footer.callout.border-button{
 						margin-bottom: 0;
 
@@ -1973,15 +2025,17 @@ section#correspondance{
 						}
 					}
 					div.profil.middle{
-						border-width: 0 1px 0 1px;
-						border-style: none solid none solid;
-						border-color: $my-black;
+						// border-width: 0 1px 0 1px;
+						// border-style: none solid none solid;
+						// border-color: $my-black;
+
 					}
 					div.profil{
 
-						padding: 1rem;						
-						border-width: 0 1px 1px 1px;
-						border-style: none solid solid solid;
+						// padding: 1rem;						
+						// border-width: 0 1px 1px 1px;
+						// border-style: none solid solid solid;
+						
 
 						p {
 							color: $my-black;
@@ -2014,7 +2068,66 @@ section#correspondance{
 
 			div.columns{
 
+				article.suggest-corres{
+					background-color: transparent;
+					border: 1px solid $my-black;
+
+					a.cat-4{
+						border-color: $my-black;
+						color: $my-black;
+
+						&:after{
+							border-color: $my-black;
+							background-image: url('../img/iconset_yokoso_sprite_black_refresh.svg');
+							background-repeat: no-repeat;
+							background-position: center center;
+							background-size: 40%;
+						}
+
+						&:hover{
+							background-color: white;
+						}
+					}
+
+				}
+
+				article.nest{
+					background-color: transparent;
+					padding: 0 0 1rem 1rem;
+				}			
+
 				article{
+
+					background-color: white;
+					border-radius: 4px;
+					margin-bottom: 1rem;
+					padding: 1rem;
+
+					a.cat-3{
+						&:after{
+							display: none;
+						}
+					}
+
+					a.cat-3.desactivated{
+						border-color: grey;
+						color: grey;
+						cursor: default;
+
+						&:before{
+							content: "0";
+							border-color: grey;
+						}
+
+						&:after{
+							display: none;
+						}
+
+						&:hover{
+							background-color: transparent;
+							border: solid 1px grey;
+						}
+					}
 
 					li.avatar{
 								display: inline-block;
@@ -2027,7 +2140,7 @@ section#correspondance{
 								}
 
 								a{color: $my-black;}
-								figure{text-align: center; margin: 0; padding: 1rem;}
+								figure{text-align: center; margin: 0; padding: 1rem 1rem 1rem 0;}
 								img{
 									display: inline-block;
 									height: 70px;
@@ -2039,32 +2152,25 @@ section#correspondance{
 									text-align: center;}
 							}
 
-					footer.callout{
-
-						p{
-							a{
-								color: $my-black;
-							}
-						}
-
-					}
-
+					
 					.callout.profil{
 							width: 100%;
-							border-width: 0 1px 1px 1px;
-							border-style: none solid solid solid;
-							border-color: $my-black;
-							text-align: left;							
+							// border-width: 0 1px 1px 1px;
+							// border-style: none solid solid solid;
+							// border-color: $my-black;
+							text-align: left;
+							padding: 0;	
+													
 					}
 
-					footer{
+					.not-send{
+							padding-top: 1rem;
+							}
 
-
-						button.square-button.block{
-							border-width: 0 0 0 1px;
-							border-style: none none none solid;
-						}
+					.my-corres{
+						padding: 0;
 					}
+					
 				}
 
 			}
@@ -3263,7 +3369,7 @@ div.lightbox.active section form div {
 			width: $block-height;
 		h1{
 			display: none;
-			
+
 		}
 
 		.picto-button.settings, .picto-button.logout{
@@ -3274,6 +3380,14 @@ div.lightbox.active section form div {
 	}
 	}
 }
+
+@media (max-width: 1000px){
+	section#correspondance section div.columns article.nest.large-6.medium-12.columns{
+		padding: 0;
+	}
+}
+
+
 
 
 

@@ -286,11 +286,11 @@ main#base>section:nth-child(1){
 div.inside-left, div.inside-right{
 	margin: 0px 0px 0px;
 	padding: 1rem;	
-	/*border-width: 1px 1px 0px 1px;*/  border-width: 1px 1px 0px 1px; 
-	/*border-style: solid solid none solid;*/ border-style: solid solid none solid;
+	/*border-width: 1px 1px 0px 1px;*/  /*border-width: 1px 1px 0px 1px; */
+	/*border-style: solid solid none solid;*/ /*border-style: solid solid none solid;*/
 	border-color: black;
 	/*box-shadow: 1px 1px 0px 1px rgba(0, 0, 0, 0.1);*/
-	border-radius: 4px 4px 0px 0px;
+	/*border-radius: 4px 4px 0px 0px;*/
 	position: relative;
 	color: black;
 	background-color: rgba(0,0,0,0);

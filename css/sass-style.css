@@ -285,6 +285,42 @@ a.cat-3 {
     margin-left: 1rem;
     float: right; }
 
+a.cat-4 {
+  height: 50px;
+  display: block;
+  margin: 1rem auto 0 auto;
+  border: 1px solid #d61232;
+  padding: 0;
+  line-height: 50px;
+  text-align: right;
+  width: 100%;
+  color: #d61232;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  transition: background-color;
+  transition-duration: 0.30s;
+  transition-timing-function: ease-out; }
+  a.cat-4:hover {
+    color: white;
+    border: none;
+    background-color: #d61232; }
+  a.cat-4:after {
+    content: "";
+    background-image: url("../img/iconset_yokoso_sprite_black_delete.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50%;
+    display: block;
+    border-width: 0 0 0 1px;
+    border-style: none none none solid;
+    border-color: #d61232;
+    width: 50px;
+    height: 100%;
+    text-align: center;
+    margin-left: 1rem;
+    float: right; }
+
 .line-of-articles-bottom-button {
   width: 100%;
   margin: 2rem auto 0 auto;
@@ -1165,7 +1201,8 @@ section#correspondance {
   margin: 96px auto 20px auto; }
   section#correspondance section .big-button {
     margin-top: 0;
-    background-color: #d61232; }
+    background-color: #d61232;
+    margin-bottom: 0; }
     section#correspondance section .big-button:hover {
       background-color: white;
       transition: background-color 0.3s ease-out 0s; }
@@ -1204,7 +1241,7 @@ section#correspondance {
     font-family: "Open Sans", sans-serif;
     color: #302a2b; }
   section#correspondance section article.nest {
-    padding-right: 0; }
+    padding: 0; }
     section#correspondance section article.nest button h1 {
       font-size: 1.2rem; }
   section#correspondance section div.nest {
@@ -1223,56 +1260,81 @@ section#correspondance {
       font-weight: 400; }
       section#correspondance section div.large-4 article footer.callout.border-button p a {
         color: #302a2b; }
-  section#correspondance section div.large-4 article div.profil.middle {
-    border-width: 0 1px 0 1px;
-    border-style: none solid none solid;
-    border-color: #302a2b; }
-  section#correspondance section div.large-4 article div.profil {
-    padding: 1rem;
-    border-width: 0 1px 1px 1px;
-    border-style: none solid solid solid; }
-    section#correspondance section div.large-4 article div.profil p {
-      color: #302a2b;
-      font-weight: 300;
-      font-style: italic;
-      font-family: "Open Sans", sans-serif;
-      font-size: 1rem; }
-      section#correspondance section div.large-4 article div.profil p a {
-        color: #d61232; }
-        section#correspondance section div.large-4 article div.profil p a:hover {
-          text-decoration: underline; }
-  section#correspondance section div.columns article li.avatar {
-    display: inline-block;
-    vertical-align: top;
-    opacity: 1; }
-    section#correspondance section div.columns article li.avatar:hover {
-      opacity: 0.5;
-      transition: 0.3s opacity ease-out 0s; }
-    section#correspondance section div.columns article li.avatar a {
+  section#correspondance section div.large-4 article div.profil p {
+    color: #302a2b;
+    font-weight: 300;
+    font-style: italic;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem; }
+    section#correspondance section div.large-4 article div.profil p a {
+      color: #d61232; }
+      section#correspondance section div.large-4 article div.profil p a:hover {
+        text-decoration: underline; }
+  section#correspondance section div.columns article.suggest-corres {
+    background-color: transparent;
+    border: 1px solid #302a2b; }
+    section#correspondance section div.columns article.suggest-corres a.cat-4 {
+      border-color: #302a2b;
       color: #302a2b; }
-    section#correspondance section div.columns article li.avatar figure {
-      text-align: center;
-      margin: 0;
-      padding: 1rem; }
-    section#correspondance section div.columns article li.avatar img {
+      section#correspondance section div.columns article.suggest-corres a.cat-4:after {
+        border-color: #302a2b;
+        background-image: url("../img/iconset_yokoso_sprite_black_refresh.svg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 40%; }
+      section#correspondance section div.columns article.suggest-corres a.cat-4:hover {
+        background-color: white; }
+  section#correspondance section div.columns article.nest {
+    background-color: transparent;
+    padding: 0 0 1rem 1rem; }
+  section#correspondance section div.columns article {
+    background-color: white;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+    padding: 1rem; }
+    section#correspondance section div.columns article a.cat-3:after {
+      display: none; }
+    section#correspondance section div.columns article a.cat-3.desactivated {
+      border-color: grey;
+      color: grey;
+      cursor: default; }
+      section#correspondance section div.columns article a.cat-3.desactivated:before {
+        content: "0";
+        border-color: grey; }
+      section#correspondance section div.columns article a.cat-3.desactivated:after {
+        display: none; }
+      section#correspondance section div.columns article a.cat-3.desactivated:hover {
+        background-color: transparent;
+        border: solid 1px grey; }
+    section#correspondance section div.columns article li.avatar {
       display: inline-block;
-      height: 70px;
-      margin-bottom: 0.5rem; }
-    section#correspondance section div.columns article li.avatar figcaption {
-      font-family: "Open Sans", sans-serif;
-      font-weight: 400;
-      text-align: center; }
-  section#correspondance section div.columns article footer.callout p a {
-    color: #302a2b; }
-  section#correspondance section div.columns article .callout.profil {
-    width: 100%;
-    border-width: 0 1px 1px 1px;
-    border-style: none solid solid solid;
-    border-color: #302a2b;
-    text-align: left; }
-  section#correspondance section div.columns article footer button.square-button.block {
-    border-width: 0 0 0 1px;
-    border-style: none none none solid; }
+      vertical-align: top;
+      opacity: 1; }
+      section#correspondance section div.columns article li.avatar:hover {
+        opacity: 0.5;
+        transition: 0.3s opacity ease-out 0s; }
+      section#correspondance section div.columns article li.avatar a {
+        color: #302a2b; }
+      section#correspondance section div.columns article li.avatar figure {
+        text-align: center;
+        margin: 0;
+        padding: 1rem 1rem 1rem 0; }
+      section#correspondance section div.columns article li.avatar img {
+        display: inline-block;
+        height: 70px;
+        margin-bottom: 0.5rem; }
+      section#correspondance section div.columns article li.avatar figcaption {
+        font-family: "Open Sans", sans-serif;
+        font-weight: 400;
+        text-align: center; }
+    section#correspondance section div.columns article .callout.profil {
+      width: 100%;
+      text-align: left;
+      padding: 0; }
+    section#correspondance section div.columns article .not-send {
+      padding-top: 1rem; }
+    section#correspondance section div.columns article .my-corres {
+      padding: 0; }
 
 div.flexslider {
   margin: 0 auto 20px auto;
@@ -1996,3 +2058,6 @@ body > footer.open {
     section#dashboard .big-button.settings .picto-button.settings, section#dashboard .big-button.settings .picto-button.logout, section#dashboard .big-button.logout .picto-button.settings, section#dashboard .big-button.logout .picto-button.logout {
       border-style: none;
       border-width: 0; } }
+@media (max-width: 1000px) {
+  section#correspondance section div.columns article.nest.large-6.medium-12.columns {
+    padding: 0; } }

@@ -99,11 +99,10 @@
     <div class="large-8 medium-12 columns"> <!-- ligne de 8 -->
       
       <article>
-      <div class="my-corres callout inside-right">
-        <h1>Mes correspondants</h1>         
-      </div>
-      <ul class="callout profil"> <!-- Profil icon one -->
-         <li class="avatar">
+      <div class="my-corres callout">
+        <h1>Mes correspondants</h1> 
+        <ul class="callout profil"> <!-- Profil icon one -->
+        <li class="avatar">
           <a>
             <figure>
               <img src="../img/avatar_mouse.png" alt="">
@@ -119,33 +118,30 @@
             </figure>
           </a>
         </li>
-         <li class="avatar">
+        <li class="avatar">
           <a>
             <figure>
               <img src="../img/avatar_coffee.png" alt="">
               <figcaption>Yato</figcaption>
             </figure>
           </a>
-        </li>
-        
-        
-      </ul> <!-- FIN Profil icone zone -->      
+        </li>       
+      </ul> <!-- FIN Profil icone zone --> 
+      <a class="cat-4" href="correspondant.html">Bloquer et supprimer</a>        
+      </div>
+           
 
-      <footer class="callout inside-right">
-                  <p><a href="">Bloquer et supprimer</a></p>
-                  <button class="square-button block"></button>
-      </footer>
+      
       </article>
 
       <section class="row column"> <!-- Deuxieme ligne sous Mes correspondants -->
     <div class="nest large-6 medium-12 columns"> <!-- Block Suggestions de correspondants -->
       
-      <article>
-      <div class="callout inside-right">
+      <article class="suggest-corres">
+      <div class="callout">
         <h1>Suggestions</h1>    
-        <p class="exergue">de correspondants</p>     
-      </div>
-      <div class="callout profil"> <!-- Profil icon one -->
+        <p class="exergue">de correspondants</p> 
+        <ul class="callout profil"> <!-- Profil icon one -->
         <li class="avatar">
           <a>
             <figure>
@@ -171,13 +167,10 @@
           </a>
         </li>   
         
-      </div> <!-- FIN Profil icone zone -->      
-
-      <footer class="callout inside-right">
-                  <p><a href="">Rafraichir</a></p>
-                  <button class="square-button block"></button>
-      </footer>
-      </article>
+      </ul> <!-- FIN Profil icone zone -->  
+        <a class="cat-4" href="javascript:(void)">Rafraichir</a> 
+      </div>
+    </article>
     </div><!-- FIN Block Suggestions de correspondants -->
 
     <article class="nest large-6 medium-12 columns"> <!-- Bouton nouvelle lettre -->
@@ -193,15 +186,11 @@
 
     <div class="large-4 medium-12 columns"> <!-- panel demande de correspodances -->
     <article>
-    <div class="callout inside-right">
-    <h1>Demandes de correspondances</h1>     
-    </div>
-      <footer class="callout border-button">
-                  <button class="picto-button on">1</button>
-                  <p>Reçues</p>
-                  
-      </footer>
-      <div class="callout profil middle"> <!-- Profil icon one -->
+      <div class="callout inside-right">
+        <h1>Demandes de correspondances</h1>     
+      </div>
+      <a class="cat-3" href="javascript:(void)">Reçues</a> 
+      <ul class="callout profil middle"> <!-- Profil icon one -->
         <!-- <div>
           <p>Vous n'avez envoyé aucune demande de correspondance. <a href="">Chercher un nouveau correspondant ?</a></p>
         </div> -->
@@ -229,14 +218,10 @@
             </figure>
           </a>
         </li>        
-      </div> <!-- FIN Profil icone zone --> 
-      <footer class="callout border-button">
-                  <button class="picto-button off">0</button>
-                  <p>Envoyées</p>
-                  
-      </footer>
+      </ul> <!-- FIN Profil icone zone --> 
+      <a class="cat-3 desactivated" href="javascript:(void)">Envoyées</a> 
       <div class="callout profil"> <!-- Profil icon one -->
-        <div>
+        <div class="not-send">
           <p>Vous n'avez envoyé aucune demande de correspondance. <a href="">Chercher un nouveau correspondant ?</a></p>
         </div>
         <!-- <div class="avatar">
@@ -251,10 +236,8 @@
           <span class="avatar-pict"></span>
           <p>Tsubaki</p>
         </div>           -->
-      </div> <!-- FIN Profil icone zone --> 
-      
-      
-    </article>
+      </div> <!-- FIN Profil icone zone -->     
+     </article>
     </div><!-- FIN panel demande de correspodances -->
 
     </section> <!-- Fin de la section row column -->      
