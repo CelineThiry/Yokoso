@@ -1136,6 +1136,12 @@ section#dashboard {
     border: none; }
   section#dashboard .big-button.settings:hover .picto-button.settings {
     border: none; }
+  section#dashboard .big-button.logout:hover {
+    background-color: white;
+    border: none; }
+  section#dashboard .big-button.logout:hover .picto-button.logout {
+    border: none;
+    background-image: url("../img/iconset_yokoso_sprite_black_exit.svg"); }
 
 .jetlag {
   text-align: center; }
@@ -1980,3 +1986,13 @@ body > footer.open {
 @media (max-height: 600px) {
   .intro-content {
     padding-top: 5%; } }
+@media (min-width: 1000px) {
+  section#dashboard ul.logout-buttons li {
+    width: 76px; }
+  section#dashboard .big-button.settings, section#dashboard .big-button.logout {
+    width: 76px; }
+    section#dashboard .big-button.settings h1, section#dashboard .big-button.logout h1 {
+      display: none; }
+    section#dashboard .big-button.settings .picto-button.settings, section#dashboard .big-button.settings .picto-button.logout, section#dashboard .big-button.logout .picto-button.settings, section#dashboard .big-button.logout .picto-button.logout {
+      border-style: none;
+      border-width: 0; } }

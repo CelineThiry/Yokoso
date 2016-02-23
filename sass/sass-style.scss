@@ -1847,6 +1847,16 @@ section#dashboard{
 			border: none;
 		}
 
+		.big-button.logout:hover{
+			background-color: white;
+			border: none;
+		}
+
+		.big-button.logout:hover .picto-button.logout{
+			border: none;
+			background-image: url('../img/iconset_yokoso_sprite_black_exit.svg');
+		}
+
 		
 }
 
@@ -3238,6 +3248,30 @@ div.lightbox.active section form div {
 @media (max-height: 600px){
 	.intro-content{
 		padding-top: 5%;
+	}
+}
+
+@media (min-width: 1000px){
+	section#dashboard{
+
+		ul.logout-buttons{
+			li{
+				width: $block-height;
+			}
+		}
+		.big-button.settings, .big-button.logout{
+			width: $block-height;
+		h1{
+			display: none;
+			
+		}
+
+		.picto-button.settings, .picto-button.logout{
+			border-style: none;
+			border-width: 0;
+			
+		}
+	}
 	}
 }
 
