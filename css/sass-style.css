@@ -848,7 +848,7 @@ section#profil {
     margin-bottom: 10px;
     height: 30px; }
     section#profil section.row div.left-column div label {
-      width: 50%;
+      width: 40%;
       float: left;
       text-align: right;
       line-height: 30px;
@@ -856,33 +856,26 @@ section#profil {
       font-family: "Open Sans Condensed", sans-serif;
       font-weight: 400;
       text-transform: uppercase;
-      font-size: 0.8rem; }
+      font-size: 0.75rem; }
     section#profil section.row div.left-column div select {
       line-height: 30px;
-      border: 0 !important;
-      /*Removes border*/
-      -webkit-appearance: none;
-      /*Removes default chrome and safari style*/
+      border: 0px none !important;
       -moz-appearance: none;
-      /* Removes Default Firefox style*/
-      background-image: url("../img/iconset_yokoso_sprite_black_bottom-arrow.svg");
+      background-image: url("../img/iconset_yokoso_sprite_grey_bottom-arrow.svg");
       background-repeat: no-repeat;
-      background-position: center center;
-      background-size: 50px;
-      /*Width of select dropdown to give space for arrow image*/
-      text-indent: 0.01px;
-      /* Removes default arrow from firefox*/
-      text-overflow: "";
-      /*Removes default arrow from firefox*/
+      background-position: 100% center;
+      background-size: 12px;
       outline-color: transparent;
+      font-size: 0.9rem;
       color: grey;
-      width: 50%;
+      width: 60%;
       float: left;
-      background: transparent; }
+      height: 99%;
+      background-color: transparent; }
       section#profil section.row div.left-column div select option {
         width: 100%; }
     section#profil section.row div.left-column div div {
-      width: 50%;
+      width: 60%;
       float: left; }
       section#profil section.row div.left-column div div select[name="birthdate"] {
         width: 33.33%;
@@ -916,20 +909,25 @@ section#profil {
       background-color: white;
       color: #302a2b; }
   section#profil section.row div.right-column div:first-child {
-    width: 50%;
-    background-color: transparent; }
+    width: 100%;
+    background-color: transparent;
+    margin-bottom: 0; }
   section#profil section.row div.right-column div {
     background-color: white;
+    border-radius: 4px;
     margin-bottom: 1rem;
     padding: 1rem 1rem 1rem 1rem; }
     section#profil section.row div.right-column div input[type="text"][placeholder="Nouvel_inscrit"] {
       font-size: 2rem;
-      color: #302a2b; }
+      color: #302a2b;
+      font-style: italic;
+      font-family: "Droid Serif", serif; }
     section#profil section.row div.right-column div h2 {
       font-size: 2rem;
       position: relative;
       font-family: "Droid Serif", serif;
-      font-style: italic; }
+      font-style: italic;
+      color: #302a2b; }
       section#profil section.row div.right-column div h2:after {
         content: "";
         position: absolute;
@@ -937,10 +935,15 @@ section#profil {
         right: 0;
         width: 30px;
         height: 100%;
-        background-image: url("../img/iconset_yokoso_sprite_black.svg");
+        cursor: pointer;
+        background-image: url("../img/iconset_yokoso_sprite_black_modify.svg");
         background-repeat: no-repeat;
-        background-position: center -60px;
-        background-size: cover; }
+        background-position: center center;
+        background-size: 85%;
+        opacity: 1;
+        transition: opacity 0.3s ease-out 0s; }
+    section#profil section.row div.right-column div h2:hover:after {
+      opacity: 0.5; }
     section#profil section.row div.right-column div textarea {
       border: 0px none transparent;
       box-shadow: 0px;
@@ -970,27 +973,15 @@ section#profil {
         font-size: 0.8rem;
         line-height: 30px; }
       section#profil section.row div.right-column div div select {
-        line-height: 30px;
-        border: 0 !important;
-        /*Removes border*/
-        -webkit-appearance: none;
-        /*Removes default chrome and safari style*/
+        border: 0px none !important;
         -moz-appearance: none;
-        /* Removes Default Firefox style*/
-        background-image: url("../img/iconset_yokoso_sprite_black_bottom-arrow.svg");
+        background-image: url("../img/iconset_yokoso_sprite_grey_bottom-arrow.svg");
         background-repeat: no-repeat;
-        background-position: center center;
-        background-size: cover;
-        /*Width of select dropdown to give space for arrow image*/
-        text-indent: 0.01px;
-        /* Removes default arrow from firefox*/
-        text-overflow: "";
-        /*Removes default arrow from firefox*/
-        outline-color: transparent;
-        color: grey;
+        background-position: 100% center;
+        background-size: 15px;
         width: 75%;
-        background: transparent;
-        float: left; }
+        outline-color: transparent;
+        color: grey; }
 
 section#profil-corres {
   margin: 96px auto 20px auto; }

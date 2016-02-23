@@ -1398,7 +1398,7 @@ section#profil{
 					height: 30px;
 
 					label{
-						width: 50%;
+						width: 40%;
 						float: left;
 						text-align: right;
 						line-height: 30px;
@@ -1406,29 +1406,25 @@ section#profil{
 						font-family: $open-sans-condensed;
 						font-weight: 400;
 						text-transform: uppercase;
-						font-size: 0.8rem;
+						font-size: 0.75rem;
 
 					}
 
 					select{
 						line-height: 30px;
-						border: 0 !important;  /*Removes border*/
-    					-webkit-appearance: none;  /*Removes default chrome and safari style*/
-    					-moz-appearance: none; /* Removes Default Firefox style*/
-    					background-image: url('../img/iconset_yokoso_sprite_black_bottom-arrow.svg');
+						border: 0px none !important;
+						-moz-appearance: none;
+						background-image: url("../img/iconset_yokoso_sprite_grey_bottom-arrow.svg");
 						background-repeat: no-repeat;
-						background-position: center center;
-						background-size: 50px;
-						// height: 100%;
-    					 /*Width of select dropdown to give space for arrow image*/
-    					text-indent: 0.01px; /* Removes default arrow from firefox*/
-    					text-overflow: "";  /*Removes default arrow from firefox*/
-    					outline-color: rgba(0,0,0,0);
-    					
+						background-position: 100% center;
+						background-size: 12px;
+						outline-color: transparent;
+    					font-size: 0.9rem;
 						color: grey;
-						width: 50%;
+						width: 60%;
 						float: left;
-						background: transparent;
+						height: 99%;
+						background-color: transparent;
 
 						option{
 							width: 100%;
@@ -1437,12 +1433,13 @@ section#profil{
 
 					div{
 
-						width: 50%;
+						width: 60%;
 						float: left;
 
 						select[name="birthdate"]{
 							width: 33.33%;
-							float: left;
+							float: left;							
+							
 						}
 					}		
 
@@ -1489,20 +1486,23 @@ section#profil{
 			div.right-column{
 
 				div:first-child{
-					width: 50%;
+					width: 100%;
 					background-color: transparent;
+					margin-bottom: 0;
 				}
 
 				div{
 
 					background-color: white;
+					border-radius: 4px;
 					margin-bottom: 1rem;
 					padding: 1rem 1rem 1rem 1rem;
 
 					input[type="text"][placeholder="Nouvel_inscrit"]{
 						font-size: 2rem;
-						color: $my-black;						
-						
+						color: $my-black;
+						font-style: italic;
+						font-family: $droid-serif;							
 					}
 
 					h2{
@@ -1510,6 +1510,7 @@ section#profil{
 						position: relative;
 						font-family: $droid-serif;
 						font-style: italic;
+						color: $my-black;
 
 						&:after{
 							content: "";
@@ -1518,12 +1519,18 @@ section#profil{
 							right:0;
 							width: 30px;
 							height: 100%;
-							
-							background-image: url('../img/iconset_yokoso_sprite_black.svg');
+							cursor: pointer;
+							background-image: url('../img/iconset_yokoso_sprite_black_modify.svg');
 							background-repeat: no-repeat;
-							background-position: center -60px;
-							background-size: cover;
+							background-position: center center;
+							background-size: 85%;
+							opacity: 1;
+							transition: opacity 0.3s ease-out 0s;
 						}
+					}
+
+					h2:hover:after{
+						opacity: 0.5;
 					}
 
 					textarea{
@@ -1568,24 +1575,17 @@ section#profil{
 						}
 
 						select{
-							line-height: 30px;
-							border: 0 !important;  /*Removes border*/
-    						-webkit-appearance: none;  /*Removes default chrome and safari style*/
-    						-moz-appearance: none; /* Removes Default Firefox style*/
-    						background-image: url('../img/iconset_yokoso_sprite_black_bottom-arrow.svg');
-							background-repeat: no-repeat;
-							background-position: center center;
-							background-size: cover;
-							
-    						 /*Width of select dropdown to give space for arrow image*/
-    						text-indent: 0.01px; /* Removes default arrow from firefox*/
-    						text-overflow: "";  /*Removes default arrow from firefox*/
-    						outline-color: rgba(0,0,0,0);    						
-							color: grey;
-							width: 75%;							
-							background: transparent;
-							float: left;
-
+							    border: 0px none !important;
+							    -moz-appearance: none;
+							    background-image: url("../img/iconset_yokoso_sprite_grey_bottom-arrow.svg");
+							    background-repeat: no-repeat;
+							    background-position: 100% center;
+							    background-size: 15px;
+							    width: 75%;
+							    // height: 100%;
+							    outline-color: transparent;
+							    color: grey;
+    
 						}
 					}
 				}
