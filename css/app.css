@@ -230,6 +230,8 @@ nav#menu-push{
 	transition-duration: 0.4s;
 	transition-timing-function: cubic-bezier(0, 0.99, 0.13, 0.995);
 	transform: translate(-300px, 0px);
+	font-family: 'Open sans', serif;
+	font-weight: 300;
 }
 
 nav#menu-push.open{

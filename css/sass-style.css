@@ -728,6 +728,8 @@ div.hidden-menu-login {
     div.hidden-menu-login a.login.hidden:hover {
       color: #d61232; }
 
+.lightbox.search.active section form div {
+  margin-bottom: 0; }
 .lightbox.search.active h1 {
   text-align: center;
   color: white;
@@ -737,54 +739,116 @@ div.hidden-menu-login {
   font-style: italic;
   font-family: "Droid Serif", serif; }
 .lightbox.search.active form.search {
-  background-color: lightcoral;
-  width: 75%;
+  background-color: transparent;
+  min-width: 620px;
+  width: 50%;
   margin: auto;
   padding: 1rem; }
+  .lightbox.search.active form.search .the-input-div {
+    padding-top: 2rem; }
   .lightbox.search.active form.search input[type="submit"] {
     width: 200px;
     height: 38px;
     display: block;
     background-color: #d61232;
-    margin: auto;
+    margin: 2rem auto 0 auto;
     cursor: pointer;
     border-radius: 4px;
     border: none;
     padding: 0 1rem 0 1rem;
     float: none;
     color: white;
-    transition: background-color 0.25s ease-out 0s, color 0.25s ease-out 0s; }
+    transition: background-color 0.25s ease-out 0s, color 0.25s ease-out 0s;
+    clear: both; }
     .lightbox.search.active form.search input[type="submit"]:hover {
       color: black;
       background-color: white; }
-  .lightbox.search.active form.search .question-line {
-    height: 38px;
-    margin-bottom: 0.5rem; }
-  .lightbox.search.active form.search .title-query {
-    height: 100%;
+  .lightbox.search.active form.search .wrap {
+    margin-bottom: 0;
+    padding: 0rem 1rem 1rem 1rem;
     width: 50%;
+    float: left; }
+  .lightbox.search.active form.search .title-query {
+    background-color: white;
+    height: 100%;
+    width: 100%;
     float: left;
     padding: 0 1rem 0 1rem; }
     .lightbox.search.active form.search .title-query h1 {
-      text-transform: uppercase;
+      text-transform: none;
       font-weight: 300;
       font-size: 1rem;
       line-height: 38px;
       margin: 0;
       color: #302a2b;
       text-align: right;
-      font-style: normal;
-      font-family: "Open Sans Condensed", sans-serif; }
+      font-style: italic;
+      font-family: "Droid Serif", serif; }
+  .lightbox.search.active form.search .radio-form input {
+    width: auto;
+    opacity: 0.00000001;
+    position: absolute;
+    left: 0; }
+  .lightbox.search.active form.search .radio-form label {
+    position: relative;
+    cursor: pointer;
+    padding-left: 2rem;
+    text-align: left;
+    color: #333;
+    display: block; }
   .lightbox.search.active form.search .query {
     background-color: #fff;
     height: 100%;
-    width: 50%;
+    width: 100%;
     float: left;
     line-height: 38px;
     padding: 0 1rem 0 1rem; }
-    .lightbox.search.active form.search .query div {
-      display: inline-block;
-      padding: 0 2rem 0 0; }
+    .lightbox.search.active form.search .query .radio label:hover .helper {
+      color: #302a2b; }
+    .lightbox.search.active form.search .query .radio input:checked ~ .helper::before {
+      color: #302a2b; }
+    .lightbox.search.active form.search .query .radio input:checked ~ .helper::after {
+      -webkit-transform: scale(0.5);
+      transform: scale(0.5); }
+    .lightbox.search.active form.search .query .radio {
+      display: inline;
+      margin: 0;
+      padding: 0 1rem 0 0;
+      float: left;
+      width: 50%; }
+      .lightbox.search.active form.search .query .radio label {
+        position: relative; }
+      .lightbox.search.active form.search .query .radio .helper {
+        position: absolute;
+        top: 0;
+        left: 0;
+        cursor: pointer;
+        display: block;
+        font-size: 1rem;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        color: #999; }
+        .lightbox.search.active form.search .query .radio .helper::before, .lightbox.search.active form.search .query .radio .helper::after {
+          content: '';
+          position: absolute;
+          left: 0;
+          top: 0;
+          margin: 0.25rem;
+          width: 1rem;
+          height: 1rem;
+          -webkit-transition: -webkit-transform 0.28s ease;
+          transition: -webkit-transform 0.28s ease;
+          transition: transform 0.28s ease;
+          transition: transform 0.28s ease, -webkit-transform 0.28s ease;
+          border-radius: 50%;
+          border: 0.125rem solid currentColor; }
+        .lightbox.search.active form.search .query .radio .helper:after {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+          background-color: #302a2b;
+          border-color: #302a2b; }
     .lightbox.search.active form.search .query label, .lightbox.search.active form.search .query select, .lightbox.search.active form.search .query input {
       width: initial;
       display: inline;
@@ -797,14 +861,15 @@ div.hidden-menu-login {
       border: 0px none !important;
       -moz-appearance: none;
       -webkit-appearance: none;
-      background-image: url("../img/iconset_yokoso_sprite_grey_bottom-arrow.svg");
+      background-image: url("../img/iconset_yokoso_sprite_black_bottom-arrow.svg");
       background-repeat: no-repeat;
       background-position: 100% center;
       background-size: 12px;
       outline-color: transparent;
       font-size: 1rem;
-      color: grey;
-      background-color: transparent; }
+      color: #302a2b;
+      background-color: transparent option;
+        background-color-width: 100%; }
 
 div.lightbox.avatar.active section div {
   overflow-y: auto;
@@ -830,8 +895,7 @@ div.lightbox.avatar.active section div {
 
 div.lightbox.active.search .dropdown {
   background-color: blue;
-  width: 100%;
-  display: none; }
+  width: 100%; }
 div.lightbox.active.search label {
   float: left;
   display: block;

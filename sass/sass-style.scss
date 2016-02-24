@@ -1137,6 +1137,8 @@ div.hidden-menu-login{
 
 .lightbox.search.active{
 
+	section form div{margin-bottom: 0;}
+
 	h1{
 			text-align: center;
 			color: white;
@@ -1148,13 +1150,23 @@ div.hidden-menu-login{
 	}
 
 	form.search{
+
+		background-color: transparent;
+		min-width: 620px;
+		width: 50%;
+		margin: auto;
+		padding: 1rem;  
+
+	.the-input-div{
+		padding-top: 2rem;
+	}
   
 	  input[type="submit"]{
 	    width: 200px;
 	    height: $block-height/2;
 	    display: block;
 	    background-color: $cherry-red;
-	    margin: auto;
+	    margin: 2rem auto 0 auto;
 	    cursor: pointer;
 	    border-radius: 4px;
 	    border: none;
@@ -1162,53 +1174,131 @@ div.hidden-menu-login{
 	    float: none;
 	    color: white;
 	    transition: $global-button-hover-transition;
+	    clear: both;
 	    &:hover{
 	    	color: black;
 	    	background-color: white;
 	    }
+  } 
+
+  .wrap{
+  	margin-bottom: 0; 	
+  	padding: 0rem 1rem 1rem 1rem;
+  	width: 50%;
+  	float: left;
   }
+
+
   
-  background-color: lightcoral;
-  width: 75%;
-  margin: auto;
-  padding: 1rem;  
-  
-  .question-line{
-    height: $block-height/2;
-    margin-bottom: 0.5rem;
-  }
+  // .question-line{
+  //       width: 100%;
+  //       height: 100%;
+  // }
     
   .title-query{
-    // background-color: yellow;
+    background-color: white;
     height: 100%;
-    width: 50%;
+    width: 100%;
     float: left;
     padding: 0 1rem 0 1rem;
     
       h1{
-      text-transform: uppercase;
+      text-transform: none;
       font-weight: 300;
       font-size: 1rem;
       line-height: $block-height/2;
       margin: 0;
       color: $my-black;
       text-align: right;      
-      font-style: normal;
-		font-family: $open-sans-condensed;
+      font-style: italic;
+		font-family: $droid-serif;
     }
+  }
+
+  .radio-form{
+  	input{
+  		width: auto;
+		opacity: 0.00000001;
+		position: absolute;
+		left: 0;
+  	}
+  	label{
+  		position: relative;
+		cursor: pointer;
+		padding-left: 2rem;
+		text-align: left;
+		color: #333;
+		display: block;
+  	}
   }
   
   .query{
     background-color: #fff;
     height: 100%;
-    width: 50%;
+    width: 100%;
     float: left;
     line-height: $block-height/2; 
     padding: 0 1rem 0 1rem;
 
-    div{
-    	display: inline-block;
-    	padding: 0 2rem 0 0;
+
+    .radio label:hover .helper {
+    color: $my-black;
+	}
+
+	.radio input:checked ~ .helper::before {
+    color: $my-black;
+	}
+
+	.radio input:checked ~ .helper::after {
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+	}
+
+    .radio{
+    	display: inline;    	
+    	margin: 0;
+    	padding: 0 1rem 0 0;
+    	float: left;
+    	width: 50%;
+
+    	label{position: relative;}
+
+    	.helper{
+    		position: absolute;
+			top: 0;
+			left: 0;
+			cursor: pointer;
+			display: block;
+			font-size: 1rem;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+			color: #999;
+
+			&::before, &::after{
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 0;
+				margin: 0.25rem;
+				width: 1rem;
+				height: 1rem;
+				-webkit-transition: -webkit-transform 0.28s ease;
+				transition: -webkit-transform 0.28s ease;
+				transition: transform 0.28s ease;
+				transition: transform 0.28s ease, -webkit-transform 0.28s ease;
+				border-radius: 50%;
+				border: 0.125rem solid currentColor;
+			}
+
+			&:after{
+				-webkit-transform: scale(0);
+				transform: scale(0);
+				background-color: $my-black;
+				border-color: $my-black;
+			}
+    	}
     }
     
     label, select, input{
@@ -1216,7 +1306,8 @@ div.hidden-menu-login{
     	width: initial;
     	display: inline;
     	float: none;
-    	height: initial;            
+    	height: initial;  
+    	         
     }
 
     select{
@@ -1226,15 +1317,23 @@ div.hidden-menu-login{
 		border: 0px none !important;
 		-moz-appearance: none;
 		-webkit-appearance: none;
-		background-image: url("../img/iconset_yokoso_sprite_grey_bottom-arrow.svg");
+		background-image: url("../img/iconset_yokoso_sprite_black_bottom-arrow.svg");
 		background-repeat: no-repeat;
 		background-position: 100% center;
 		background-size: 12px;
 		outline-color: transparent;
     	font-size: 1rem;
-		color: grey;		
-		background-color: transparent
+		color: $my-black;		
+		background-color: transparent	
+
+		option{
+			width:100%;
+		}	
     }
+
+    
+
+
   }  
   
 }
@@ -1296,7 +1395,7 @@ div.lightbox.active.search{
 					// position: relative;	
 					background-color: blue;	
 					width: 100%;
-					display: none;
+					
 
 
 					dt{
