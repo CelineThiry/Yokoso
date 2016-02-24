@@ -29,7 +29,7 @@ body header.first-nav nav div.burger-div.large-4.medium-4{
 
 body{
 	background-color: $body-bgc;
-  	font: $global-font;
+  	font: $open-sans;
 
 	header.first-nav{
 
@@ -753,7 +753,7 @@ div.my-input{
 // }
 nav#menu-push > ul > li.lang{
 	font-size: 0.9rem;
-	
+
 	a{
 		font-size: 0.9rem;	
 	}
@@ -1765,6 +1765,8 @@ section#profil{
 
 				}
 
+				a.update{color: $my-black;}
+
 				input[type="submit"]{
 					display: block;
 					height: 50px;
@@ -2134,6 +2136,8 @@ section#profil-corres{
 
 		}
 }
+
+
 
 
 section#dashboard{
@@ -2809,12 +2813,9 @@ main#base{
 	section#content{
 
 		padding-bottom: 200px;	
-			
+
 
 		#courrier, #courrier-new{
-			
-
-
 			
 			aside.left-panel{
 				display: none;
@@ -2930,6 +2931,7 @@ ul.letter-accordion{
 		padding: 1rem;
 		margin-bottom: 1rem;
 		border-radius: $global-border-radius;
+		font-family: $open-sans;
 	}
 
 	.you{
@@ -3209,11 +3211,33 @@ form.new-messages{
 				overflow: hidden;
 				color: white;
 
+				div{
+					label, p.level{
+						display: inline-block;
+						vertical-align: top;
+						width: 49%;
+					}
+
+
+				}
+
+				.interest-tag{
+						display: inline-block;
+						vertical-align: top;
+						height: 30px;
+						background-color: white;
+						padding: 0 1rem 0 1rem;
+						line-height: 30px;
+						color: grey;
+						width: initial;
+						border-radius: $global-border-radius;
+					}
+
 				p{
 					font-family: $open-sans;
-					font-weight: 400;
+					font-weight: 300;
 					
-					font-size: 1rem;
+					font-size: 0.9rem;
 				}
 
 				h1{
@@ -3383,6 +3407,17 @@ body>main#base>footer{
 					}
 
 					select{
+
+								border: 0px none !important;
+							    -moz-appearance: none;
+							    background-image: url("../img/iconset_yokoso_sprite_grey_bottom-arrow.svg");
+							    background-repeat: no-repeat;
+							    background-position: 100% center;
+							    background-size: 10px;
+							    width: 80px;
+							    // height: 100%;
+							    outline-color: transparent;
+							    color: grey;
 
 						&:focus{
 						outline-width: 0px;

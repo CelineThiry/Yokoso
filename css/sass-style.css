@@ -9,7 +9,7 @@ body header.first-nav nav div.burger-div.large-4.medium-4 {
 
 body {
   background-color: #EEE8D8;
-  font: "Roboto", sans-serif; }
+  font: "Open Sans", sans-serif; }
   body header.first-nav {
     margin: 0;
     border: 0;
@@ -1087,6 +1087,8 @@ section#profil {
       section#profil section.row div.left-column div div select[name="birthdate"] {
         width: 33.33%;
         float: left; }
+  section#profil section.row div.left-column a.update {
+    color: #302a2b; }
   section#profil section.row div.left-column input[type="submit"] {
     display: block;
     height: 50px;
@@ -1802,7 +1804,8 @@ ul.letter-accordion {
   ul.letter-accordion .one-letter, ul.letter-accordion .you, ul.letter-accordion .me {
     padding: 1rem;
     margin-bottom: 1rem;
-    border-radius: 4px; }
+    border-radius: 4px;
+    font-family: "Open Sans", sans-serif; }
   ul.letter-accordion .you {
     background-color: white; }
   ul.letter-accordion .me {
@@ -1982,10 +1985,24 @@ form.new-messages {
       transition: transform 0.30s ease-out 0s;
       overflow: hidden;
       color: white; }
+      .courrier-nav .corres-header.active .contact-description div label, .courrier-nav .corres-header.active .contact-description div p.level {
+        display: inline-block;
+        vertical-align: top;
+        width: 49%; }
+      .courrier-nav .corres-header.active .contact-description .interest-tag {
+        display: inline-block;
+        vertical-align: top;
+        height: 30px;
+        background-color: white;
+        padding: 0 1rem 0 1rem;
+        line-height: 30px;
+        color: grey;
+        width: initial;
+        border-radius: 4px; }
       .courrier-nav .corres-header.active .contact-description p {
         font-family: "Open Sans", sans-serif;
-        font-weight: 400;
-        font-size: 1rem; }
+        font-weight: 300;
+        font-size: 0.9rem; }
       .courrier-nav .corres-header.active .contact-description h1 {
         color: white;
         font-size: 1.5rem;
@@ -2087,8 +2104,18 @@ body > main#base > footer {
         color: grey; }
         body > main#base > footer div nav .footer-sub-nav li a:hover {
           color: #d61232; }
-      body > main#base > footer div nav .footer-sub-nav li select:focus {
-        outline-width: 0px; }
+      body > main#base > footer div nav .footer-sub-nav li select {
+        border: 0px none !important;
+        -moz-appearance: none;
+        background-image: url("../img/iconset_yokoso_sprite_grey_bottom-arrow.svg");
+        background-repeat: no-repeat;
+        background-position: 100% center;
+        background-size: 10px;
+        width: 80px;
+        outline-color: transparent;
+        color: grey; }
+        body > main#base > footer div nav .footer-sub-nav li select:focus {
+          outline-width: 0px; }
   body > main#base > footer div div.columns {
     border-left: 1px solid grey; }
     body > main#base > footer div div.columns .newsletter label {
