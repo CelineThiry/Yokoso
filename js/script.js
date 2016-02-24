@@ -266,6 +266,13 @@ $(document).ready(function(){
   				
 	});
 
+	//choose lang slideng panel
+	$('.button-close-choose-lang').click(function(e){
+				e.preventDefault();
+				$('.choose-lang').addClass('close');
+				window.scrollTo(0, 0);							 
+	});
+
 	//Lightbox
 	// ouvrir la light box du login
 	$('.login.button').click(function(e){

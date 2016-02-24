@@ -479,6 +479,54 @@ a.login.my-button, .signup-section form a.login.facebook, .signup-section form a
 div.my-input {
   height: 76px; }
 
+nav#menu-push > ul > li.lang {
+  font-size: 0.9rem; }
+  nav#menu-push > ul > li.lang a {
+    font-size: 0.9rem; }
+
+.choose-lang.close {
+  display: none; }
+
+.choose-lang {
+  background-color: #97C6C1;
+  height: 38px;
+  z-index: 1;
+  transform: translateY(-38px);
+  position: absolute;
+  width: 100%;
+  animation-name: choose-lang;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards; }
+  .choose-lang div {
+    width: 100%;
+    margin: auto;
+    text-align: center; }
+  .choose-lang button {
+    float: right;
+    height: 100%;
+    line-height: 38px;
+    padding: 0 1rem 0 1rem;
+    color: white;
+    font-size: 1.75rem; }
+    .choose-lang button:hover {
+      color: #302a2b; }
+  .choose-lang p {
+    display: inline-block;
+    color: white;
+    line-height: 38px;
+    font-family: "Open Sans", sans-serif; }
+    .choose-lang p a {
+      color: white; }
+      .choose-lang p a:hover {
+        color: #302a2b; }
+
+@keyframes choose-lang {
+  0% {
+    transform: translateY(-38px); }
+  100% {
+    transform: translateY(0px); } }
 header.first-nav.online {
   font-family: "Open Sans", sans-serif;
   font-weight: 300; }

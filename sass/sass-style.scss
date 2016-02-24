@@ -722,6 +722,100 @@ div.my-input{
 	height: $block-height;
 }
 
+// .lang-button-div{
+// 	position: fixed;
+// 	bottom: 1rem;
+// 	right: 0;
+// 	z-index: 3;
+// 	background-color: $cherry-red;
+// 	height: 50px;
+// 	width: $block-height;
+// 	border-radius: 4px 0 0 4px;
+// 	padding: 0 1rem 0 1rem;
+
+// 	p{
+// 		text-align: center;
+// 		line-height: 50px;		
+// 		color: white;
+// 		padding: 0;
+
+// 		a{
+// 			// text-transform: uppercase;
+// 			font-family: $droid-serif;
+// 			font-style: italic;
+// 			color: white;
+// 			&:hover{
+// 				color: $my-black;
+// 			}
+// 		}
+// 	}
+
+// }
+nav#menu-push > ul > li.lang{
+	font-size: 0.9rem;
+	
+	a{
+		font-size: 0.9rem;	
+	}
+}
+
+.choose-lang.close{
+	display: none;
+
+}
+
+.choose-lang{
+	background-color: #97C6C1;
+	height: $block-height/2;	
+	z-index: 1;
+	transform: translateY(-38px);
+	position: absolute;
+	width: 100%;
+	animation-name: choose-lang;
+	animation-duration: 1s;
+	animation-delay: 1s;
+	animation-timing-function: ease-out;
+	animation-fill-mode: forwards;
+
+	div{
+		width: 100%;
+		margin: auto;
+		text-align: center;
+
+	}
+
+	button{
+		float: right;
+		height: 100%;
+		line-height: $block-height/2;
+		padding: 0 1rem 0 1rem;
+		color: white;
+		font-size: 1.75rem;
+
+		&:hover{
+			color: $my-black;
+		}
+
+	}
+
+	p{	
+		display: inline-block;
+		color: white;		
+		line-height: $block-height/2;
+		font-family: $open-sans;
+
+		a{
+			color: white;
+			&:hover{color: $my-black;}
+		}
+	}
+}
+
+@keyframes choose-lang{
+	0%{transform: translateY(-38px);}
+	100%{transform: translateY(0px);}
+}
+
 header.first-nav.online{
 
 	font-family: $open-sans;
