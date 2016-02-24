@@ -479,79 +479,83 @@ a.login.my-button, .signup-section form a.login.facebook, .signup-section form a
 div.my-input {
   height: 76px; }
 
-header.first-nav.online nav ul li {
-  height: 40px;
-  display: inline-block;
-  vertical-align: top; }
-  header.first-nav.online nav ul li a img.corres, header.first-nav.online nav ul li a img.letter {
-    display: block; }
-  header.first-nav.online nav ul li a img.profil {
+header.first-nav.online {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300; }
+  header.first-nav.online nav ul li {
+    height: 40px;
     display: inline-block;
-    height: 40px;
-    padding: 0; }
-  header.first-nav.online nav ul li .contact {
-    position: relative;
-    height: 40px;
-    width: 40px;
-    background-color: transparent;
-    background-image: url("../img/iconset_yokoso_sprite.svg");
-    background-repeat: no-repeat;
-    background-position: center -720px;
-    background-size: auto;
-    margin-right: 0.5rem; }
-    header.first-nav.online nav ul li .contact:hover {
-      opacity: 0.5;
-      transition: opacity 0.3s ease-out 0s; }
-    header.first-nav.online nav ul li .contact:after {
-      content: "1";
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      height: 15px;
-      width: 15px;
-      border-radius: 15px;
-      background-color: #d61232;
-      color: white;
-      font-size: 0.7rem;
-      padding: 1px; }
-  header.first-nav.online nav ul li .msg {
-    position: relative;
-    height: 40px;
-    width: 40px;
-    background-color: transparent;
-    background-image: url("../img/iconset_yokoso_sprite.svg");
-    background-repeat: no-repeat;
-    background-position: center -1020px;
-    background-size: auto;
-    margin-right: 0.5rem; }
-    header.first-nav.online nav ul li .msg:hover {
-      opacity: 0.5;
-      transition: opacity 0.3s ease-out 0s; }
-    header.first-nav.online nav ul li .msg:after {
-      content: "1";
-      position: absolute;
-      bottom: 0;
-      right: 0;
-      height: 15px;
-      width: 15px;
-      border-radius: 15px;
-      background-color: #d61232;
-      color: white;
-      padding: 1px;
-      font-size: 0.7rem; }
-  header.first-nav.online nav ul li .profil {
-    display: inline-block;
-    vertical-align: top;
-    position: relative;
-    line-height: 40px;
-    font-size: 1.25rem;
-    background-color: transparent; }
-    header.first-nav.online nav ul li .profil:hover {
-      opacity: 0.5;
-      transition: opacity 0.3s ease-out 0s; }
+    vertical-align: top; }
+    header.first-nav.online nav ul li a img.corres, header.first-nav.online nav ul li a img.letter {
+      display: block; }
+    header.first-nav.online nav ul li a img.profil {
+      display: inline-block;
+      height: 40px;
+      padding: 0; }
+    header.first-nav.online nav ul li .contact {
+      position: relative;
+      height: 40px;
+      width: 40px;
+      background-color: transparent;
+      background-image: url("../img/iconset_yokoso_sprite.svg");
+      background-repeat: no-repeat;
+      background-position: center -720px;
+      background-size: auto;
+      margin-right: 0.5rem; }
+      header.first-nav.online nav ul li .contact:hover {
+        opacity: 0.5;
+        transition: opacity 0.3s ease-out 0s; }
+      header.first-nav.online nav ul li .contact:after {
+        content: "1";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 15px;
+        width: 15px;
+        border-radius: 15px;
+        background-color: #d61232;
+        color: white;
+        font-size: 0.7rem;
+        padding: 1px; }
+    header.first-nav.online nav ul li .msg {
+      position: relative;
+      height: 40px;
+      width: 40px;
+      background-color: transparent;
+      background-image: url("../img/iconset_yokoso_sprite.svg");
+      background-repeat: no-repeat;
+      background-position: center -1020px;
+      background-size: auto;
+      margin-right: 0.5rem; }
+      header.first-nav.online nav ul li .msg:hover {
+        opacity: 0.5;
+        transition: opacity 0.3s ease-out 0s; }
+      header.first-nav.online nav ul li .msg:after {
+        content: "1";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        height: 15px;
+        width: 15px;
+        border-radius: 15px;
+        background-color: #d61232;
+        color: white;
+        padding: 1px;
+        font-size: 0.7rem; }
+    header.first-nav.online nav ul li .profil {
+      display: inline-block;
+      vertical-align: top;
+      position: relative;
+      line-height: 40px;
+      font-size: 1.25rem;
+      background-color: transparent; }
+      header.first-nav.online nav ul li .profil:hover {
+        opacity: 0.5;
+        transition: opacity 0.3s ease-out 0s; }
 
 div.lightbox.active {
   background-color: rgba(48, 42, 43, 0.9);
+  font-family: "Open Sans", sans-serif;
   width: 100%;
   height: 100vh;
   position: fixed;
@@ -724,6 +728,84 @@ div.hidden-menu-login {
     div.hidden-menu-login a.login.hidden:hover {
       color: #d61232; }
 
+.lightbox.search.active h1 {
+  text-align: center;
+  color: white;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  font-weight: 300;
+  font-style: italic;
+  font-family: "Droid Serif", serif; }
+.lightbox.search.active form.search {
+  background-color: lightcoral;
+  width: 75%;
+  margin: auto;
+  padding: 1rem; }
+  .lightbox.search.active form.search input[type="submit"] {
+    width: 200px;
+    height: 38px;
+    display: block;
+    background-color: #d61232;
+    margin: auto;
+    cursor: pointer;
+    border-radius: 4px;
+    border: none;
+    padding: 0 1rem 0 1rem;
+    float: none;
+    color: white;
+    transition: background-color 0.25s ease-out 0s, color 0.25s ease-out 0s; }
+    .lightbox.search.active form.search input[type="submit"]:hover {
+      color: black;
+      background-color: white; }
+  .lightbox.search.active form.search .question-line {
+    height: 38px;
+    margin-bottom: 0.5rem; }
+  .lightbox.search.active form.search .title-query {
+    height: 100%;
+    width: 50%;
+    float: left;
+    padding: 0 1rem 0 1rem; }
+    .lightbox.search.active form.search .title-query h1 {
+      text-transform: uppercase;
+      font-weight: 300;
+      font-size: 1rem;
+      line-height: 38px;
+      margin: 0;
+      color: #302a2b;
+      text-align: right;
+      font-style: normal;
+      font-family: "Open Sans Condensed", sans-serif; }
+  .lightbox.search.active form.search .query {
+    background-color: #fff;
+    height: 100%;
+    width: 50%;
+    float: left;
+    line-height: 38px;
+    padding: 0 1rem 0 1rem; }
+    .lightbox.search.active form.search .query div {
+      display: inline-block;
+      padding: 0 2rem 0 0; }
+    .lightbox.search.active form.search .query label, .lightbox.search.active form.search .query select, .lightbox.search.active form.search .query input {
+      width: initial;
+      display: inline;
+      float: none;
+      height: initial; }
+    .lightbox.search.active form.search .query select {
+      padding-left: 0;
+      width: 100%;
+      line-height: 30px;
+      border: 0px none !important;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      background-image: url("../img/iconset_yokoso_sprite_grey_bottom-arrow.svg");
+      background-repeat: no-repeat;
+      background-position: 100% center;
+      background-size: 12px;
+      outline-color: transparent;
+      font-size: 1rem;
+      color: grey;
+      background-color: transparent; }
+
 div.lightbox.avatar.active section div {
   overflow-y: auto;
   overflow-x: hidden;
@@ -748,7 +830,8 @@ div.lightbox.avatar.active section div {
 
 div.lightbox.active.search .dropdown {
   background-color: blue;
-  width: 100%; }
+  width: 100%;
+  display: none; }
 div.lightbox.active.search label {
   float: left;
   display: block;
@@ -791,27 +874,30 @@ div.lightbox {
   position: absolute;
   transform: scale(0); }
 
-nav#menu-push.online ul li .profil {
-  display: inline-block;
-  vertical-align: top;
-  position: relative;
-  height: 40px;
-  line-height: 40px;
-  font-size: 1.5rem;
-  background-color: transparent;
-  padding-left: 5px;
-  margin-bottom: 15px; }
-  nav#menu-push.online ul li .profil:hover {
-    color: white; }
-nav#menu-push.online ul li a.avatar {
-  display: inline-block;
-  vertical-align: top;
-  height: 40px;
-  width: 40px;
-  background-image: url("../img/avatar_doll.png");
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: cover; }
+nav#menu-push.online {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300; }
+  nav#menu-push.online ul li .profil {
+    display: inline-block;
+    vertical-align: top;
+    position: relative;
+    height: 40px;
+    line-height: 40px;
+    font-size: 1.5rem;
+    background-color: transparent;
+    padding-left: 5px;
+    margin-bottom: 15px; }
+    nav#menu-push.online ul li .profil:hover {
+      color: white; }
+  nav#menu-push.online ul li a.avatar {
+    display: inline-block;
+    vertical-align: top;
+    height: 40px;
+    width: 40px;
+    background-image: url("../img/avatar_doll.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover; }
 
 section#profil {
   margin: 96px auto 20px auto;
@@ -1059,6 +1145,21 @@ section#profil-corres {
     section#profil-corres section.row div.left-column input[type="submit"].add-corres.on:hover {
       background-color: white;
       color: #302a2b; }
+  section#profil-corres section.row div.left-column input[type="submit"].added-corres {
+    display: block;
+    height: 50px;
+    width: 100%;
+    background-color: #b7c931;
+    box-shadow: 0px;
+    border: none;
+    border-radius: 4px;
+    padding: 0 1rem 0 1rem;
+    margin-bottom: 1rem;
+    transition: background-color 0.25s ease-out 0s, color 0.25s ease-out 0s;
+    color: #302a2b; }
+    section#profil-corres section.row div.left-column input[type="submit"].added-corres:hover {
+      background-color: white;
+      color: black; }
   section#profil-corres section.row div.left-column button.etc {
     display: block;
     border-color: #302a2b;

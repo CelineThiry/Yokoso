@@ -197,11 +197,11 @@
             <form class="large-6 medium-6 columns">
                 <!-- Right column -->
                 <a class="login my-button facebook" href=
-                "online/tableau-de-bord.html">S'inscrire avec Facebook</a>
+                "online/profil.html">S'inscrire avec Facebook</a>
                 <a class="login my-button twitter" href=
-                "online/tableau-de-bord.html">S'inscrire avec Twitter</a>
+                "online/profil.html">S'inscrire avec Twitter</a>
                 <a class="login my-button google" href=
-                "online/tableau-de-bord.html">S'inscrire avec Google+</a>
+                "online/profil.html">S'inscrire avec Google+</a>
             </form>
             <!-- END Right column -->
         </section>
@@ -209,30 +209,34 @@
     <!-- END lightbox signupt -->
 
 
-    <div class="lightbox search">
-        <button class="close">⨯</button>
+<div class="lightbox search">
+  <button class="close">⨯</button>
 
-        <section class="row">
-            <h2>Chercher un correspondant</h2>
-
-
-            <form class="large-12 medium-12 columns">
-                <!-- Left column -->
+  <section class="">
+    <h1>Chercher un correspondant</h1>
 
 
-                <div>
-                    <label for="">Langue maternelle</label> <input id=
-                    "native-lang" type="radio" value="french">
-
-                    <p>Français</p>
-                    <input id="native-lang" type="radio" value="japanese">
-
-                    <p>Japonais</p>
-                </div>
+    <form action="resultat-recherche.html" class="search">
+      <!-- Left column -->
 
 
-                <div>
-                    <label for="">Niveau</label> <select id="level">
+      <div class="question-line">
+        <div class="title-query">
+          <h1>Langue maternelle</h1></div>
+        <div class="query">
+          <div><label>Français</label>
+          <input name="native-lang" id="native-lang" type="radio" value="french" checked></div>
+
+          <div><label>Japonais</label>
+          <input name="native-lang" id="native-lang" type="radio" value="japanese"></div>
+        </div>
+      </div>
+
+
+      <div class="question-line">
+        <div class="title-query">
+          <h1>Niveau</h1></div>
+        <div class="query"><select id="level">
                         <option value="Beginner">
                             Débutant
                         </option>
@@ -244,23 +248,33 @@
                         <option value="Advanced">
                             Avancé
                         </option>
-                    </select>
-                </div>
+          </select>
+        </div>
+      </div>
 
 
-                <div>
-                    <label for="">Genre</label> <input id="Gender" type="radio"
-                    value="female">
+      <div class="question-line">
+        <div class="title-query">
+          <h1>Genre</h1></div>
 
-                    <p>Femme</p>
-                    <input id="Gender" type="radio" value="male">
+        <div class="query">
 
-                    <p>Homme</p>
-                </div>
+          <div><label>Femme</label>
+          <input name="gender" id="Gender" type="radio" value="female" checked></div>
+
+          <div><label>Homme</label>
+          <input name="gender" id="Gender" type="radio" value="male"></div>
+
+        </div>
+      </div>
 
 
-                <div>
-                    <label for="">Age</label> <select id="level">
+      <div class="question-line">
+        <div class="title-query">
+          <h1>Age</h1>
+        </div>
+        <div class="query"> 
+          <select id="level">
                         <option value="teen">
                             15-20 ans
                         </option>
@@ -280,15 +294,19 @@
                         <option value="oldest">
                             50+ ans
                         </option>
-                    </select>
-                </div>
+          </select>
+        </div>
+      </div>
 
 
-                <div>
-                    <label for="">Centre d'intérêt</label>
+      <div class="question-line">
+        <div class="title-query">
+          <h1>Centre d'intérêt</h1>
+        </div>
 
-                    <dl class="dropdown">
-                        <dt>
+        <div class="query">
+          <dl class="dropdown">
+            <dt>
                             <a href="#"><span class="hida">Select</span>
 
                             <p class="multiSel">
@@ -296,42 +314,39 @@
                         </dt>
 
 
-                        <dd>
-                            <div class="mutliSelect">
-                                <ul>
-                                    <li><input type="checkbox" value=
-                                    "Apple">Apple</li>
+            <dd>
+              <div class="mutliSelect">
+                <ul>
+                  <li><input type="checkbox" value="Apple">Apple</li>
 
 
-                                    <li><input type="checkbox" value=
-                                    "Blackberry">Blackberry</li>
+                  <li><input type="checkbox" value="Blackberry">Blackberry</li>
 
 
-                                    <li><input type="checkbox" value=
-                                    "HTC">HTC</li>
+                  <li><input type="checkbox" value="HTC">HTC</li>
 
 
-                                    <li><input type="checkbox" value=
-                                    "Sony Ericson">Sony Ericson</li>
+                  <li><input type="checkbox" value="Sony Ericson">Sony Ericson</li>
 
 
-                                    <li><input type="checkbox" value=
-                                    "Motorola">Motorola</li>
+                  <li><input type="checkbox" value="Motorola">Motorola</li>
 
 
-                                    <li><input type="checkbox" value=
-                                    "Nokia">Nokia</li>
-                                </ul>
-                            </div>
-                        </dd>
-                    </dl>
-                    <!-- FIN DROPDOWN MENU -->
-                </div>
-                <!-- <input type="submit" value="Chercher"> -->
-            </form>
-            <!-- END Left column -->
-        </section>
-    </div>
+                  <li><input type="checkbox" value="Nokia">Nokia</li>
+                </ul>
+              </div>
+            </dd>
+          </dl>
+          <!-- FIN DROPDOWN MENU -->
+        </div>
+
+      </div>
+      <input type="submit" value="Chercher">
+    </form>
+    <!-- END Left column -->
+  </section>
+</div>
+<!-- END lightbox search -->
     <!-- END lightbox search -->
 
 
@@ -386,7 +401,7 @@
 
                                 <p>Faites vous de nouveaux amis parmis des gens
                                 passionés et motivés !</p>
-                                <a class="cat" href="">Chercher un
+                                <a class="cat search" href="">Chercher un
                                 correspondant</a>
                             </div>
                         </div>

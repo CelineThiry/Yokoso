@@ -17,7 +17,7 @@
   
 
 
-    <header class="callout first-nav online">
+ <header class="callout first-nav online">
         <!-- online Navigation bar -->
         <nav class="main-nav row expanded">
             <div class="large-4 medium-4 small-4 columns burger-div">
@@ -84,7 +84,7 @@
       <li><a href="tableau-de-bord.html">Tableau de bord</a></li>
       <li><a href="courrier.html">Courrier</a></li>
       <li><a href="correspondant.html">Correspondants</a></li>
-      <li><a href="profil-nomducorrespondant-ajoute.html">Profil</a></li> 
+      <li><a href="profil.html">Profil</a></li> 
       <li><a href="../index.html">Déconexion</a></li>
     </ul>
   </nav>
@@ -93,158 +93,88 @@
 <main id="base">
 
 <div id="content">
-  <section id="correspondance"> 
-    <section class="row column"><!-- First row -->
-
-    <div class="large-8 medium-12 columns"> <!-- ligne de 8 -->
-      
-      <article>
-      <div class="my-corres callout">
-        <h1>Mes correspondants</h1> 
-        <ul class="callout profil"> <!-- Profil icon one -->
-        <li class="avatar">
-          <a href="profil-nomducorrespondant-ajoute.html">
-            <figure>
-              <img src="../img/avatar_mouse.png" alt="">
-              <figcaption>Hiyori_17</figcaption>
-            </figure>
-          </a>
-        </li>
-        <li class="avatar">
-          <a href="profil-nomducorrespondant-ajoute.html">
-            <figure>
-              <img src="../img/avatar_panda.png" alt="">
-              <figcaption>Yamamoto</figcaption>
-            </figure>
-          </a>
-        </li>
-        <li class="avatar">
-          <a href="profil-nomducorrespondant-ajoute.html">
-            <figure>
-              <img src="../img/avatar_coffee.png" alt="">
-              <figcaption>Yato</figcaption>
-            </figure>
-          </a>
-        </li>       
-      </ul> <!-- FIN Profil icone zone --> 
-      <a class="cat-4" href="correspondant.html">Bloquer et supprimer</a>        
+  <section id="profil-corres">
+  <section class="row">
+    <div class="left-column large-4 medium-4 columns"> <!-- Colonne de gauche -->
+      <img src="../img/avatar_mouse.png" alt="">
+      <div class="">
+        <label for="">Langue maternelle</label>
+        <p>Japonais</p>
       </div>
-           
 
-      
-      </article>
-
-      <section class="row column"> <!-- Deuxieme ligne sous Mes correspondants -->
-    <div class="nest large-6 medium-12 columns"> <!-- Block Suggestions de correspondants -->
-      
-      <article class="suggest-corres">
-      <div class="callout">
-        <h1>Suggestions</h1>    
-        <p class="exergue">de correspondants</p> 
-        <ul class="callout profil"> <!-- Profil icon one -->
-        <li class="avatar">
-          <a href="profil-nomducorrespondant-ajoute.html">
-            <figure>
-              <img src="../img/avatar_pig.png" alt="">
-              <figcaption>Iro</figcaption>
-            </figure>
-          </a>
-        </li>
-        <li class="avatar">
-          <a href="profil-nomducorrespondant-ajoute.html">
-            <figure>
-              <img src="../img/avatar_bird.png" alt="">
-              <figcaption>Tsubaki</figcaption>
-            </figure>
-          </a>
-        </li>
-        <li class="avatar">
-          <a href="profil-nomducorrespondant-ajoute.html">
-            <figure>
-              <img src="../img/avatar_space.png" alt="">
-              <figcaption>Mayuri</figcaption>
-            </figure>
-          </a>
-        </li>   
+      <div class="">
+        <label for="">Date de naissance</label>
+        <div>
+          <p class="birthdate">17</p>
+          <p class="birthdate">10</p>
+          <p class="birthdate">1989</p>         
+        </div>
         
-      </ul> <!-- FIN Profil icone zone -->  
-        <a class="cat-4" href="javascript:(void)">Rafraichir</a> 
       </div>
-    </article>
-    </div><!-- FIN Block Suggestions de correspondants -->
 
-    <article class="nest large-6 medium-12 columns"> <!-- Bouton nouvelle lettre -->
-      <button class="callout big-button">
-        <div class="picto-button"></div>
-        <h1>Ecrire une nouvelle lettre</h1>    
-    </button>
-    </article> <!-- FIN Bouton nouvelle lettre -->
+      <div class="">
+        <label for="">Genre</label>
+        <p>Femme</p>
+      </div>
+
+      <div class="">
+        <label for="">Pays</label>
+        <p>Belgique</p>
+      </div>
+
+      <div class="">
+        <label for="">Ville</label>
+        <p>Bruxelles</p>
+      </div>
+
+      <hr>
+      
+      <input type="submit" class="added-corres" value="Fait partie de vos correspondants">
+      <!-- <input type="submit" value="Fait partie de vos correspondants"> -->
+      <button class="etc">...</button>
+      
+    </div><!-- FIN Colonne de gauche -->
+
+    <div class="right-column large-8 medium-8 columns"><!-- Colonne de droite -->
+    <div class="">
+      <h2>Hiyori_17</h2>
+    </div> 
+    <div class="">
+      <h2 for="">A propos</h2>
+      <p>Ecrivez ici votre annonce pour recevoir des lettres de futurs correspodants. Pas la peine d’écrire un roman, quelques lignes succinctes et efficaces suffiront !</p>
+    </div>
     
-    </section><!-- FIN Deuxieme ligne sous Mes correspondants -->
-
-    </div><!-- FIN de la ligne de 8 -->
-
-    <div class="large-4 medium-12 columns"> <!-- panel demande de correspodances -->
-    <article>
-      <div class="callout">
-        <h1>Demandes de correspondances</h1>     
-      </div>
-      <a class="cat-3" href="javascript:(void)">Reçues</a> 
-      <ul class="callout profil middle"> <!-- Profil icon one -->
-        <!-- <div>
-          <p>Vous n'avez envoyé aucune demande de correspondance. <a href="">Chercher un nouveau correspondant ?</a></p>
-        </div> -->
-        <li class="avatar">
-          <a href="profil-nomducorrespondant-ajoute.html">
-            <figure>
-              <img src="../img/avatar_pinguin.png" alt="">
-              <figcaption>Kyoma</figcaption>
-            </figure>
-          </a>
-        </li>
-        <li class="avatar">
-          <a href="profil-nomducorrespondant-ajoute.html">
-            <figure>
-              <img src="../img/avatar_rabbit.png" alt="">
-              <figcaption>Nobunaga</figcaption>
-            </figure>
-          </a>
-        </li>
-        <li class="avatar">
-          <a href="profil-nomducorrespondant-ajoute.html">
-            <figure>
-              <img src="../img/avatar_watermelon.png" alt="">
-              <figcaption>Sato</figcaption>
-            </figure>
-          </a>
-        </li>        
-      </ul> <!-- FIN Profil icone zone --> 
-      <a class="cat-3 desactivated" href="javascript:(void)">Envoyées</a> 
-      <div class="callout profil"> <!-- Profil icon one -->
-        <div class="not-send">
-          <p>Vous n'avez envoyé aucune demande de correspondance. <a href="">Chercher un nouveau correspondant ?</a></p>
+    <div class="">
+      <h2>Langues</h2>
+        <div>
+          <label for="">Anglais</label>
+          <p>Avancé</p>
         </div>
-        <!-- <div class="avatar">
-          <span class="avatar-pict"></span>
-          <p>Mayuri</p>
-        </div>
-        <div class="avatar">
-          <span class="avatar-pict"></span>
-          <p>Tsubaki</p>
-        </div>
-        <div class="avatar">
-          <span class="avatar-pict"></span>
-          <p>Tsubaki</p>
-        </div>           -->
-      </div> <!-- FIN Profil icone zone -->     
-     </article>
-    </div><!-- FIN panel demande de correspodances -->
 
-    </section> <!-- Fin de la section row column -->      
-  </section> 
+        <div>
+          <label for="">Français</label>
+          <p>Avancé</p>
+        </div>
+    </div>
+    
+    
+    <div class="">
+      <h2>Centres d'intérêts</h2>
+      <p class="interest-tag">tennis</p>
+      <p class="interest-tag">sport</p>
+      <p class="interest-tag">violon</p>
+      <p class="interest-tag">musique classique</p>
+      <p class="interest-tag">Surf sur le net</p>
 
-</div>
+    </div>
+      
+    </div><!-- FIN Colonne de droite -->
+    
+  </section><!-- Fin row -->
   
+</section> <!-- Fin section Profil -->
+</div>
+
 <footer>
             <div class="row">
                 <nav class="large-8 medium-8 columns">

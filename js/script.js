@@ -296,6 +296,11 @@ $(document).ready(function(){
 				$('.lightbox.search').addClass('active');
 				window.scrollTo(0, 0);							 
 	});
+	$('.cat.search').click(function(e){
+				e.preventDefault();
+				$('.lightbox.search').addClass('active');
+				window.scrollTo(0, 0);							 
+	});
 	// Fermer n'importe quelle lightbox en cliquant sur la croix
 	$('button.close').click(function(e){
 				e.preventDefault();
